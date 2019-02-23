@@ -1,0 +1,165 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top:0;
+  left:0;
+  right:0;
+  margin: auto;
+  z-index: 100;
+  transition: background .4s, box-shadow .4s, height .4s;
+  .header_inner{
+    width: calc(100% - 60px);
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    transition: height .4s;
+    #hummenu{
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      margin: auto;
+      width: 30px;
+      height: 30px;
+      a{
+        display: block;
+        width: 30px;
+        height: 30px;
+        @include bgSet;
+        @include hover;
+        background-image: url(../img/header/humButton.svg);
+      }
+    }
+    .header_logo{
+      width: 130px;
+      height: 50px;
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      margin: auto;
+      a{
+        display: block;
+        width: 130px;
+        height: 50px;
+        @include hover;
+        @include bgSet;
+        background-image: url(../img/logo.svg);
+      }
+    }
+    .header_nav{
+      height: 24px;
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      margin: auto;
+      @include flexSet;
+      a{
+        display: block;
+        font-size: 12px;
+        letter-spacing: 1.6px;
+        @include hover;
+        span{
+          position: relative;
+          display: inline-block;
+          line-height: 24px;
+          padding-left: 30px;
+          color: #666;
+          &::before{
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            margin: auto;
+            display: block;
+            content: "";
+            width: 24px;
+            height: 24px;
+            @include bgSet;
+            background-size: 22px;
+          }
+        }
+        &.nav_login{
+          margin-right: 20px;
+          span{
+            &::before{
+              background-image: url(../img/header/header_login.svg);
+            }
+          }
+        }
+        &.nav_cart{
+          span{
+            &::before{
+              background-image: url(../img/header/header_cart.svg);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.rolled{
+    background: #fff;
+    box-shadow: 0 2px 3px 0 #f1f1f1;
+    height: 80px;
+    .header_inner{
+      height: 80px;
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    .header_inner{
+      width: 90vw;
+      height: 60px;
+      #hummenu{
+        width: 25px;
+        height: 25px;
+        a{
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .header_logo{
+        width: 87px;
+        height: 34px;
+        a{
+          width: 87px;
+          height: 34px;
+        }
+      }
+      .header_nav{
+        height: 24px;
+        a{
+          display: block;
+          span{
+            width: 24px;
+            padding-left:0;
+            font{
+              display: none;
+            }
+            &::before{
+              width: 24px;
+              height: 24px;
+              background-size: 22px;
+            }
+          }
+          &.nav_login{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &.rolled{
+      height: 60px;
+      .header_inner{
+        height: 60px;
+      }
+    }
+  }
+}

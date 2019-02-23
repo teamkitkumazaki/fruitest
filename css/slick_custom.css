@@ -1,0 +1,262 @@
+.slidewrap {
+  width: calc(80vw + 60px);
+  margin: 5px 0 30px;
+  overflow: hidden; }
+  .slidewrap #slickSlider .slick-next,
+  .slidewrap #slickSlider .slick-prev {
+    width: 100px;
+    height: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: rgba(183, 165, 139, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    border: none;
+    outline: 0; }
+    .slidewrap #slickSlider .slick-next::before,
+    .slidewrap #slickSlider .slick-prev::before {
+      display: block;
+      content: "";
+      bottom: 0;
+      margin: auto;
+      border-top: 2px solid #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      line-height: 1;
+      color: #fff; }
+  .slidewrap #slickSlider .slick-list {
+    padding-bottom: 5px !important; }
+  .slidewrap #slickSlider .slick-next {
+    left: calc(50vw + 175px); }
+    .slidewrap #slickSlider .slick-next::before {
+      right: 45px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid #fff;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .slidewrap #slickSlider .slick-prev {
+    left: -50px; }
+    .slidewrap #slickSlider .slick-prev::before {
+      right: 0;
+      left: 45px;
+      width: 12px;
+      height: 12px;
+      border-left: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .slidewrap #slickSlider .item_box {
+    padding-right: 20px !important; }
+  .slidewrap #slickSlider2 {
+    padding-bottom: 80px; }
+    .slidewrap #slickSlider2 .slick-next,
+    .slidewrap #slickSlider2 .slick-prev {
+      width: 100px;
+      height: 100px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      background: rgba(183, 165, 139, 0.8);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 100;
+      display: block;
+      line-height: 0;
+      font-size: 0;
+      cursor: pointer;
+      top: 0;
+      bottom: 200px;
+      margin: auto;
+      padding: 0;
+      border: none;
+      outline: 0; }
+      .slidewrap #slickSlider2 .slick-next::before,
+      .slidewrap #slickSlider2 .slick-prev::before {
+        display: block;
+        content: "";
+        bottom: 0;
+        margin: auto;
+        border-top: 2px solid #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        line-height: 1;
+        color: #fff; }
+    .slidewrap #slickSlider2 .slick-list {
+      padding-bottom: 5px !important; }
+    .slidewrap #slickSlider2 .slick-next {
+      left: calc(50vw + 175px); }
+      .slidewrap #slickSlider2 .slick-next::before {
+        right: 45px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-right: 2px solid #fff;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .slidewrap #slickSlider2 .slick-prev {
+      left: -50px; }
+      .slidewrap #slickSlider2 .slick-prev::before {
+        right: 0;
+        left: 45px;
+        width: 12px;
+        height: 12px;
+        border-left: 2px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+    .slidewrap #slickSlider2 .slick-dots {
+      position: absolute;
+      bottom: 0px;
+      list-style: none;
+      display: block;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      width: 100%; }
+      .slidewrap #slickSlider2 .slick-dots li {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer; }
+        .slidewrap #slickSlider2 .slick-dots li button {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: 0;
+          background: #aaa;
+          display: block;
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          outline: 0;
+          line-height: 0;
+          font-size: 0;
+          color: transparent;
+          padding: 5px;
+          cursor: pointer; }
+          .slidewrap #slickSlider2 .slick-dots li button::before {
+            display: none !important; }
+    .slidewrap #slickSlider2 .item_box {
+      padding-right: 15px !important; }
+      .slidewrap #slickSlider2 .item_box .img_wrap {
+        position: relative;
+        margin-bottom: 15px; }
+        .slidewrap #slickSlider2 .item_box .img_wrap .date {
+          position: absolute;
+          left: 10px;
+          bottom: -2px;
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #ffffff; }
+      .slidewrap #slickSlider2 .item_box .txt_wrap a {
+        color: #222;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+        letter-spacing: 1.5px; }
+
+@media screen and (max-width: 1080px) {
+  .slidewrap {
+    width: calc(100vw + 60px); }
+    .slidewrap #slickSlider .slick-next,
+    .slidewrap #slickSlider .slick-prev {
+      width: 80px;
+      height: 80px; }
+    .slidewrap #slickSlider .slick-list {
+      padding-bottom: 5px !important; }
+    .slidewrap #slickSlider .slick-next {
+      left: calc(50vw + 275px); }
+    .slidewrap #slickSlider .slick-prev {
+      left: -40px; }
+    .slidewrap #slickSlider .item_box {
+      padding-right: 15px !important; }
+    .slidewrap #slickSlider2 {
+      padding-bottom: 60px; }
+      .slidewrap #slickSlider2 .slick-next,
+      .slidewrap #slickSlider2 .slick-prev {
+        width: 80px;
+        height: 80px;
+        bottom: 150px; }
+      .slidewrap #slickSlider2 .slick-list {
+        padding-bottom: 5px !important; }
+      .slidewrap #slickSlider2 .slick-next {
+        left: calc(50vw + 275px); }
+      .slidewrap #slickSlider2 .slick-prev {
+        left: -40px; }
+      .slidewrap #slickSlider2 .item_box {
+        padding-right: 15px !important; }
+        .slidewrap #slickSlider2 .item_box .img_wrap .date {
+          font-size: 18px;
+          letter-spacing: 1.5px; }
+        .slidewrap #slickSlider2 .item_box .txt_wrap a {
+          font-size: 14px;
+          letter-spacing: 1.2px; } }
+
+@media screen and (max-width: 730px) {
+  .slidewrap {
+    width: calc(90vw + 10px);
+    margin: 5px 0 30px;
+    overflow: visible; }
+    .slidewrap #slickSlider .slick-next,
+    .slidewrap #slickSlider .slick-prev {
+      width: 70px;
+      height: 70px; }
+    .slidewrap #slickSlider .slick-list {
+      padding-bottom: 0vw !important; }
+    .slidewrap #slickSlider .slick-next {
+      left: calc(95vw - 35px); }
+      .slidewrap #slickSlider .slick-next::before {
+        right: 28px;
+        width: 10px;
+        height: 10px; }
+    .slidewrap #slickSlider .slick-prev {
+      left: calc(-5vw - 35px); }
+      .slidewrap #slickSlider .slick-prev::before {
+        left: 28px;
+        width: 10px;
+        height: 10px; }
+    .slidewrap #slickSlider .item_box {
+      padding-right: 10px !important; }
+    .slidewrap #slickSlider2 {
+      padding-bottom: 60px; }
+      .slidewrap #slickSlider2 .slick-next,
+      .slidewrap #slickSlider2 .slick-prev {
+        display: none !important; }
+      .slidewrap #slickSlider2 .slick-list {
+        padding-bottom: 5px !important; }
+      .slidewrap #slickSlider2 .slick-dots {
+        text-align: center;
+        width: 100%; }
+      .slidewrap #slickSlider2 .item_box {
+        padding-right: 10px !important; }
+        .slidewrap #slickSlider2 .item_box .img_wrap {
+          position: relative;
+          margin-bottom: 15px; }
+          .slidewrap #slickSlider2 .item_box .img_wrap .date {
+            bottom: -2px;
+            font-size: 16px;
+            letter-spacing: 1.6px; }
+        .slidewrap #slickSlider2 .item_box .txt_wrap a {
+          font-size: 13px; } }

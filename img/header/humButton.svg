@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>menu_button</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc_top" transform="translate(-36.000000, -32.000000)" fill="#666666">
+            <g id="header" transform="translate(0.000000, -32.000000)">
+                <g id="menu_button" transform="translate(36.000000, 64.000000)">
+                    <text id="MENU" font-family="Abel-Regular, Abel" font-size="12.7400004" font-weight="normal" letter-spacing="1.82000005">
+                        <tspan x="0.733066232" y="33.2030015">MEN</tspan>
+                        <tspan x="28.1334869" y="33.2030015">U</tspan>
+                    </text>
+                    <rect id="Rectangle" fill-rule="nonzero" x="0.637000116" y="0" width="32.7600022" height="1"></rect>
+                    <rect id="Rectangle" fill-rule="nonzero" x="0.637000116" y="6.55200045" width="32.7600022" height="1"></rect>
+                    <rect id="Rectangle" fill-rule="nonzero" x="0.637000116" y="13.1040009" width="24.5700017" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
