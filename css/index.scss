@@ -626,7 +626,7 @@
     #main {
       #mainVisual {
         width: 90vw;
-        height: calc(100vh - 120px);
+        height: calc(100vh - 200px);
         background-image: url(../img/index/main_sp.jpg);
         #scrollDown {
           bottom: -45px;
@@ -674,7 +674,7 @@
           font-size: 14px;
           line-height: 1.8;
           letter-spacing: 1px;
-          margin-bottom: 10px;
+          margin-bottom: 15px;
           span{
             display: block;
           }
@@ -715,7 +715,7 @@
               font-size: 14px;
               line-height: 1.8;
               letter-spacing: 1px;
-              margin-bottom: 10px;
+              margin-bottom: 15px;
 
               span {
                 display: inline;
@@ -865,6 +865,11 @@
                 background-image: url(../img/index/prod_all_caret.png);
               }
             }
+          }
+          &:hover{
+            background: #f1f1f1;
+            color: #333;
+            opacity: 0.8;
           }
         }
       }

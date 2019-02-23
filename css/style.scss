@@ -10,7 +10,10 @@
 */
 $keycolor: #8c3333;
 @mixin xiaowei{
-  font-family: 'Cormorant Garamond', serif;
+  /*font-family: 'Cormorant Garamond', serif;*/
+  /*font-family: 'Marcellus SC', serif;*/
+  font-family: 'Marcellus', serif;
+  letter-spacing: 0.2em !important;
 }
 @mixin basicP {
 	font-size: 14px;
@@ -53,7 +56,10 @@ body {
   color: #333;
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-
+article{
+  width: 100%;
+  overflow: hidden;
+}
 .effect{
   opacity: 0;
   transition: transform 2s cubic-bezier(0.77, 0, 0.175,1),

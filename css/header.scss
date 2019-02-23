@@ -28,7 +28,7 @@ header {
         height: 30px;
         @include bgSet;
         @include hover;
-        background-image: url(../img/header/humButton.svg);
+        background-image: url(../img/header/menu_button.png);
       }
     }
     .header_logo{
@@ -118,11 +118,13 @@ header {
       width: 90vw;
       height: 60px;
       #hummenu{
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 30px;
         a{
-          width: 25px;
-          height: 25px;
+          width: 50px;
+          height: 30px;
+          background-size: 25px;
+          background-position: center left;
         }
       }
       .header_logo{

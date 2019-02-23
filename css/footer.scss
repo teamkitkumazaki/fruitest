@@ -273,7 +273,7 @@ footer{
                 display: block;
                 text-align: left;
                 font-size: 12px;
-                padding: 10px 5px;
+                padding: 15px 5px;
                 letter-spacing: 1.5px;
                 color: #666;
                 @include hover;
@@ -282,7 +282,7 @@ footer{
                   font-size: 18px;
                   color: $keycolor;
                   letter-spacing: 1.8px;
-                  margin-bottom: 5px;
+                  margin-bottom: 0px;
                 }
               }
             }
