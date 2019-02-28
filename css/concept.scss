@@ -1,0 +1,432 @@
+#concept{
+  #keyVisual{
+    .img_wrap{
+      position: relative;
+      width: 100%;
+      height: 480px;
+      background-color: #f1f1f1;
+      background-image: url(../img/concept/main.jpg);
+      @include bgSet;
+    }
+  }
+  #conceptWrap{
+    .concept_ttl_section{
+      margin-top: 60px;
+      margin-bottom: 40px;
+      .ttl_ja{
+        font-size: 28px;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        color: #333333;
+        margin-bottom: 10px;
+        .ttl_en{
+          display: inline-block;
+          padding-left: 30px;
+          @include xiaowei;
+          font-size: 18px;
+          color: $keycolor;
+          letter-spacing: 1.6px;
+        }
+      }
+    }
+    .flex_ttl_wrap{
+      @include flexSet;
+      .ja{
+        width: 50%;
+        p{
+          font-size: 14px;
+          line-height: 2;
+          letter-spacing: 1.5px;
+            margin-bottom: 10px;
+          span{
+            display: block;
+          }
+        }
+      }
+      .en{
+        width: 50%;
+        p{
+          font-size: 14px;
+          line-height: 2;
+          letter-spacing: 1.8px;
+          color: #666;
+        }
+      }
+    }
+  }
+  #conceptRare{
+    margin-top: 200px;
+    .flex_wrap{
+      @include flexSet;
+      flex-direction: row-reverse;
+      align-items: center;
+      .flex_right{
+        width: 50%;
+        padding-left: 40px;
+        box-sizing: border-box;
+        .img_wrap{
+          width: 100%;
+          height: 600px;
+          background-color: #f1f1f1;
+          @include bgSet;
+          background-image: url(../img/concept/concept_img01.jpg);
+        }
+      }
+      .flex_left{
+        width: 50%;
+        .txt_wrap{
+          .ttl{
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 1.6;
+            letter-spacing: 1.7px;
+            margin-bottom: 40px;
+            span{
+              display: block;
+            }
+          }
+          p{
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 1.6px;
+            margin-bottom: 15px;
+            span{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  #conceptTaberu{
+    margin-top: 200px;
+    .flex_wrap{
+      @include flexSet;
+      align-items: center;
+      .flex_left{
+        width: 50%;
+        padding-right: 40px;
+        box-sizing: border-box;
+        .img_wrap{
+          width: 100%;
+          height: 700px;
+          background-color: #f1f1f1;
+          @include bgSet;
+          background-image: url(../img/concept/concept_img02.jpg);
+        }
+      }
+      .flex_right{
+        width:50%;
+        .txt_wrap{
+          .ttl{
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 1.6;
+            letter-spacing: 1.7px;
+            margin-bottom: 40px;
+            span{
+              display: block;
+            }
+          }
+          p{
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 1.6px;
+            margin-bottom: 15px;
+            span{
+              display: block;
+            }
+          }
+        }
+        .fb_button_wrap{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  #conceptSubscription{
+    margin: 200px auto 150px;
+    .flex_wrap{
+      @include flexSet;
+      align-items: center;
+      flex-direction: row-reverse;
+      .flex_right{
+        width: 50%;
+        padding-left: 40px;
+        box-sizing: border-box;
+        .img_wrap{
+          width: 100%;
+          height: 450px;
+          background-color: #f1f1f1;
+          @include bgSet;
+          background-image: url(../img/concept/concept_img03.jpg);
+        }
+      }
+      .flex_left{
+        width: 50%;
+        .txt_wrap{
+          p{
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 1.6px;
+            margin-bottom: 15px;
+            span{
+              display: block;
+              font{
+                font-size: 12px;
+                color: #666;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  #concept{
+    #conceptWrap{
+      .flex_ttl_wrap{
+        display: block;
+        .ja{
+          width: 100%;
+          margin-bottom: 40px;
+          p{
+            span{
+              display: inline;
+            }
+          }
+        }
+        .en{
+          width: 100%;
+        }
+      }
+    }
+    #conceptRare{
+      margin-top: 200px;
+      .flex_wrap{
+        display: block;
+        .flex_right{
+          display: none;
+        }
+        .flex_left{
+          width: 100%;
+          .sp_img{
+            width: 100%;
+            height: 350px;
+            margin-bottom: 40px;
+            @include bgSet;
+            background-image: url(../img/concept/concept_sp01.jpg);
+          }
+          .txt_wrap{
+            p{
+              span{
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
+    #conceptTaberu{
+      margin-top: 100px;
+      .flex_wrap{
+        display: block;
+        .flex_left{
+          display: none;
+          .img_wrap{
+            width: 100%;
+            height: 700px;
+            background-color: #f1f1f1;
+            @include bgSet;
+            background-image: url(../img/concept/concept_img02.jpg);
+          }
+        }
+        .flex_right{
+          width:100%;
+          .sp_img{
+            width: 100%;
+            height: 350px;
+            margin-bottom: 40px;
+            @include bgSet;
+            background-image: url(../img/concept/concept_sp02.jpg);
+          }
+          .txt_wrap{
+            p{
+              span{
+                display: inline;
+              }
+            }
+          }
+          .fb_button_wrap{
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    #conceptSubscription{
+      margin: 200px auto;
+      .flex_wrap{
+        display: block;
+        .flex_right{
+          display: none;
+        }
+        .flex_left{
+          width: 100%;
+          .sp_img{
+            width: 100%;
+            height: 350px;
+            margin-bottom: 40px;
+            @include bgSet;
+            background-image: url(../img/concept/concept_sp03.jpg);
+          }
+          .txt_wrap{
+            p{
+              span{
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  #concept{
+    .ttl_section{
+      text-align: center;
+    }
+    #keyVisual{
+      .img_wrap{
+        height: 78vw;
+        background-image: url(../img/concept/main_sp.jpg);
+      }
+    }
+    #conceptWrap{
+      .concept_ttl_section{
+        margin-top: 45px;
+        margin-bottom: 40px;
+        text-align: center;
+        .ttl_ja{
+          font-size: 24px;
+          letter-spacing: 1.6px;
+          line-height: 1.5;
+          margin-bottom: 0px;
+          .ttl_en{
+            margin-top: 5px;
+            display: block;
+            font-size: 18px;
+            letter-spacing: 1.6px;
+            padding-left:0;
+          }
+        }
+      }
+      .flex_ttl_wrap{
+        .ja{
+          p{
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 0.7px;
+            margin-bottom: 10px;
+            span{
+              display: inline;
+            }
+          }
+        }
+        .en{
+          p{
+            font-size: 14px;
+            line-height: 1.8;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+    #conceptRare{
+      margin-top: 120px;
+      .flex_wrap{
+        .flex_left{
+          width: 100%;
+          .sp_img{
+            height: 54vw;
+            margin-bottom: 25px;
+          }
+          .txt_wrap{
+            .ttl{
+              font-size: 18px;
+              line-height: 1.78;
+              letter-spacing: 1.4px;
+              margin-bottom: 25px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.86;
+              letter-spacing: 0.7px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    #conceptTaberu{
+      margin-top: 80px;
+      .flex_wrap{
+        .flex_right{
+          width:100%;
+          .sp_img{
+            height: 54vw;
+            margin-bottom: 25px;
+          }
+          .txt_wrap{
+            .ttl{
+              font-size: 18px;
+              line-height: 1.78;
+              letter-spacing: 1.4px;
+              margin-bottom: 25px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.86;
+              letter-spacing: 0.7px;
+              margin-bottom: 15px;
+            }
+          }
+          .fb_button_wrap{
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    #conceptSubscription{
+      margin: 120px auto 100px;
+      .flex_wrap{
+        .flex_right{
+          display: none;
+        }
+        .flex_left{
+          width: 100%;
+          .sp_img{
+            height: 54vw;
+            margin-bottom: 25px;
+          }
+          .txt_wrap{
+            .ttl{
+              font-size: 18px;
+              line-height: 1.78;
+              letter-spacing: 1.4px;
+              margin-bottom: 25px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.86;
+              letter-spacing: 0.7px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

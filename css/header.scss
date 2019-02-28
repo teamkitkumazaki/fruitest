@@ -7,7 +7,7 @@ header {
   right:0;
   margin: auto;
   z-index: 100;
-  transition: background .4s, box-shadow .4s, height .4s;
+  transition: background .4s, height .4s;
   .header_inner{
     width: calc(100% - 60px);
     height: 100px;
@@ -23,12 +23,32 @@ header {
       width: 30px;
       height: 30px;
       a{
+        position: relative;
         display: block;
         width: 30px;
         height: 30px;
-        @include bgSet;
         @include hover;
-        background-image: url(../img/header/menu_button.png);
+         &:before, &:after{
+           display: block;
+           content: "";
+           position: absolute;
+           top:0;
+           bottom:0;
+           left:0;
+           right:0;
+           margin: auto;
+           width: 30px;
+           height: 30px;
+           @include bgSet;
+           background-size: 26px;
+         }
+         &:before{
+           background-image: url(../img/header/menu_button.png);
+         }
+         &:after{
+           opacity: 0;
+           background-image: url(../img/header/menu_button_white.png);
+         }
       }
     }
     .header_logo{
@@ -41,12 +61,31 @@ header {
       right:0;
       margin: auto;
       a{
+        position: relative;
         display: block;
         width: 130px;
         height: 50px;
         @include hover;
-        @include bgSet;
-        background-image: url(../img/logo.svg);
+        &::before, &::after{
+          display: block;
+          position: absolute;
+          content: "";
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+          margin: auto;
+          width: 130px;
+          height: 50px;
+          @include bgSet;
+        }
+        &::before{
+          background-image: url(../img/logo.svg);
+        }
+        &::after{
+          opacity: 0;
+          background-image: url(../img/logo_white.svg);
+        }
       }
     }
     .header_nav{
@@ -68,7 +107,7 @@ header {
           line-height: 24px;
           padding-left: 30px;
           color: #666;
-          &::before{
+          &::before, &::after{
             position: absolute;
             top:0;
             bottom:0;
@@ -88,6 +127,10 @@ header {
             &::before{
               background-image: url(../img/header/header_login.svg);
             }
+            &::after{
+              opacity: 0;
+              background-image: url(../img/header/header_login_white.png);
+            }
           }
         }
         &.nav_cart{
@@ -95,17 +138,133 @@ header {
             &::before{
               background-image: url(../img/header/header_cart.svg);
             }
+            &::after{
+              opacity: 0;
+              background-image: url(../img/header/header_cart_white.png);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.under{
+    background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.2), rgba(0, 0, 0, 0));
+    transition: background 0s, height .4s;
+    .header_inner{
+      #hummenu{
+        a{
+           &:before, &:after{
+             transition: opacity .4s;
+           }
+           &:before{
+             opacity: 0;
+           }
+           &:after{
+             opacity: 1;
+           }
+        }
+      }
+      .header_logo{
+        a{
+          &::before, &::after{
+            transition: opacity .4s;
+          }
+          &::before{
+            opacity: 0;
+          }
+          &::after{
+            opacity: 1;
+          }
+        }
+      }
+      .header_nav{
+        a{
+          span{
+            color: #fff;
+            transition: color .4s;
+            &::before, &::after{
+              transition: opacity .4s;
+            }
+          }
+          &.nav_login{
+            span{
+              &::before{
+                opacity: 0;
+              }
+              &::after{
+                opacity: 1;
+              }
+            }
+          }
+          &.nav_cart{
+            span{
+              &::before{
+                opacity: 0;
+              }
+              &::after{
+                opacity: 1;
+              }
+            }
           }
         }
       }
     }
   }
   &.rolled{
-    background: #fff;
+    background-color: #fff;
+    background-image: none;
     box-shadow: 0 2px 3px 0 #f1f1f1;
     height: 80px;
+    transition: background 0s, height .4s;
     .header_inner{
       height: 80px;
+      #hummenu{
+        a{
+           &:before{
+             opacity: 1;
+           }
+           &:after{
+             opacity: 0;
+           }
+        }
+      }
+      .header_logo{
+        a{
+          &::before{
+            opacity: 1;
+          }
+          &::after{
+            opacity: 0;
+          }
+        }
+      }
+      .header_nav{
+        a{
+          span{
+              color: #333;
+          }
+          &.nav_login{
+            span{
+              &::before{
+                opacity: 1;
+              }
+              &::after{
+                opacity: 0;
+              }
+            }
+          }
+          &.nav_cart{
+            span{
+              &::before{
+                opacity: 1;
+              }
+              &::after{
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -123,8 +282,12 @@ header {
         a{
           width: 50px;
           height: 30px;
-          background-size: 25px;
-          background-position: center left;
+          &::before, &::after{
+            width: 50px;
+            height: 30px;
+            background-size: 25px;
+            background-position: center left;
+          }
         }
       }
       .header_logo{
@@ -133,6 +296,10 @@ header {
         a{
           width: 87px;
           height: 34px;
+          &::before, &::after{
+            width: 87px;
+            height: 34px;
+          }
         }
       }
       .header_nav{
@@ -145,7 +312,7 @@ header {
             font{
               display: none;
             }
-            &::before{
+            &::before, &::after{
               width: 24px;
               height: 24px;
               background-size: 22px;
