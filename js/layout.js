@@ -148,37 +148,39 @@ $(function() {
   var toggleState = [];
 
   function toggleMove(e) {
-    var w = $(window).width();
-    if (toggleState[e] == -1 || toggleState[e] == 0) {
-      toggleButton[e].addClass('active');
-      var tagetHeight = toggleContents[e].height();
-      if (w < 750) {
-        toggleItem[e].css({
-          'height': 110 + tagetHeight + 'px'
-        });
-      }else{
-        toggleItem[e].css({
-          'height': 90 + tagetHeight + 'px'
-        });
-      }
-
-      toggleState[e] = 1;
-    } else {
-      toggleButton[e].removeClass('active');
-
-      if (w > 750) {
-        toggleItem[e].css({
-          'height': 60 + 'px'
-        });
-      } else {
-        toggleItem[e].css({
-          'height': 72 + 'px'
-        });
-      }
-
-      toggleState[e] = 0;
+  if (toggleState[e] == -1 || toggleState[e] == 0) {
+    toggleButton[e].addClass('active');
+    var tagetHeight = toggleContents[e].height();
+    if (w > 750) {
+      toggleItem[e].css({
+        'height': 50 + tagetHeight + 'px'
+      });
+    }else{
+      toggleItem[e].css({
+        'height': 80 + tagetHeight + 'px'
+      });
     }
+    toggleState[e] = 1;
+  } else {
+    toggleButton[e].removeClass('active');
+    var w = $(window).width();
+    if (w > 750) {
+      toggleItem[e].css({
+        'height': 42 + 'px'
+      });
+    } else if (toggleButton[e].parent('div').hasClass('row2')) {
+      toggleItem[e].css({
+        'height': 77 + 'px'
+      });
+    } else {
+      toggleItem[e].css({
+        'height': 52 + 'px'
+      });
+    }
+
+    toggleState[e] = 0;
   }
+}
 
   function init() {
     $.each(target.find('.toggle_item'), function(index) {
@@ -199,6 +201,9 @@ $(function() {
 }
 
 if (document.getElementById('faq')) {
+  faqToggle($('article'));
+}
+if (document.getElementById('gift')) {
   faqToggle($('article'));
 }
 

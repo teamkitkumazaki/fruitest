@@ -8,12 +8,11 @@
     url('../fonts/abel.ttf') format('truetype'),
 }
 */
-$keycolor: #8c3333;
+$keycolor: #333;
 @mixin xiaowei{
-  /*font-family: 'Cormorant Garamond', serif;*/
-  /*font-family: 'Marcellus SC', serif;*/
-  font-family: 'Marcellus', serif;
-  letter-spacing: 0.2em !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em !important;
 }
 @mixin basicP {
 	font-size: 14px;
@@ -78,4 +77,5 @@ article{
 @import 'journal_lower.scss';
 @import 'index.scss';
 @import 'concept.scss';
+@import 'gift.scss';
 @import 'form.scss';

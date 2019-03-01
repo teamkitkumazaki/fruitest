@@ -1,5 +1,7 @@
 article{
-
+}
+button{
+  font-family: inherit;
 }
 .inner{
   @include waku;
@@ -18,7 +20,7 @@ article{
     display: block;
     @include xiaowei;
     font-size: 18px;
-    color: $keycolor;
+    color: #666;
     letter-spacing: 1.6px;
   }
   &.center{
