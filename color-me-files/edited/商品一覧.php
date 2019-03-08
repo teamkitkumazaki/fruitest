@@ -25,7 +25,7 @@
           <div class="txt_wrap">
             <a class="product_name" href="#aaa">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
             <p class="copy">農家さんから、一番人気を誇る白桃。</p>
-            <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+            <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
               <a href="#aaaa"><span>詳しく知る</span></a>
             </div>
@@ -40,7 +40,7 @@
           <div class="txt_wrap">
             <a class="product_name" href="#aaa">麗王<span>REIOU</span></a>
             <p class="copy">コピーが入ります。</p>
-            <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+            <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
               <a href="#aaaa"><span>詳しく知る</span></a>
             </div>
@@ -55,7 +55,7 @@
             <div class="txt_wrap">
             <a class="product_name" href="#aaa">ピオーネ<span>PIONE</span></a>
             <p class="copy">コピーが入ります。コピーが入ります。</p>
-            <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+            <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
               <a href="#aaaa"><span>詳しく知る</span></a>
             </div>
@@ -70,7 +70,7 @@
             <div class="txt_wrap">
               <a class="product_name" href="#aaa">シャインマスカット<span>SHINE MASCUT</span></a>
               <p class="copy">コピーが入ります。</p>
-              <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="#aaaa"><span>詳しく知る</span></a>
               </div>
@@ -85,7 +85,7 @@
             <div class="txt_wrap">
               <a class="product_name" href="#aaa">貴陽<span>KIYOU</span></a>
               <p class="copy">コピーが入ります。</p>
-              <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="#aaaa"><span>詳しく知る</span></a>
               </div>
@@ -100,7 +100,7 @@
             <div class="txt_wrap">
               <a class="product_name" href="#aaa">巨峰<span>KYOHOU</span></a>
               <p class="copy">コピーが入ります。</p>
-              <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="#aaaa"><span>詳しく知る</span></a>
               </div>
@@ -115,7 +115,7 @@
             <div class="txt_wrap">
               <a class="product_name" href="#aaa">アレキサンドリア<span>ALEXSANDRIA</span></a>
               <p class="copy">コピーが入ります。</p>
-              <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="#aaaa"><span>詳しく知る</span></a>
               </div>
@@ -130,7 +130,7 @@
             <div class="txt_wrap">
               <a class="product_name" href="#aaa">甲州百目<span>KOSYU HYAKUME</span></a>
               <p class="copy">コピーが入ります。</p>
-              <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="#aaaa"><span>詳しく知る</span></a>
               </div>

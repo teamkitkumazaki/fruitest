@@ -82,9 +82,11 @@ article{
 /* レイアウトパーツ */
 @import 'component/comp-title.scss';
 @import 'component/comp-linkbutton.scss';
+@import 'component/comp-cartbutton.scss';
 @import 'component/comp-linkbutton-mini.scss';
 @import 'component/comp-qa.scss';
 @import 'component/comp-productlist.scss';
+@import 'component/comp-itemdetail.scss';
 @import 'component/comp-option.scss';
 @import 'component/comp-journal.scss';
 
@@ -93,3 +95,4 @@ article{
 @import 'pages/concept.scss';
 @import 'pages/gift.scss';
 @import 'pages/itemList.scss';
+@import 'pages/itemDetail.scss';

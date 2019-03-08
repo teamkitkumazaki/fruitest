@@ -1,0 +1,39 @@
+.comp-itemdetail{
+  .item{
+    @include flexSet;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    &.item_upper{
+      border-bottom: 1px solid #d8d8d8;
+    }
+  }
+  .state{
+    border-radius: 5px;
+    background-color: #4675ab;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    padding: 5px 10px;
+    color: #fff;
+    &.on-sale{
+      &::before{
+        display: inline-block;
+        content: "販売中";
+      }
+    }
+  }
+  .number{
+    input[type="number"]{
+      width: 70px;
+      display: inline-block;
+      margin: 0 10px;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+}

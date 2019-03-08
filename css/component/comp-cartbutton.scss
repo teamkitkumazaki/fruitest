@@ -1,0 +1,36 @@
+.comp-cartbutton {
+  display: block;
+  width: 100%;
+  appearance: none;
+  font-size: 16px;
+  padding: 15px 0;
+  background: #333;
+  color: #fff;
+  letter-spacing: normal;
+  text-align: center;
+  border: 0px;
+  transition: background .4s;
+  margin-bottom: 10px;
+  span{
+    display: inline-block;
+    padding-left: 35px;
+    position: relative;
+    &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      margin: auto;
+      width: 22px;
+      height: 20px;
+      @include bgSet;
+      background-image: url(../img/gift/cart_icon.png);
+      background-size: 20px;
+    }
+  }
+  &:hover{
+    background: #464646;
+  }
+}
