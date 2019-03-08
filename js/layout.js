@@ -50,19 +50,16 @@ $(function() {
     function init() {
       humButton.on({
         'click': function() {
-          console.log('click');
           humMenuShift();
         }
       });
       menuBg.on({
         'click': function() {
-          console.log('click');
           humMenuShift();
         }
       });
       closeBtn.on({
         'click': function() {
-            console.log('click');
             humMenuShift();
         }
       });

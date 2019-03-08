@@ -1,4 +1,4 @@
-#JournalWrap{
+.comp-journal{
   margin-top: 175px;
   .journal_wrap{
     #slickSlider{
@@ -11,6 +11,9 @@
       .slick-track{
         min-width: 1080px;
         @include flexSet;
+      }
+      .slick-arrow{
+        display: none;
       }
       .item_box{
         @media screen and (min-width: 1101px){
@@ -76,7 +79,7 @@
         }
       }
     }
-    .link_button01 {
+    .comp-linkbutton {
       max-width: 550px;
       margin: 50px auto 0;
       text-align: center;
@@ -84,7 +87,7 @@
   }
 }
 @media screen and (max-width: 1100px){
-  #JournalWrap{
+  .comp-journal{
     margin-top: 175px;
     .journal_wrap{
       #slickSlider{
@@ -119,7 +122,7 @@
   }
 }
 @media screen and (max-width: 740px){
-  #JournalWrap{
+  .comp-journal{
     margin-top: 100px;
     .journal_wrap{
       #slickSlider{
@@ -229,7 +232,7 @@
           }
         }
       }
-      .link_button01 {
+      .comp-linkbutton {
         @include waku;
         margin: 80px auto 0;
         text-align: left;

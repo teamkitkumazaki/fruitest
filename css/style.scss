@@ -68,14 +68,28 @@ article{
 .animated{
   opacity: 1;
 }
+/* CSS リセット */
 @import 'reset.scss';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'slidemenu.scss';
-@import 'slick_custom.scss';
 @import 'common.scss';
-@import 'journal_lower.scss';
-@import 'index.scss';
-@import 'concept.scss';
-@import 'gift.scss';
 @import 'form.scss';
+
+/* 共通レイアウト */
+@import 'common/header.scss';
+@import 'common/footer.scss';
+@import 'common/slidemenu.scss';
+@import 'common/slick_custom.scss';
+
+/* レイアウトパーツ */
+@import 'component/comp-title.scss';
+@import 'component/comp-linkbutton.scss';
+@import 'component/comp-linkbutton-mini.scss';
+@import 'component/comp-qa.scss';
+@import 'component/comp-productlist.scss';
+@import 'component/comp-option.scss';
+@import 'component/comp-journal.scss';
+
+/* ページ個別 */
+@import 'pages/index.scss';
+@import 'pages/concept.scss';
+@import 'pages/gift.scss';
+@import 'pages/itemList.scss';
