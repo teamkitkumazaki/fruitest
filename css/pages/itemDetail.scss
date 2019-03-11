@@ -39,6 +39,9 @@
             display: block;
           }
         }
+        .sp_img{
+          display: none;
+        }
         .button_wrap{
           margin-top: 15px;
         }
@@ -157,6 +160,25 @@
       }
     }
   }
+  #paringWrap{
+    margin-top: 100px;
+    .paring_wrap{
+      padding: 15px 15px 8px 15px;
+      background: #f4f4f4;
+      span{
+        display: inline-block;
+        padding: 10px;
+        margin-right: 3px;
+        margin-bottom: 7px;
+        border-radius: 5px;
+        background: #fff;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 1.2px;
+        color: #666;
+      }
+    }
+  }
   #itemInfo{
     margin-top: 100px;
     .info_wrap{
@@ -222,5 +244,268 @@
   }
   #detailJournal{
     margin: 150px 0;
+  }
+}
+@media screen and (max-width: 1100px){
+  #itemDetail{
+    #basicInfo{
+      margin-top: 45px;
+      .flex_wrap{
+        margin-top: 50px;
+        display: block;
+        .flex_left{
+          width: 100%;
+          margin-right: 0px;
+          text-align: center;
+          background: #f8f8f8;
+          padding: 80px 0;
+          img{
+            width: 70%;
+          }
+        }
+        .flex_right{
+          width: 100%;
+          margin-top: 50px;
+        }
+      }
+    }
+    #itemFeature{
+      margin-top: 150px;
+      .flex_wrap{
+        display: block;
+        margin-bottom: 120px;
+        .flex_txt{
+          width: 100%;
+          .chart_wrap{
+            max-width: 70%;
+            margin-top: 40px;
+          }
+        }
+        .flex_img{
+          width: 100%;
+          height: 400px;
+          position: relative;
+          overflow: hidden;
+          margin-bottom: 30px;
+          img{
+            position: absolute;
+            width: 100%;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin: auto;
+          }
+        }
+      }
+      .flex_origin{
+        display: block;
+        .flex_txt{
+          width: 100%;
+          margin-right: 0px;
+        }
+        .flex_img{
+          width: 100%;
+          margin-bottom: 40px;
+          &::before{
+            display: none;
+          }
+        }
+      }
+    }
+    #itemInfo{
+      margin-top: 100px;
+    }
+    #detailLower{
+      margin-top: 100px;
+      .flex_wrap{
+        display: block;
+        .flex_img{
+          width: 100%;
+          margin-right: 0px;
+          text-align: center;
+          margin-bottom: 40px;
+          background: #f8f8f8;
+          padding: 80px 0;
+          img{
+            width: 70%;
+          }
+        }
+        .flex_txt{
+          width: 100%;
+        }
+      }
+    }
+    #relatedItem{
+      margin-top: 150px;
+    }
+    #detailJournal{
+      margin: 150px 0;
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  #itemDetail{
+    #keyVisual{
+      .img_wrap{
+        position: relative;
+        width: 100%;
+        height: 65vw;
+      }
+    }
+    #basicInfo{
+      margin-top: 35px;
+      .comp-title{
+        text-align: left;
+        @include flexSet;
+        align-items: center;
+        margin-bottom: 5px;
+        .ttl_en{
+          display: block;
+          padding-left:15px;
+        }
+      }
+      .flex_wrap{
+        margin-top: 0px;
+        .flex_left{
+          display: none;
+        }
+        .flex_right{
+          margin-top: 0px;
+          .copy{
+            font-size: 18px;
+            letter-spacing: 1px;
+          }
+          .sp_img{
+            display: block;
+            margin: 40px auto 30px;
+          }
+          .button_wrap{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    #itemFeature{
+      margin-top: 80px;
+      .flex_wrap{
+        margin-bottom: 100px;
+        .flex_txt{
+          width: 100%;
+          .comp-title{
+            margin-bottom: 30px;
+          }
+          .copy{
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+          }
+          .txt{
+            margin-bottom: 12px;
+          }
+          .chart_wrap{
+            max-width: 100%;
+            margin-top: 30px;
+            padding: 0 5px;
+          }
+        }
+        .flex_img{
+          width: 100%;
+          height: 360px;
+          margin-bottom: 20px;
+        }
+      }
+      .flex_origin{
+        .flex_txt{
+          width: 100%;
+          margin-right: 60px;
+          .comp-title{
+            margin-bottom: 25px;
+          }
+          .origin_upper{
+            margin-bottom: 15px;
+          }
+        }
+        .flex_img{
+          width: 100%;
+          padding: 30px 0;
+          margin-bottom: 25px;
+          .origin_img{
+            img{
+              max-width: 80%;
+            }
+          }
+        }
+      }
+    }
+    #paringWrap{
+      margin-top: 80px;
+      .comp-title{
+        margin-bottom: 25px;
+      }
+    }
+    #itemInfo{
+      margin-top: 100px;
+      .comp-title{
+        margin-bottom: 20px;
+      }
+      .info_wrap{
+        .info_item{
+          padding:10px 0;
+          .title{
+            width: 90px;
+            padding: 10px 0;
+            font-size: 12px;
+            letter-spacing: 1.2px;
+            margin-right: 15px;
+          }
+          .content{
+            width: calc(100% - 105px);
+            font-size: 12px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+    #detailLower{
+      margin-top: 100px;
+      .flex_wrap{
+        .flex_img{
+          padding:0;
+          background: transparent;
+          margin-bottom: 0;
+          img{
+            width: 100%;
+          }
+        }
+        .flex_txt{
+          width: 100%;
+          margin-top: 25px;
+          .comp-title{
+            .ttl_ja{
+              .en{
+                display: inline-block;
+                padding-left:15px;
+              }
+            }
+          }
+          .copy{
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+          }
+          .button_wrap{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    #relatedItem{
+      margin-top: 100px;
+    }
+    #detailJournal{
+      margin: 100px 0;
+    }
   }
 }

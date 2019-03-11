@@ -18,7 +18,7 @@
 			</div>
 			<div class="img_wrap"></div>
 			<div class="comp-linkbutton">
-				<a href="#aaaa"><span>詳しく知る<font>READ MORE</font></span></a>
+				<a href="/?mode=f1"><span>詳しく知る<font>READ MORE</font></span></a>
 			</div>
 		</section><!-- topConcept -->
 		<section id="topRareDry">
@@ -35,7 +35,7 @@
 							<p class="en">Rare / dried fruit using Japanese premium variety.It is a dried fruit close to raw state, condensing umami while keeping the freshness of fruits.Because it is harvested in ripe state and ripened in the manufacturing process,It is sweeter than raw fruit, finished in a rich taste.</p>
 						</div>
 						<div class="comp-linkbutton">
-							<a href="#aaaa"><span>詳しく知る<font>READ MORE</font></span></a>
+							<a href="/?mode=f1#conceptRare"><span>詳しく知る<font>READ MORE</font></span></a>
 						</div>
 					</div><!-- flex_left -->
 					<div class="flex_right">
@@ -53,12 +53,12 @@
 			</div><!-- inner -->
 			<section id="kawanaka" class="prod_section">
     		<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
       		<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">KAWANAKAJIMA PEACH</span>
 							<h3 class="ja">川中島白桃</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
         	</div>
@@ -66,12 +66,12 @@
     	</section>
 			<section id="pione" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
 					<div class="txt_wrapper">
 						<div class="txt_block">
 							<span class="en">PIONE</span>
 							<h3 class="ja">ピオーネ</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -79,12 +79,12 @@
 			</section>
 			<section id="reiou" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">REIOU</span>
 							<h3 class="ja">麗王</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -92,12 +92,12 @@
 			</section>
 			<section id="shine" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
 					<div class="txt_wrapper">
 						<div class="txt_block">
 							<span class="en">SHINE MASCUT</span>
 							<h3 class="ja">シャインマスカット</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -105,19 +105,19 @@
 			</section>
 			<section id="kiyou" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">KIYOU</span>
 							<h3 class="ja">貴陽</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
 			</section>
 			<div class="product_all">
-				<a href="#aaaa">
+				<a href="/?mode=srh">
 					<span class="txt">商品一覧へ<font>VIEW PRODUCTS</font></span><span class="obj"></span>
 					<span class="txt_sp"><font>VIEW PRODUCTS</font><span>商品一覧へ</span></span>
 				</a>
@@ -134,11 +134,11 @@
 			<div class="flex_wrap">
 				<div class="block gift">
 					<span class="sp_ttl">ギフト商品一覧</span>
-					<a class="img_wrap" href="#aaa"></a>
+					<a class="img_wrap" href="/?mode=f2"></a>
 					<div class="txt_wrap">
 						<span class="ttl">ギフト商品一覧</span>
 						<div class="comp-linkbutton-mini">
-							<a href="#aaaa"><span>詳しく知る</span></a>
+							<a href="/?mode=f2"><span>詳しく知る</span></a>
 						</div>
 					</div>
 				</div>

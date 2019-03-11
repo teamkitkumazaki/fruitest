@@ -1,89 +1,179 @@
-<div class="prd_lst_block container_section">
-  <h2 class="ttl_h2">カテゴリー：<{if $search_category!=""}><{$search_category}><{else}>指定なし<{/if}>／キーワード：<{if $search_keyword!=""}><{$search_keyword}><{else}>指定なし<{/if}>&nbsp;の検索結果</h2>
-
-  <{if $productlist_num != 0}>
-    <div class="prd_lst_sort icon icon_sort">
-      <{if $productlist_sort_now != ""}>
-        <a href="<{$productlist_sort_def}>">おすすめ順</a>
-      <{else}>
-        <strong>おすすめ順</strong>
-      <{/if}>
-      &nbsp;|&nbsp;
-      <{if $productlist_sort_now != "p"}>
-        <a href="<{$productlist_sort_price}>">価格順</a>
-      <{else}>
-        <strong>価格順</strong>
-      <{/if}>
-      &nbsp;|&nbsp;
-      <{if $productlist_sort_now != "n"}>
-        <a href="<{$productlist_sort_new}>">新着順</a>
-      <{else}>
-        <strong>新着順</strong>
-      <{/if}>
+<article id="itemList">
+  <section id="keyVisual">
+    <div class="img_wrap">
     </div>
-    <p class="prd_search_hit">
-      <{$productlist_num}>件の商品が見つかりました
-    </p>
-    <ul class="prd_lst prd_lst_s clearfix">
-      <{section name=num loop=$productlist}>
-        <li class="prd_lst_unit prd_lst_unit_s">
-          <a href="<{$productlist[num].link_url}>" class="prd_lst_link">
-            <{if $productlist[num].img_url != ""}>
-              <img src="<{$productlist[num].img_url}>" class="prd_lst_img" alt="<{$productlist[num].name}>" />
-            <{else}>
-              <img src="https://img.shop-pro.jp/tmpl_img/63/prd_lst_noimage.png" class="prd_lst_img" alt="<{$productlist[num].name}>" />
-            <{/if}>
-          </a>
-          <span class="prd_lst_name prd_lst_span">
-            <a href="<{$productlist[num].link_url}>"><{$productlist[num].name}></a>
-          </span>
-          <{if $productlist[num].s_expl != ""}>
-            <span class="prd_lst_exp prd_lst_span">
-              <{$productlist[num].s_expl}>
-            </span>
-          <{/if}>
-          <{if $members_login_flg == true && $productlist[num].discount_flg == true}>
-            <span class="prd_lst_regular prd_lst_span"><{$productlist[num].regular_price}></span>
-          <{/if}>
-          <{if $productlist[num].soldout_flg == false}>
-            <span class="prd_lst_price prd_lst_span"><{$productlist[num].price}></span>
-            <{if $members_login_flg == true && $productlist[num].discount_flg == true}>
-              <span class="prd_lst_discount prd_lst_span"><{$productlist[num].discount_rate}>OFF!!</span>
-            <{/if}>
-          <{else}>
-            <span class="prd_lst_soldout prd_lst_span">SOLDOUT</span>
-          <{/if}>
+  </section>
+  <section id="productList">
+    <div class="inner">
+      <div class="ttl_wrap">
+      <div class="comp-title">
+        <h2 class="ttl_ja">商品一覧<span class="en">PRODUCT LIST</span></h2>
+      </div>
+      <select name="cat" id="cat" class="postform">
+       <option class="option-1" value="?mode=srh">全ての商品</option>
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2421809">発売中の商品</option>
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2432491">Upcoming商品</option>
+      </select>
+    </div><!-- ttl_wrap -->
+    <div class="products">
+      <ul class="comp-productlist">
+        <li>
+          <div class="state on-sale">
+          <div class="img_wrap">
+            <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product01.jpg)"></a>
+          </div>
+          <div class="txt_wrap">
+            <a class="product_name" href="/?mode=f4">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
+            <p class="copy">農家さんから、一番人気を誇る白桃。</p>
+            <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+            <div class="comp-linkbutton-mini">
+              <a href="/?mode=f4"><span>詳しく知る</span></a>
+            </div>
+          </div>
+          </div>
         </li>
-      <{/section}>
-    </ul>
-    <div class="prd_lst_pager">
-      <ul>
-        <li class="prd_lst_pager_prev">
-          <{if $productlist_prev_page == ""}>
-            <span class="icon icon_prev_dis">前のページ</span>
-          <{else}>
-            <a href="<{$productlist_prev_page}>" class="icon icon_prev">前のページ</a>
-          <{/if}>
+        <li>
+          <div class="state on-sale">
+          <div class="img_wrap">
+            <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product02.jpg)"></a>
+          </div>
+          <div class="txt_wrap">
+            <a class="product_name" href="/?mode=f4">麗王<span>REIOU</span></a>
+            <p class="copy">コピーが入ります。</p>
+            <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+            <div class="comp-linkbutton-mini">
+              <a href="/?mode=f4"><span>詳しく知る</span></a>
+            </div>
+          </div>
+          </div>
         </li>
-        <li class="prd_lst_pos">
-          <b><{$productlist_num}></b><span>商品中</span>&nbsp;<b><{$productlist_snum}>-<{$productlist_enum}></b><span>商品</span>
+        <li>
+          <div class="state on-sale">
+            <div class="img_wrap">
+              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product03.jpg)"></a>
+            </div>
+            <div class="txt_wrap">
+            <a class="product_name" href="/?mode=f4">ピオーネ<span>PIONE</span></a>
+            <p class="copy">コピーが入ります。コピーが入ります。</p>
+            <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+            <div class="comp-linkbutton-mini">
+              <a href="/?mode=f4"><span>詳しく知る</span></a>
+            </div>
+          </div>
+          </div>
         </li>
-        <li class="prd_lst_pager_next">
-          <{if $productlist_next_page == ""}>
-            <span class="icon icon_next_dis">次のページ</span>
-          <{else}>
-            <a href="<{$productlist_next_page}>" class="icon icon_next">次のページ</a>
-          <{/if}>
+        <li>
+          <div class="state on-sale">
+            <div class="img_wrap">
+              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product04.jpg)"></a>
+            </div>
+            <div class="txt_wrap">
+              <a class="product_name" href="/?mode=f4">シャインマスカット<span>SHINE MASCUT</span></a>
+              <p class="copy">コピーが入ります。</p>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+              <div class="comp-linkbutton-mini">
+                <a href="/?mode=f4"><span>詳しく知る</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="state sold-out">
+            <div class="img_wrap">
+              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product05.jpg)"></a>
+            </div>
+            <div class="txt_wrap">
+              <a class="product_name" href="/?mode=f4">貴陽<span>KIYOU</span></a>
+              <p class="copy">コピーが入ります。</p>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+              <div class="comp-linkbutton-mini">
+                <a href="/?mode=f4"><span>詳しく知る</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="state sold-out">
+            <div class="img_wrap">
+              <a href="/?mode=f4a" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product06.jpg)"></a>
+            </div>
+            <div class="txt_wrap">
+              <a class="product_name" href="/?mode=f4">巨峰<span>KYOHOU</span></a>
+              <p class="copy">コピーが入ります。</p>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+              <div class="comp-linkbutton-mini">
+                <a href="/?mode=f4"><span>詳しく知る</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="state waiting-list">
+            <div class="img_wrap">
+              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product07.jpg)"></a>
+            </div>
+            <div class="txt_wrap">
+              <a class="product_name" href="/?mode=f4">アレキサンドリア<span>ALEXSANDRIA</span></a>
+              <p class="copy">コピーが入ります。</p>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+              <div class="comp-linkbutton-mini">
+                <a href="/?mode=f4"><span>詳しく知る</span></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="state waiting-list">
+            <div class="img_wrap">
+              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product08.jpg)"></a>
+            </div>
+            <div class="txt_wrap">
+              <a class="product_name" href="/?mode=f4">甲州百目<span>KOSYU HYAKUME</span></a>
+              <p class="copy">コピーが入ります。</p>
+              <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
+              <div class="comp-linkbutton-mini">
+                <a href="/?mode=f4"><span>詳しく知る</span></a>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
-    <div class="sp_prd_lst_pos">
-      <b><{$productlist_num}></b><span>商品中</span>&nbsp;<b><{$productlist_snum}>-<{$productlist_enum}></b><span>商品</span>
+  </div><!-- inner -->
+</section><!-- productList -->
+<section class="comp-option">
+  <div class="comp-title center">
+    <h2 class="ttl_ja">購入オプション</h2>
+    <span class="ttl_en">OPTIONS</span>
+  </div>
+  <div class="lead_txt">
+    <p><span>FRUITESTでは、記念日の贈り物向けのギフトセット・ラッピングサービスや</span><span>季節毎に旬の果物をお届けする定期便など、様々なオプションをご用意しております。</span></p>
+  </div>
+  <div class="flex_wrap">
+    <div class="block gift">
+      <span class="sp_ttl">ギフト商品一覧</span>
+      <a class="img_wrap" href="/?mode=f2"></a>
+      <div class="txt_wrap">
+        <span class="ttl">ギフト商品一覧</span>
+        <div class="comp-linkbutton-mini">
+          <a href="/?mode=f2"><span>詳しく知る</span></a>
+        </div>
+      </div>
     </div>
-  <{else}>
-    <{if $subcategory_num == 0 && $subgroup_num == 0}>
-      <p class="prd_lst_none">該当する商品がありません</p>
-    <{/if}>
-  <{/if}>
+    <div class="block subscription">
+      <span class="sp_ttl">定期便について</span>
+      <a class="img_wrap" href="#aaa"></a>
+      <div class="txt_wrap">
+        <span class="ttl">定期便について</span>
+        <div class="comp-linkbutton-mini">
+          <a href="#aaaa"><span>詳しく知る</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- topOption -->
+</article>
 
-</div>
+<script>
+$('header').addClass('under');
+</script>

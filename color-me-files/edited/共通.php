@@ -34,10 +34,10 @@
     <div class="footer_middle">
       <nav>
         <ul>
-          <li><a href="#aaaa"><span>TOP</span>トップページへ</a></li>
-          <li><a href="#aaaa"><span>CONCEPT</span>コンセプト</a></li>
-          <li><a href="#aaaa"><span>PRODUCTS</span>商品一覧</a></li>
-          <li><a href="#aaaa"><span>GIFT</span>ギフト商品一覧</a></li>
+          <li><a href="<{$home_url}>"><span>TOP</span>トップページへ</a></li>
+          <li><a href="/?mode=f1"><span>CONCEPT</span>コンセプト</a></li>
+          <li><a href="/?mode=srh"><span>PRODUCTS</span>商品一覧</a></li>
+          <li><a href="/?mode=f2"><span>GIFT</span>ギフト商品一覧</a></li>
           <li><a href="#aaaa"><span>JOURNAL</span>ジャーナル</a></li>
           <li><a href="#aaaa"><span>CONTACT</span>お問い合わせ</a></li>
         </ul>
@@ -85,10 +85,10 @@
       <div class="hum_navi">
         <nav>
         <ul>
-          <li><a href="#aaaa"><span>TOP</span><font>トップページ</font></a></li>
-          <li><a href="#aaaa"><span>CONCEPT</span><font>コンセプト</font></a></li>
-          <li><a href="#aaaa"><span>PRODUCTS</span><font>商品一覧</font></a></li>
-          <li><a href="#aaaa"><span>GIFT</span><font>ギフト商品一覧</font></a></li>
+          <li><a href="<{$home_url}>"><span>TOP</span><font>トップページ</font></a></li>
+          <li><a href="/?mode=f1"><span>CONCEPT</span><font>コンセプト</font></a></li>
+          <li><a href="/?mode=srh"><span>PRODUCTS</span><font>商品一覧</font></a></li>
+          <li><a href="/?mode=f2"><span>GIFT</span><font>ギフト商品一覧</font></a></li>
           <li><a href="#aaaa"><span>GUIDE</span><font>ご利用ガイド</font></a></li>
           <li><a href="#aaaa"><span>FAQ</span><font>よくある質問</font></a></li>
           <li><a href="#aaaa"><span>CONTACT</span><font>お問い合わせ</font></a></li>
