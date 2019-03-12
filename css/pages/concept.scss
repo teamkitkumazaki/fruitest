@@ -48,7 +48,8 @@
     }
   }
   #conceptRare{
-    margin-top: 200px;
+    margin-top: 80px;
+    padding-top: 120px;
     .flex_wrap{
       @include flexSet;
       flex-direction: row-reverse;
@@ -196,7 +197,6 @@
       }
     }
     #conceptRare{
-      margin-top: 200px;
       .flex_wrap{
         display: block;
         .flex_right{
@@ -337,7 +337,8 @@
       }
     }
     #conceptRare{
-      margin-top: 120px;
+      margin-top: 20px;
+      padding-top: 100px;
       .flex_wrap{
         .flex_left{
           width: 100%;

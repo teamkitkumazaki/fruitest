@@ -11,6 +11,12 @@
   border: 0px;
   transition: background .4s;
   margin-bottom: 10px;
+  &:focus{
+    outline: none;
+  }
+  &.large{
+    padding: 25px 0;
+  }
   span{
     display: inline-block;
     padding-left: 35px;

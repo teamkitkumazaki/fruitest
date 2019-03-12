@@ -10,6 +10,7 @@
     background: transparent;
     appearance: none;
     transition: color .3s, background .3s;
+    box-sizing: border-box;
     &::before, &::after{
       display: block;
       content: "";

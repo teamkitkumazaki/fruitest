@@ -61,6 +61,19 @@
     }
   }
   .wpcf7{
+    margin-bottom: 80px;
+    span.wpcf7-not-valid-tip{
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .wpcf7c-conf{
+      background: #f4f4f4 !important;
+    }
+    div.wpcf7-response-output{
+      padding: 10px;
+      text-align: center;
+      margin: 0;
+    }
     .ttl_h3{
       margin-bottom: 40px;
     }
@@ -86,7 +99,7 @@
         line-height: 45px;
         border-radius: 5px;
         border: solid 1px #c0c0c0;
-        font-size: 16px;
+        font-size: 14px;
       }
 
       .form01{
@@ -123,7 +136,7 @@
       }
     }
     .confirm_wrap{
-      margin: 0 auto 100px;
+      margin: 0 auto 50px;
       .confirmButton{
         display: block;
         width: 600px;
@@ -144,6 +157,7 @@
           border: none;
           text-indent: -2em;
           transition: all 0.5s;
+          z-index: 10;
         }
       }
     }
@@ -162,15 +176,15 @@
         font-size: 16px;
         font-family: initial;
         position: relative;
-        border: 1px solid #000;
+        color: #333;
+        border: 1px solid #c0c0c0;
         transition: all 0.3s;
         box-sizing: border-box;
         appearance: none;
       }
       input[type="submit"]{
         display: inline-block;
-        background: #111;
-        color: #fff;
+        color: #333;
         width: 300px;
         height: 50px;
         line-height: 50px;
@@ -179,10 +193,171 @@
         font-size: 16px;
         font-family: initial;
         position: relative;
-        border: 1px solid #000;
+        border: 1px solid #c0c0c0;
         transition: all 0.3s;
         box-sizing: border-box;
         appearance: none;
+        background: #c0c0c0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  #contact{
+    #guideNav{
+      margin: 30px 0;
+      ul{
+        padding: 0 10px;
+        @include flexSet;
+        li{
+          width: 49%;
+          margin-right: 2%;
+          padding: 5px 0;
+          margin-bottom: 5px;
+          &:nth-child(3n){
+            margin-right:2%;
+          }
+          &:nth-child(2n){
+            margin-right:0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px){
+  #contact{
+    .ttl_h3{
+      margin-bottom: 10px;
+    }
+    .comp-title{
+      margin-bottom: 25px;
+    }
+    .contact_lead{
+      font-size: 14px;
+      line-height: 1.8;
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+      p{
+        span{
+          display: inline;
+        }
+      }
+    }
+    #guideNav{
+      margin: 20px 0;
+      ul{
+        display: block;
+        padding: 0;
+        li{
+          width: 100%;
+          margin-right: 0;
+          margin-bottom:0;
+          padding: 5px 0;
+          &:nth-child(3n){
+            margin-right:0;
+          }
+        }
+      }
+    }
+    .wpcf7{
+      margin-bottom: 80px;
+      span.wpcf7-not-valid-tip{
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .wpcf7c-conf{
+        background: #f4f4f4 !important;
+      }
+      div.wpcf7-response-output{
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .ttl_h3{
+        margin-bottom: 30px;
+      }
+      .form_wrap{
+        padding: 0;
+        margin-bottom: 30px;
+        label{
+          display: block;
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"]{
+          font-size: 16px;
+        }
+
+        .form01{
+          width: 100%;
+        }
+        select{
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          padding: 0px 10px;
+        }
+        textarea{
+          width: 100%;
+          height: 160px;
+          border: solid 1px #c0c0c0;
+          box-sizing: border-box;
+          padding: 10px;
+          line-height: 1.6;
+          border-radius: 5px;
+          box-shadow: none;
+        }
+        .flex_wrap{
+          display: block;
+          margin-bottom: 30px;
+          .form_left, .yourname{
+            display: block;
+            width: 100%;
+            margin-right: 0%;
+          }
+          .form_left{
+            margin-bottom: 30px;
+          }
+          .yourname{
+            margin-bottom: 5px;
+          }
+          .form_right, .yourname2{
+            width: 100%;
+            margin-right: 0;
+          }
+        }
+      }
+      .confirm_wrap{
+        margin: 0 auto 20px;
+        .confirmButton{
+          display: block;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+      .send_wrap{
+        display: block;
+        text-align: center;
+        #backButton{
+          display: block;
+          background: #fff;
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          margin-right: 0px;
+          margin-bottom: 10px;
+        }
+        input[type="submit"]{
+          display: block;
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
       }
     }
   }

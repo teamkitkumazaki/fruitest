@@ -89,6 +89,18 @@ $(function() {
     function init() {
       var timer = false;
       $(window).on({
+        'load': function(){
+          var scroll = $(window).scrollTop();
+          if (scroll > 10) {
+            if (scrollSwitch == 0) {
+              afterScroll();
+            }
+          } else {
+            if (scrollSwitch == 1) {
+              beforeScroll();
+            }
+          }
+        },
         'scroll': function() {
           /*
           $(".effect").each(function(index) {
@@ -136,6 +148,17 @@ $(function() {
   };
 
     scrollJudge($('body'));
+
+  //アンカーリンクで追従ヘッダー分をパディングする
+  function scrollToLink() {
+    $('a[href^="#"]').click(function() {
+      var href = $(this).attr("href");
+      return scrollToHref(href);
+    });
+  }
+
+
+
 
   //よくある質問
   function faqToggle(target) {
@@ -207,6 +230,7 @@ if (document.getElementById('gift')) {
 // よくある質問のスクロール処理
 
 function faqScroll(target) {
+  console.log('faqScroll');
    var scrollObj = [];
 
    function windowMove(e) {
@@ -214,9 +238,9 @@ function faqScroll(target) {
      console.log(scrollObj[e]);
      var scrollHeight = $(scrollObj[e]).offset().top;
      if (w > 1100) {
-       var adScroll = scrollHeight - 130;
+       var adScroll = scrollHeight;
      } else {
-       var adScroll = scrollHeight - 90;
+       var adScroll = scrollHeight;
      }
      $("html, body").animate({
        scrollTop: adScroll
@@ -245,39 +269,7 @@ function faqScroll(target) {
    faqScroll($('#guideNav'));
  }
 
-  //利用規約同意しないとsubmitできないように制御
 
-  function agreePolicy() {
-    var submitButton = $('#confirmButton');
-    var submitWrap = $('.confirm_wrap');
-    var agreeButton = $('#agreeButton');
-    var agreeState = 0;
-
-    function submitPermit() {
-      if (agreeState == 0) {
-        submitButton.attr('disabled', false);
-        submitWrap.removeClass('disable');
-        agreeState = 1;
-      } else {
-        submitButton.attr('disabled', true);
-        submitWrap.addClass('disable');
-        agreeState = 0;
-      }
-    }
-
-    function init() {
-      submitButton.attr('disabled', true);
-      submitWrap.addClass('disable');
-      agreeButton.change(function() {
-        submitPermit();
-      });
-    }
-
-    init();
-
-  }
-
-    agreePolicy();
 
   //ページスクロールの処理
   function smoothScroll(target) {
