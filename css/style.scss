@@ -58,6 +58,9 @@ body {
 article{
   width: 100%;
   overflow: hidden;
+  &.under-page{
+    margin-top: 120px;
+  }
 }
 .effect{
   opacity: 0;
@@ -85,6 +88,7 @@ article{
 @import 'component/comp-cartbutton.scss';
 @import 'component/comp-linkbutton-mini.scss';
 @import 'component/comp-qa.scss';
+@import 'component/comp-chart.scss';
 @import 'component/comp-productlist.scss';
 @import 'component/comp-itemdetail.scss';
 @import 'component/comp-option.scss';
