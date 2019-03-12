@@ -1,7 +1,7 @@
 .comp-qa{
   @include waku;
   .toggle_item{
-    height: 42px;
+    height: 45px;
     transition: height 0.5s;
     overflow: hidden;
     margin-bottom: 10px;
@@ -12,8 +12,12 @@
       line-height: normal;
       letter-spacing: normal;
       color: #111111;
-      background: #f4f4f4;
+      border: 1px solid #d8d8d8;
       padding: 10px;
+      &.gray{
+        background: #f4f4f4;
+        border: 1px solid #f4f4f4;
+      }
       &::before, &::after{
         position: absolute;
         display: block;
@@ -50,6 +54,7 @@
            width: 16px;
            height: 16px;
            @include bgSet;
+           background-size: 90%;
            background-image: url(../img/gift/q.svg);
         }
       }
@@ -66,23 +71,34 @@
       padding: 0 10px;
       p{
         position: relative;
-        padding: 20px 0 15px 25px;
+        padding: 20px 0 0 25px;
         font-size: 12px;
         line-height: 1.7;
         letter-spacing: normal;
         color: #00381f;
-        &::before{
-           display: block;
-           content: "";
-           position: absolute;
-           top:22.5px;
-           left:-2px;
-           margin: auto;
-           width: 20px;
-           height: 16px;
-           @include bgSet;
-           background-image: url(../img/gift/a.svg);
-           background-size: 14px;
+        a{
+          color: #068acc;
+        }
+        &:nth-of-type(1){
+          &::before{
+             display: block;
+             content: "";
+             position: absolute;
+             top:22.5px;
+             left:-2px;
+             margin: auto;
+             width: 20px;
+             height: 16px;
+             @include bgSet;
+             background-image: url(../img/gift/a.svg);
+             background-size: 14px;
+          }
+        }
+        &:nth-last-of-type(1){
+          padding: 20px 0 0 25px;
+        }
+        &:nth-of-type(n+2){
+          padding: 10px 0 10xp 25px;
         }
       }
     }
@@ -92,7 +108,7 @@
   .comp-qa{
     @include waku;
     .toggle_item{
-      height: 52px;
+      height: 54px;
       margin-bottom: 10px;
       a.toggle_button{
         padding: 15px 10px;

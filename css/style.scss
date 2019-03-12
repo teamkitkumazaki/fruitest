@@ -46,7 +46,7 @@ $keycolor: #333;
   }
 }
 html{
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 body {
 	font-size: 14px;
@@ -101,3 +101,4 @@ article{
 @import 'pages/gift.scss';
 @import 'pages/itemList.scss';
 @import 'pages/itemDetail.scss';
+@import 'pages/faq.scss';

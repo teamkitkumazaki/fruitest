@@ -9,7 +9,7 @@
 }
 */
 html {
-  scroll-behavior: smooth; }
+  /*scroll-behavior: smooth;*/ }
 
 body {
   font-size: 14px;
@@ -1647,7 +1647,7 @@ footer {
     .comp-qa {
       max-width: 90vw; } }
   .comp-qa .toggle_item {
-    height: 42px;
+    height: 45px;
     -webkit-transition: height 0.5s;
     -o-transition: height 0.5s;
     transition: height 0.5s;
@@ -1660,8 +1660,11 @@ footer {
       line-height: normal;
       letter-spacing: normal;
       color: #111111;
-      background: #f4f4f4;
+      border: 1px solid #d8d8d8;
       padding: 10px; }
+      .comp-qa .toggle_item a.toggle_button.gray {
+        background: #f4f4f4;
+        border: 1px solid #f4f4f4; }
       .comp-qa .toggle_item a.toggle_button::before, .comp-qa .toggle_item a.toggle_button::after {
         position: absolute;
         display: block;
@@ -1701,6 +1704,7 @@ footer {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center center;
+          background-size: 90%;
           background-image: url(../img/gift/q.svg); }
       .comp-qa .toggle_item a.toggle_button.active::before {
         opacity: 0; }
@@ -1710,12 +1714,14 @@ footer {
       padding: 0 10px; }
       .comp-qa .toggle_item .toggle_contents p {
         position: relative;
-        padding: 20px 0 15px 25px;
+        padding: 20px 0 0 25px;
         font-size: 12px;
         line-height: 1.7;
         letter-spacing: normal;
         color: #00381f; }
-        .comp-qa .toggle_item .toggle_contents p::before {
+        .comp-qa .toggle_item .toggle_contents p a {
+          color: #068acc; }
+        .comp-qa .toggle_item .toggle_contents p:nth-of-type(1)::before {
           display: block;
           content: "";
           position: absolute;
@@ -1729,6 +1735,10 @@ footer {
           background-position: center center;
           background-image: url(../img/gift/a.svg);
           background-size: 14px; }
+        .comp-qa .toggle_item .toggle_contents p:nth-last-of-type(1) {
+          padding: 20px 0 0 25px; }
+        .comp-qa .toggle_item .toggle_contents p:nth-of-type(n+2) {
+          padding: 10px 0 10xp 25px; }
 
 @media screen and (max-width: 740px) {
   .comp-qa {
@@ -1744,7 +1754,7 @@ footer {
 
 @media screen and (max-width: 740px) {
     .comp-qa .toggle_item {
-      height: 52px;
+      height: 54px;
       margin-bottom: 10px; }
       .comp-qa .toggle_item a.toggle_button {
         padding: 15px 10px; }
@@ -4355,3 +4365,106 @@ footer {
     margin-top: 100px; }
   #itemDetail #detailJournal {
     margin: 100px 0; } }
+
+#faq .faq_index {
+  background: #f8f8f8;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 70px;
+  margin-bottom: 70px; }
+  #faq .faq_index ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #faq .faq_index ul li {
+      width: 32%;
+      margin-right: 2%;
+      padding: 5px 0;
+      margin-bottom: 5px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      #faq .faq_index ul li:nth-child(3n) {
+        margin-right: 0; }
+      #faq .faq_index ul li a {
+        display: block;
+        color: #333;
+        font-size: 14px;
+        padding: 10px 40px 10px 10px;
+        position: relative;
+        background: #fff;
+        border-radius: 5px;
+        -webkit-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        transition: opacity .5s; }
+        #faq .faq_index ul li a:hover {
+          opacity: 0.6; }
+        #faq .faq_index ul li a::before {
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          content: "";
+          top: -5px;
+          bottom: 0;
+          right: 12px;
+          margin: auto;
+          border-bottom: 2px solid #333;
+          border-right: 2px solid #333;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+#faq #qaToggle {
+  margin-bottom: 100px; }
+  #faq #qaToggle .ttl_h3 {
+    padding: 10px;
+    font-weight: normal;
+    background: #f1f1f1;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  #faq #qaToggle .comp-title {
+    margin-top: 70px; }
+
+@media screen and (max-width: 1100px) {
+  #faq .faq_index {
+    background: #f8f8f8;
+    padding: 30px 30px;
+    padding-bottom: 40px;
+    margin-bottom: 40px; }
+    #faq .faq_index ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #faq .faq_index ul li {
+        width: 49%;
+        margin-right: 2%; }
+        #faq .faq_index ul li:nth-child(3n) {
+          margin-right: 2%; }
+        #faq .faq_index ul li:nth-child(2n) {
+          margin-right: 0%; } }
+
+@media screen and (max-width: 740px) {
+  #faq .faq_index {
+    padding: 20px 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px; }
+    #faq .faq_index .comp-title {
+      margin-bottom: 20px; }
+      #faq .faq_index .comp-title .en {
+        display: inline-block;
+        padding-left: 10px; }
+    #faq .faq_index ul {
+      display: block; }
+      #faq .faq_index ul li {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 0; }
+        #faq .faq_index ul li:nth-child(3n) {
+          margin-right: 0%; }
+        #faq .faq_index ul li:nth-child(2n) {
+          margin-right: 0%; } }

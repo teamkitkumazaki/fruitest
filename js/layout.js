@@ -147,14 +147,14 @@ $(function() {
   function toggleMove(e) {
   if (toggleState[e] == -1 || toggleState[e] == 0) {
     toggleButton[e].addClass('active');
-    var tagetHeight = toggleContents[e].height();
+    var targetHeight = toggleContents[e].height();
     if (w > 750) {
       toggleItem[e].css({
-        'height': 50 + tagetHeight + 'px'
+        'height': targetHeight + 'px'
       });
     }else{
       toggleItem[e].css({
-        'height': 80 + tagetHeight + 'px'
+        'height': 80 + targetHeight + 'px'
       });
     }
     toggleState[e] = 1;
@@ -163,7 +163,7 @@ $(function() {
     var w = $(window).width();
     if (w > 750) {
       toggleItem[e].css({
-        'height': 42 + 'px'
+        'height': 45 + 'px'
       });
     } else if (toggleButton[e].parent('div').hasClass('row2')) {
       toggleItem[e].css({
@@ -203,6 +203,47 @@ if (document.getElementById('faq')) {
 if (document.getElementById('gift')) {
   faqToggle($('article'));
 }
+
+// よくある質問のスクロール処理
+
+function faqScroll(target) {
+   var scrollObj = [];
+
+   function windowMove(e) {
+     var w = $(window).width();
+     console.log(scrollObj[e]);
+     var scrollHeight = $(scrollObj[e]).offset().top;
+     if (w > 1100) {
+       var adScroll = scrollHeight - 130;
+     } else {
+       var adScroll = scrollHeight - 90;
+     }
+     $("html, body").animate({
+       scrollTop: adScroll
+     }, 500);
+     return false;
+   }
+
+   function init() {
+     $.each(target.find('a'), function(index) {
+       $(this).attr('href', 'javascript:void(0);');
+       scrollObj[index] = $(this).attr("jump");
+       $(this).on({
+         'click': function() {
+           windowMove(index);
+         }
+       });
+     });
+   }
+
+   init();
+
+ }
+
+ if (document.getElementById('faq')) {
+   faqScroll($('.guide_nav'));
+   faqScroll($('#guideNav'));
+ }
 
   //利用規約同意しないとsubmitできないように制御
 
