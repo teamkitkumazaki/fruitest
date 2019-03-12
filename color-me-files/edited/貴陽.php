@@ -1,6 +1,6 @@
 <article id="itemDetail">
   <section id="keyVisual">
-    <div class="img_wrap" style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/product_detail/main.jpg)">
+    <div class="img_wrap" style="background-image: url(//journal.fruitest.jp/files/img/product_detail/main.jpg)">
     </div>
   </section>
   <section id="basicInfo">
@@ -11,13 +11,13 @@
     </div>
     <div class="flex_wrap">
       <div class="flex_left">
-        <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/product_img01.jpg">
+        <img src="//journal.fruitest.jp/files/img/product_detail/product_img01.jpg">
       </div>
       <div class="flex_right">
         <h2 class="copy">ひとかけらで、まるでフルコース。<span>酸味も主役です。</span></h2>
         <p class="detail"><span>貴陽は栽培が難しく、手間がかかる高級すもも。それがまるまる1玉、この中に詰まっています。食べた直後の強い酸味と、甘みの余韻。</span><span>皮付きのままレア・ドライにすることで、どちらの味を共存させることに成功しました。ちょっと他にはない子の味わいこそが、私たちFRUITESTの貴陽です。</span></p>
         <div class="sp_img">
-          <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/product_img02.jpg">
+          <img src="//journal.fruitest.jp/files/img/product_detail/product_img02.jpg">
         </div>
         <div class="comp-itemdetail">
           <div class="item_upper item">
@@ -26,7 +26,7 @@
           </div>
           <div class="item">
             <span class="number">個数<input type="number">個</span>
-            <span class="price">¥1,200(税抜)</span>
+            <span class="price">?1,200(税抜)</span>
           </div>
           <div class="button_wrap">
             <button class="comp-cartbutton"><span>カートに入れる</span></button>
@@ -40,7 +40,7 @@
   <div class="inner">
   <div class="flex_wrap reverse">
     <div class="flex_img">
-      <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/detail01.jpg">
+      <img src="//journal.fruitest.jp/files/img/product_detail/detail01.jpg">
     </div>
     <div class="flex_txt">
       <div class="comp-title">
@@ -58,7 +58,7 @@
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
     <div class="flex_img">
-      <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/detail02.jpg">
+      <img src="//journal.fruitest.jp/files/img/product_detail/detail02.jpg">
     </div>
     <div class="flex_txt">
       <div class="comp-title">
@@ -67,14 +67,14 @@
       </div>
       <p class="txt">口に入れると、酸味をしっかりと感じられ、噛むほどに口の中で甘さが広がります、皮を残し、貴陽らしいジューシーさを保っているので、より「レア感」を感じられます。</p>
       <div class="chart_wrap">
-        <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/chart.png">
+        <img src="//journal.fruitest.jp/files/img/product_detail/chart.png">
       </div>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_origin">
     <div class="flex_img">
       <div class="origin_img">
-        <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/location.png">
+        <img src="//journal.fruitest.jp/files/img/product_detail/location.png">
       </div>
     </div>
     <div class="flex_txt">
@@ -144,7 +144,7 @@
 <div class="inner">
 <div class="flex_wrap">
   <div class="flex_img">
-    <img src="https://fruitest.sakura.ne.jp/journal/files/img/product_detail/product_img02.jpg">
+    <img src="//journal.fruitest.jp/files/img/product_detail/product_img02.jpg">
   </div>
   <div class="flex_txt">
     <div class="comp-title">
@@ -158,7 +158,7 @@
       </div>
       <div class="item">
         <span class="number">個数<input type="number">個</span>
-        <span class="price">¥1,200(税抜)</span>
+        <span class="price">?1,200(税抜)</span>
       </div>
       <div class="button_wrap">
         <button class="comp-cartbutton"><span>カートに入れる</span></button>
@@ -179,12 +179,12 @@
     <li>
       <div class="state on-sale">
       <div class="img_wrap">
-        <a href="#aaaa" style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/product_list/product01.jpg)"></a>
+        <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product01.jpg)"></a>
       </div>
       <div class="txt_wrap">
         <a class="product_name" href="#aaa">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
         <p class="copy">農家さんから、一番人気を誇る白桃。</p>
-        <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+        <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
         <div class="comp-linkbutton-mini">
           <a href="#aaaa"><span>詳しく知る</span></a>
         </div>
@@ -194,12 +194,12 @@
     <li>
       <div class="state on-sale">
       <div class="img_wrap">
-        <a href="#aaaa" style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/product_list/product02.jpg)"></a>
+        <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product02.jpg)"></a>
       </div>
       <div class="txt_wrap">
         <a class="product_name" href="#aaa">麗王<span>REIOU</span></a>
         <p class="copy">コピーが入ります。</p>
-        <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+        <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
         <div class="comp-linkbutton-mini">
           <a href="#aaaa"><span>詳しく知る</span></a>
         </div>
@@ -209,12 +209,12 @@
     <li>
       <div class="state on-sale">
         <div class="img_wrap">
-          <a href="#aaaa" style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/product_list/product03.jpg)"></a>
+          <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product03.jpg)"></a>
         </div>
         <div class="txt_wrap">
         <a class="product_name" href="#aaa">ピオーネ<span>PIONE</span></a>
         <p class="copy">コピーが入ります。コピーが入ります。</p>
-        <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+        <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
         <div class="comp-linkbutton-mini">
           <a href="#aaaa"><span>詳しく知る</span></a>
         </div>
@@ -224,12 +224,12 @@
     <li>
       <div class="state on-sale">
         <div class="img_wrap">
-          <a href="#aaaa" style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/product_list/product04.jpg)"></a>
+          <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product04.jpg)"></a>
         </div>
         <div class="txt_wrap">
           <a class="product_name" href="#aaa">シャインマスカット<span>SHINE MASCUT</span></a>
           <p class="copy">コピーが入ります。</p>
-          <div class="detail"><font>¥1,200(税抜)</font><span class="stock"></span></div>
+          <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
           <div class="comp-linkbutton-mini">
             <a href="#aaaa"><span>詳しく知る</span></a>
           </div>
@@ -252,7 +252,7 @@
         <a
           class="img_wrap"
           href="#aaaa"
-          style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/index/journal01.jpg);"
+          style="background-image: url(//journal.fruitest.jp/files/img/index/journal01.jpg);"
         >
         </a>
         <div class="txt_wrap">
@@ -264,7 +264,7 @@
         <a
           class="img_wrap"
           href="#aaaa"
-          style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/index/journal02.jpg);"
+          style="background-image: url(//journal.fruitest.jp/files/img/index/journal02.jpg);"
         >
         </a>
         <div class="txt_wrap">
@@ -276,7 +276,7 @@
         <a
           class="img_wrap"
           href="#aaaa"
-          style="background-image: url(https://fruitest.sakura.ne.jp/journal/files/img/index/journal03.jpg);"
+          style="background-image: url(//journal.fruitest.jp/files/img/index/journal03.jpg);"
         >
         </a>
         <div class="txt_wrap">
@@ -292,3 +292,6 @@
 </div>
 </section>
 </article>
+<script>
+$('header').addClass('under');
+</script>

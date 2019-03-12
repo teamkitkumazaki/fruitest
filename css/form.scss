@@ -4,7 +4,6 @@
 
   select {
     appearance: none;
-    font-size: 16px;
     border: solid 1px #d8d8d8;
     font-size: 14px;
     letter-spacing: 0.8px;
@@ -17,14 +16,17 @@
       size: 40px;
       image: url(../img/select_caret.png);
     }
+    @media screen and (max-width: 780px){
+      font-size: 16px;
+    }
   }
 
   ::placeholder {
     color: #aaa !important;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     @media screen and (max-width: 780px){
-      /*padding-top: 0.25em;*/
+      font-size: 16px;
     }
   }
 
@@ -52,8 +54,11 @@
     border-radius: 0;
     -webkit-appearance: none;
     box-shadow: none;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
+    @media screen and (max-width: 780px){
+      font-size: 16px;
+    }
   }
 
   input {
@@ -81,7 +86,10 @@
     border-radius: 0;
     border: 1px solid #979797;
     padding: 0 5px;
-    font-size: 16px;
+    font-size: 14px;
+    @media screen and (max-width: 780px){
+      font-size: 16px;
+    }
   }
 
 

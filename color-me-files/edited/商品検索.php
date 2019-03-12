@@ -7,7 +7,7 @@
     <div class="inner">
       <div class="ttl_wrap">
       <div class="comp-title">
-        <h2 class="ttl_ja">商品一覧<span class="en">PRODUCT LIST</span></h2>
+        <h1 class="ttl_ja">商品一覧<span class="en">PRODUCT LIST</span></h1>
       </div>
       <select name="cat" id="cat" class="postform">
        <option class="option-1" value="?mode=srh">全ての商品</option>
@@ -20,7 +20,7 @@
         <li>
           <div class="state on-sale">
           <div class="img_wrap">
-            <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product01.jpg)"></a>
+            <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product01.jpg)"></a>
           </div>
           <div class="txt_wrap">
             <a class="product_name" href="/?mode=f4">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
@@ -35,7 +35,7 @@
         <li>
           <div class="state on-sale">
           <div class="img_wrap">
-            <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product02.jpg)"></a>
+            <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product02.jpg)"></a>
           </div>
           <div class="txt_wrap">
             <a class="product_name" href="/?mode=f4">麗王<span>REIOU</span></a>
@@ -50,7 +50,7 @@
         <li>
           <div class="state on-sale">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product03.jpg)"></a>
+              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product03.jpg)"></a>
             </div>
             <div class="txt_wrap">
             <a class="product_name" href="/?mode=f4">ピオーネ<span>PIONE</span></a>
@@ -65,7 +65,7 @@
         <li>
           <div class="state on-sale">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product04.jpg)"></a>
+              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product04.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?mode=f4">シャインマスカット<span>SHINE MASCUT</span></a>
@@ -80,7 +80,7 @@
         <li>
           <div class="state sold-out">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product05.jpg)"></a>
+              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product05.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?mode=f4">貴陽<span>KIYOU</span></a>
@@ -95,7 +95,7 @@
         <li>
           <div class="state sold-out">
             <div class="img_wrap">
-              <a href="/?mode=f4a" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product06.jpg)"></a>
+              <a href="/?mode=f4a" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product06.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?mode=f4">巨峰<span>KYOHOU</span></a>
@@ -110,7 +110,7 @@
         <li>
           <div class="state waiting-list">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product07.jpg)"></a>
+              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product07.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?mode=f4">アレキサンドリア<span>ALEXSANDRIA</span></a>
@@ -125,7 +125,7 @@
         <li>
           <div class="state waiting-list">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/product_list/product08.jpg)"></a>
+              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product08.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?mode=f4">甲州百目<span>KOSYU HYAKUME</span></a>

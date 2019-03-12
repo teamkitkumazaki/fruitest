@@ -13,7 +13,7 @@
 			</div>
 			<div class="img_wrap_sp"></div>
 			<div class="lead_txt">
-				<h3 class="ja">日本のプレミアム品種の果物をつかった、<span>「レア･ドライフルーツ」が誕生しました。</span></h3>
+				<h1 class="ja">日本のプレミアム品種の果物をつかった、<span>「レア･ドライフルーツ」が誕生しました。</span></h1>
 				<span class="en">I used fruits from Japan's premium variety,<span>"Rare / dried fruit" was born.</span>
 			</div>
 			<div class="img_wrap"></div>
@@ -166,7 +166,7 @@
 							<a
 								class="img_wrap"
 								href="#aaaa"
-								style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/journal01.jpg);"
+								style="background-image: url(//journal.fruitest.jp/files/img/index/journal01.jpg);"
 							>
 							</a>
 							<div class="txt_wrap">
@@ -178,7 +178,7 @@
 							<a
 								class="img_wrap"
 								href="#aaaa"
-								style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/journal02.jpg);"
+								style="background-image: url(//journal.fruitest.jp/files/img/index/journal02.jpg);"
 							>
 							</a>
 							<div class="txt_wrap">
@@ -190,7 +190,7 @@
 							<a
 								class="img_wrap"
 								href="#aaaa"
-								style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/journal03.jpg);"
+								style="background-image: url(//journal.fruitest.jp/files/img/index/journal03.jpg);"
 							>
 							</a>
 							<div class="txt_wrap">
@@ -211,12 +211,12 @@
 			</div>
 			<div id="instaFeed">
 				<ul>
-					<li><a href="#aaaa" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/insta01.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/insta02.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/insta03.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/insta04.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/insta05.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(http://fruitest.sakura.ne.jp/journal/files/img/index/insta06.jpg)"></a></li>
+					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta01.jpg)"></a></li>
+					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta02.jpg)"></a></li>
+					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta03.jpg)"></a></li>
+					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta04.jpg)"></a></li>
+					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta05.jpg)"></a></li>
+					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta06.jpg)"></a></li>
 				</ul>
 				<div class="ig_link">
 					<a href="#aaaa"><span>@FRUITEST.JP</span></a>
