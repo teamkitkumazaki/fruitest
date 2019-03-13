@@ -213,7 +213,7 @@ header {
   &.rolled{
     background-color: #fff;
     background-image: none;
-    box-shadow: 0 2px 3px 0 #f1f1f1;
+    /*box-shadow: 0 2px 3px 0 #f1f1f1;*/
     height: 80px;
     transition: background 0s, height .4s;
     .header_inner{

@@ -86,10 +86,10 @@
 @media screen and (max-width: 740px){
   #faq{
     .faq_index{
-      padding: 20px 20px;
-      padding-bottom: 30px;
+      padding: 20px 10px 10px;
       margin-bottom: 30px;
       .comp-title{
+        text-align: center;
         margin-bottom: 20px;
         .en{
           display: inline-block;
@@ -102,6 +102,9 @@
           width: 100%;
           margin-right: 0%;
           margin-bottom: 0;
+          a{
+            padding: 15px 40px 15px 15px;
+          }
           &:nth-child(3n){
             margin-right: 0%;
           }
@@ -113,6 +116,14 @@
     }
     #qaToggle{
       margin-bottom: 100px;
+      .comp-title{
+        .ttl_ja{
+          font-size: 20px;
+        }
+        .ttl_en{
+          font-size: 16px;
+        }
+      }
       .comp-title{
         margin-top: -40px;
         padding-top: 100px;

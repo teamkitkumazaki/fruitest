@@ -46,7 +46,7 @@
     .menu_wrap{
       position: relative;
       background: #fff;
-      width: 460px;
+      width: 360px;
       height: 100vh;
       padding: 60px 30px;
       box-sizing: border-box;
@@ -115,9 +115,9 @@
 }
 @media screen and (max-width: 740px){
   #slideMenu{
-    left: -100vw;
+    left: -80vw;
       #menuBg{
-        width: 200%;
+        width: 180%;
       }
       #closeBtn{
         top: 8%;
@@ -130,7 +130,7 @@
         }
       }
       .menu_wrap{
-        width: 100%;
+        width: 80vw;
         padding: 60px 0;
         height: 100vh;
         overflow: scroll;
