@@ -53,12 +53,12 @@
 			</div><!-- inner -->
 			<section id="kawanaka" class="prod_section">
     		<div class="productBg">
-					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
       		<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">KAWANAKAJIMA PEACH</span>
 							<h3 class="ja">川中島白桃</h3>
-							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
         	</div>
@@ -66,12 +66,12 @@
     	</section>
 			<section id="pione" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
 					<div class="txt_wrapper">
 						<div class="txt_block">
 							<span class="en">PIONE</span>
 							<h3 class="ja">ピオーネ</h3>
-							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -79,12 +79,12 @@
 			</section>
 			<section id="reiou" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">REIOU</span>
 							<h3 class="ja">麗王</h3>
-							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -92,12 +92,12 @@
 			</section>
 			<section id="shine" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
 					<div class="txt_wrapper">
 						<div class="txt_block">
 							<span class="en">SHINE MASCUT</span>
 							<h3 class="ja">シャインマスカット</h3>
-							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -105,12 +105,12 @@
 			</section>
 			<section id="kiyou" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="/?mode=f4"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">KIYOU</span>
 							<h3 class="ja">貴陽</h3>
-							<a class="prod_link" href="/?mode=f4"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>

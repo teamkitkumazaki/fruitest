@@ -20,14 +20,14 @@
         <li>
           <div class="state on-sale">
           <div class="img_wrap">
-            <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product01.jpg)"></a>
+            <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product01.jpg)"></a>
           </div>
           <div class="txt_wrap">
-            <a class="product_name" href="/?mode=f4">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
+            <a class="product_name" href="/?pid=141554730">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
             <p class="copy">農家さんから、一番人気を誇る白桃。</p>
             <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
-              <a href="/?mode=f4"><span>詳しく知る</span></a>
+              <a href="/?pid=141554730"><span>詳しく知る</span></a>
             </div>
           </div>
           </div>
@@ -35,14 +35,14 @@
         <li>
           <div class="state on-sale">
           <div class="img_wrap">
-            <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product02.jpg)"></a>
+            <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product02.jpg)"></a>
           </div>
           <div class="txt_wrap">
-            <a class="product_name" href="/?mode=f4">麗王<span>REIOU</span></a>
+            <a class="product_name" href="/?pid=141554730">麗王<span>REIOU</span></a>
             <p class="copy">コピーが入ります。</p>
             <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
-              <a href="/?mode=f4"><span>詳しく知る</span></a>
+              <a href="/?pid=141554730"><span>詳しく知る</span></a>
             </div>
           </div>
           </div>
@@ -50,14 +50,14 @@
         <li>
           <div class="state on-sale">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product03.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product03.jpg)"></a>
             </div>
             <div class="txt_wrap">
-            <a class="product_name" href="/?mode=f4">ピオーネ<span>PIONE</span></a>
+            <a class="product_name" href="/?pid=141554730">ピオーネ<span>PIONE</span></a>
             <p class="copy">コピーが入ります。コピーが入ります。</p>
             <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
-              <a href="/?mode=f4"><span>詳しく知る</span></a>
+              <a href="/?pid=141554730"><span>詳しく知る</span></a>
             </div>
           </div>
           </div>
@@ -65,14 +65,14 @@
         <li>
           <div class="state on-sale">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product04.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product04.jpg)"></a>
             </div>
             <div class="txt_wrap">
-              <a class="product_name" href="/?mode=f4">シャインマスカット<span>SHINE MASCUT</span></a>
+              <a class="product_name" href="/?pid=141554730">シャインマスカット<span>SHINE MASCUT</span></a>
               <p class="copy">コピーが入ります。</p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
-                <a href="/?mode=f4"><span>詳しく知る</span></a>
+                <a href="/?pid=141554730"><span>詳しく知る</span></a>
               </div>
             </div>
           </div>
@@ -80,14 +80,14 @@
         <li>
           <div class="state sold-out">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product05.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product05.jpg)"></a>
             </div>
             <div class="txt_wrap">
-              <a class="product_name" href="/?mode=f4">貴陽<span>KIYOU</span></a>
+              <a class="product_name" href="/?pid=141554730">貴陽<span>KIYOU</span></a>
               <p class="copy">コピーが入ります。</p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
-                <a href="/?mode=f4"><span>詳しく知る</span></a>
+                <a href="/?pid=141554730"><span>詳しく知る</span></a>
               </div>
             </div>
           </div>
@@ -98,11 +98,11 @@
               <a href="/?mode=f4a" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product06.jpg)"></a>
             </div>
             <div class="txt_wrap">
-              <a class="product_name" href="/?mode=f4">巨峰<span>KYOHOU</span></a>
+              <a class="product_name" href="/?pid=141554730">巨峰<span>KYOHOU</span></a>
               <p class="copy">コピーが入ります。</p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
-                <a href="/?mode=f4"><span>詳しく知る</span></a>
+                <a href="/?pid=141554730"><span>詳しく知る</span></a>
               </div>
             </div>
           </div>
@@ -110,14 +110,14 @@
         <li>
           <div class="state waiting-list">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product07.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product07.jpg)"></a>
             </div>
             <div class="txt_wrap">
-              <a class="product_name" href="/?mode=f4">アレキサンドリア<span>ALEXSANDRIA</span></a>
+              <a class="product_name" href="/?pid=141554730">アレキサンドリア<span>ALEXSANDRIA</span></a>
               <p class="copy">コピーが入ります。</p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
-                <a href="/?mode=f4"><span>詳しく知る</span></a>
+                <a href="/?pid=141554730"><span>詳しく知る</span></a>
               </div>
             </div>
           </div>
@@ -125,14 +125,14 @@
         <li>
           <div class="state waiting-list">
             <div class="img_wrap">
-              <a href="/?mode=f4" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product08.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product08.jpg)"></a>
             </div>
             <div class="txt_wrap">
-              <a class="product_name" href="/?mode=f4">甲州百目<span>KOSYU HYAKUME</span></a>
+              <a class="product_name" href="/?pid=141554730">甲州百目<span>KOSYU HYAKUME</span></a>
               <p class="copy">コピーが入ります。</p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
-                <a href="/?mode=f4"><span>詳しく知る</span></a>
+                <a href="/?pid=141554730"><span>詳しく知る</span></a>
               </div>
             </div>
           </div>

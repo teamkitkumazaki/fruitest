@@ -156,7 +156,17 @@ $(function() {
       return scrollToHref(href);
     });
   }
+  
+  //商品詳細のリード説明文を上部に移動
+  function readTxtMove(target) {
+    var strInnerHTML = target.html();
+    $('#excerpt').prepend(strInnerHTML);
+    target.remove();
+  }
 
+  if (document.getElementById('itemDetail')) {
+    readTxtMove($('#leadTxt'));
+  }
 
 
 

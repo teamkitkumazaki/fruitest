@@ -2078,28 +2078,42 @@ footer {
         font-size: 18px !important;
         letter-spacing: 0.7px !important;
         height: 18px !important; }
-    .comp-productlist li .state .txt_wrap .product_name {
-      font-size: 16px;
-      letter-spacing: 1px; }
-      .comp-productlist li .state .txt_wrap .product_name span {
-        font-size: 12px;
+    .comp-productlist li .state .txt_wrap {
+      position: relative;
+      padding-bottom: 30px;
+      min-height: 120px; }
+      .comp-productlist li .state .txt_wrap .product_name {
+        font-size: 16px;
         letter-spacing: 1px; }
-    .comp-productlist li .state .txt_wrap .copy {
-      margin-top: 10px;
-      padding-top: 10px;
-      font-size: 12px;
-      line-height: 1.6;
-      letter-spacing: 0.8px; }
-    .comp-productlist li .state .txt_wrap .detail {
-      padding: 10px 0 15px;
-      display: block;
-      text-align: right;
-      font-size: 14px;
-      letter-spacing: 1.2px; }
-      .comp-productlist li .state .txt_wrap .detail font {
-        font-size: 12px; }
-      .comp-productlist li .state .txt_wrap .detail .stock {
-        display: none; }
+        .comp-productlist li .state .txt_wrap .product_name span {
+          font-size: 12px;
+          letter-spacing: 1px; }
+      .comp-productlist li .state .txt_wrap .copy {
+        margin-top: 10px;
+        padding-top: 10px;
+        font-size: 12px;
+        line-height: 1.6;
+        letter-spacing: 0.8px; }
+      .comp-productlist li .state .txt_wrap .detail {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px 0 15px;
+        display: block;
+        text-align: right;
+        font-size: 14px;
+        letter-spacing: 1.2px; }
+        .comp-productlist li .state .txt_wrap .detail font {
+          font-size: 14px; }
+        .comp-productlist li .state .txt_wrap .detail .stock {
+          font-size: 12px;
+          display: block;
+          padding: 7px 10px;
+          border-radius: 0px;
+          pointer-events: none;
+          position: absolute;
+          top: -145px;
+          right: 5px; }
     .comp-productlist li .state .comp-linkbutton-mini {
       display: none; } }
 
@@ -4012,7 +4026,21 @@ footer {
       #itemDetail #basicInfo .flex_wrap .flex_right .sp_img {
         display: none; }
       #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap {
-        margin-top: 15px; }
+        margin-top: 15px;
+        position: relative; }
+        #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap input[type="submit"] {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          opacity: 0; }
+        #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap:hover button {
+          background: #464646; }
 
 #itemDetail #itemFeature {
   margin-top: 200px; }
@@ -4028,7 +4056,7 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 200px; }
+    margin-bottom: 175px; }
     #itemDetail #itemFeature .flex_wrap.reverse {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
@@ -4036,6 +4064,8 @@ footer {
       flex-direction: row-reverse; }
     #itemDetail #itemFeature .flex_wrap .flex_txt {
       width: 540px; }
+      #itemDetail #itemFeature .flex_wrap .flex_txt .sp_img {
+        display: none; }
       #itemDetail #itemFeature .flex_wrap .flex_txt .copy {
         font-size: 22px;
         line-height: 1.59;
@@ -4074,6 +4104,8 @@ footer {
     #itemDetail #itemFeature .flex_origin .flex_txt {
       width: 540px;
       margin-right: 60px; }
+      #itemDetail #itemFeature .flex_origin .flex_txt .sp_img {
+        display: none; }
       #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper {
         margin-bottom: 25px; }
         #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item {
@@ -4205,6 +4237,19 @@ footer {
           display: block; }
       #itemDetail #detailLower .flex_wrap .flex_txt .button_wrap {
         margin-top: 15px; }
+        #itemDetail #detailLower .flex_wrap .flex_txt .button_wrap input[type="submit"] {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          opacity: 0; }
+        #itemDetail #detailLower .flex_wrap .flex_txt .button_wrap:hover button {
+          background: #464646; }
 
 #itemDetail #relatedItem {
   margin-top: 150px; }
@@ -4291,7 +4336,7 @@ footer {
     width: 100%;
     height: 65vw; }
   #itemDetail #basicInfo {
-    margin-top: 35px; }
+    margin-top: 25px; }
     #itemDetail #basicInfo .comp-title {
       text-align: left;
       display: -webkit-box;
@@ -4317,7 +4362,7 @@ footer {
           letter-spacing: 1px; }
         #itemDetail #basicInfo .flex_wrap .flex_right .sp_img {
           display: block;
-          margin: 40px auto 30px; }
+          margin: 40px auto 10px; }
         #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap {
           margin-top: 15px; }
   #itemDetail #itemFeature {
@@ -4328,6 +4373,24 @@ footer {
         width: 100%; }
         #itemDetail #itemFeature .flex_wrap .flex_txt .comp-title {
           margin-bottom: 30px; }
+        #itemDetail #itemFeature .flex_wrap .flex_txt .sp_img {
+          display: block;
+          width: 100%;
+          height: 360px;
+          margin-bottom: 20px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          position: relative;
+          overflow: hidden; }
+          #itemDetail #itemFeature .flex_wrap .flex_txt .sp_img img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
         #itemDetail #itemFeature .flex_wrap .flex_txt .copy {
           font-size: 18px;
           letter-spacing: 1px;
@@ -4339,28 +4402,39 @@ footer {
           margin-top: 30px;
           padding: 0 5px; }
       #itemDetail #itemFeature .flex_wrap .flex_img {
-        width: 100%;
-        height: 360px;
-        margin-bottom: 20px; }
+        display: none; }
     #itemDetail #itemFeature .flex_origin .flex_txt {
       width: 100%;
       margin-right: 60px; }
       #itemDetail #itemFeature .flex_origin .flex_txt .comp-title {
         margin-bottom: 25px; }
+      #itemDetail #itemFeature .flex_origin .flex_txt .sp_img {
+        display: block;
+        width: 100%;
+        padding: 30px 0;
+        margin-bottom: 15px;
+        background-color: #f8f8f8;
+        text-align: center; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .sp_img img {
+          max-width: 80%; }
       #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper {
         margin-bottom: 15px; }
     #itemDetail #itemFeature .flex_origin .flex_img {
+      display: none;
       width: 100%;
       padding: 30px 0;
       margin-bottom: 25px; }
       #itemDetail #itemFeature .flex_origin .flex_img .origin_img img {
         max-width: 80%; }
   #itemDetail #paringWrap {
-    margin-top: 80px; }
+    margin-top: 60px; }
     #itemDetail #paringWrap .comp-title {
       margin-bottom: 25px; }
+    #itemDetail #paringWrap .paring_wrap span {
+      font-size: 12px;
+      line-height: 1.6; }
   #itemDetail #itemInfo {
-    margin-top: 100px; }
+    margin-top: 60px; }
     #itemDetail #itemInfo .comp-title {
       margin-bottom: 20px; }
     #itemDetail #itemInfo .info_wrap .info_item {
@@ -4377,7 +4451,7 @@ footer {
         line-height: 1.6;
         letter-spacing: 1px; }
   #itemDetail #detailLower {
-    margin-top: 100px; }
+    margin-top: 60px; }
     #itemDetail #detailLower .flex_wrap .flex_img {
       padding: 0;
       background: transparent;
@@ -4397,9 +4471,9 @@ footer {
       #itemDetail #detailLower .flex_wrap .flex_txt .button_wrap {
         margin-top: 15px; }
   #itemDetail #relatedItem {
-    margin-top: 100px; }
+    margin-top: 60px; }
   #itemDetail #detailJournal {
-    margin: 100px 0; } }
+    margin: 60px 0; } }
 
 #faq .faq_index {
   background: #f8f8f8;
