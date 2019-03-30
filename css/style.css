@@ -2704,7 +2704,7 @@ footer {
         margin-left: 55px; }
         #index #topRareDry .flex_wrap .flex_right span {
           display: block;
-          height: 550px;
+          height: 650px;
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center center;
@@ -3360,9 +3360,7 @@ footer {
     align-items: center; }
     #concept #conceptRare .flex_wrap .flex_right {
       width: 50%;
-      padding-left: 40px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      padding-left: 6%; }
       #concept #conceptRare .flex_wrap .flex_right .img_wrap {
         width: 100%;
         height: 600px;
@@ -3372,7 +3370,7 @@ footer {
         background-position: center center;
         background-image: url(../img/concept/concept_img01.jpg); }
     #concept #conceptRare .flex_wrap .flex_left {
-      width: 50%; }
+      width: 44%; }
       #concept #conceptRare .flex_wrap .flex_left .txt_wrap .ttl {
         font-size: 22px;
         font-weight: normal;
@@ -3401,10 +3399,8 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
     #concept #conceptTaberu .flex_wrap .flex_left {
-      width: 50%;
-      padding-right: 40px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      width: 46%;
+      padding-right: 6%; }
       #concept #conceptTaberu .flex_wrap .flex_left .img_wrap {
         width: 100%;
         height: 700px;
@@ -3414,7 +3410,7 @@ footer {
         background-position: center center;
         background-image: url(../img/concept/concept_img02.jpg); }
     #concept #conceptTaberu .flex_wrap .flex_right {
-      width: 50%; }
+      width: 48%; }
       #concept #conceptTaberu .flex_wrap .flex_right .txt_wrap .ttl {
         font-size: 22px;
         font-weight: normal;
@@ -3450,19 +3446,17 @@ footer {
     flex-direction: row-reverse; }
     #concept #conceptSubscription .flex_wrap .flex_right {
       width: 50%;
-      padding-left: 40px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      padding-left: 6%; }
       #concept #conceptSubscription .flex_wrap .flex_right .img_wrap {
         width: 100%;
-        height: 450px;
+        height: 650px;
         background-color: #f1f1f1;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         background-image: url(../img/concept/concept_img03.jpg); }
     #concept #conceptSubscription .flex_wrap .flex_left {
-      width: 50%; }
+      width: 44%; }
       #concept #conceptSubscription .flex_wrap .flex_left .txt_wrap p {
         font-size: 14px;
         line-height: 1.71;

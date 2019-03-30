@@ -8,12 +8,12 @@
 		</section><!-- main -->
 		<section id="topConcept">
 			<div class="comp-title center">
-				<h2 class="ttl_ja">完熟を超えた、果物を</h2>
+				<h2 class="ttl_ja">はじめまして、<span>FRUITESTです。</spsn></h2>
 				<span class="ttl_en">BEYOND RIPE FRUITS</span>
 			</div>
 			<div class="img_wrap_sp"></div>
 			<div class="lead_txt">
-				<h1 class="ja">日本のプレミアム品種の果物をつかった、<span>「レア･ドライフルーツ」が誕生しました。</span></h1>
+				<h1 class="ja">フルーテストは、<span>日本が誇る最上級の完熟果物だけをつかった</span>レア・ドライフルーツのブランドです。</span></h1>
 				<span class="en">I used fruits from Japan's premium variety,<span>"Rare / dried fruit" was born.</span>
 			</div>
 			<div class="img_wrap"></div>
@@ -26,12 +26,16 @@
 				<div class="flex_wrap">
 					<div class="flex_left">
 						<div class="comp-title">
-							<h2 class="ttl_ja">完熟を超えた、果物を</h2>
+							<h2 class="ttl_ja">生でもない。ドライでもない。<br>ここでしか体感できない、<br>味があります。</h2>
 							<span class="ttl_en">BEYOND RIPE FRUITS</span>
 						</div>
 						<div class="spimg_wrap"></div>
 						<div class="txt">
-							<p class="ja"><span>日本のプレミアム品種を使った、レア・ドライフルーツ。</span><span>果物のみずみずしさを保ちながら、うまみを凝縮した、生の状態に近いドライフルーツです。完熟の状態で収穫し、製造過程で追熟しているので、生のフルーツよりも甘く、濃い味わいに仕上がっています。</span></p>
+							<p class="ja">
+								<span>みずみずしさを出来る限り保ちながら、果物本来のおいしさを凝縮したFRUITESTの「レア・ドライフルーツ」。</span>
+								<span>原材料は、品種・作り手・熟度にこだわった最上級の国産果物だけ。素材に自信があるので、果物以外の原料は使いません。</span>
+								<span>これまでは、旬の時期に、産地でしか味わうことのできなかった、最上級の風味と香りをできる限りとじ込めてお届けします。</span>
+							</p>
 							<p class="en">Rare / dried fruit using Japanese premium variety.It is a dried fruit close to raw state, condensing umami while keeping the freshness of fruits.Because it is harvested in ripe state and ripened in the manufacturing process,It is sweeter than raw fruit, finished in a rich taste.</p>
 						</div>
 						<div class="comp-linkbutton">
