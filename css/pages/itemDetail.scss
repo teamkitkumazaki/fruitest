@@ -208,7 +208,7 @@
     .info_wrap{
       .info_item{
         @include flexSet;
-        align-items: center;
+        align-items: flex-start;
         padding:15px 0;
         border-bottom: dotted 1px #d8d8d8;
         &:nth-last-of-type(1){
@@ -227,6 +227,8 @@
         .content{
           width: calc(100% - 130px);
           font-size: 14px;
+          line-height: 1.6;
+          padding-top: 5px;
           letter-spacing: 1.2px;
           color: #666;
         }

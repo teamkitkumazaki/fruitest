@@ -1,51 +1,20 @@
-<article id="itemDetail">
-  <section id="keyVisual">
-    <div class="img_wrap" style="background-image: url(//journal.fruitest.jp/files/img/product_detail/main.jpg)">
-    </div>
-  </section>
-  <section id="basicInfo">
-    <div class="inner">
-    <div class="comp-title center">
-      <h1 class="ttl_ja">貴陽</h1>
-      <span class="ttl_en">KIYOU</span>
-    </div>
-    <div class="flex_wrap">
-      <div class="flex_left">
-        <img src="//journal.fruitest.jp/files/img/product_detail/product_img01.jpg">
-      </div>
-      <div class="flex_right">
-        <h2 class="copy">ひとかけらで、まるでフルコース。<span>酸味も主役です。</span></h2>
-        <p class="detail"><span>貴陽は栽培が難しく、手間がかかる高級すもも。それがまるまる1玉、この中に詰まっています。食べた直後の強い酸味と、甘みの余韻。</span><span>皮付きのままレア・ドライにすることで、どちらの味を共存させることに成功しました。ちょっと他にはない子の味わいこそが、私たちFRUITESTの貴陽です。</span></p>
-        <div class="sp_img">
-          <img src="//journal.fruitest.jp/files/img/product_detail/product_img02.jpg">
-        </div>
-        <div class="comp-itemdetail">
-          <div class="item_upper item">
-            <span class="amount">内容量: 300g</span>
-            <span class="state on-sale"></span>
-          </div>
-          <div class="item">
-            <span class="number">個数<input type="number">個</span>
-            <span class="price">?1,200(税抜)</span>
-          </div>
-          <div class="button_wrap">
-            <button class="comp-cartbutton"><span>カートに入れる</span></button>
-          </div>
-        </div><!-- comp-itemdetail -->
-      </div>
-    </div><!-- flex_wrap -->
-  </div>
-</section><!-- basicInfo -->
+<p id="leadTxt">
+<span>貴陽は栽培が難しく、手間がかかる高級すもも。それがまるまる1玉、この中に詰まっています。食べた直後の強い酸味と、甘みの余韻。</span><span>皮付きのままレア・ドライにすることで、どちらの味を共存させることに成功しました。ちょっと他にはない子の味わいこそが、私たちFRUITESTの貴陽です。</span>
+</p>
+
 <section id="itemFeature">
   <div class="inner">
   <div class="flex_wrap reverse">
     <div class="flex_img">
-      <img src="//journal.fruitest.jp/files/img/product_detail/detail01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
     </div>
     <div class="flex_txt">
       <div class="comp-title">
         <h2 class="ttl_ja">商品の特徴</h2>
         <span class="ttl_en">FEATURES</span>
+      </div>
+      <div class="sp_img">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
       </div>
       <h3 class="copy">
         <span>収穫期間、わずか10日。</span>
@@ -58,23 +27,26 @@
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
     <div class="flex_img">
-      <img src="//journal.fruitest.jp/files/img/product_detail/detail02.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
     </div>
     <div class="flex_txt">
       <div class="comp-title">
         <h2 class="ttl_ja">風味の特徴</h2>
         <span class="ttl_en">FLAVOR</span>
       </div>
-      <p class="txt">口に入れると、酸味をしっかりと感じられ、噛むほどに口の中で甘さが広がります、皮を残し、貴陽らしいジューシーさを保っているので、より「レア感」を感じられます。</p>
+      <div class="sp_img">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
+      </div>
+      <p class="txt">皮付きのままカットして加工することで、食べた直後は酸味をしっかりと感じ、噛むほどに口の中で甘さがどんどんあふれ出ていく仕上がりになりました。<span>また、皮があることで貴陽ならではのジューシーさが保たれて、より「レア感、生感」を感じられます。</span></p>
       <div class="chart_wrap">
-        <img src="//journal.fruitest.jp/files/img/product_detail/chart.png">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/chart.png">
       </div>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_origin">
     <div class="flex_img">
       <div class="origin_img">
-        <img src="//journal.fruitest.jp/files/img/product_detail/location.png">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
       </div>
     </div>
     <div class="flex_txt">
@@ -82,17 +54,20 @@
         <h2 class="ttl_ja">原産地</h2>
         <span class="ttl_en">PLACE OF ORIGIN</span>
       </div>
+      <div class="sp_img">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
+      </div>
       <div class="origin_upper">
         <div class="origin_item">
           <span class="title">産地</span>
           <span class="content">山梨県南アルプス市</span>
         </div>
         <div class="origin_item">
-          <span class="title">産地</span>
-          <span class="content">山梨県南アルプス市</span>
+          <span class="title">旬の時期</span>
+          <span class="content">7月下旬 〜 8月下旬</span>
         </div>
       </div>
-        <p class="txt">口に入れると、酸味をしっかりと感じられ、噛むほどに口の中で甘さが広がります、皮を残し、貴陽らしいジューシーさを保っているので、より「レア感」を感じられます。</p>
+        <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家ｘｘさんの貴陽です。</p>
     </div>
   </div>
 </div><!-- inner -->
@@ -119,179 +94,20 @@
   <div class="info_wrap">
     <div class="info_item">
       <span class="title">原材料</span>
-      <span class="content">桃 砂糖</span>
+      <span class="content">すもも(貴陽)</span>
     </div>
     <div class="info_item">
-      <span class="title">添加物</span>
-      <span class="content">クエン酸 亜硫酸塩 香料</span>
+      <span class="title">産地</span>
+      <span class="content">山梨県笛吹市</span>
+    </div>
+    <div class="info_item">
+      <span class="title">内容量</span>
+      <span class="content">9個(約1.5個分)</span>
     </div>
     <div class="info_item">
       <span class="title">保存方法</span>
-      <span class="content">直射日光高温多湿を避け、冷所で保存</span>
-    </div>
-    <div class="info_item">
-      <span class="title">賞味期限</span>
-      <span class="content">上記保存方法で約３ヶ月</span>
-    </div>
-    <div class="info_item">
-      <span class="title">原産</span>
-      <span class="content">山梨県</span>
+      <span class="content">直射日光を避け、冷暗所に保存してください。<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。</span>
     </div>
   </div><!-- info_wrap -->
 </div><!-- inner-->
 </section><!-- itemInfo -->
-<section id="detailLower">
-<div class="inner">
-<div class="flex_wrap">
-  <div class="flex_img">
-    <img src="//journal.fruitest.jp/files/img/product_detail/product_img02.jpg">
-  </div>
-  <div class="flex_txt">
-    <div class="comp-title">
-      <h2 class="ttl_ja">貴陽<span class="en">KIYOU</span></h2>
-    </div>
-    <h2 class="copy">ひとかけらで、まるでフルコース。<span>酸味も主役です。</span></h2>
-    <div class="comp-itemdetail">
-      <div class="item_upper item">
-        <span class="amount">内容量: 300g</span>
-        <span class="state on-sale"></span>
-      </div>
-      <div class="item">
-        <span class="number">個数<input type="number">個</span>
-        <span class="price">?1,200(税抜)</span>
-      </div>
-      <div class="button_wrap">
-        <button class="comp-cartbutton"><span>カートに入れる</span></button>
-      </div>
-    </div><!-- comp-itemdetail -->
-  </div>
-</div>
-</div><!-- inner -->
-</section><!-- detailLower -->
-<section id="relatedItem">
-<div class="inner">
-<div class="comp-title">
-  <h2 class="ttl_ja">関連商品</h2>
-  <span class="en">RELATED ITEMS</span>
-</div>
-<div class="products">
-  <ul class="comp-productlist">
-    <li>
-      <div class="state on-sale">
-      <div class="img_wrap">
-        <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product01.jpg)"></a>
-      </div>
-      <div class="txt_wrap">
-        <a class="product_name" href="#aaa">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
-        <p class="copy">農家さんから、一番人気を誇る白桃。</p>
-        <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
-        <div class="comp-linkbutton-mini">
-          <a href="#aaaa"><span>詳しく知る</span></a>
-        </div>
-      </div>
-      </div>
-    </li>
-    <li>
-      <div class="state on-sale">
-      <div class="img_wrap">
-        <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product02.jpg)"></a>
-      </div>
-      <div class="txt_wrap">
-        <a class="product_name" href="#aaa">麗王<span>REIOU</span></a>
-        <p class="copy">コピーが入ります。</p>
-        <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
-        <div class="comp-linkbutton-mini">
-          <a href="#aaaa"><span>詳しく知る</span></a>
-        </div>
-      </div>
-      </div>
-    </li>
-    <li>
-      <div class="state on-sale">
-        <div class="img_wrap">
-          <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product03.jpg)"></a>
-        </div>
-        <div class="txt_wrap">
-        <a class="product_name" href="#aaa">ピオーネ<span>PIONE</span></a>
-        <p class="copy">コピーが入ります。コピーが入ります。</p>
-        <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
-        <div class="comp-linkbutton-mini">
-          <a href="#aaaa"><span>詳しく知る</span></a>
-        </div>
-      </div>
-      </div>
-    </li>
-    <li>
-      <div class="state on-sale">
-        <div class="img_wrap">
-          <a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product04.jpg)"></a>
-        </div>
-        <div class="txt_wrap">
-          <a class="product_name" href="#aaa">シャインマスカット<span>SHINE MASCUT</span></a>
-          <p class="copy">コピーが入ります。</p>
-          <div class="detail"><font>?1,200(税抜)</font><span class="stock"></span></div>
-          <div class="comp-linkbutton-mini">
-            <a href="#aaaa"><span>詳しく知る</span></a>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-</div>
-</section><!-- relatedItem -->
-<section id="detailJournal" class="comp-journal">
-<div class="inner">
-  <div class="comp-title">
-    <h2 class="ttl_ja">FRUITESTについて<span>もっと知る。</span></h2>
-    <span class="ttl_en">JOURNAL</span>
-  </div>
-  <div class="journal_wrap">
-    <div id="slickSlider" class="slick-slider">
-      <div class="item_box slick-slide">
-        <a
-          class="img_wrap"
-          href="#aaaa"
-          style="background-image: url(//journal.fruitest.jp/files/img/index/journal01.jpg);"
-        >
-        </a>
-        <div class="txt_wrap">
-          <span class="date">10月<span>31日</span></span>
-          <a class="ttl" href="#aaaa">FRUITESTを作るにあたって</a>
-        </div>
-      </div>
-      <div class="item_box slick-slide">
-        <a
-          class="img_wrap"
-          href="#aaaa"
-          style="background-image: url(//journal.fruitest.jp/files/img/index/journal02.jpg);"
-        >
-        </a>
-        <div class="txt_wrap">
-          <span class="date">9月<span>4日</span></span>
-          <a class="ttl" href="#aaaa">”天空の茶畑”産ティーシードオイルについて</a>
-        </div>
-      </div>
-      <div class="item_box last slick-slide">
-        <a
-          class="img_wrap"
-          href="#aaaa"
-          style="background-image: url(//journal.fruitest.jp/files/img/index/journal03.jpg);"
-        >
-        </a>
-        <div class="txt_wrap">
-          <span class="date">7月<span>1日</span></span>
-          <a class="ttl" href="#aaaa">「Komons」の名前の由来は「江戸小紋」</a>
-        </div>
-      </div>
-    </div>
-    <div class="comp-linkbutton">
-      <a href="#aaaa"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
-    </div>
-  </div>
-</div>
-</section>
-</article>
-<script>
-$('header').addClass('under');
-</script>

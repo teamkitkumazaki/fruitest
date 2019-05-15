@@ -1491,7 +1491,7 @@ footer {
     .comp-title {
       margin-bottom: 40px; }
       .comp-title .ttl_ja {
-        font-size: 24px;
+        font-size: 22px;
         letter-spacing: 1.6px;
         line-height: 1.5;
         margin-bottom: 7px; }
@@ -4183,9 +4183,9 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding: 15px 0;
     border-bottom: dotted 1px #d8d8d8; }
     #itemDetail #itemInfo .info_wrap .info_item:nth-last-of-type(1) {
@@ -4202,6 +4202,8 @@ footer {
     #itemDetail #itemInfo .info_wrap .info_item .content {
       width: calc(100% - 130px);
       font-size: 14px;
+      line-height: 1.6;
+      padding-top: 5px;
       letter-spacing: 1.2px;
       color: #666; }
 
