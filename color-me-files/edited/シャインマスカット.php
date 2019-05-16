@@ -1,5 +1,5 @@
 <p id="leadTxt">
-フルーツ王国山梨県のぶどう農家が口をそろえて「一番好き」と言う、元祖プレミアムぶどうの巨峰。品種登録から半世紀以上経っても未だにその味と人気は色あせません。特にFRUITESTが使っている、山梨市牧岡地区の昔ながらの種あり巨峰の味は別格。適度な甘みと、味の輪郭を際立たせる酸味のバランスを大切にして仕上げました。
+しまりのある果肉、18度以上のしっかりとした甘味と、その奥に感じるマスカット香。誰もが知るぶどう界のサラブレッド品種です。レア・ドライによってその甘みを極限まで凝縮させつつも、甘ったるさは感じさせない。そんな不思議なFRUITESTのシャインマスカットをぜひ体感してください。
 </p>
 
 <section id="itemFeature">
@@ -20,7 +20,8 @@
         <span>収穫期間、わずか10日。</span>
         <span>開発期間、20年。</span>
       </h3>-->
-      <p class="txt">60年以上前に品種登録されて以降、あまたの新しいぶどう品種が世に出てきましたが、いまだに根強い人気を誇る巨峰。<span>山梨のぶどう農家さんの多くが「やっぱり巨峰がいちばんうまい」と口をそろえるのにはワケがあります。</span></p>
+      <p class="txt">2006年に品種登録された若い品種。<span>「あっという間に日本全国に広まり、今では知らない人はいないぶどうになりました。</span>
+      <span>圧倒的な甘みと果汁感、そしてマスカットの芳香が特徴。</span><span>世界に誇る日本生まれのぶどうです。</span></p>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
@@ -35,7 +36,7 @@
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
       </div>
-      <p class="txt">優しく続く甘みと、あとから感じる巨峰の香りがくせになる。<span>何個でも食べたくなる味わいです。</span></p>
+      <p class="txt">完熟のシャインマスカットでないと感じることのできない、紅茶のようなマスカット香がギュッと凝縮された香り高い仕上がりです。</p>
       <div class="chart_wrap">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/chart.png">
       </div>
@@ -58,13 +59,13 @@
       <div class="origin_upper">
         <div class="origin_item">
           <span class="title">産地</span>
-          <span class="content">山梨県山梨市（牧岡地区）</span>
+          <span class="content">山梨県笛吹市</span>
         </div>
         <div class="origin_item">
           <span class="title">旬の時期</span>
           <span class="content">9月初旬～10月初旬</span>
         </div>
-          <p class="txt">巨峰の聖地とよばれる「牧岡地区」。標高が600メートル以上で昼夜の寒暖の差が大きく、南向き斜面という好条件がそろうこの地区では、昔から一貫して種ありのおいしい巨峰を作り続けています。</p>
+        <p class="txt">ぶどう作りを極めるために、夏は日本（山梨）で、そして冬はニュージーランドで葡萄を栽培する「葡萄専心」の樋口さん。そんな樋口さんがつくる房の形まで美しいシャインマスカットです。</p>
       </div>
     </div>
   </div>
@@ -92,15 +93,15 @@
   <div class="info_wrap">
     <div class="info_item">
       <span class="title">原材料</span>
-      <span class="content">ぶどう（巨峰）</span>
+      <span class="content">ぶどう（シャインマスカット）</span>
     </div>
     <div class="info_item">
       <span class="title">産地</span>
-      <span class="content">山梨県山梨市（牧岡地区）</span>
+      <span class="content">山梨県笛吹市</span>
     </div>
     <div class="info_item">
       <span class="title">内容量</span>
-      <span class="content">12個（12粒）</span>
+      <span class="content">8個（8粒）</span>
     </div>
     <div class="info_item">
       <span class="title">保存方法</span>

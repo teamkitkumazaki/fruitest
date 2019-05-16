@@ -1,5 +1,5 @@
 <p id="leadTxt">
-フルーツ王国山梨県のぶどう農家が口をそろえて「一番好き」と言う、元祖プレミアムぶどうの巨峰。品種登録から半世紀以上経っても未だにその味と人気は色あせません。特にFRUITESTが使っている、山梨市牧岡地区の昔ながらの種あり巨峰の味は別格。適度な甘みと、味の輪郭を際立たせる酸味のバランスを大切にして仕上げました。
+<span>上品な甘みと孤高の香り。その歴史は紀元前まで遡り、あのクレオパトラが愛したとも言われている、まさにぶどうのオリジナルです。</span><span>口に入れた瞬間に感じる繊細なマスカット香。その紅茶のような品位ある香りに、あなたも虜になるはずです。</span>
 </p>
 
 <section id="itemFeature">
@@ -16,11 +16,12 @@
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
       </div>
-      <!--<h3 class="copy">
+      <!---<h3 class="copy">
         <span>収穫期間、わずか10日。</span>
         <span>開発期間、20年。</span>
-      </h3>-->
-      <p class="txt">60年以上前に品種登録されて以降、あまたの新しいぶどう品種が世に出てきましたが、いまだに根強い人気を誇る巨峰。<span>山梨のぶどう農家さんの多くが「やっぱり巨峰がいちばんうまい」と口をそろえるのにはワケがあります。</span></p>
+      </h3>--->
+      <p class="txt"><span>ぶどうの女王といわれる通称「アレキ」。</span><span>その理由は、シャインマスカットほど強くはないけれどどこか上品さを感じる甘さと、何よりマスカット香といわれる香りにあります。</span></p>
+      <p class="txt"><span>他のどんなぶどうとも似ていない、孤高の風味をもつアレキは、紀元前から栽培される非常に歴史の古い品種。</span><span>近年ではシャインマスカットの人気に押され少しずつ生産量が減ってきてしまっていますが、特にぶどう農家さんの間で人気が根強く、「本当のぶどう好きに好かれる品種」です。</span></p>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
@@ -35,7 +36,7 @@
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
       </div>
-      <p class="txt">優しく続く甘みと、あとから感じる巨峰の香りがくせになる。<span>何個でも食べたくなる味わいです。</span></p>
+      <p class="txt"><span>皮が薄く繊細なアレキを、優しくゆっくりとレア・ドライに仕上げました。</span>食べると口の中で徐々に広がってくるマスカット香（紅茶のような香り）が特徴です。<span>上品な甘さと、孤高の香りをお楽しみください。</span></p>
       <div class="chart_wrap">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/chart.png">
       </div>
@@ -58,14 +59,14 @@
       <div class="origin_upper">
         <div class="origin_item">
           <span class="title">産地</span>
-          <span class="content">山梨県山梨市（牧岡地区）</span>
+          <span class="content">岡山県岡山市</span>
         </div>
         <div class="origin_item">
           <span class="title">旬の時期</span>
-          <span class="content">9月初旬～10月初旬</span>
+          <span class="content">7月上旬～8月上旬</span>
         </div>
-          <p class="txt">巨峰の聖地とよばれる「牧岡地区」。標高が600メートル以上で昼夜の寒暖の差が大きく、南向き斜面という好条件がそろうこの地区では、昔から一貫して種ありのおいしい巨峰を作り続けています。</p>
       </div>
+        <p class="txt">昔ながらのガラス温室と、面積あたりにぶら下げる房の数を極限まで減らし１房１房に充分な養分を与える昔ながらの栽培方法を守り続けているｘｘさんのアレキです。</p>
     </div>
   </div>
 </div><!-- inner -->
@@ -92,15 +93,15 @@
   <div class="info_wrap">
     <div class="info_item">
       <span class="title">原材料</span>
-      <span class="content">ぶどう（巨峰）</span>
+      <span class="content">ぶどう（マスカットオブアレキサンドリア）</span>
     </div>
     <div class="info_item">
       <span class="title">産地</span>
-      <span class="content">山梨県山梨市（牧岡地区）</span>
+      <span class="content">岡山県岡山市</span>
     </div>
     <div class="info_item">
       <span class="title">内容量</span>
-      <span class="content">12個（12粒）</span>
+      <span class="content">8個（16粒）</span>
     </div>
     <div class="info_item">
       <span class="title">保存方法</span>
