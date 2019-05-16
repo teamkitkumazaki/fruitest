@@ -1,5 +1,5 @@
 <p id="leadTxt">
-糖度16度以上の強い甘みと、それに負けない爽やかな酸味。レア・ドライ製法で、甘みと酸味を究極のバランスで凝縮した逸品です。大玉ぶどうならではのジューシーさが楽しめる贅沢な味わいを、どうぞご堪能ください。
+フルーツ王国山梨県のぶどう農家が口をそろえて「一番好き」と言う、元祖プレミアムぶどうの巨峰。品種登録から半世紀以上経っても未だにその味と人気は色あせません。特にFRUITESTが使っている、山梨市牧岡地区の昔ながらの種あり巨峰の味は別格。適度な甘みと、味の輪郭を際立たせる酸味のバランスを大切にして仕上げました。
 </p>
 
 <section id="itemFeature">
@@ -20,8 +20,7 @@
         <span>収穫期間、わずか10日。</span>
         <span>開発期間、20年。</span>
       </h3>-->
-      <p class="txt">巨峰とマスカットの交配から生まれた大玉の黒ぶどう。<span>「ピオーネ」という言葉は、イタリア語で「開拓者」という意味をもちます。その名の通り、今では当たり前となった種なしぶどうの先駆者的な存在として、日本を代表する品種です。</span>
-      <span>やわらかくてみずみずしい果肉にくわえ、強い甘みとそれを支える酸味を併せ持つのが特徴です。</span></p>
+      <p class="txt">60年以上前に品種登録されて以降、あまたの新しいぶどう品種が世に出てきましたが、いまだに根強い人気を誇る巨峰。<span>山梨のぶどう農家さんの多くが「やっぱり巨峰がいちばんうまい」と口をそろえるのにはワケがあります。</span></p>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
@@ -36,7 +35,7 @@
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
       </div>
-      <p class="txt">大玉ぶどうのピオーネは、プチっと噛むと、みずみずしい果肉がじゅわっと口の中に広がります。<span>凝縮された濃い甘さと、それを引き立てる酸味の絶妙なバランスをお楽しみください。</span></p>
+      <p class="txt">優しく続く甘みと、あとから感じる巨峰の香りがくせになる。<span>何個でも食べたくなる味わいです。</span></p>
       <div class="chart_wrap">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/chart.png">
       </div>
@@ -59,12 +58,13 @@
       <div class="origin_upper">
         <div class="origin_item">
           <span class="title">産地</span>
-          <span class="content">山梨県韮崎市</span>
+          <span class="content">山梨県山梨市（牧岡地区）</span>
         </div>
         <div class="origin_item">
           <span class="title">旬の時期</span>
-          <span class="content">8月下旬～10月初旬</span>
+          <span class="content">9月初旬～10月初旬</span>
         </div>
+          <p class="txt">巨峰の聖地とよばれる「牧岡地区」。標高が600メートル以上で昼夜の寒暖の差が大きく、南向き斜面という好条件がそろうこの地区では、昔から一貫して種ありのおいしい巨峰を作り続けています。</p>
       </div>
     </div>
   </div>
@@ -92,15 +92,15 @@
   <div class="info_wrap">
     <div class="info_item">
       <span class="title">原材料</span>
-      <span class="content">ぶどう（ピオーネ）</span>
+      <span class="content">ぶどう（巨峰）</span>
     </div>
     <div class="info_item">
       <span class="title">産地</span>
-      <span class="content">山梨県韮崎市</span>
+      <span class="content">山梨県山梨市（牧岡地区）</span>
     </div>
     <div class="info_item">
       <span class="title">内容量</span>
-      <span class="content">10個（10粒）</span>
+      <span class="content">12個（12粒）</span>
     </div>
     <div class="info_item">
       <span class="title">保存方法</span>
