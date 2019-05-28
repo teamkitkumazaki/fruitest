@@ -3927,6 +3927,8 @@ footer {
               color: #333; }
           #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap {
             margin-top: 30px; }
+      #gift #giftProduct .product_wrap .flex_wrap#trio ul li .txt_wrap .desc {
+        min-height: 44px; }
 
 #gift #giftWrapping .flex_wrap {
   display: -webkit-box;
@@ -4088,6 +4090,8 @@ footer {
               font-size: 13px; }
           #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap {
             margin-top: 20px; }
+      #gift #giftProduct .product_wrap#trio ul li .txt_wrap .desc {
+        min-height: initial; }
   #gift #giftWrapping .flex_wrap .flex_left .ttl_section {
     text-align: center; }
   #gift #giftWrapping .flex_wrap .flex_left .sp_img {

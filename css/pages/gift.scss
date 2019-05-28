@@ -105,6 +105,17 @@
             }
           }
         }
+        &#trio{
+          ul{
+            li{
+              .txt_wrap{
+                .desc{
+                  min-height: 44px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -283,6 +294,17 @@
               }
               .button_wrap{
                 margin-top: 20px;
+              }
+            }
+          }
+        }
+        &#trio{
+          ul{
+            li{
+              .txt_wrap{
+                .desc{
+                  min-height: initial;
+                }
               }
             }
           }
