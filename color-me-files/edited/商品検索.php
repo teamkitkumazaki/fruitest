@@ -20,7 +20,7 @@
         <li>
           <div class="state on-sale">
           <div class="img_wrap">
-            <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product01.jpg)"></a>
+            <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kawanaka/product_thumb.jpg)"></a>
           </div>
           <div class="txt_wrap">
             <a class="product_name" href="/?pid=141554730">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
@@ -35,7 +35,7 @@
         <li>
           <div class="state on-sale">
           <div class="img_wrap">
-            <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product02.jpg)"></a>
+            <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/reiou/product_thumb.jpg)"></a>
           </div>
           <div class="txt_wrap">
             <a class="product_name" href="/?pid=141554730">麗王<span>REIOU</span></a>
@@ -50,11 +50,11 @@
         <li>
           <div class="state on-sale">
             <div class="img_wrap">
-              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product03.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/product_thumb.jpg)"></a>
             </div>
             <div class="txt_wrap">
             <a class="product_name" href="/?pid=141554730">ピオーネ<span>PIONE</span></a>
-            <p class="copy">コピーが入ります。コピーが入ります。</p>
+            <p class="copy"><span>甘みと酸味の極致。</span><span>巨峰を凌ぐ人気の大玉ぶどう。</span></p>
             <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
             <div class="comp-linkbutton-mini">
               <a href="/?pid=141554730"><span>詳しく知る</span></a>
@@ -65,11 +65,11 @@
         <li>
           <div class="state on-sale">
             <div class="img_wrap">
-              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product04.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/shine/product_thumb.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?pid=141554730">シャインマスカット<span>SHINE MASCUT</span></a>
-              <p class="copy">コピーが入ります。</p>
+              <p class="copy"><span>甘さの奥に、マスカット香。</span><span>ぶどう界のサラブレッド。</span></p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="/?pid=141554730"><span>詳しく知る</span></a>
@@ -80,11 +80,11 @@
         <li>
           <div class="state sold-out">
             <div class="img_wrap">
-              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product05.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/product_thumb.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?pid=141554730">貴陽<span>KIYOU</span></a>
-              <p class="copy">コピーが入ります。</p>
+              <p class="copy"><span>ひとかけらで、まるでフルコース。</span><span>酸味も、主役です。</span></p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="/?pid=141554730"><span>詳しく知る</span></a>
@@ -95,11 +95,11 @@
         <li>
           <div class="state sold-out">
             <div class="img_wrap">
-              <a href="/?mode=f4a" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product06.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kyohou/product_thumb.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?pid=141554730">巨峰<span>KYOHOU</span></a>
-              <p class="copy">コピーが入ります。</p>
+              <p class="copy"><span>半世紀たっても色あせない。</span><span>ぶどう農家が愛するぶどう。</span></p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="/?pid=141554730"><span>詳しく知る</span></a>
@@ -110,11 +110,11 @@
         <li>
           <div class="state waiting-list">
             <div class="img_wrap">
-              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product07.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/alex/product_thumb.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?pid=141554730">アレキサンドリア<span>ALEXSANDRIA</span></a>
-              <p class="copy">コピーが入ります。</p>
+              <p class="copy"><span>本当のぶどう好きかが、試される。</span><span>孤高の香り放つ、ぶどうの女王。</span></p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="/?pid=141554730"><span>詳しく知る</span></a>
@@ -125,11 +125,11 @@
         <li>
           <div class="state waiting-list">
             <div class="img_wrap">
-              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/files/img/product_list/product08.jpg)"></a>
+              <a href="/?pid=141554730" style="background-image: url(//journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/hyakume/product_thumb.jpg)"></a>
             </div>
             <div class="txt_wrap">
               <a class="product_name" href="/?pid=141554730">甲州百目<span>KOSYU HYAKUME</span></a>
-              <p class="copy">コピーが入ります。</p>
+              <p class="copy"><span>新しく、どこか懐かしい。</span><span>一度食べたらとまらない、優しさの味。</span></p>
               <div class="detail"><font>&yen;1,200(税抜)</font><span class="stock"></span></div>
               <div class="comp-linkbutton-mini">
                 <a href="/?pid=141554730"><span>詳しく知る</span></a>

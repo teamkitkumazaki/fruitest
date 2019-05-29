@@ -50,7 +50,12 @@
           margin-bottom: 5px;
           font-size: 12px;
           letter-spacing: 1.2px;
+          line-height: 1.6;
           color: #666;
+          min-height: 50px;
+          span{
+            display: block;
+          }
         }
         .detail{
           padding: 10px 0 15px;
@@ -250,6 +255,10 @@
             font-size: 12px;
             line-height: 1.6;
             letter-spacing: 0.8px;
+            min-height: initial;
+            span{
+              display: inline;
+            }
           }
           .detail{
             position: absolute;
@@ -264,13 +273,13 @@
               font-size: 14px;
             }
             .stock{
-              font-size: 12px;
+              font-size: 10px;
               display: block;
               padding: 7px 10px;
               border-radius: 0px;
               pointer-events: none;
               position: absolute;
-              top: -145px;
+              top: -143px;
               right: 5px;
             }
           }

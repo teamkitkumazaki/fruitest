@@ -7,8 +7,9 @@
 			</div>
 		</section><!-- main -->
 		<section id="topConcept">
+			<div class="inner">
 			<div class="comp-title center">
-				<h2 class="ttl_ja">はじめまして、<span>FRUITESTです。</spsn></h2>
+				<h2 class="ttl_ja">はじめまして、FRUITESTです。</h2>
 				<span class="ttl_en">BEYOND RIPE FRUITS</span>
 			</div>
 			<div class="img_wrap_sp">
@@ -16,7 +17,7 @@
 				<div class="img_right"></div>
 			</div>
 			<div class="lead_txt">
-				<h1 class="ja">フルーテストは、<span>日本が誇る最上級の完熟果物だけをつかった</span>レア・ドライフルーツのブランドです。</span></h1>
+				<h1 class="ja">フルーテストは、日本が誇る最上級の完熟果物だけをつかったレア・ドライフルーツのブランドです。</h1>
 				<span class="en">I used fruits from Japan's premium variety,<span>"Rare / dried fruit" was born.</span>
 			</div>
 			<div class="img_wrap">
@@ -26,6 +27,7 @@
 			<div class="comp-linkbutton">
 				<a href="/?mode=f1"><span>詳しく知る<font>READ MORE</font></span></a>
 			</div>
+		</div><!-- inner -->
 		</section><!-- topConcept -->
 		<section id="topRareDry">
 			<div class="inner">

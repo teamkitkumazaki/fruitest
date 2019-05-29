@@ -25,6 +25,8 @@
       @include flexSet;
       .ja{
         width: 50%;
+        box-sizing: border-box;
+        padding-right: 20px;
         p{
           font-size: 14px;
           line-height: 2;
@@ -37,6 +39,8 @@
       }
       .en{
         width: 50%;
+        box-sizing: border-box;
+        padding-left: 20px;
         p{
           @include xiaowei;
           font-size: 14px;
@@ -47,7 +51,7 @@
       }
     }
   }
-  #conceptRare{
+  #conceptSozai{
     margin-top: 80px;
     padding-top: 120px;
     .flex_wrap{
@@ -91,7 +95,7 @@
       }
     }
   }
-  #conceptTaberu{
+  #conceptMethod{
     margin-top: 200px;
     .flex_wrap{
       @include flexSet;
@@ -101,10 +105,20 @@
         padding-right: 6%;
         .img_wrap{
           width: 100%;
-          height: 700px;
-          background-color: #f1f1f1;
-          @include bgSet;
-          background-image: url(../img/concept/concept_img02.jpg);
+          .img_upper{
+            width: 100%;
+            height: 320px;
+            background-color: #f1f1f1;
+            @include bgSet;
+            background-image: url(../img/concept/concept_img02_1.jpg);
+          }
+          .img_lower{
+            width: 100%;
+            height: 320px;
+            background-color: #f1f1f1;
+            @include bgSet;
+            background-image: url(../img/concept/concept_img02_2.jpg);
+          }
         }
       }
       .flex_right{
@@ -136,7 +150,7 @@
       }
     }
   }
-  #conceptSubscription{
+  #conceptTaberu{
     margin: 200px auto 150px;
     .flex_wrap{
       @include flexSet;
@@ -173,6 +187,42 @@
       }
     }
   }
+  #conceptSubscription{
+    margin: 200px auto 150px;
+    .flex_wrap{
+      @include flexSet;
+      align-items: center;
+      .flex_left{
+        width: 46%;
+        margin-right: 6%;
+        .img_wrap{
+          width: 100%;
+          height: 450px;
+          background-color: #f1f1f1;
+          @include bgSet;
+          background-image: url(../img/concept/concept_img04.jpg);
+        }
+      }
+      .flex_right{
+        width: 48%;
+        .txt_wrap{
+          p{
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 1.6px;
+            margin-bottom: 15px;
+            span{
+              display: block;
+              font{
+                font-size: 12px;
+                color: #666;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1100px){
   #concept{
@@ -181,6 +231,7 @@
         display: block;
         .ja{
           width: 100%;
+          padding: 0;
           margin-bottom: 40px;
           p{
             span{
@@ -190,10 +241,11 @@
         }
         .en{
           width: 100%;
+          padding: 0;
         }
       }
     }
-    #conceptRare{
+    #conceptSozai{
       .flex_wrap{
         display: block;
         .flex_right{
@@ -218,28 +270,33 @@
         }
       }
     }
-    #conceptTaberu{
+    #conceptMethod{
       margin-top: 100px;
       .flex_wrap{
         display: block;
         .flex_left{
           display: none;
           .img_wrap{
-            width: 100%;
-            height: 700px;
-            background-color: #f1f1f1;
-            @include bgSet;
-            background-image: url(../img/concept/concept_img02.jpg);
+            display: none;
           }
         }
         .flex_right{
           width:100%;
           .sp_img{
-            width: 100%;
-            height: 350px;
+            @include flexSet;
             margin-bottom: 40px;
-            @include bgSet;
-            background-image: url(../img/concept/concept_sp02.jpg);
+            .img_upper{
+              width: 50%;
+              height: 320px;
+              @include bgSet;
+              background-image: url(../img/concept/concept_img02_1.jpg);
+            }
+            .img_lower{
+              width: 50%;
+              height: 320px;
+              @include bgSet;
+              background-image: url(../img/concept/concept_img02_2.jpg);
+            }
           }
           .txt_wrap{
             p{
@@ -254,7 +311,7 @@
         }
       }
     }
-    #conceptSubscription{
+    #conceptTaberu{
       margin: 200px auto;
       .flex_wrap{
         display: block;
@@ -280,6 +337,32 @@
         }
       }
     }
+    #conceptSubscription{
+      margin: 0px auto 150px;
+      .flex_wrap{
+        display: block;
+        .flex_left{
+          display: none;
+        }
+        .flex_right{
+          width: 100%;
+          .sp_img{
+            width: 100%;
+            height: 350px;
+            margin-bottom: 40px;
+            @include bgSet;
+            background-image: url(../img/concept/concept_sp04.jpg);
+          }
+          .txt_wrap{
+            p{
+              span{
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 740px){
@@ -294,6 +377,9 @@
       }
     }
     #conceptWrap{
+      .comp-title{
+        margin-top: 25px;
+      }
       .concept_ttl_section{
         margin-top: 45px;
         margin-bottom: 40px;
@@ -314,6 +400,7 @@
       }
       .flex_ttl_wrap{
         .ja{
+          margin-bottom: 30px;
           p{
             font-size: 14px;
             line-height: 2;
@@ -333,10 +420,79 @@
         }
       }
     }
-    #conceptRare{
+    #conceptSozai{
       margin-top: 20px;
       padding-top: 100px;
       .flex_wrap{
+        .flex_left{
+          width: 100%;
+          .sp_img{
+            height: 54vw;
+            margin-bottom: 25px;
+          }
+          .txt_wrap{
+            .ttl{
+              font-size: 18px;
+              line-height: 1.78;
+              letter-spacing: 1.4px;
+              margin-bottom: 10px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.86;
+              letter-spacing: 0.7px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    #conceptMethod{
+      margin-top: 80px;
+      .flex_wrap{
+        .flex_right{
+          width:100%;
+          .sp_img{
+          }
+          .sp_img{
+            display: block;
+            margin-bottom: 25px;
+            .img_upper{
+              width: 100%;
+              height: 54vw;
+              margin-bottom: 5px;
+            }
+            .img_lower{
+              width: 100%;
+              height: 54vw;
+            }
+          }
+          .txt_wrap{
+            .ttl{
+              font-size: 18px;
+              line-height: 1.78;
+              letter-spacing: 1.4px;
+              margin-bottom: 10px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.86;
+              letter-spacing: 0.7px;
+              margin-bottom: 15px;
+            }
+          }
+          .fb_button_wrap{
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    #conceptTaberu{
+      margin: 120px auto 100px;
+      .flex_wrap{
+        .flex_right{
+          display: none;
+        }
         .flex_left{
           width: 100%;
           .sp_img{
@@ -360,42 +516,13 @@
         }
       }
     }
-    #conceptTaberu{
-      margin-top: 80px;
-      .flex_wrap{
-        .flex_right{
-          width:100%;
-          .sp_img{
-            height: 54vw;
-            margin-bottom: 25px;
-          }
-          .txt_wrap{
-            .ttl{
-              font-size: 18px;
-              line-height: 1.78;
-              letter-spacing: 1.4px;
-              margin-bottom: 25px;
-            }
-            p{
-              font-size: 14px;
-              line-height: 1.86;
-              letter-spacing: 0.7px;
-              margin-bottom: 15px;
-            }
-          }
-          .fb_button_wrap{
-            margin-top: 30px;
-          }
-        }
-      }
-    }
     #conceptSubscription{
       margin: 120px auto 100px;
       .flex_wrap{
-        .flex_right{
+        .flex_left{
           display: none;
         }
-        .flex_left{
+        .flex_right{
           width: 100%;
           .sp_img{
             height: 54vw;
