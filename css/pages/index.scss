@@ -85,10 +85,20 @@
 
     .img_wrap {
       @include waku;
-      height: 500px;
-      @include bgSet;
-      background-image: url("../img/index/concept_img.jpg");
+      @include flexSet;
       margin-bottom: 50px;
+      .img_left{
+        width: 50%;
+        height: 480px;
+        @include bgSet;
+        background-image: url("../img/index/concept_img01.jpg");
+      }
+      .img_right{
+        width: 50%;
+        height: 480px;
+        @include bgSet;
+        background-image: url("../img/index/concept_img02.jpg");
+      }
     }
 
     .comp-linkbutton {
@@ -260,6 +270,16 @@
           background-image: url("../img/index/prod_kiyou.jpg");
         }
       }
+      &#alex {
+        .productBg {
+          background-image: url("../img/index/prod_alex.jpg");
+        }
+      }
+      &#kyohou {
+        .productBg {
+          background-image: url("../img/index/prod_kyohou.jpg");
+        }
+      }
     }
     .product_all{
       margin-top: 50px;
@@ -403,8 +423,13 @@
       }
 
       .img_wrap {
-        height: 280px;
         margin-bottom: 50px;
+        .img_left{
+          height: 360px;
+        }
+        .img_right{
+          height: 360px;
+        }
       }
     }
 
@@ -547,10 +572,20 @@
 
       .img_wrap_sp {
         @include waku;
-        height: 225px;
-        @include bgSet;
-        background-image: url("../img/index/concept_img.jpg");
-        margin-bottom: 40px;
+          margin-bottom: 40px;
+        .img_left{
+          width: 100%;
+          height: 225px;
+          margin-bottom: 5px;
+          @include bgSet;
+          background-image: url("../img/index/concept_img01.jpg");
+        }
+        .img_right{
+          width: 100%;
+          height: 225px;
+          @include bgSet;
+          background-image: url("../img/index/concept_img02.jpg");
+        }
       }
 
       .lead_txt {
@@ -704,6 +739,16 @@
         &#kiyou {
           .productBg {
             background-image: url("../img/index/prod_kiyou_sp.jpg");
+          }
+        }
+        &#alex {
+          .productBg {
+            background-image: url("../img/index/prod_alex_sp.jpg");
+          }
+        }
+        &#kyohou {
+          .productBg {
+            background-image: url("../img/index/prod_kyohou_sp.jpg");
           }
         }
       }
