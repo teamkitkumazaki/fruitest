@@ -12,13 +12,41 @@
     </div>
     <div class="flex_wrap">
       <div class="flex_left">
-        <img src="<{$product.ot2_url}>">
+        <div id="itemThumb01" class="comp-item-thumb">
+          <div class="slide_num">
+            <span class="current">1</span><span class="slash">/</span><span class="all">2</span>
+          </div>
+          <div class="slide_next"></div>
+          <div class="slide_prev"></div>
+          <ul class="slide_upper">
+            <li class="slide1 active_slide">
+              <img src="<{$product.ot2_url}>">
+            </li>
+            <li class="slide2">
+              <img src="<{$product.ot3_url}>">
+            </li>
+          </ul>
+        </div><!-- itemThumb01 -->
       </div>
       <div class="flex_right">
           <h2 class="copy"><{$product.simple_explain}></h2>
           <p id="excerpt" class="detail"></p>
         <div class="sp_img">
-          <img src="<{$product.ot2_url}>">
+          <div id="itemThumb02" class="comp-item-thumb">
+            <div class="slide_num">
+              <span class="current">1</span><span class="slash">/</span><span class="all">2</span>
+            </div>
+            <div class="slide_next"></div>
+            <div class="slide_prev"></div>
+            <ul class="slide_upper">
+              <li class="slide1 active_slide">
+                <img src="<{$product.ot2_url}>">
+              </li>
+              <li class="slide2">
+                <img src="<{$product.ot3_url}>">
+              </li>
+            </ul>
+          </div><!-- itemThumb01 -->
         </div>
         <div class="comp-itemdetail">
           <div class="item_upper item">

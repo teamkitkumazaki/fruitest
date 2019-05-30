@@ -1,5 +1,5 @@
 <p id="leadTxt">
-<span>貴陽は栽培が難しく、手間がかかる高級すもも。それがまるまる1玉、この中に詰まっています。食べた直後の強い酸味と、甘みの余韻。</span><span>皮付きのままレア・ドライにすることで、どちらの味を共存させることに成功しました。ちょっと他にはない子の味わいこそが、私たちFRUITESTの貴陽です。</span>
+<span>貴陽は、栽培が難しく手間がかかる高級すもも。それがまるまる1玉分以上、この缶に詰まっています。食べた直後の強い酸味と、しばらく続く甘味の余韻。皮付きのままレア・ドライにすることで、どちらの味も共存させることに成功しました。ちょっと他にはないこの味わいこそが、わたしたちFRUITESTの貴陽です。</span>
 </p>
 
 <section id="itemFeature">
@@ -16,13 +16,8 @@
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
       </div>
-      <h3 class="copy">
-        <span>収穫期間、わずか10日。</span>
-        <span>開発期間、20年。</span>
-      </h3>
-      <p class="txt">貴陽は、すももの中で特に大玉な品種の一つ。果汁量が多く、驚くほどジューシーです。そのままかじると、とろけるほどの甘い果肉と酸味が詰まった皮が混ざり合い、他の果物では味わえない美味しさに。</p>
-      <p class="txt">開発期間は約20年。山梨県南アルプス市の高石鷹雄さんが試行錯誤を繰り返して、誕生しました。栽培が難しく、熟練した生産者にしか暑開けないので、栽培している人は日本でわずか30人。収穫時期は、年間約10日と短いので、市場では1個1,000円近い値段で取引されるほど高い評価を受けています。</p>
-      <p class="txt">果実の表皮に踏んだんに入っている「雲紋」と呼ばれる黄色い模様は、美味しい証拠。表面についている白い粉、「ブルーム」これがついていれば、さらに新鮮です。</p>
+      <p class="txt">すももの中では特に大玉で、果汁量が驚くほど多くジューシーな貴陽。丸のままかじると、とろける甘みの果肉と酸味がつまった皮の部分が相まって、他の果物では味わえないおいしさです。</p>
+      <p class="txt">栽培が難しく、生産者の中でも熟練したものだけした栽培できないため、生産者は全国でもわずか。果実の表皮に雲紋と呼ばれる黄色い模様が、甘くてジューシーな証拠です。</p>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
@@ -37,7 +32,7 @@
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
       </div>
-      <p class="txt">皮付きのままカットして加工することで、食べた直後は酸味をしっかりと感じ、噛むほどに口の中で甘さがどんどんあふれ出ていく仕上がりになりました。<span>また、皮があることで貴陽ならではのジューシーさが保たれて、より「レア感、生感」を感じられます。</span></p>
+      <p class="txt"><span>皮付きのままカットして加工することで、食べた直後は酸味をしっかりと感じ、噛むほどに口の中で甘さがどんどんあふれ出ていく仕上がりになりました。</span><span>また、皮があることで貴陽ならではのジューシーさが保たれて、より「レア感、生感」を感じられます。</span></p>
       <div class="chart_wrap">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/chart.png">
       </div>
@@ -67,24 +62,11 @@
           <span class="content">7月下旬 〜 8月下旬</span>
         </div>
       </div>
-        <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家ｘｘさんの貴陽です。</p>
+        <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家、久津間さんの貴陽です。</p>
     </div>
   </div>
 </div><!-- inner -->
 </section><!-- itemFeature -->
-<section id="paringWrap">
-<div class="inner">
-  <div class="comp-title">
-    <h2 class="ttl_ja">オススメの食べ方</h2>
-    <span class="ttl_en">PARING SUGGESTION</span>
-  </div>
-  <div class="paring_wrap">
-    <span>フルーティで酸味のある、辛口の白ワイン</span>
-    <span>辛口の白ワイン</span>
-    <span>酸味のあるワイン</span>
-  </div>
-</div>
-</section>
 <section id="itemInfo">
 <div class="inner">
   <div class="comp-title">

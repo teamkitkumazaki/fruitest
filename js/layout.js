@@ -156,7 +156,7 @@ $(function() {
       return scrollToHref(href);
     });
   }
-  
+
   //商品詳細のリード説明文を上部に移動
   function readTxtMove(target) {
     var strInnerHTML = target.html();
@@ -338,6 +338,60 @@ function faqScroll(target) {
   };
 
     smoothScroll($('.scroll_button'));
+
+  // 商品ページのサムネイルスライダー
+
+  function slideItemThumb(target){
+    var currentSlide = 1;
+    var slideList = [];
+    var targetSlide;
+    var slideNum = target.find('li').length;
+    var slideNext = target.find('.slide_next');
+    var slidePrev = target.find('.slide_prev');
+
+    function slideChange(){
+      targetSlide = target.find('.slide' + currentSlide);
+      target.find('.active_slide').removeClass('active_slide');
+      targetSlide.addClass('active_slide');
+      target.find('.current').text(currentSlide);
+    }
+
+    function init() {
+      target.find('.all').text(slideNum);
+      target.find('li').each(function(index) {
+        slideList[index] = $(this);
+      });
+      slideNext.on({
+        'click': function(){
+          if( currentSlide < slideNum - 0.1 ){
+            currentSlide = currentSlide + 1;
+
+          }else{
+            currentSlide = 1;
+          }
+          slideChange();
+        }
+      });
+      slidePrev.on({
+        'click': function(){
+          if( currentSlide == 1){
+            currentSlide = slideNum;
+          }else{
+            currentSlide = currentSlide - 1;
+          }
+          slideChange();
+        }
+      });
+    };
+
+    init();
+
+  };
+
+  if (document.getElementById('itemDetail')) {
+    slideItemThumb($('#itemThumb01'));
+    slideItemThumb($('#itemThumb02'));
+  }
 
 
     $('#slickSlider').slick({
