@@ -6,7 +6,7 @@
   <div class="inner">
   <div class="flex_wrap reverse">
     <div class="flex_img">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/detail01.jpg">
     </div>
     <div class="flex_txt">
       <div class="comp-title">
@@ -14,7 +14,7 @@
         <span class="ttl_en">FEATURES</span>
       </div>
       <div class="sp_img">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/detail01.jpg">
       </div>
       <!--<h3 class="copy">
         <span>収穫期間、わずか10日。</span>
@@ -26,7 +26,7 @@
   </div><!-- flex_wrap -->
   <div class="flex_wrap">
     <div class="flex_img">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/detail02.jpg">
     </div>
     <div class="flex_txt">
       <div class="comp-title">
@@ -34,18 +34,18 @@
         <span class="ttl_en">FLAVOR</span>
       </div>
       <div class="sp_img">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail02.jpg">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/detail02.jpg">
       </div>
       <p class="txt">大玉ぶどうのピオーネは、プチっと噛むと、みずみずしい果肉がじゅわっと口の中に広がります。<span>凝縮された濃い甘さと、それを引き立てる酸味の絶妙なバランスをお楽しみください。</span></p>
       <div class="chart_wrap">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/chart.png">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/chart.png">
       </div>
     </div>
   </div><!-- flex_wrap -->
   <div class="flex_origin">
     <div class="flex_img">
       <div class="origin_img">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/location.png">
       </div>
     </div>
     <div class="flex_txt">
@@ -54,7 +54,7 @@
         <span class="ttl_en">PLACE OF ORIGIN</span>
       </div>
       <div class="sp_img">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/pione/location.png">
       </div>
       <div class="origin_upper">
         <div class="origin_item">
