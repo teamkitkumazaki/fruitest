@@ -2995,6 +2995,8 @@ footer {
               text-align: right; }
       #index #topProduct .prod_section#kawanaka .productBg {
         background-image: url("../img/index/prod_kawanaka.jpg"); }
+      #index #topProduct .prod_section#hyakume .productBg {
+        background-image: url("../img/index/prod_hyakume.jpg"); }
       #index #topProduct .prod_section#pione .productBg {
         background-image: url("../img/index/prod_pione.jpg"); }
       #index #topProduct .prod_section#reiou .productBg {
@@ -3410,6 +3412,8 @@ footer {
             display: none; }
       #index #topProduct .prod_section#kawanaka .productBg {
         background-image: url("../img/index/prod_kawanaka_sp.jpg"); }
+      #index #topProduct .prod_section#hyakume .productBg {
+        background-image: url("../img/index/prod_hyakume_sp.jpg"); }
       #index #topProduct .prod_section#pione .productBg {
         background-image: url("../img/index/prod_pione_sp.jpg"); }
       #index #topProduct .prod_section#reiou .productBg {
