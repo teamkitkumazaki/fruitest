@@ -10,12 +10,12 @@
         <h2 class="ttl_ja">商品一覧<span class="en">PRODUCT LIST</span></h2>
       </div>
       <select name="cat" id="cat" class="postform">
-       <option class="option-1" value="?mode=srh">全ての商品</option>
-       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2421809">発売中の商品</option>
-       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2432491">Upcoming商品</option>
+       <option class="option-1" value="/?mode=cate&amp;csid=0&amp;cbid=2520817">全ての商品</option>
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2520817&amp;csid=1">発売中の商品</option>
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2520817&amp;csid=2">Upcoming商品</option>
       </select>
     </div><!-- ttl_wrap -->
-    <div class="products">
+    <div id="products" class="products">
       <ul class="comp-productlist">
         <li>
           <div class="state on-sale">

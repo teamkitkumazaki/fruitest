@@ -1,33 +1,33 @@
 $(function() {
 
   // ローディングアニメーション
-/*  function loadingAnimation() {
-    $(window).on({
-      'load': function() {
-        setTimeout(function() {
-          $('#main').addClass('loading');
-          $('.main_inner .ttl_wrap').addClass('loading');
-
+  /*  function loadingAnimation() {
+      $(window).on({
+        'load': function() {
           setTimeout(function() {
-            $('#main').addClass('loaded');
-            $('.main_inner .ttl_wrap').addClass('loaded');
+            $('#main').addClass('loading');
+            $('.main_inner .ttl_wrap').addClass('loading');
 
             setTimeout(function() {
-              $('.main_inner nav').addClass('loaded');
-              $('#spHeader').addClass('loaded');
-            }, 100);
-          }, 1500);
+              $('#main').addClass('loaded');
+              $('.main_inner .ttl_wrap').addClass('loaded');
 
-        }, 100);
+              setTimeout(function() {
+                $('.main_inner nav').addClass('loaded');
+                $('#spHeader').addClass('loaded');
+              }, 100);
+            }, 1500);
 
-      }
-    })
-  }
+          }, 100);
 
-  if (document.getElementById('index')) {
-    loadingAnimation();
-  }
-*/
+        }
+      })
+    }
+
+    if (document.getElementById('index')) {
+      loadingAnimation();
+    }
+  */
 
   //ハンバーガーメニュー
   function humMenuToggle(target) {
@@ -60,7 +60,7 @@ $(function() {
       });
       closeBtn.on({
         'click': function() {
-            humMenuShift();
+          humMenuShift();
         }
       });
     }
@@ -69,7 +69,7 @@ $(function() {
 
   };
 
-    humMenuToggle($('#hummenu'));
+  humMenuToggle($('#hummenu'));
 
   //スクロールイベントに関する諸々
   function scrollJudge(target) {
@@ -89,7 +89,7 @@ $(function() {
     function init() {
       var timer = false;
       $(window).on({
-        'load': function(){
+        'load': function() {
           var scroll = $(window).scrollTop();
           if (scroll > 10) {
             if (scrollSwitch == 0) {
@@ -147,7 +147,7 @@ $(function() {
 
   };
 
-    scrollJudge($('body'));
+  scrollJudge($('body'));
 
   //アンカーリンクで追従ヘッダー分をパディングする
   function scrollToLink() {
@@ -168,105 +168,46 @@ $(function() {
     readTxtMove($('#leadTxt'));
   }
 
+  //商品一覧のフィルタリング機能
+  function filterProduct(target) {
+   var dropdown = document.getElementById("cat");
+   var optionVal = [];
 
-
-  //よくある質問
-  function faqToggle(target) {
-  var toggleItem = [];
-  var toggleButton = [];
-  var toggleContents = [];
-  var toggleState = [];
-
-  function toggleMove(e) {
-  if (toggleState[e] == -1 || toggleState[e] == 0) {
-    toggleButton[e].addClass('active');
-    var targetHeight = toggleContents[e].height();
-    if (w > 750) {
-      toggleItem[e].css({
-        'height': targetHeight + 'px'
-      });
-    }else{
-      toggleItem[e].css({
-        'height': 80 + targetHeight + 'px'
-      });
-    }
-    toggleState[e] = 1;
-  } else {
-    toggleButton[e].removeClass('active');
-    var w = $(window).width();
-    if (w > 750) {
-      toggleItem[e].css({
-        'height': 45 + 'px'
-      });
-    } else if (toggleButton[e].parent('div').hasClass('row2')) {
-      toggleItem[e].css({
-        'height': 77 + 'px'
-      });
-    } else {
-      toggleItem[e].css({
-        'height': 52 + 'px'
-      });
-    }
-
-    toggleState[e] = 0;
-  }
-}
-
-  function init() {
-    $.each(target.find('.toggle_item'), function(index) {
-      toggleItem[index] = $(this);
-      toggleButton[index] = $(this).find('.toggle_button');
-      toggleContents[index] = $(this).find('.toggle_contents');
-      toggleState[index] = -1;
-      toggleButton[index].on({
-        'click': function() {
-          toggleMove(index);
-        }
-      });
-    });
-  }
-
-  init();
-
-}
-
-if (document.getElementById('faq')) {
-  faqToggle($('article'));
-}
-if (document.getElementById('gift')) {
-  faqToggle($('article'));
-}
-
-// よくある質問のスクロール処理
-
-function faqScroll(target) {
-  console.log('faqScroll');
-   var scrollObj = [];
-
-   function windowMove(e) {
-     var w = $(window).width();
-     console.log(scrollObj[e]);
-     var scrollHeight = $(scrollObj[e]).offset().top;
-     if (w > 1100) {
-       var adScroll = scrollHeight;
-     } else {
-       var adScroll = scrollHeight;
+   function onCatChange() {
+     var u = dropdown.value;
+     var url = 'https://www.fruitest.jp/' + u + '#productList';
+     if (u !== 'undefined') {
+       location.href = url;
      }
-     $("html, body").animate({
-       scrollTop: adScroll
-     }, 500);
-     return false;
    }
 
    function init() {
-     $.each(target.find('a'), function(index) {
-       $(this).attr('href', 'javascript:void(0);');
-       scrollObj[index] = $(this).attr("jump");
-       $(this).on({
-         'click': function() {
-           windowMove(index);
-         }
-       });
+     var urlHash = location.hash;
+     if (0 < urlHash.length) {
+       var scroll = $(urlHash).offset().top;
+       var h = $(window).width();
+
+       if (h > 1100) {
+         var adScroll = scroll - 100;
+       } else {
+         var adScroll = scroll - 100;
+       }
+
+       $("html, body").animate({
+         scrollTop: adScroll
+       }, 0);
+     }
+
+     var search = location.search;
+     $.each(target.find('.option-1'), function(index) {
+       optionVal[index] = $(this).attr('value');
+       if (optionVal[index] = search) {
+         target.val(optionVal[index]);
+       }
+     });
+
+     target.change(function() {
+       onCatChange();
      });
    }
 
@@ -274,10 +215,119 @@ function faqScroll(target) {
 
  }
 
- if (document.getElementById('faq')) {
-   faqScroll($('.guide_nav'));
-   faqScroll($('#guideNav'));
+ if (document.getElementById('itemList')) {
+   filterProduct($('#cat'));
  }
+
+
+  //よくある質問
+  function faqToggle(target) {
+    var toggleItem = [];
+    var toggleButton = [];
+    var toggleContents = [];
+    var toggleState = [];
+
+    function toggleMove(e) {
+      if (toggleState[e] == -1 || toggleState[e] == 0) {
+        toggleButton[e].addClass('active');
+        var targetHeight = toggleContents[e].height();
+        if (w > 750) {
+          toggleItem[e].css({
+            'height': targetHeight + 'px'
+          });
+        } else {
+          toggleItem[e].css({
+            'height': 80 + targetHeight + 'px'
+          });
+        }
+        toggleState[e] = 1;
+      } else {
+        toggleButton[e].removeClass('active');
+        var w = $(window).width();
+        if (w > 750) {
+          toggleItem[e].css({
+            'height': 45 + 'px'
+          });
+        } else if (toggleButton[e].parent('div').hasClass('row2')) {
+          toggleItem[e].css({
+            'height': 77 + 'px'
+          });
+        } else {
+          toggleItem[e].css({
+            'height': 52 + 'px'
+          });
+        }
+
+        toggleState[e] = 0;
+      }
+    }
+
+    function init() {
+      $.each(target.find('.toggle_item'), function(index) {
+        toggleItem[index] = $(this);
+        toggleButton[index] = $(this).find('.toggle_button');
+        toggleContents[index] = $(this).find('.toggle_contents');
+        toggleState[index] = -1;
+        toggleButton[index].on({
+          'click': function() {
+            toggleMove(index);
+          }
+        });
+      });
+    }
+
+    init();
+
+  }
+
+  if (document.getElementById('faq')) {
+    faqToggle($('article'));
+  }
+  if (document.getElementById('gift')) {
+    faqToggle($('article'));
+  }
+
+  // よくある質問のスクロール処理
+
+  function faqScroll(target) {
+    console.log('faqScroll');
+    var scrollObj = [];
+
+    function windowMove(e) {
+      var w = $(window).width();
+      console.log(scrollObj[e]);
+      var scrollHeight = $(scrollObj[e]).offset().top;
+      if (w > 1100) {
+        var adScroll = scrollHeight;
+      } else {
+        var adScroll = scrollHeight;
+      }
+      $("html, body").animate({
+        scrollTop: adScroll
+      }, 500);
+      return false;
+    }
+
+    function init() {
+      $.each(target.find('a'), function(index) {
+        $(this).attr('href', 'javascript:void(0);');
+        scrollObj[index] = $(this).attr("jump");
+        $(this).on({
+          'click': function() {
+            windowMove(index);
+          }
+        });
+      });
+    }
+
+    init();
+
+  }
+
+  if (document.getElementById('faq')) {
+    faqScroll($('.guide_nav'));
+    faqScroll($('#guideNav'));
+  }
 
 
 
@@ -295,12 +345,12 @@ function faqScroll(target) {
         var scrollHeight = $(scrollObj[e]).offset().top;
       }
 
-      if( w > 750){
+      if (w > 750) {
         $("html, body").stop().animate({
           scrollTop: scrollHeight - 150
         }, 500);
         return false;
-      }else{
+      } else {
         $("html, body").stop().animate({
           scrollTop: scrollHeight - 100
         }, 500);
@@ -337,49 +387,104 @@ function faqScroll(target) {
 
   };
 
-    smoothScroll($('.scroll_button'));
+  smoothScroll($('.scroll_button'));
 
   // 商品ページのサムネイルスライダー
 
-  function slideItemThumb(target){
+  function slideItemThumb(target) {
     var currentSlide = 1;
     var slideList = [];
     var targetSlide;
     var slideNum = target.find('li').length;
-    var slideNext = target.find('.slide_next');
-    var slidePrev = target.find('.slide_prev');
+    var slideNextButton = target.find('.slide_next');
+    var slidePrevButton = target.find('.slide_prev');
 
-    function slideChange(){
+    function slideChange() {
       targetSlide = target.find('.slide' + currentSlide);
       target.find('.active_slide').removeClass('active_slide');
       targetSlide.addClass('active_slide');
       target.find('.current').text(currentSlide);
-    }
+    };
+
+    function slideNext(){
+      if (currentSlide < slideNum - 0.1) {
+        currentSlide = currentSlide + 1;
+      } else {
+        currentSlide = 1;
+      }
+      slideChange();
+    };
+
+    function slidePrev(){
+      if (currentSlide == 1) {
+        currentSlide = slideNum;
+      } else {
+        currentSlide = currentSlide - 1;
+      }
+      slideChange();
+    };
+
+    function tabTouch(){
+      if(startTouchX - endTouchX > 50){
+        slideNext();
+      }else if(startTouchX - endTouchX < - 50){
+        slidePrev();
+      }
+    };
+
+    function windowDrag() {
+      if (startDragX - endDragX > 100) {
+        slideNext();
+      } else if (startDragX - endDragX < -100) {
+        slidePrev();
+      }
+    };
 
     function init() {
       target.find('.all').text(slideNum);
       target.find('li').each(function(index) {
         slideList[index] = $(this);
       });
-      slideNext.on({
-        'click': function(){
-          if( currentSlide < slideNum - 0.1 ){
-            currentSlide = currentSlide + 1;
 
-          }else{
-            currentSlide = 1;
-          }
-          slideChange();
+      slideNextButton.on({
+        'click': function() {
+          slideNext();
         }
       });
-      slidePrev.on({
-        'click': function(){
-          if( currentSlide == 1){
-            currentSlide = slideNum;
-          }else{
-            currentSlide = currentSlide - 1;
-          }
-          slideChange();
+
+      slidePrevButton.on({
+        'click': function() {
+          slidePrev();
+        }
+      });
+
+      target.find('ul').on({
+        'dragstart': function(e) {
+          startDragX = event.pageX;
+        },
+        'dragend': function(e) {
+          endDragX = event.pageX;
+          windowDrag();
+        }
+      });
+
+      target.on({
+        'touchstart' : function(e){
+          startTouchX = event.changedTouches[0].pageX;
+        },
+        'touchmove' : function(e){
+          /*
+          movingTouchX = event.changedTouches[0].pageX;
+          var movingX = movingTouchX - startTouchX;
+          var sliderPosition = parseInt($('#top_slide ul').css('left'));
+          Position = sliderPosition + movingX;
+          console.log(Position);
+          $('#top_slide ul').css({'left': Position + 'px'});
+          */
+        },
+        'touchend' : function(e){
+          endTouchX = event.changedTouches[0].pageX;
+          tabTouch();
         }
       });
     };
@@ -394,22 +499,22 @@ function faqScroll(target) {
   }
 
 
-    $('#slickSlider').slick({
-      accessibility: false,
-      infinite: false,
-      dots: true,
-      slidesToShow: 3,
-      centerMode: true,
-      autoplay: false,
-      responsive: [{
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 1,
-          centerPadding: '5%',
-          centerMode: false,
-        }
-      }]
-    });
+  $('#slickSlider').slick({
+    accessibility: false,
+    infinite: false,
+    dots: true,
+    slidesToShow: 3,
+    centerMode: true,
+    autoplay: false,
+    responsive: [{
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '5%',
+        centerMode: false,
+      }
+    }]
+  });
 
 
   $('#slickSlider2').slick({
@@ -440,7 +545,7 @@ function faqScroll(target) {
 
     function init() {
       $('#scrollTop').on({
-        'click': function(){
+        'click': function() {
           $("html, body").stop().animate({
             scrollTop: 0
           }, 500);

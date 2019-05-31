@@ -4368,7 +4368,8 @@ footer {
           left: 0;
           right: 0;
           margin: auto;
-          opacity: 0; }
+          opacity: 0;
+          cursor: pointer; }
         #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap:hover button {
           background: #464646; }
 
@@ -4580,7 +4581,8 @@ footer {
           left: 0;
           right: 0;
           margin: auto;
-          opacity: 0; }
+          opacity: 0;
+          cursor: pointer; }
         #itemDetail #detailLower .flex_wrap .flex_txt .button_wrap:hover button {
           background: #464646; }
 
