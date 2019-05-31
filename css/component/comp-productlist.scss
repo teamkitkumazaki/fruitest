@@ -68,7 +68,7 @@
             line-height: normal;
             color: #666;
           }
-          .stock{
+          .stock, .soldout, .upcoming{
             font-size: 10px;
             display: inline-block;
             background: #666;
@@ -77,27 +77,19 @@
             color: #fff;
             margin-left: 10px;
             pointer-events: none;
-            &::before{
-              display: inline-block;
-              content: "販売中";
-            }
+          }
+          .stock{
+            background: #4675ab;
+          }
+          .soldout{
+            background: #e67822;
+          }
+          .upcoming{
+            background: #63ad2b;
           }
         }
       }
-      &.on-sale{
-        .txt_wrap{
-          .detail{
-            .stock{
-              background: #4675ab;
-              &::before{
-                display: inline-block;
-                content: "販売中";
-              }
-            }
-          }
-        }
-      }
-      &.sold-out{
+      &.soldout{
         .img_wrap{
           a{
             &::before{
@@ -131,19 +123,8 @@
             }
           }
         }
-        .txt_wrap{
-          .detail{
-            .stock{
-              background: #e67822;
-              &::before{
-                display: inline-block;
-                content: "再販受付中";
-              }
-            }
-          }
-        }
       }
-      &.waiting-list{
+      &.upcoming{
         .img_wrap{
           a{
             &::before{
@@ -174,17 +155,6 @@
               @include xiaowei;
               font-size: 25px;
               letter-spacing: 1.2px !important;
-            }
-          }
-        }
-        .txt_wrap{
-          .detail{
-            .stock{
-              background: #63ad2b;
-              &::before{
-                display: inline-block;
-                content: "構想中";
-              }
             }
           }
         }

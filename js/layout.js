@@ -219,6 +219,28 @@ $(function() {
    filterProduct($('#cat'));
  }
 
+ // 商品一覧ページで「0円から未定」にテキストを差し替える
+ function txtFreeToMitei(target) {
+   console.log('txtFreeToMitei');
+   var priceTxt = [];
+   $.each(target.find('li'), function(index) {
+     var priceTag = $(this).find('span.price');
+     priceTxt[index] = priceTag.text();
+     console.log(priceTxt[index] == '0円(税抜)');
+     if ( priceTxt[index] == '0円(税抜)') {
+       console.log(priceTxt[index]);
+       priceTag.text('発売前');
+     } else if (priceTxt[index] == '') {
+       console.log('index:' + priceTxt[index]);
+       $(this).remove();
+     }
+   });
+ }
+
+ if (document.getElementById('itemList')) {
+   txtFreeToMitei($('#product'));
+ }
+
 
   //よくある質問
   function faqToggle(target) {

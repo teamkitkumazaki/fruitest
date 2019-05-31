@@ -15,19 +15,44 @@
        <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2520817&amp;csid=2">Upcoming商品</option>
       </select>
     </div><!-- ttl_wrap -->
-    <div class="products">
+    <div id="product" class="products">
       <ul class="comp-productlist">
         <{if $productlist_num !=0 }>
           <{section name=num loop=$productlist}>
         <li>
-          <div class="state on-sale">
-          <div class="img_wrap">
-            <a href="<{$productlist[num].link_url}>" style="background-image: url(<{$productlist[num].img_url}>)"></a>
+          <{$productlist[num].sub_category}>
+            <{if $productlist[num].soldout_flg == false}>
+              <{if $productlist[num].teika_disp == true}>
+              <!-- 通常 -->
+              <div class="state">
+              <{else}>
+              <!-- Upcoming -->
+              <div class="state upcoming">
+              <{/if}>
+              <{else}>
+              <div class="state soldout">
+            <{/if}>
+            <div class="img_wrap">
+              <a href="<{$productlist[num].link_url}>" style="background-image: url(<{$productlist[num].img_url}>)"></a>
           </div>
           <div class="txt_wrap">
             <a class="product_name" href="<{$productlist[num].link_url}>"><{$productlist[num].name}><span><{$productlist[num].model}></span></a>
             <p class="copy"><{$productlist[num].s_expl}></p>
-            <div class="detail"><font><{$productlist[num].price}></font><span class="stock"></span></div>
+            <div class="detail">
+              <span class="price"><{$productlist[num].price}></span>
+              <{if $productlist[num].soldout_flg == false}>
+                <{if $productlist[num].teika_disp == true}>
+                <!-- 通常 -->
+                <span class="stock">販売中</span>
+              <{else}>
+                <!-- Upcoming -->
+                <span class="upcoming">構想中</span>
+              <{/if}>
+              <{else}>
+                <!-- 売り切れ -->
+                <span class="soldout">再販受付中</span>
+              <{/if}>
+            </div>
             <div class="comp-linkbutton-mini">
               <a href="<{$productlist[num].link_url}>"><span>詳しく知る</span></a>
             </div>
