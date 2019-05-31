@@ -155,7 +155,7 @@
 				</div>
 			</section>
 			<div class="product_all">
-				<a href="#aaaa">
+				<a href="/?mode=cate&csid=0&cbid=2520817">
 					<span class="txt">商品一覧へ<font>VIEW PRODUCTS</font></span><span class="obj"></span>
 					<span class="txt_sp"><font>VIEW PRODUCTS</font><span>商品一覧へ</span></span>
 				</a>
