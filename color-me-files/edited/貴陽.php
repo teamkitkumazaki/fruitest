@@ -59,7 +59,7 @@
         </div>
         <div class="origin_item">
           <span class="title">旬の時期</span>
-          <span class="content">7月下旬 〜 8月下旬</span>
+          <span class="content">7月下旬 &#12316; 8月下旬</span>
         </div>
       </div>
         <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家、久津間さんの貴陽です。</p>

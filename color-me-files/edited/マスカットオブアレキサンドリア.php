@@ -71,19 +71,6 @@
   </div>
 </div><!-- inner -->
 </section><!-- itemFeature -->
-<section id="paringWrap">
-<div class="inner">
-  <div class="comp-title">
-    <h2 class="ttl_ja">オススメの食べ方</h2>
-    <span class="ttl_en">PARING SUGGESTION</span>
-  </div>
-  <div class="paring_wrap">
-    <span>フルーティで酸味のある、辛口の白ワイン</span>
-    <span>辛口の白ワイン</span>
-    <span>酸味のあるワイン</span>
-  </div>
-</div>
-</section>
 <section id="itemInfo">
 <div class="inner">
   <div class="comp-title">
