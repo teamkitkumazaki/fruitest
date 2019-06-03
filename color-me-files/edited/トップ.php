@@ -63,7 +63,7 @@
 					<span class="ttl_en">PRODUCT LINEUP</span>
 				</div>
 			</div><!-- inner -->
-			<section id="kawanaka" class="prod_section">
+			<!--<section id="kawanaka" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
@@ -75,15 +75,15 @@
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<section id="pione" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=142898188"><span class="caret"></span></a>
 					<div class="txt_wrapper">
 						<div class="txt_block">
 							<span class="en">PIONE</span>
 							<h3 class="ja">ピオーネ</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=142898188"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -91,18 +91,18 @@
 			</section>
 			<section id="alex" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=142905193"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">MASCUT OR ALEXSANDRIA</span>
 							<h3 class="ja">マスカットオブアレキサンドリア</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=142905193"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
 			</section>
-			<section id="reiou" class="prod_section">
+			<!--<section id="reiou" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
 					<div class="txt_wrapper">
@@ -114,28 +114,15 @@
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section>
-			<section id="kyohou" class="prod_section">
+			</section>-->
+			<section id="hyakume" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
-					<div class="txt_wrapper right">
-						<div class="txt_block">
-							<span class="en">KYOHOU</span>
-							<h3 class="ja">巨峰</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
-						</div>
-						<div class="height_adjuster"></div>
-					</div>
-				</div>
-			</section>
-			<section id="shine" class="prod_section">
-				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=142905939"><span class="caret"></span></a>
 					<div class="txt_wrapper">
 						<div class="txt_block">
-							<span class="en">SHINE MASCUT</span>
-							<h3 class="ja">シャインマスカット</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<span class="en">KOSYU HYAKUME</span>
+							<h3 class="ja">甲州百目</h3>
+							<a class="prod_link" href="/?pid=142905939"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -143,12 +130,38 @@
 			</section>
 			<section id="kiyou" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">KIYOU</span>
 							<h3 class="ja">貴陽</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
+						</div>
+						<div class="height_adjuster"></div>
+					</div>
+				</div>
+			</section>
+			<section id="shine" class="prod_section">
+				<div class="productBg">
+					<a class="product_caret" href="/?pid=142904277"><span class="caret"></span></a>
+					<div class="txt_wrapper">
+						<div class="txt_block">
+							<span class="en">SHINE MASCUT</span>
+							<h3 class="ja">シャインマスカット</h3>
+							<a class="prod_link" href="/?pid=142904277"><span>VIEW MORE</span></a>
+						</div>
+						<div class="height_adjuster"></div>
+					</div>
+				</div>
+			</section>
+			<section id="kyohou" class="prod_section">
+				<div class="productBg">
+					<a class="product_caret" href="/?pid=142903040"><span class="caret"></span></a>
+					<div class="txt_wrapper right">
+						<div class="txt_block">
+							<span class="en">KYOHOU</span>
+							<h3 class="ja">巨峰</h3>
+							<a class="prod_link" href="/?pid=142903040"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>

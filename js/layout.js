@@ -220,7 +220,7 @@ $(function() {
  }
 
  // 商品一覧ページで「0円から未定」にテキストを差し替える
- function txtFreeToMitei(target) {
+ /*function txtFreeToMitei(target) {
    console.log('txtFreeToMitei');
    var priceTxt = [];
    $.each(target.find('li'), function(index) {
@@ -240,6 +240,7 @@ $(function() {
  if (document.getElementById('itemList')) {
    txtFreeToMitei($('#product'));
  }
+ */
 
 
   //よくある質問

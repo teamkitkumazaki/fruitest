@@ -19,12 +19,25 @@
           <div class="slide_next"></div>
           <div class="slide_prev"></div>
           <ul class="slide_upper">
-            <li class="slide1 active_slide">
-              <img draggable="false" src="<{$product.ot2_url}>">
-            </li>
-            <li class="slide2">
-              <img draggable="false" src="<{$product.ot3_url}>">
-            </li>
+            <li class="slide1 active_slide"><img draggable="false" src="<{$product.ot2_url}>"></li>
+            <{if $product.ot3_url != null }>
+            <li class="slide2"><img draggable="false" src="<{$product.ot3_url}>"></li>
+            <{/if}>
+            <{if $product.ot4_url != null }>
+            <li class="slide3"><img draggable="false" src="<{$product.ot4_url}>"></li>
+            <{/if}>
+            <{if $product.ot5_url != null }>
+            <li class="slide4"><img draggable="false" src="<{$product.ot5_url}>"></li>
+            <{/if}>
+            <{if $product.ot6_url != null }>
+            <li class="slide5"><img draggable="false" src="<{$product.ot6_url}>"></li>
+            <{/if}>
+            <{if $product.ot7_url != null }>
+            <li class="slide6"><img draggable="false" src="<{$product.ot7_url}>"></li>
+            <{/if}>
+            <{if $product.ot8_url != null }>
+            <li class="slide7"><img draggable="false" src="<{$product.ot8_url}>"></li>
+            <{/if}>
           </ul>
         </div><!-- itemThumb01 -->
       </div>
@@ -39,23 +52,54 @@
             <div class="slide_next"></div>
             <div class="slide_prev"></div>
             <ul class="slide_upper">
-              <li class="slide1 active_slide">
-                <img src="<{$product.ot2_url}>">
-              </li>
-              <li class="slide2">
-                <img src="<{$product.ot3_url}>">
-              </li>
+              <li class="slide1 active_slide"><img src="<{$product.ot2_url}>"></li>
+              <{if $product.ot3_url != null }>
+              <li class="slide2"><img src="<{$product.ot3_url}>"></li>
+              <{/if}>
+              <{if $product.ot4_url != null }>
+              <li class="slide3"><img src="<{$product.ot4_url}>"></li>
+              <{/if}>
+              <{if $product.ot5_url != null }>
+              <li class="slide4"><img src="<{$product.ot5_url}>"></li>
+              <{/if}>
+              <{if $product.ot6_url != null }>
+              <li class="slide5"><img src="<{$product.ot6_url}>"></li>
+              <{/if}>
+              <{if $product.ot7_url != null }>
+              <li class="slide6"><img src="<{$product.ot7_url}>"></li>
+              <{/if}>
+              <{if $product.ot8_url != null }>
+              <li class="slide7"><img src="<{$product.ot8_url}>"></li>
+              <{/if}>
             </ul>
           </div><!-- itemThumb01 -->
         </div>
         <div class="comp-itemdetail">
           <div class="item_upper item">
-            <span class="amount">内容量: <{$product.weight}>g</span>
-            <span class="state on-sale"></span>
+            <{if $product.price_disp == true}>
+            <{if $product.soldout_flg == false}>
+            <!-- 通常 -->
+            <span class="amount">内容量: <{$product.weight}>個</span>
+            <span class="state onsale">販売中</span>
+            <{else}>
+            <!-- 売り切れ -->
+            <span class="amount">内容量: <{$product.weight}>個</span>
+              <span class="state soldout">再販受付中</span>
+            <{/if}>
+            <{else}>
+            <!-- Upcoming -->
+            <span class="amount">内容量: 未定</span>
+            <span class="state upcoming">構想中</span>
+            <{/if}>
           </div>
           <div class="item">
-            <span class="number">個数<input type="number" name="product_num" value="<{$product.init_num}>">個</span>
-            <span class="price"><{$product.price}></span>
+            <{if $product.price_disp == true}>
+              <span class="number">個数<input type="number" name="product_num" value="<{$product.init_num}>">個</span>
+              <span class="price"><{$product.price}></span>
+              <{else}>
+              <span class="number">個数<input disabled="disabled" class="disabled" type="number" name="product_num" value="<{$product.init_num}>">個</span>
+              <span class="price">価格未定</span>
+            <{/if}>
           </div>
           <div class="button_wrap">
             <button class="comp-cartbutton large"><span>カートに入れる</span></button>
@@ -81,7 +125,7 @@
     <h2 class="copy"><{$product.simple_explain}></h2>
     <div class="comp-itemdetail">
       <div class="item_upper item">
-        <span class="amount">内容量: <{$product.weight}>g</span>
+        <span class="amount">内容量: <{$product.weight}>個</span>
         <span class="state on-sale"></span>
       </div>
       <div class="item">
@@ -98,6 +142,7 @@
 </div><!-- inner -->
 </section><!-- detailLower -->
 </form>
+<{if $together_product_num != 0}>
 <section id="relatedItem">
 <div class="inner">
 <div class="comp-title">
@@ -106,70 +151,52 @@
 </div>
 <div class="products">
   <ul class="comp-productlist">
-    <li>
-      <div class="state on-sale">
-      <div class="img_wrap">
-        <a href="#aaaa" style="background-image: url(https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_list/product01.jpg)"></a>
-      </div>
-      <div class="txt_wrap">
-        <a class="product_name" href="#aaa">川中島白桃<span>KAWANAKAJIMA PEACH</span></a>
-        <p class="copy">農家さんから、一番人気を誇る白桃。</p>
-        <div class="detail"><font>\1,200(税抜)</font><span class="stock"></span></div>
-        <div class="comp-linkbutton-mini">
-          <a href="#aaaa"><span>詳しく知る</span></a>
-        </div>
-      </div>
-      </div>
-    </li>
-    <li>
-      <div class="state on-sale">
-      <div class="img_wrap">
-        <a href="#aaaa" style="background-image: url(https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_list/product02.jpg)"></a>
-      </div>
-      <div class="txt_wrap">
-        <a class="product_name" href="#aaa">麗王<span>REIOU</span></a>
-        <p class="copy">コピーが入ります。</p>
-        <div class="detail"><font>\1,200(税抜)</font><span class="stock"></span></div>
-        <div class="comp-linkbutton-mini">
-          <a href="#aaaa"><span>詳しく知る</span></a>
-        </div>
-      </div>
-      </div>
-    </li>
-    <li>
-      <div class="state on-sale">
-        <div class="img_wrap">
-          <a href="#aaaa" style="background-image: url(https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_list/product03.jpg)"></a>
-        </div>
-        <div class="txt_wrap">
-        <a class="product_name" href="#aaa">ピオーネ<span>PIONE</span></a>
-        <p class="copy">コピーが入ります。コピーが入ります。</p>
-        <div class="detail"><font>\1,200(税抜)</font><span class="stock"></span></div>
-        <div class="comp-linkbutton-mini">
-          <a href="#aaaa"><span>詳しく知る</span></a>
-        </div>
-      </div>
-      </div>
-    </li>
-    <li>
-      <div class="state on-sale">
-        <div class="img_wrap">
-          <a href="#aaaa" style="background-image: url(https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_list/product04.jpg)"></a>
-        </div>
-        <div class="txt_wrap">
-          <a class="product_name" href="#aaa">シャインマスカット<span>SHINE MASCUT</span></a>
-          <p class="copy">コピーが入ります。</p>
-          <div class="detail"><font>\1,200(税抜)</font><span class="stock"></span></div>
-          <div class="comp-linkbutton-mini">
-            <a href="#aaaa"><span>詳しく知る</span></a>
-          </div>
-        </div>
-      </div>
-    </li>
+     <{section name=num loop=$together_product}>
+     <li>
+         <{if $together_product[num].soldout_flg == false}>
+           <{if $together_product[num].teika_disp == true}>
+           <!-- 通常 -->
+           <div class="state">
+           <{else}>
+           <!-- Upcoming -->
+           <div class="state upcoming">
+           <{/if}>
+           <{else}>
+           <div class="state soldout">
+         <{/if}>
+         <div class="img_wrap">
+           <a href="<{$together_product[num].link_url}>" style="background-image: url(<{$together_product[num].img_url}>)"></a>
+       </div>
+       <div class="txt_wrap">
+         <a class="product_name" href="<{$together_product[num].link_url}>"><{$together_product[num].name}><span><{$together_product[num].model}></span></a>
+         <p class="copy"><{$together_product[num].s_expl}></p>
+         <div class="detail">
+           <span class="price"><{$together_product[num].price}></span>
+           <{if $together_product[num].soldout_flg == false}>
+             <{if $together_product[num].teika_disp == true}>
+             <!-- 通常 -->
+             <span class="stock">販売中</span>
+           <{else}>
+             <!-- Upcoming -->
+             <span class="upcoming">構想中</span>
+           <{/if}>
+           <{else}>
+             <!-- 売り切れ -->
+             <span class="soldout">再販受付中</span>
+           <{/if}>
+         </div>
+         <div class="comp-linkbutton-mini">
+           <a href="<{$together_product[num].link_url}>"><span>詳しく知る</span></a>
+         </div>
+       </div>
+       </div>
+     </li>
+     <{/section}>
   </ul>
 </div>
 </div>
 </section><!-- relatedItem -->
+<{/if}>
 <section id="detailJournal" class="comp-journal">
 <div class="inner">
   <div class="comp-title">
