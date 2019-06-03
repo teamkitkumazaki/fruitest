@@ -1628,6 +1628,56 @@ footer {
   .comp-cartbutton:hover {
     background: #464646; }
 
+.comp-gift-cartbutton {
+  position: relative; }
+  .comp-gift-cartbutton .comp-cartbutton {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .comp-gift-cartbutton .cartjs_box {
+    padding: 0 !important; }
+    .comp-gift-cartbutton .cartjs_box .cartjs_product_table table {
+      margin: 0 !important; }
+    .comp-gift-cartbutton .cartjs_box .cartjs_product_table .cartjs_product_num {
+      display: none; }
+    .comp-gift-cartbutton .cartjs_box .cartjs_cart_in {
+      opacity: 0;
+      position: relative;
+      z-index: 10; }
+      .comp-gift-cartbutton .cartjs_box .cartjs_cart_in input[type="submit"] {
+        border-radius: 0px !important;
+        display: block;
+        width: 100% !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 16px !important;
+        height: auto !important;
+        padding: 15px 0;
+        background-color: #333 !important;
+        color: #fff;
+        letter-spacing: normal;
+        text-align: center;
+        border: 0px;
+        font-family: inherit;
+        margin-bottom: 10px !important;
+        -webkit-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        transition: opacity .5s;
+        -webkit-transition: background .4s, opacity .4s;
+        -o-transition: background .4s, opacity .4s;
+        transition: background .4s, opacity .4s; }
+        .comp-gift-cartbutton .cartjs_box .cartjs_cart_in input[type="submit"]:hover {
+          opacity: 0.6; }
+        .comp-gift-cartbutton .cartjs_box .cartjs_cart_in input[type="submit"]:focus {
+          outline: none; }
+  .comp-gift-cartbutton:hover .comp-cartbutton {
+    background: #464646; }
+
 .comp-linkbutton-mini {
   width: 100%; }
   .comp-linkbutton-mini a {
@@ -2136,15 +2186,17 @@ footer {
 
 .comp-itemdetail .state {
   border-radius: 5px;
-  background-color: #4675ab;
   font-size: 12px;
   line-height: normal;
   letter-spacing: 0.7px;
   padding: 5px 10px;
   color: #fff; }
-  .comp-itemdetail .state.on-sale::before {
-    display: inline-block;
-    content: "販売中"; }
+  .comp-itemdetail .state.onsale {
+    background-color: #4675ab; }
+  .comp-itemdetail .state.upcoming {
+    background-color: #63ad2b; }
+  .comp-itemdetail .state.soldout {
+    background-color: #63ad2b; }
 
 .comp-itemdetail .number input[type="number"] {
   width: 70px;
@@ -2153,6 +2205,9 @@ footer {
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 12px; }
+  .comp-itemdetail .number input[type="number"].disabled {
+    pointer-events: none;
+    background: #f1f1f1; }
 
 .comp-option {
   margin-top: 180px; }
