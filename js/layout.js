@@ -220,7 +220,7 @@ $(function() {
  }
 
  // 商品一覧ページで「0円から未定」にテキストを差し替える
- function txtFreeToMitei(target) {
+ /*function txtFreeToMitei(target) {
    console.log('txtFreeToMitei');
    var priceTxt = [];
    $.each(target.find('li'), function(index) {
@@ -240,6 +240,7 @@ $(function() {
  if (document.getElementById('itemList')) {
    txtFreeToMitei($('#product'));
  }
+ */
 
 
   //よくある質問
@@ -522,6 +523,23 @@ $(function() {
 
 
   $('#slickSlider').slick({
+    accessibility: false,
+    infinite: false,
+    dots: true,
+    slidesToShow: 3,
+    centerMode: true,
+    autoplay: false,
+    responsive: [{
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '5%',
+        centerMode: false,
+      }
+    }]
+  });
+
+  $('#relatedSlider').slick({
     accessibility: false,
     infinite: false,
     dots: true,

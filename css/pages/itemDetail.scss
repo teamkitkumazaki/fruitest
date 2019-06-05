@@ -120,7 +120,7 @@
       .flex_txt{
         width: 540px;
         margin-right: 60px;
-        .sp_img{
+        .sp_img, .sp_photo{
           display: none;
         }
         .origin_upper{
@@ -181,6 +181,11 @@
           img{
             max-width: 400px;
           }
+        }
+      }
+      .flex_photo{
+        width: calc(100% - 600px);
+        .img_wrap{
         }
       }
     }
@@ -354,6 +359,13 @@
             display: none;
           }
         }
+        .flex_photo{
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          .img_wrap{
+          }
+        }
       }
     }
     #itemInfo{
@@ -492,20 +504,17 @@
               max-width: 80%;
             }
           }
+          .sp_photo{
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+          }
           .origin_upper{
             margin-bottom: 15px;
           }
         }
-        .flex_img{
+        .flex_img, .flex_photo{
           display: none;
-          width: 100%;
-          padding: 30px 0;
-          margin-bottom: 25px;
-          .origin_img{
-            img{
-              max-width: 80%;
-            }
-          }
         }
       }
     }
