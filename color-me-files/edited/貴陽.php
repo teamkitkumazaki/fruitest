@@ -10,8 +10,8 @@
     </div>
     <div class="flex_txt">
       <div class="comp-title">
-        <h2 class="ttl_ja">商品の特徴</h2>
-        <span class="ttl_en">FEATURES</span>
+        <h2 class="ttl_ja">素材</h2>
+        <span class="ttl_en">INGREDIENT</span>
       </div>
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/detail01.jpg">
@@ -26,7 +26,7 @@
     </div>
     <div class="flex_txt">
       <div class="comp-title">
-        <h2 class="ttl_ja">風味の特徴</h2>
+        <h2 class="ttl_ja">風味</h2>
         <span class="ttl_en">FLAVOR</span>
       </div>
       <div class="sp_img">
@@ -46,8 +46,8 @@
     </div>
     <div class="flex_txt">
       <div class="comp-title">
-        <h2 class="ttl_ja">原産地</h2>
-        <span class="ttl_en">PLACE OF ORIGIN</span>
+        <h2 class="ttl_ja">産地・作り手</h2>
+        <span class="ttl_en">ORIGIN</span>
       </div>
       <div class="sp_img">
         <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
@@ -59,7 +59,7 @@
         </div>
         <div class="origin_item">
           <span class="title">旬の時期</span>
-          <span class="content">7月下旬 〜 8月下旬</span>
+          <span class="content">7月下旬 &#12316; 8月下旬</span>
         </div>
       </div>
         <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家、久津間さんの貴陽です。</p>
@@ -70,8 +70,8 @@
 <section id="itemInfo">
 <div class="inner">
   <div class="comp-title">
-    <h2 class="ttl_ja">商品情報</h2>
-    <span class="ttl_en">ITEM DETAIL</span>
+    <h2 class="ttl_ja">商品詳細</h2>
+    <span class="ttl_en">DETAIL</span>
   </div>
   <div class="info_wrap">
     <div class="info_item">
