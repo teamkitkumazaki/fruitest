@@ -4550,42 +4550,24 @@ footer {
       #itemDetail #basicInfo .flex_wrap .flex_right.flex_all {
         max-width: 730px;
         width: 100%;
-        margin: 0px auto; }
+        margin: 0px auto;
+        text-align: center; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .tag {
+          display: inline-block;
+          font-size: 12px;
+          display: inline-block;
+          background: #63ad2b;
+          padding: 7px 10px;
+          border-radius: 5px;
+          margin: -20px auto 25px;
+          color: #fff; }
         #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .copy {
-          text-align: center;
-          font-size: 22px;
-          line-height: 1.59;
-          letter-spacing: 1.2px;
-          font-weight: normal;
-          margin-bottom: 25px; }
-          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .copy span {
-            display: block; }
+          text-align: center; }
         #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .detail {
-          font-size: 14px;
-          line-height: 1.8;
-          letter-spacing: 1px;
-          margin-bottom: 30px; }
-          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .detail span {
-            display: block; }
-        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .sp_img {
-          display: none; }
-        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .button_wrap {
-          margin-top: 15px;
-          position: relative; }
-          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .button_wrap input[type="submit"] {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 10;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            opacity: 0;
-            cursor: pointer; }
-          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .button_wrap:hover button {
-            background: #464646; }
+          text-align: left; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .comp-linkbutton {
+          width: 80%;
+          margin: 0 auto; }
 
 #itemDetail #itemFeature {
   margin-top: 200px; }
@@ -4927,6 +4909,17 @@ footer {
               font-size: 12px; }
         #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap {
           margin-top: 15px; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all {
+          max-width: 730px;
+          width: 100%;
+          margin: 0px auto;
+          text-align: left; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .tag {
+            font-size: 12px;
+            margin: 0px 0 20px; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .comp-linkbutton {
+            width: 100%;
+            margin: -10px auto 0; }
   #itemDetail #itemFeature {
     margin-top: 80px; }
     #itemDetail #itemFeature .flex_wrap {
