@@ -4547,6 +4547,45 @@ footer {
           cursor: pointer; }
         #itemDetail #basicInfo .flex_wrap .flex_right .button_wrap:hover button {
           background: #464646; }
+      #itemDetail #basicInfo .flex_wrap .flex_right.flex_all {
+        max-width: 730px;
+        width: 100%;
+        margin: 0px auto; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .copy {
+          text-align: center;
+          font-size: 22px;
+          line-height: 1.59;
+          letter-spacing: 1.2px;
+          font-weight: normal;
+          margin-bottom: 25px; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .copy span {
+            display: block; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .detail {
+          font-size: 14px;
+          line-height: 1.8;
+          letter-spacing: 1px;
+          margin-bottom: 30px; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .detail span {
+            display: block; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .sp_img {
+          display: none; }
+        #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .button_wrap {
+          margin-top: 15px;
+          position: relative; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .button_wrap input[type="submit"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+            cursor: pointer; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .button_wrap:hover button {
+            background: #464646; }
 
 #itemDetail #itemFeature {
   margin-top: 200px; }
