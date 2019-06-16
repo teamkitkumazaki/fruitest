@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/layout.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
 </head>
 
 <body>
@@ -285,19 +286,28 @@
 				<h2 class="ttl_ja">#FRUITEST</h2>
 			</div>
 			<div id="instaFeed">
-				<ul>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta01.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta02.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta03.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta04.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta05.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta06.jpg)"></a></li>
+				<ul id="instafeed">
 				</ul>
 				<div class="ig_link">
 					<a href="#aaaa"><span>@FRUITEST.JP</span></a>
 				</div>
 			</div>
 		</section>
+		<script type="text/javascript">
+			var feed = new Instafeed({
+    		clientId: '76def5db2e0346ac867b6acdcba28b66',
+    		get: 'user',
+    		userId: '14104863491',
+    		accessToken:'14104863491.76def5d.5b705e6afa6a409aa4a3b284f069c437',
+    		links: true,
+    		limit: 6, // 取得件数
+    		resolution:'standard_resolution',
+    		template: '<li><a href="{{link}}" style="background-image: url({{image}})"></a></li>' // 画像URL：{{image}} リンク：{{link}} キャプションテキスト{{caption}} いいね数：{{likes}} コメント数：{{comments}}
+			});
+
+			feed.run();
+
+		</script>
 	</article>
 	<footer>
 		<div class="footer_inner">

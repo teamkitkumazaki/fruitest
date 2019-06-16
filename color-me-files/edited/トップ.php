@@ -1,3 +1,4 @@
+<script type="text/javascript" src="//journal.fruitest.jp/wp-content/themes/fruitest-theme/js/instafeed.min.js"></script>
 <article id="index">
 		<section id="main">
 			<div id="mainVisual">
@@ -266,17 +267,26 @@
 				<h2 class="ttl_ja">#FRUITEST</h2>
 			</div>
 			<div id="instaFeed">
-				<ul>
-					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta01.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta02.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta03.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta04.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta05.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta06.jpg)"></a></li>
+				<ul id="instafeed">
 				</ul>
 				<div class="ig_link">
-					<a href="#aaaa"><span>@fruitest.jp</span></a>
+					<a href="https://www.instagram.com/fruitest.jp/" target="_blank">
+						<span>@fruitest.jp</span>
+					</a>
 				</div>
 			</div>
 		</section>
+		<script type="text/javascript">
+			var feed = new Instafeed({
+				clientId: '76def5db2e0346ac867b6acdcba28b66',
+				get: 'user',
+				userId: '14104863491',
+				accessToken:'14104863491.76def5d.5b705e6afa6a409aa4a3b284f069c437',
+				links: true,
+				limit: 6, // 取得件数
+				resolution:'standard_resolution',
+				template: '<li><a href="{{link}}" style="background-image: url({{image}})"></a></li>'
+			});
+			feed.run();
+		</script>
 	</article>
