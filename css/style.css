@@ -2079,6 +2079,8 @@ footer {
         opacity: 0.6; }
       .comp-productlist li .state .img_wrap a:hover {
         opacity: 0.8; }
+    .comp-productlist li .state .img_wrap .stock, .comp-productlist li .state .img_wrap .soldout, .comp-productlist li .state .img_wrap .upcoming {
+      display: none; }
     .comp-productlist li .state .txt_wrap .product_name {
       display: block;
       font-size: 18px;
@@ -2221,13 +2223,32 @@ footer {
     margin-bottom: 100px; }
     .comp-productlist li:nth-child(n+3) {
       margin-top: 35px; }
-    .comp-productlist li .state .img_wrap a {
-      height: 40vw;
-      margin-bottom: 10px; }
-      .comp-productlist li .state .img_wrap a::after {
-        font-size: 18px !important;
-        letter-spacing: 0.7px !important;
-        height: 18px !important; }
+    .comp-productlist li .state .img_wrap {
+      position: relative; }
+      .comp-productlist li .state .img_wrap a {
+        height: 40vw;
+        margin-bottom: 10px; }
+        .comp-productlist li .state .img_wrap a::after {
+          font-size: 18px !important;
+          letter-spacing: 0.7px !important;
+          height: 18px !important; }
+      .comp-productlist li .state .img_wrap .stock, .comp-productlist li .state .img_wrap .soldout, .comp-productlist li .state .img_wrap .upcoming {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 10px;
+        display: inline-block;
+        background: #666;
+        padding: 7px 10px;
+        color: #fff;
+        margin-left: 10px;
+        pointer-events: none; }
+      .comp-productlist li .state .img_wrap .stock {
+        background: #4675ab; }
+      .comp-productlist li .state .img_wrap .soldout {
+        background: #e67822; }
+      .comp-productlist li .state .img_wrap .upcoming {
+        background: #63ad2b; }
     .comp-productlist li .state .txt_wrap {
       position: relative;
       padding-bottom: 30px;
@@ -2258,15 +2279,8 @@ footer {
         letter-spacing: 1.2px; }
         .comp-productlist li .state .txt_wrap .detail font {
           font-size: 14px; }
-        .comp-productlist li .state .txt_wrap .detail .stock {
-          font-size: 10px;
-          display: block;
-          padding: 7px 10px;
-          border-radius: 0px;
-          pointer-events: none;
-          position: absolute;
-          top: -143px;
-          right: 5px; }
+        .comp-productlist li .state .txt_wrap .detail .stock, .comp-productlist li .state .txt_wrap .detail .soldout, .comp-productlist li .state .txt_wrap .detail .upcoming {
+          display: none; }
     .comp-productlist li .state .comp-linkbutton-mini {
       display: none; } }
 
