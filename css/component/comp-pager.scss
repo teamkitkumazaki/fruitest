@@ -1,0 +1,134 @@
+.comp-pager {
+  margin-top: 60px;
+  .wp-pagenavi{
+    @include flexSet;
+    justify-content: center;
+    align-items: center;
+    .pages{
+      display: none;
+    }
+    .first, .last{
+      display: none;
+    }
+    .current, .page, .previouspostslink, .nextpostslink{
+      display: block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 38px;
+      box-sizing: border-box;
+      letter-spacing: -1px;
+      @include xiaowei;
+    }
+    .current{
+      font-size: 16px;
+      background-color: #f1f1f1;
+      border: 1px solid #f1f1f1;
+      margin-right: 0.5em;
+    }
+    .page{
+      box-sizing: border-box;
+      border: 1px solid #d8d8d8;
+      color: #333;
+      @include hover;
+      margin-right: 0.5em;
+    }
+    .previouspostslink{
+      position: relative;
+      background-color: #f1f1f1;
+      border: 1px solid #f1f1f1;
+      margin-right: 0.5em;
+      text-indent: -9999px;
+      &::before{
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-top: 1px solid #666;
+        border-right: 1px solid #666;
+        transform: rotate(-135deg);
+      }
+    }
+    .nextpostslink{
+      position: relative;
+      background-color: #f1f1f1;
+      border: 1px solid #f1f1f1;
+      text-indent: -9999px;
+      &::before{
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-top: 1px solid #666;
+        border-right: 1px solid #666;
+        transform: rotate(45deg);
+      }
+    }
+    .extend{
+      display: block;
+      margin-right: 0.8em;
+      margin-left: 0.3em;
+      color: #999;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  .comp-pager {
+    margin-top: 25px;
+    .wp-pagenavi{
+      .pages{
+        display: none;
+      }
+      .first, .last{
+        display: none;
+      }
+      .current, .page, .previouspostslink, .nextpostslink{
+        display: block;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        font-size: 12px;
+      }
+      .current{
+        margin-right: 0.5em;
+      }
+      .page{
+        margin-right: 0.5em;
+      }
+      .previouspostslink{
+        margin-right: 0.5em;
+        &::before{
+          left: 0;
+          right: -2px;
+        }
+      }
+      .nextpostslink{
+        &::before{
+          left: -2px;
+          right: 0;
+        }
+      }
+      .extend{
+        margin-right: 0.8em;
+        margin-left: 0.3em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}

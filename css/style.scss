@@ -102,7 +102,9 @@ article{
 @import 'component/comp-option.scss';
 @import 'component/comp-journal.scss';
 @import 'component/comp-item-thumb.scss';
-
+@import 'component/comp-taglist.scss';
+@import 'component/comp-journal-archive.scss';
+@import 'component/comp-pager.scss';
 
 
 /* ページ個別 */
@@ -113,3 +115,4 @@ article{
 @import 'pages/itemDetail.scss';
 @import 'pages/faq.scss';
 @import 'pages/contact.scss';
+@import 'pages/journalArchive.scss';
