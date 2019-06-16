@@ -382,6 +382,7 @@
     #conceptWrap{
       .comp-title{
         margin-top: 25px;
+        margin-bottom: 15px;
       }
       .concept_ttl_section{
         margin-top: 45px;
@@ -410,7 +411,7 @@
             letter-spacing: 0.7px;
             margin-bottom: 10px;
             span{
-              display: inline;
+              /*display: inline;*/
             }
           }
         }
@@ -438,7 +439,7 @@
               font-size: 18px;
               line-height: 1.78;
               letter-spacing: 1.4px;
-              margin-bottom: 10px;
+              margin-bottom: 20px;
             }
             p{
               font-size: 14px;

@@ -181,35 +181,24 @@
 			</div>
 		</div><!-- topProduct -->
 		<section id="topOption" class="comp-option">
-			<div class="comp-title center">
-				<h2 class="ttl_ja">購入オプション</h2>
-				<span class="ttl_en">OPTIONS</span>
-			</div>
-			<div class="lead_txt">
-				<p><span>FRUITESTでは、記念日の贈り物向けのギフトセット・ラッピングサービスや</span><span>季節毎に旬の果物をお届けする定期便など、様々なオプションをご用意しております。</span></p>
-			</div>
-			<div class="flex_wrap">
-				<div class="block gift">
-					<span class="sp_ttl">ギフト商品一覧</span>
-					<a class="img_wrap" href="/?mode=f2"></a>
-					<div class="txt_wrap">
-						<span class="ttl">ギフト商品一覧</span>
-						<div class="comp-linkbutton-mini">
-							<a href="/?mode=f2"><span>詳しく知る</span></a>
-						</div>
-					</div>
+			<div class="inner">
+				<div class="comp-title center">
+					<h2 class="ttl_ja">FRUITESTのギフトセット</h2>
+					<span class="ttl_en">GIFT SET</span>
 				</div>
-				<div class="block subscription">
-					<span class="sp_ttl">定期便について</span>
-					<a class="img_wrap" href="#aaa"></a>
-					<div class="txt_wrap">
-						<span class="ttl">定期便について</span>
-						<div class="comp-linkbutton-mini">
-							<a href="#aaaa"><span>詳しく知る</span></a>
-						</div>
-					</div>
+				<div class="spimg_wrap"></div>
+				<div class="txt_wrap">
+					<p class="text">
+						<span>手土産や特別な日のプレゼントに。</span>
+						<span>旬のレア・ドライフルーツを、ギフトボックスに入れてお届けします。</span>
+					</p>
 				</div>
-			</div>
+				<div class="img_wrap"></div>
+				<div class="comp-linkbutton">
+					<a href="/?mode=f2">
+						<span>ギフトセット一覧<font>GIFT SET</font></span></a>
+				</div>
+			</div><!-- inner -->
 		</section><!-- topOption -->
 		<section class="comp-journal">
 			<div class="inner">

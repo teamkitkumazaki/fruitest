@@ -2319,183 +2319,58 @@ footer {
 
 .comp-option {
   margin-top: 180px; }
-  .comp-option .lead_txt {
-    text-align: center; }
-    .comp-option .lead_txt p {
-      font-size: 16px;
-      letter-spacing: 1.5px;
-      line-height: 1.75; }
-      .comp-option .lead_txt p span {
-        display: block; }
-  .comp-option .flex_wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    @media screen and (max-width: 1100px) {
-      .comp-option .flex_wrap {
-        max-width: 720px; } }
-    @media screen and (max-width: 740px) {
-      .comp-option .flex_wrap {
-        max-width: 90vw; } }
-    .comp-option .flex_wrap .block {
-      width: 525px; }
-      .comp-option .flex_wrap .block .sp_ttl {
-        display: none; }
-      .comp-option .flex_wrap .block .img_wrap {
-        display: block;
-        width: 100%;
-        height: 300px;
-        margin-bottom: 10px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        -webkit-transition: opacity .5s;
-        -o-transition: opacity .5s;
-        transition: opacity .5s;
-        background-color: #f1f1f1; }
-        .comp-option .flex_wrap .block .img_wrap:hover {
-          opacity: 0.6; }
-        .comp-option .flex_wrap .block .img_wrap:hover {
-          opacity: 0.8; }
-      .comp-option .flex_wrap .block .txt_wrap {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        .comp-option .flex_wrap .block .txt_wrap .ttl {
-          display: block;
-          font-size: 18px;
-          letter-spacing: 1.5px; }
-        .comp-option .flex_wrap .block .txt_wrap .comp-linkbutton-mini {
-          max-width: 250px; }
-      .comp-option .flex_wrap .block.gift .img_wrap {
-        background-image: url(../img/option_img01.jpg); }
-      .comp-option .flex_wrap .block.subscription .img_wrap {
-        background-image: url(../img/option_img02.jpg); }
+  .comp-option .img_wrap {
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/index/giftset_img.jpg");
+    margin-bottom: 50px; }
+  .comp-option .txt_wrap .text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    margin-bottom: 45px; }
+    .comp-option .txt_wrap .text span {
+      display: block; }
+  .comp-option .comp-linkbutton {
+    max-width: 550px;
+    margin: 0 auto; }
 
 @media screen and (max-width: 1100px) {
-  .comp-option {
-    margin-top: 180px; }
-    .comp-option .lead_txt {
-      text-align: center; }
-      .comp-option .lead_txt p {
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        line-height: 1.75; }
-        .comp-option .lead_txt p span {
-          display: block; }
-    .comp-option .flex_wrap {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      max-width: 1080px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 80px;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
-    @media screen and (max-width: 1100px) and (max-width: 1100px) {
-      .comp-option .flex_wrap {
-        max-width: 720px; } }
-    @media screen and (max-width: 1100px) and (max-width: 740px) {
-      .comp-option .flex_wrap {
-        max-width: 90vw; } }
-
-@media screen and (max-width: 1100px) {
-      .comp-option .flex_wrap .block {
-        width: 49%; }
-        .comp-option .flex_wrap .block .img_wrap {
-          display: block;
-          width: 100%;
-          height: 200px;
-          margin-bottom: 20px; }
-        .comp-option .flex_wrap .block .txt_wrap {
-          display: block;
-          text-align: center; }
-          .comp-option .flex_wrap .block .txt_wrap .ttl {
-            display: block;
-            font-size: 18px;
-            letter-spacing: 1.5px;
-            margin-bottom: 20px; }
-          .comp-option .flex_wrap .block .txt_wrap .comp-linkbutton-mini {
-            max-width: 250px;
-            margin: 0 auto; }
-        .comp-option .flex_wrap .block.gift .img_wrap {
-          background-image: url(../img/option_img01.jpg); }
-        .comp-option .flex_wrap .block.subscription .img_wrap {
-          background-image: url(../img/option_img02.jpg); } }
+  .comp-option .img_wrap {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 35px; }
+  .comp-option .txt_wrap .text {
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 740px) {
   .comp-option {
     margin-top: 100px; }
-    .comp-option .ttl_section {
+    .comp-option .comp-title.center {
+      text-align: left;
+      margin-bottom: 25px; }
+    .comp-option .img_wrap {
       display: none; }
-    .comp-option .lead_txt {
-      display: none;
-      text-align: center; }
-      .comp-option .lead_txt p {
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        line-height: 1.75; }
-        .comp-option .lead_txt p span {
-          display: block; }
-    .comp-option .flex_wrap {
-      display: block;
-      max-width: 100vw;
-      margin-top: 80px;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .comp-option .flex_wrap .block {
-        width: 100%; }
-        .comp-option .flex_wrap .block .sp_ttl {
-          display: block;
-          font-size: 22px;
-          letter-spacing: 1.6px;
-          text-align: center;
-          margin-bottom: 70px;
-          position: relative; }
-          .comp-option .flex_wrap .block .sp_ttl::after {
-            display: block;
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -30px;
-            margin: auto;
-            width: 40px;
-            height: 2px;
-            background: #d8d8d8; }
-        .comp-option .flex_wrap .block .img_wrap {
-          display: block;
-          width: 100%;
-          height: 58vw;
-          margin-bottom: 5vw; }
-        .comp-option .flex_wrap .block .txt_wrap .ttl {
-          display: none; }
-        .comp-option .flex_wrap .block .txt_wrap .comp-linkbutton-mini {
-          max-width: 90vw; }
-        .comp-option .flex_wrap .block.subscription {
-          margin-top: 60px; } }
+    .comp-option .spimg_wrap {
+      width: 100%;
+      height: 48vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-image: url("../img/index/giftset_img.jpg");
+      margin-bottom: 20px; }
+    .comp-option .txt_wrap .text {
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px; }
+      .comp-option .txt_wrap .text span {
+        display: inline; } }
 
 .comp-journal {
   margin-top: 175px; }
@@ -4022,7 +3897,8 @@ footer {
     height: 78vw;
     background-image: url(../img/concept/main_sp.jpg); }
   #concept #conceptWrap .comp-title {
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-bottom: 15px; }
   #concept #conceptWrap .concept_ttl_section {
     margin-top: 45px;
     margin-bottom: 40px;
@@ -4046,7 +3922,7 @@ footer {
       letter-spacing: 0.7px;
       margin-bottom: 10px; }
       #concept #conceptWrap .flex_ttl_wrap .ja p span {
-        display: inline; }
+        /*display: inline;*/ }
   #concept #conceptWrap .flex_ttl_wrap .en p {
     font-size: 14px;
     line-height: 1.8;
@@ -4063,7 +3939,7 @@ footer {
         font-size: 18px;
         line-height: 1.78;
         letter-spacing: 1.4px;
-        margin-bottom: 10px; }
+        margin-bottom: 20px; }
       #concept #conceptSozai .flex_wrap .flex_left .txt_wrap p {
         font-size: 14px;
         line-height: 1.86;
