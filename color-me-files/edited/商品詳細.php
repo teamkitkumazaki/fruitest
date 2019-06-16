@@ -158,9 +158,9 @@
   <span class="en">RELATED ITEMS</span>
 </div>
 <div class="products">
-  <ul class="comp-productlist">
+  <div id="relatedSlider" class="comp-related-product">
      <{section name=num loop=$together_product}>
-     <li>
+     <div class="item_box slick-slide">
          <{if $together_product[num].soldout_flg == false}>
            <{if $together_product[num].teika_disp == true}>
            <!-- 通常 -->
@@ -174,6 +174,18 @@
          <{/if}>
          <div class="img_wrap">
            <a href="<{$together_product[num].link_url}>" style="background-image: url(<{$together_product[num].img_url}>)"></a>
+           <{if $together_product[num].soldout_flg == false}>
+             <{if $together_product[num].teika_disp == true}>
+             <!-- 通常 -->
+             <span class="stock">販売中</span>
+             <{else}>
+             <!-- Upcoming -->
+             <span class="upcoming">構想中</span>
+             <{/if}>
+             <{else}>
+               <!-- 売り切れ -->
+               <span class="soldout">再販受付中</span>
+             <{/if}>
        </div>
        <div class="txt_wrap">
          <a class="product_name" href="<{$together_product[num].link_url}>"><{$together_product[num].name}><span><{$together_product[num].model}></span></a>
@@ -198,9 +210,9 @@
          </div>
        </div>
        </div>
-     </li>
+     </div>
      <{/section}>
-  </ul>
+  </div>
 </div>
 </div>
 </section><!-- relatedItem -->

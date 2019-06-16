@@ -539,6 +539,23 @@ $(function() {
     }]
   });
 
+  $('#relatedSlider').slick({
+    accessibility: false,
+    infinite: false,
+    dots: true,
+    slidesToShow: 3,
+    centerMode: true,
+    autoplay: false,
+    responsive: [{
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '5%',
+        centerMode: false,
+      }
+    }]
+  });
+
 
   $('#slickSlider2').slick({
     accessibility: false,

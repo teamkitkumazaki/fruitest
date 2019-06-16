@@ -9,7 +9,7 @@
 }
 */
 $keycolor: #333;
-@mixin xiaowei{ 
+@mixin xiaowei{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em !important;
@@ -97,6 +97,7 @@ article{
 @import 'component/comp-chart.scss';
 @import 'component/comp-privacy.scss';
 @import 'component/comp-productlist.scss';
+@import 'component/comp-related-product.scss';
 @import 'component/comp-itemdetail.scss';
 @import 'component/comp-option.scss';
 @import 'component/comp-journal.scss';
