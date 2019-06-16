@@ -49,10 +49,11 @@
         <h2 class="ttl_ja">産地・作り手</h2>
         <span class="ttl_en">ORIGIN</span>
       </div>
-      <div class="sp_img">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
-      </div>
       <div class="origin_upper">
+        <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家、久津間さんの貴陽です。</p>
+        <div class="sp_img">
+          <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kiyou/location.png">
+        </div>
         <div class="origin_item">
           <span class="title">産地</span>
           <span class="content">山梨県南アルプス市</span>
@@ -62,7 +63,6 @@
           <span class="content">7月下旬 &#12316; 8月下旬</span>
         </div>
       </div>
-        <p class="txt">貴陽が生まれた山梨県南アルプス市の熟練農家、久津間さんの貴陽です。</p>
     </div>
   </div>
 </div><!-- inner -->
@@ -80,7 +80,7 @@
     </div>
     <div class="info_item">
       <span class="title">産地</span>
-      <span class="content">山梨県笛吹市</span>
+      <span class="content">山梨県南アルプス市</span>
     </div>
     <div class="info_item">
       <span class="title">内容量</span>

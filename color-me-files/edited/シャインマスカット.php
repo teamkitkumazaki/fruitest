@@ -53,10 +53,11 @@
         <h2 class="ttl_ja">産地・作り手</h2>
         <span class="ttl_en">ORIGIN</span>
       </div>
-      <div class="sp_photo">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/shine/location.jpg">
-      </div>
       <div class="origin_upper">
+        <p class="txt">ぶどう作りを極めるために、夏は日本（山梨）で、そして冬はニュージーランドで葡萄を栽培する「葡萄専心」の樋口さん。そんな樋口さんがつくる房の形まで美しいシャインマスカットです。</p>
+        <div class="sp_photo">
+          <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/shine/location.jpg">
+        </div>
         <div class="origin_item">
           <span class="title">産地</span>
           <span class="content">山梨県笛吹市</span>
@@ -66,7 +67,7 @@
           <span class="content">9月初旬～10月初旬</span>
         </div>
       </div>
-      <p class="txt">ぶどう作りを極めるために、夏は日本（山梨）で、そして冬はニュージーランドで葡萄を栽培する「葡萄専心」の樋口さん。そんな樋口さんがつくる房の形まで美しいシャインマスカットです。</p>
+
     </div>
   </div>
 </div><!-- inner -->

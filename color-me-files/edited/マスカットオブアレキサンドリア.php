@@ -53,10 +53,11 @@
         <h2 class="ttl_ja">産地・作り手</h2>
         <span class="ttl_en">ORIGIN</span>
       </div>
-      <div class="sp_photo">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/alex/location.jpg">
-      </div>
       <div class="origin_upper">
+        <p class="txt">昔ながらのガラス温室と、面積あたりにぶら下げる房の数を極限まで減らし１房１房に充分な養分を与える昔ながらの栽培方法を守り続けているｘｘさんのアレキです。</p>
+        <div class="sp_photo">
+          <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/alex/location.jpg">
+        </div>
         <div class="origin_item">
           <span class="title">産地</span>
           <span class="content">岡山県岡山市</span>
@@ -66,7 +67,6 @@
           <span class="content">7月上旬～8月上旬</span>
         </div>
       </div>
-        <p class="txt">昔ながらのガラス温室と、面積あたりにぶら下げる房の数を極限まで減らし１房１房に充分な養分を与える昔ながらの栽培方法を守り続けているｘｘさんのアレキです。</p>
     </div>
   </div>
 </div><!-- inner -->
