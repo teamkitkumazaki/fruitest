@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/layout.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
 </head>
 
 <body>
@@ -199,35 +200,24 @@
 			</div>
 		</div><!-- topProduct -->
 		<section id="topOption" class="comp-option">
-			<div class="comp-title center">
-				<h2 class="ttl_ja">購入オプション</h2>
-				<span class="ttl_en">OPTIONS</span>
-			</div>
-			<div class="lead_txt">
-				<p><span>FRUITESTでは、記念日の贈り物向けのギフトセット・ラッピングサービスや</span><span>季節毎に旬の果物をお届けする定期便など、様々なオプションをご用意しております。</span></p>
-			</div>
-			<div class="flex_wrap">
-				<div class="block gift">
-					<span class="sp_ttl">ギフト商品一覧</span>
-					<a class="img_wrap" href="#aaa"></a>
-					<div class="txt_wrap">
-						<span class="ttl">ギフト商品一覧</span>
-						<div class="comp-linkbutton-mini">
-							<a href="#aaaa"><span>詳しく知る</span></a>
-						</div>
-					</div>
+			<div class="inner">
+				<div class="comp-title center">
+					<h2 class="ttl_ja">FRUITESTのギフトセット</h2>
+					<span class="ttl_en">GIFT SET</span>
 				</div>
-				<div class="block subscription">
-					<span class="sp_ttl">定期便について</span>
-					<a class="img_wrap" href="#aaa"></a>
-					<div class="txt_wrap">
-						<span class="ttl">定期便について</span>
-						<div class="comp-linkbutton-mini">
-							<a href="#aaaa"><span>詳しく知る</span></a>
-						</div>
-					</div>
+				<div class="spimg_wrap"></div>
+				<div class="txt_wrap">
+					<p class="text">
+						<span>手土産や特別な日のプレゼントに。</span>
+						<span>旬のレア・ドライフルーツを、ギフトボックスに入れてお届けします。</span>
+					</p>
 				</div>
-			</div>
+				<div class="img_wrap"></div>
+				<div class="comp-linkbutton">
+					<a href="#aaaa">
+						<span>ギフトセット一覧<font>GIFT SET</font></span></a>
+				</div>
+			</div><!-- inner -->
 		</section><!-- topOption -->
 		<section class="comp-journal">
 			<div class="inner">
@@ -285,19 +275,28 @@
 				<h2 class="ttl_ja">#FRUITEST</h2>
 			</div>
 			<div id="instaFeed">
-				<ul>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta01.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta02.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta03.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta04.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta05.jpg)"></a></li>
-					<li><a href="#aaaa" style="background-image: url(img/index/insta06.jpg)"></a></li>
+				<ul id="instafeed">
 				</ul>
 				<div class="ig_link">
 					<a href="#aaaa"><span>@FRUITEST.JP</span></a>
 				</div>
 			</div>
 		</section>
+		<script type="text/javascript">
+			var feed = new Instafeed({
+    		clientId: '76def5db2e0346ac867b6acdcba28b66',
+    		get: 'user',
+    		userId: '14104863491',
+    		accessToken:'14104863491.76def5d.5b705e6afa6a409aa4a3b284f069c437',
+    		links: true,
+    		limit: 6, // 取得件数
+    		resolution:'standard_resolution',
+    		template: '<li><a href="{{link}}" style="background-image: url({{image}})"></a></li>' // 画像URL：{{image}} リンク：{{link}} キャプションテキスト{{caption}} いいね数：{{likes}} コメント数：{{comments}}
+			});
+
+			feed.run();
+
+		</script>
 	</article>
 	<footer>
 		<div class="footer_inner">

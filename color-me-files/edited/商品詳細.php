@@ -11,6 +11,7 @@
       <span class="ttl_en"><{$product.model}></span>
     </div>
     <div class="flex_wrap">
+      <{if $product.price_disp == true}>
       <div class="flex_left">
         <div id="itemThumb01" class="comp-item-thumb">
           <div class="slide_num">
@@ -41,6 +42,8 @@
           </ul>
         </div><!-- itemThumb01 -->
       </div>
+      <{/if}>
+      <{if $product.price_disp == true}>
       <div class="flex_right">
           <h2 class="copy"><{$product.simple_explain}></h2>
           <p id="excerpt" class="detail"></p>
@@ -76,7 +79,6 @@
         </div>
         <div class="comp-itemdetail">
           <div class="item_upper item">
-            <{if $product.price_disp == true}>
             <{if $product.soldout_flg == false}>
             <!-- 通常 -->
             <span class="amount">内容量: <{$product.weight}>個</span>
@@ -85,11 +87,6 @@
             <!-- 売り切れ -->
             <span class="amount">内容量: <{$product.weight}>個</span>
               <span class="state soldout">再販受付中</span>
-            <{/if}>
-            <{else}>
-            <!-- Upcoming -->
-            <span class="amount">内容量: 未定</span>
-            <span class="state upcoming">構想中</span>
             <{/if}>
           </div>
           <div class="item">
@@ -108,6 +105,17 @@
           </div>
         </div><!-- comp-itemdetail -->
       </div>
+      <{else}>
+      <!-- Upcoming -->
+      <div class="flex_right flex_all">
+          <span class="tag">構想中</span>
+          <h2 class="copy"><{$product.simple_explain}></h2>
+          <p id="excerpt" class="detail"></p>
+          <div class="comp-linkbutton">
+            <a href="#aaaa"><span>購入予約<font>WAITING LIST</font></span></a>
+          </div>
+      </div>
+      <{/if}>
     </div><!-- flex_wrap -->
   </div>
 </section><!-- basicInfo -->

@@ -25,9 +25,9 @@
       <a class="footer_logo" href="/"></a>
       <div class="sns_wrap">
         <ul>
-          <li><a class="tw" href="#aaaa"></a></li>
-          <li><a class="fb" href="#aaaa"></a></li>
-          <li><a class="ig" href="#aaaa"></a></li>
+          <li><a class="tw" target="_blank" href="https://twitter.com/FRUITEST1"></a></li>
+          <li><a class="fb" target="_blank" href="https://www.facebook.com/fruitest.jp/"></a></li>
+          <li><a class="ig" target="_blank" href="https://www.instagram.com/fruitest.jp/"></a></li>
         </ul>
       </div>
     </div><!-- footer_upper -->
@@ -97,9 +97,9 @@
       </div>
       <div class="menu_sns">
         <ul>
-          <li><a class="tw" href="#aaaa"></a></li>
-          <li><a class="fb" href="#aaaa"></a></li>
-          <li><a class="ig" href="#aaaa"></a></li>
+          <li><a class="tw" target="_blank" href="https://twitter.com/FRUITEST1"></a></li>
+          <li><a class="fb" target="_blank" href="https://www.facebook.com/fruitest.jp/"></a></li>
+          <li><a class="ig" target="_blank" href="https://www.instagram.com/fruitest.jp/"></a></li>
         </ul>
       </div>
     </div>
