@@ -368,7 +368,7 @@ input[type="button"] {
 header {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;
@@ -379,7 +379,7 @@ header {
   transition: background .4s, height .4s; }
   header .header_inner {
     width: calc(100% - 60px);
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
     position: relative;
     -webkit-transition: height .4s;
@@ -558,31 +558,27 @@ header {
   header.rolled {
     background-color: #fff;
     background-image: none;
-    /*box-shadow: 0 2px 3px 0 #f1f1f1;*/
-    height: 80px;
     -webkit-transition: background 0s, height .4s;
     -o-transition: background 0s, height .4s;
     transition: background 0s, height .4s; }
-    header.rolled .header_inner {
-      height: 80px; }
-      header.rolled .header_inner #hummenu a:before {
-        opacity: 1; }
-      header.rolled .header_inner #hummenu a:after {
-        opacity: 0; }
-      header.rolled .header_inner .header_logo a::before {
-        opacity: 1; }
-      header.rolled .header_inner .header_logo a::after {
-        opacity: 0; }
-      header.rolled .header_inner .header_nav a span {
-        color: #333; }
-      header.rolled .header_inner .header_nav a.nav_login span::before {
-        opacity: 1; }
-      header.rolled .header_inner .header_nav a.nav_login span::after {
-        opacity: 0; }
-      header.rolled .header_inner .header_nav a.nav_cart span::before {
-        opacity: 1; }
-      header.rolled .header_inner .header_nav a.nav_cart span::after {
-        opacity: 0; }
+    header.rolled .header_inner #hummenu a:before {
+      opacity: 1; }
+    header.rolled .header_inner #hummenu a:after {
+      opacity: 0; }
+    header.rolled .header_inner .header_logo a::before {
+      opacity: 1; }
+    header.rolled .header_inner .header_logo a::after {
+      opacity: 0; }
+    header.rolled .header_inner .header_nav a span {
+      color: #333; }
+    header.rolled .header_inner .header_nav a.nav_login span::before {
+      opacity: 1; }
+    header.rolled .header_inner .header_nav a.nav_login span::after {
+      opacity: 0; }
+    header.rolled .header_inner .header_nav a.nav_cart span::before {
+      opacity: 1; }
+    header.rolled .header_inner .header_nav a.nav_cart span::after {
+      opacity: 0; }
 
 @media screen and (max-width: 740px) {
   header {
@@ -2919,13 +2915,13 @@ footer {
 
 /* ページ個別 */
 #index {
-  margin-top: 100px; }
+  margin-top: 80px; }
   @media screen and (max-width: 740px) {
     #index {
       margin-top: 60px; } }
   #index #main #mainVisual {
-    width: calc(100vw - 200px);
-    height: calc(100vh - 200px);
+    width: calc(100vw - 160px);
+    height: calc(100vh - 160px);
     margin: 0 auto;
     position: relative;
     background-repeat: no-repeat;
@@ -2972,6 +2968,8 @@ footer {
           letter-spacing: 2px; }
   #index #topConcept {
     margin-top: 270px; }
+    #index #topConcept .comp-title {
+      margin-bottom: 20px; }
     #index #topConcept .lead_txt {
       text-align: center;
       margin-bottom: 60px; }
@@ -2984,12 +2982,15 @@ footer {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         letter-spacing: 0.1em !important;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 2px;
+        line-height: 1.6;
         color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         letter-spacing: 0.1em !important; }
+        #index #topConcept .lead_txt .en span {
+          display: block; }
     #index #topConcept .img_wrap {
       max-width: 1080px;
       margin-left: auto;
@@ -3049,11 +3050,14 @@ footer {
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             letter-spacing: 0.1em !important;
-            font-size: 14px;
-            line-height: 1.7;
+            font-size: 12px;
+            line-height: 1.6;
             letter-spacing: 1.5px;
             color: #666;
             word-break: break-all; }
+            #index #topRareDry .flex_wrap .flex_left .txt .en span {
+              display: block;
+              margin-bottom: 5px; }
       #index #topRareDry .flex_wrap .flex_right {
         width: 520px;
         margin-left: 55px; }
@@ -3255,6 +3259,10 @@ footer {
   #index #topInstagram {
     margin-top: 170px;
     margin-bottom: 100px; }
+    #index #topInstagram .comp-title .ttl_ja {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.1em !important; }
     #index #topInstagram #instaFeed {
       max-width: 1080px;
       margin-left: auto;
@@ -3298,7 +3306,7 @@ footer {
         display: block;
         margin: 0 auto;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 85px;
         position: relative;
         -webkit-transition: opacity .5s;
         -o-transition: opacity .5s;
@@ -3313,13 +3321,16 @@ footer {
           right: 0;
           margin: auto;
           content: "";
-          width: 100px;
-          height: 100px;
+          width: 70px;
+          height: 70px;
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center center;
           background-image: url(../img/index/ig_icon.png); }
         #index #topInstagram #instaFeed .ig_link a span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          letter-spacing: 0.1em !important;
           font-size: 18px;
           color: #333;
           letter-spacing: 2px; }
@@ -3436,7 +3447,7 @@ footer {
   #index #topConcept {
     margin-top: 120px; }
     #index #topConcept .comp-title {
-      text-align: left; }
+      margin-bottom: 10px; }
     #index #topConcept .img_wrap_sp {
       max-width: 1080px;
       margin-left: auto;
@@ -3476,7 +3487,7 @@ footer {
         #index #topConcept .lead_txt .ja span {
           display: block; }
       #index #topConcept .lead_txt .en {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.67;
         letter-spacing: 1px; }
         #index #topConcept .lead_txt .en span {
@@ -3520,7 +3531,7 @@ footer {
         #index #topRareDry .flex_wrap .flex_left .txt .ja span {
           display: inline; }
       #index #topRareDry .flex_wrap .flex_left .txt .en {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.67;
         letter-spacing: 1px;
         word-break: break-all; }
@@ -3726,10 +3737,12 @@ footer {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       letter-spacing: 0.1em !important;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 2;
       letter-spacing: 1.8px;
       color: #666; }
+      #concept #conceptWrap .flex_ttl_wrap .en p span {
+        display: block; }
 
 #concept #conceptSozai {
   margin-top: 80px;

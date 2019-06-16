@@ -60,7 +60,7 @@
               <{/if}>
             </div>
             <div class="comp-linkbutton-mini">
-              <a href="<{$productlist[num].link_url}>"><span>詳しく知る</span></a>
+              <a href="<{$productlist[num].link_url}>"><span>詳しく見る</span></a>
             </div>
           </div>
           </div>

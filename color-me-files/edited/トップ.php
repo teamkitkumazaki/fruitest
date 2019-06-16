@@ -10,22 +10,24 @@
 			<div class="inner">
 			<div class="comp-title center">
 				<h2 class="ttl_ja">はじめまして、FRUITESTです。</h2>
-				<span class="ttl_en">BEYOND RIPE FRUITS</span>
+			</div>
+			<div class="lead_txt">
+				<h1 class="ja">フルーテストは、日本が誇る最上級の完熟果物だけをつかったレア・ドライフルーツのブランドです。</h1>
+				<span class="en">
+					<span>“FRUITEST” is a brand that makes a new type of dried fruit called “rare (soft and juicy) dried fruit”.</span>
+					<span>We only use fully ripened fruit of the highest grade from Japan.</span>
+				</span>
 			</div>
 			<div class="img_wrap_sp">
 				<div class="img_left"></div>
 				<div class="img_right"></div>
-			</div>
-			<div class="lead_txt">
-				<h1 class="ja">フルーテストは、日本が誇る最上級の完熟果物だけをつかったレア・ドライフルーツのブランドです。</h1>
-				<span class="en">I used fruits from Japan's premium variety,<span>"Rare / dried fruit" was born.</span>
 			</div>
 			<div class="img_wrap">
 				<div class="img_left"></div>
 				<div class="img_right"></div>
 			</div>
 			<div class="comp-linkbutton">
-				<a href="/?mode=f1"><span>詳しく知る<font>READ MORE</font></span></a>
+				<a href="/?mode=f1"><span>FRUITESTとは？<font>VIEW CONCEPT</font></span></a>
 			</div>
 		</div><!-- inner -->
 		</section><!-- topConcept -->
@@ -35,7 +37,6 @@
 					<div class="flex_left">
 						<div class="comp-title">
 							<h2 class="ttl_ja">生でもない。ドライでもない。<br>ここでしか体感できない、<br>味があります。</h2>
-							<span class="ttl_en">BEYOND RIPE FRUITS</span>
 						</div>
 						<div class="spimg_wrap"></div>
 						<div class="txt">
@@ -44,7 +45,11 @@
 								<span>原材料は、品種・作り手・熟度にこだわった最上級の国産果物だけ。素材に自信があるので、果物以外の原料は使いません。</span>
 								<span>これまでは、旬の時期に、産地でしか味わうことのできなかった、最上級の風味と香りをできる限りとじ込めてお届けします。</span>
 							</p>
-							<p class="en">Rare / dried fruit using Japanese premium variety.It is a dried fruit close to raw state, condensing umami while keeping the freshness of fruits.Because it is harvested in ripe state and ripened in the manufacturing process,It is sweeter than raw fruit, finished in a rich taste.</p>
+							<p class="en">
+								<span>FRUITEST’s “rare-dried fruit” is made in a way that brings out the full flavor of the fruit while keeping its freshness as much as possible.</span>
+								<span>The only ingredient we use fruit of the highest grade grown in Japan. When selecting fruit for our product, we’re particular about the varieties, the farmers and the degree of ripeness.We don’t add any other ingredients because we’re confident in the quality of our fruit.</span>
+								<span>We deliver the dried fruit that is packed with a premium flavor and aroma, which you could only taste in the production areas when the fruit is in season.</span>
+							</p>
 						</div>
 						<div class="comp-linkbutton">
 							<a href="/?mode=f1#conceptRare"><span>詳しく知る<font>READ MORE</font></span></a>
@@ -270,7 +275,7 @@
 					<li><a href="#aaaa" style="background-image: url(//journal.fruitest.jp/files/img/index/insta06.jpg)"></a></li>
 				</ul>
 				<div class="ig_link">
-					<a href="#aaaa"><span>@FRUITEST.JP</span></a>
+					<a href="#aaaa"><span>@fruitest.jp</span></a>
 				</div>
 			</div>
 		</section>
