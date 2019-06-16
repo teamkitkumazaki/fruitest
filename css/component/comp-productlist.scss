@@ -25,6 +25,9 @@
             opacity: 0.8;
           }
         }
+        .stock, .soldout, .upcoming{
+          display: none;
+        }
       }
       .txt_wrap{
         .product_name{
@@ -197,6 +200,7 @@
       }
       .state{
         .img_wrap{
+          position: relative;
           a{
             height: 40vw;
             margin-bottom: 10px;
@@ -205,6 +209,27 @@
                 letter-spacing: 0.7px !important;
                 height: 18px !important;
               }
+          }
+          .stock, .soldout, .upcoming{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 10px;
+            display: inline-block;
+            background: #666;
+            padding: 7px 10px;
+            color: #fff;
+            margin-left: 10px;
+            pointer-events: none;
+          }
+          .stock{
+            background: #4675ab;
+          }
+          .soldout{
+            background: #e67822;
+          }
+          .upcoming{
+            background: #63ad2b;
           }
         }
         .txt_wrap{
@@ -242,15 +267,8 @@
             font{
               font-size: 14px;
             }
-            .stock{
-              font-size: 10px;
-              display: block;
-              padding: 7px 10px;
-              border-radius: 0px;
-              pointer-events: none;
-              position: absolute;
-              top: -143px;
-              right: 5px;
+            .stock, .soldout, .upcoming{
+              display: none;
             }
           }
         }
@@ -260,5 +278,4 @@
       }
     }
   }
-
 }

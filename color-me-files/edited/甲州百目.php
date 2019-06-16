@@ -52,10 +52,10 @@
         <h2 class="ttl_ja">産地・作り手</h2>
         <span class="ttl_en">ORIGIN</span>
       </div>
-      <div class="sp_img">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/hyakume/location.png">
-      </div>
       <div class="origin_upper">
+        <div class="sp_img">
+          <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/hyakume/location.png">
+        </div>
         <div class="origin_item">
           <span class="title">産地</span>
           <span class="content">山梨県甲州市</span>

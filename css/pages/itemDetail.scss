@@ -162,11 +162,19 @@
       .flex_txt{
         width: 540px;
         margin-right: 60px;
-        .sp_img{
-          display: none;
-        }
         .origin_upper{
-          margin-bottom: 25px;
+          .sp_img, .sp_photo{
+            display: none;
+          }
+          .txt{
+            font-size: 14px;
+            line-height: 1.8;
+            letter-spacing: 0.8px;
+            margin-bottom: 25px;
+            span{
+              display: block;
+            }
+          }
           .origin_item{
             @include flexSet;
             align-items: center;
@@ -188,14 +196,6 @@
               box-sizing: border-box;
               font-size: 14px;
             }
-          }
-        }
-        .txt{
-          font-size: 14px;
-          line-height: 1.8;
-          letter-spacing: 0.8px;
-          span{
-            display: block;
           }
         }
       }
@@ -224,6 +224,10 @@
             max-width: 400px;
           }
         }
+      }
+      .flex_photo{
+        width: calc(100% - 600px);
+        .img_wrap{}
       }
     }
   }
@@ -396,6 +400,11 @@
             display: none;
           }
         }
+        .flex_photo{
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+        }
       }
     }
     #itemInfo{
@@ -558,19 +567,34 @@
           .comp-title{
             margin-bottom: 25px;
           }
-          .sp_img{
-            display: block;
-            width: 100%;
-            padding: 30px 0;
-            margin-bottom: 15px;
-            background-color: #f8f8f8;
-            text-align: center;
-            img{
-              max-width: 80%;
-            }
-          }
           .origin_upper{
             margin-bottom: 15px;
+            .sp_img{
+              display: block;
+              width: 100%;
+              padding: 30px 0;
+              margin-bottom: 15px;
+              background-color: #f8f8f8;
+              text-align: center;
+              img{
+                max-width: 80%;
+              }
+            }
+            .sp_photo{
+              display: block;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+            .origin_item{
+              .title{
+                width: 100px;
+                font-size: 14px;
+              }
+              .content{
+                width: calc(100% - 100px);
+                font-size: 12px;
+              }
+            }
           }
         }
         .flex_img{
@@ -583,6 +607,9 @@
               max-width: 80%;
             }
           }
+        }
+        .flex_img, .flex_photo{
+          display: none;
         }
       }
     }

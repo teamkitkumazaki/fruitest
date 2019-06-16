@@ -2079,6 +2079,8 @@ footer {
         opacity: 0.6; }
       .comp-productlist li .state .img_wrap a:hover {
         opacity: 0.8; }
+    .comp-productlist li .state .img_wrap .stock, .comp-productlist li .state .img_wrap .soldout, .comp-productlist li .state .img_wrap .upcoming {
+      display: none; }
     .comp-productlist li .state .txt_wrap .product_name {
       display: block;
       font-size: 18px;
@@ -2221,13 +2223,32 @@ footer {
     margin-bottom: 100px; }
     .comp-productlist li:nth-child(n+3) {
       margin-top: 35px; }
-    .comp-productlist li .state .img_wrap a {
-      height: 40vw;
-      margin-bottom: 10px; }
-      .comp-productlist li .state .img_wrap a::after {
-        font-size: 18px !important;
-        letter-spacing: 0.7px !important;
-        height: 18px !important; }
+    .comp-productlist li .state .img_wrap {
+      position: relative; }
+      .comp-productlist li .state .img_wrap a {
+        height: 40vw;
+        margin-bottom: 10px; }
+        .comp-productlist li .state .img_wrap a::after {
+          font-size: 18px !important;
+          letter-spacing: 0.7px !important;
+          height: 18px !important; }
+      .comp-productlist li .state .img_wrap .stock, .comp-productlist li .state .img_wrap .soldout, .comp-productlist li .state .img_wrap .upcoming {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 10px;
+        display: inline-block;
+        background: #666;
+        padding: 7px 10px;
+        color: #fff;
+        margin-left: 10px;
+        pointer-events: none; }
+      .comp-productlist li .state .img_wrap .stock {
+        background: #4675ab; }
+      .comp-productlist li .state .img_wrap .soldout {
+        background: #e67822; }
+      .comp-productlist li .state .img_wrap .upcoming {
+        background: #63ad2b; }
     .comp-productlist li .state .txt_wrap {
       position: relative;
       padding-bottom: 30px;
@@ -2258,15 +2279,8 @@ footer {
         letter-spacing: 1.2px; }
         .comp-productlist li .state .txt_wrap .detail font {
           font-size: 14px; }
-        .comp-productlist li .state .txt_wrap .detail .stock {
-          font-size: 10px;
-          display: block;
-          padding: 7px 10px;
-          border-radius: 0px;
-          pointer-events: none;
-          position: absolute;
-          top: -143px;
-          right: 5px; }
+        .comp-productlist li .state .txt_wrap .detail .stock, .comp-productlist li .state .txt_wrap .detail .soldout, .comp-productlist li .state .txt_wrap .detail .upcoming {
+          display: none; }
     .comp-productlist li .state .comp-linkbutton-mini {
       display: none; } }
 
@@ -2612,6 +2626,7 @@ footer {
 .comp-item-thumb {
   position: relative; }
   .comp-item-thumb .slide_num {
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -2722,6 +2737,7 @@ footer {
 
 @media screen and (max-width: 740px) {
   .comp-item-thumb .slide_num {
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -4520,43 +4536,42 @@ footer {
     #itemDetail #itemFeature .flex_origin .flex_txt {
       width: 540px;
       margin-right: 60px; }
-      #itemDetail #itemFeature .flex_origin .flex_txt .sp_img {
+      #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .sp_img, #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .sp_photo {
         display: none; }
-      #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper {
-        margin-bottom: 25px; }
-        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          border: solid 1px #d8d8d8;
-          margin-bottom: 5px; }
-          #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item .title {
-            width: 150px;
-            display: block;
-            text-align: center;
-            font-size: 14px;
-            letter-spacing: 1.6px;
-            background-color: #f4f4f4;
-            padding: 10px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-          #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item .content {
-            width: calc(100% - 150px);
-            padding: 10px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            font-size: 14px; }
-      #itemDetail #itemFeature .flex_origin .flex_txt .txt {
+      #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .txt {
         font-size: 14px;
         line-height: 1.8;
-        letter-spacing: 0.8px; }
-        #itemDetail #itemFeature .flex_origin .flex_txt .txt span {
+        letter-spacing: 0.8px;
+        margin-bottom: 25px; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .txt span {
           display: block; }
+      #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: solid 1px #d8d8d8;
+        margin-bottom: 5px; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item .title {
+          width: 150px;
+          display: block;
+          text-align: center;
+          font-size: 14px;
+          letter-spacing: 1.6px;
+          background-color: #f4f4f4;
+          padding: 10px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item .content {
+          width: calc(100% - 150px);
+          padding: 10px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size: 14px; }
     #itemDetail #itemFeature .flex_origin .flex_img {
       width: calc(100% - 600px);
       background-color: #f8f8f8;
@@ -4579,6 +4594,8 @@ footer {
         z-index: 10; }
         #itemDetail #itemFeature .flex_origin .flex_img .origin_img img {
           max-width: 400px; }
+    #itemDetail #itemFeature .flex_origin .flex_photo {
+      width: calc(100% - 600px); }
 
 #itemDetail #setContent {
   margin-top: 120px; }
@@ -4729,6 +4746,10 @@ footer {
         margin-bottom: 40px; }
         #itemDetail #itemFeature .flex_origin .flex_img::before {
           display: none; }
+      #itemDetail #itemFeature .flex_origin .flex_photo {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px; }
   #itemDetail #itemInfo {
     margin-top: 100px; }
     #itemDetail #itemInfo .info_wrap .info_item .content {
@@ -4852,17 +4873,27 @@ footer {
       margin-right: 60px; }
       #itemDetail #itemFeature .flex_origin .flex_txt .comp-title {
         margin-bottom: 25px; }
-      #itemDetail #itemFeature .flex_origin .flex_txt .sp_img {
-        display: block;
-        width: 100%;
-        padding: 30px 0;
-        margin-bottom: 15px;
-        background-color: #f8f8f8;
-        text-align: center; }
-        #itemDetail #itemFeature .flex_origin .flex_txt .sp_img img {
-          max-width: 80%; }
       #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper {
         margin-bottom: 15px; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .sp_img {
+          display: block;
+          width: 100%;
+          padding: 30px 0;
+          margin-bottom: 15px;
+          background-color: #f8f8f8;
+          text-align: center; }
+          #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .sp_img img {
+            max-width: 80%; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .sp_photo {
+          display: block;
+          width: 100%;
+          margin-bottom: 15px; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item .title {
+          width: 100px;
+          font-size: 14px; }
+        #itemDetail #itemFeature .flex_origin .flex_txt .origin_upper .origin_item .content {
+          width: calc(100% - 100px);
+          font-size: 12px; }
     #itemDetail #itemFeature .flex_origin .flex_img {
       display: none;
       width: 100%;
@@ -4870,6 +4901,8 @@ footer {
       margin-bottom: 25px; }
       #itemDetail #itemFeature .flex_origin .flex_img .origin_img img {
         max-width: 80%; }
+    #itemDetail #itemFeature .flex_origin .flex_img, #itemDetail #itemFeature .flex_origin .flex_photo {
+      display: none; }
   #itemDetail #setContent {
     margin-top: 80px;
     margin-bottom: 80px; }
