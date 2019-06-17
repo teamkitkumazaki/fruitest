@@ -61,10 +61,6 @@ article{
   &.under-page{
     margin-top: 120px;
   }
-  &.journal{
-    margin-top: 120px;
-    min-height: 100vh;
-  }
 }
 .effect{
   opacity: 0;
@@ -116,3 +112,4 @@ article{
 @import 'pages/faq.scss';
 @import 'pages/contact.scss';
 @import 'pages/journalArchive.scss';
+@import 'pages/journalArticle.scss';

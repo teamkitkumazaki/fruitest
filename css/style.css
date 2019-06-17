@@ -23,9 +23,6 @@ article {
   overflow: hidden; }
   article.under-page {
     margin-top: 120px; }
-  article.journal {
-    margin-top: 120px;
-    min-height: 100vh; }
 
 .effect {
   opacity: 0;
@@ -2713,68 +2710,81 @@ footer {
     .comp-journal .journal_wrap #slickSlider .item_box:nth-of-type(3) {
       margin-right: 0; }
     .comp-journal .journal_wrap #slickSlider .item_box .img_wrap {
+      margin-bottom: 15px; }
+      .comp-journal .journal_wrap #slickSlider .item_box .img_wrap a {
+        display: block;
+        width: 100%;
+        height: 230px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+    .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .title {
       display: block;
-      width: 100%;
-      height: 250px;
-      background-color: #f1f1f1;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+      font-size: 18px;
+      line-height: 1.44;
+      letter-spacing: 2px;
+      color: #333;
       -webkit-transition: opacity .5s;
       -o-transition: opacity .5s;
       transition: opacity .5s;
-      margin-bottom: 15px; }
-      .comp-journal .journal_wrap #slickSlider .item_box .img_wrap:hover {
+      margin-bottom: 5px; }
+      .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .title:hover {
         opacity: 0.6; }
-      .comp-journal .journal_wrap #slickSlider .item_box .img_wrap:hover {
-        opacity: 0.8; }
-    .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap {
+    .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .tag_wrap {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .date {
-        position: relative;
+      flex-wrap: wrap; }
+      .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .tag_wrap a {
         display: block;
-        width: 65px;
-        padding: 5px 0;
-        margin-right: 20px;
-        text-align: center;
         font-size: 12px;
-        letter-spacing: 1px; }
-        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .date::after {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          margin: auto;
-          display: block;
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: #d8d8d8; }
-        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .date span {
-          display: block;
-          font-size: 18px;
-          margin-top: 5px; }
-      .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .ttl {
-        width: calc(100% - 85px);
-        font-size: 14px;
-        color: #333;
-        line-height: 1.6;
-        letter-spacing: 1.5px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding-right: 20px;
+        margin-right: 0.7em;
+        line-height: 1;
+        letter-spacing: 2.4px;
+        color: #666;
+        -webkit-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        transition: opacity .5s;
+        margin-bottom: 5px; }
+        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .tag_wrap a:hover {
+          opacity: 0.6; }
+        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .tag_wrap a:nth-last-of-type(1) {
+          margin-right: 0; }
+    .comp-journal .journal_wrap #slickSlider .item_box .link_wrap {
+      margin-top: 15px; }
+      .comp-journal .journal_wrap #slickSlider .item_box .link_wrap .prod_link {
+        display: inline-block;
+        color: #979797;
         -webkit-transition: opacity .5s;
         -o-transition: opacity .5s;
         transition: opacity .5s; }
-        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .ttl:hover {
+        .comp-journal .journal_wrap #slickSlider .item_box .link_wrap .prod_link:hover {
           opacity: 0.6; }
+        .comp-journal .journal_wrap #slickSlider .item_box .link_wrap .prod_link span {
+          position: relative;
+          font-size: 14px;
+          letter-spacing: 1px;
+          padding-right: 35px; }
+          .comp-journal .journal_wrap #slickSlider .item_box .link_wrap .prod_link span::after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 5px;
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            -webkit-transition: right .3s;
+            -o-transition: right .3s;
+            transition: right .3s;
+            background-image: url(../img/journal/journal_caret.png); }
+        .comp-journal .journal_wrap #slickSlider .item_box .link_wrap .prod_link:hover span::after {
+          right: 0; }
   .comp-journal .journal_wrap .comp-linkbutton {
     max-width: 550px;
     margin: 50px auto 0;
@@ -2807,11 +2817,12 @@ footer {
       .comp-journal .journal_wrap #slickSlider .item_box .img_wrap {
         display: block;
         width: 250px;
-        height: 140px;
-        margin-right: 20px;
+        margin-right: 25px;
         margin-bottom: 15px; }
+        .comp-journal .journal_wrap #slickSlider .item_box .img_wrap a {
+          height: 170px; }
       .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap {
-        width: calc(100% - 270px); } }
+        width: calc(100% - 275px); } }
 
 @media screen and (max-width: 740px) {
   .comp-journal {
@@ -2869,50 +2880,32 @@ footer {
       .comp-journal .journal_wrap #slickSlider .item_box .img_wrap {
         display: block;
         width: 100%;
-        height: 60vw;
         margin-right: 0;
         margin-bottom: 15px; }
-        .comp-journal .journal_wrap #slickSlider .item_box .img_wrap:hover {
-          opacity: 0.8; }
+        .comp-journal .journal_wrap #slickSlider .item_box .img_wrap a {
+          height: 60vw; }
       .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap {
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .date {
-          position: relative;
-          display: block;
-          width: 65px;
-          padding: 5px 0;
-          margin-right: 20px;
-          text-align: center;
-          font-size: 12px;
-          letter-spacing: 1px; }
-          .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .date::after {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
+        display: block;
+        padding: 0 5px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .title {
+          font-size: 16px;
+          letter-spacing: 1.2px; }
+        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .tag_wrap {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .tag_wrap a {
             display: block;
-            content: "";
-            width: 1px;
-            height: 100%;
-            background: #d8d8d8; }
-          .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .date span {
-            display: block;
-            font-size: 18px;
-            margin-top: 5px; }
-        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .ttl {
-          color: #333;
-          line-height: 1.6;
-          letter-spacing: 1px;
-          padding-right: 20px; }
+            font-size: 12px;
+            line-height: 1;
+            letter-spacing: 1.5px; }
+        .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .link_wrap {
+          margin-top: 10px; }
     .comp-journal .journal_wrap .comp-linkbutton {
       max-width: 1080px;
       margin-left: auto;
@@ -5227,17 +5220,6 @@ footer {
       background-color: #f8f8f8;
       padding: 30px 0;
       position: relative; }
-      #itemDetail #itemFeature .flex_origin .flex_img::before {
-        display: block;
-        content: "";
-        width: 65px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        background: #fff; }
       #itemDetail #itemFeature .flex_origin .flex_img .origin_img {
         text-align: center;
         position: relative;
@@ -5344,7 +5326,7 @@ footer {
 #itemDetail #relatedItem {
   margin-top: 150px; }
 
-#itemDetail #detailJournal {
+#itemDetail .comp-journal {
   margin: 150px 0; }
 
 @media screen and (max-width: 1100px) {
@@ -5423,7 +5405,7 @@ footer {
         width: 100%; }
   #itemDetail #relatedItem {
     margin-top: 150px; }
-  #itemDetail #detailJournal {
+  #itemDetail .comp-journal {
     margin: 150px 0; } }
 
 @media screen and (max-width: 740px) {
@@ -5612,7 +5594,7 @@ footer {
         margin-top: 15px; }
   #itemDetail #relatedItem {
     margin-top: 60px; }
-  #itemDetail #detailJournal {
+  #itemDetail .comp-journal {
     margin: 60px 0; } }
 
 #faq .faq_index {
@@ -6067,9 +6049,263 @@ footer {
         height: 50px;
         line-height: 50px; } }
 
-#archiveList {
-  margin-bottom: 120px; }
+#journalArchive {
+  margin-top: 120px;
+  min-height: 100vh; }
+  #journalArchive #archiveList {
+    margin-bottom: 120px; }
+  @media screen and (max-width: 740px) {
+    #journalArchive #archiveList {
+      margin-bottom: 80px; } }
 
-@media screen and (max-width: 740px) {
-  #archiveList {
-    margin-bottom: 80px; } }
+#journalArticle #articleTitle .main_visual {
+  width: 100%;
+  height: 500px;
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#journalArticle #articleTitle .title_wrap {
+  max-width: 780px;
+  margin: 30px auto 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d8d8d8; }
+  #journalArticle #articleTitle .title_wrap .title {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.8;
+    letter-spacing: 2.2px;
+    color: #333; }
+
+#journalArticle #articleTitle .flex_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #journalArticle #articleTitle .flex_wrap .tag_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #journalArticle #articleTitle .flex_wrap .tag_list a {
+      display: block;
+      font-size: 16px;
+      margin-right: 0.5em;
+      line-height: normal;
+      letter-spacing: 2px;
+      color: #666; }
+  #journalArticle #articleTitle .flex_wrap .sns_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #journalArticle #articleTitle .flex_wrap .sns_wrap .sns_title {
+      display: block;
+      font-size: 16px;
+      margin-right: 0.5em;
+      line-height: normal;
+      letter-spacing: 2px;
+      color: #666; }
+    #journalArticle #articleTitle .flex_wrap .sns_wrap a {
+      display: block;
+      width: 32px;
+      margin-right: 5px; }
+      #journalArticle #articleTitle .flex_wrap .sns_wrap a:nth-last-of-type(1) {
+        margin-right: 0; }
+
+#journalArticle #articleContents {
+  max-width: 780px;
+  margin: 0 auto; }
+  #journalArticle #articleContents .contents_inner {
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 60px; }
+    #journalArticle #articleContents .contents_inner::after {
+      display: block;
+      content: "";
+      width: 120px;
+      height: 1px;
+      background-color: #d8d8d8;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; }
+    #journalArticle #articleContents .contents_inner p {
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: 1.8px;
+      margin-bottom: 20px; }
+    #journalArticle #articleContents .contents_inner img {
+      margin: 10px 0 30px; }
+  #journalArticle #articleContents .footer_sns {
+    text-align: center;
+    margin-bottom: 100px; }
+    #journalArticle #articleContents .footer_sns .sns_title {
+      display: block;
+      font-size: 22px;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      color: #333;
+      margin-bottom: 30px; }
+    #journalArticle #articleContents .footer_sns .sns_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #journalArticle #articleContents .footer_sns .sns_wrap a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 8px; }
+        #journalArticle #articleContents .footer_sns .sns_wrap a:nth-last-of-type(1) {
+          margin-right: 0; }
+  #journalArticle #articleContents .tag_list {
+    padding: 30px 30px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px dotted #d8d8d8;
+    position: relative; }
+    #journalArticle #articleContents .tag_list::before {
+      display: block;
+      content: "";
+      width: 210px;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: #fff; }
+    #journalArticle #articleContents .tag_list .comp-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: absolute;
+      left: 30px;
+      top: -20px; }
+      #journalArticle #articleContents .tag_list .comp-title .ttl_ja {
+        margin-right: 10px; }
+      #journalArticle #articleContents .tag_list .comp-title .ttl_ja, #journalArticle #articleContents .tag_list .comp-title .ttl_en {
+        position: relative;
+        z-index: 10; }
+    #journalArticle #articleContents .tag_list .comp-taglist {
+      margin-bottom: 0; }
+
+#journalArticle .comp-journal {
+  margin: 120px auto; }
+
+@media screen and (max-width: 1100px) {
+  #journalArticle #articleTitle .main_visual {
+    height: 46vw; }
+  #journalArticle #articleTitle .title_wrap {
+    max-width: 730px;
+    margin: 30px auto 40px; }
+  #journalArticle #articleContents {
+    max-width: 730px;
+    margin: 0 auto; }
+    #journalArticle #articleContents .contents_inner {
+      position: relative;
+      padding-bottom: 60px;
+      margin-bottom: 60px; }
+      #journalArticle #articleContents .contents_inner p {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 1.8px;
+        margin-bottom: 20px; }
+      #journalArticle #articleContents .contents_inner img {
+        margin: 10px 0 30px; }
+    #journalArticle #articleContents .footer_sns {
+      text-align: center;
+      margin-bottom: 100px; } }
+
+@media screen and (max-width: 730px) {
+  #journalArticle #articleTitle .main_visual {
+    height: 55vw; }
+  #journalArticle #articleTitle .title_wrap {
+    max-width: 90vw;
+    margin: 25px auto 40px;
+    padding-bottom: 25px; }
+    #journalArticle #articleTitle .title_wrap .title {
+      font-weight: normal;
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      line-height: 1.5;
+      margin-bottom: 5px; }
+  #journalArticle #articleTitle .flex_wrap {
+    display: block; }
+    #journalArticle #articleTitle .flex_wrap .tag_list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #journalArticle #articleTitle .flex_wrap .tag_list a {
+        display: block;
+        font-size: 14px;
+        letter-spacing: 1.5px; }
+    #journalArticle #articleTitle .flex_wrap .sns_wrap {
+      margin-top: 10px; }
+      #journalArticle #articleTitle .flex_wrap .sns_wrap .sns_title {
+        display: none; }
+      #journalArticle #articleTitle .flex_wrap .sns_wrap a {
+        display: block;
+        width: 25px;
+        margin-right: 5px; }
+  #journalArticle #articleContents {
+    max-width: 90vw;
+    margin: 0 auto; }
+    #journalArticle #articleContents .contents_inner {
+      padding-bottom: 40px;
+      margin-bottom: 60px; }
+      #journalArticle #articleContents .contents_inner p {
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px; }
+      #journalArticle #articleContents .contents_inner img {
+        margin: 5px 0 20px; }
+    #journalArticle #articleContents .footer_sns {
+      text-align: center;
+      margin-bottom: 100px; }
+      #journalArticle #articleContents .footer_sns .sns_title {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        margin-bottom: 20px; }
+      #journalArticle #articleContents .footer_sns .sns_wrap a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px; }
+    #journalArticle #articleContents .tag_list {
+      padding: 30px 5px 5px 20px; }
+      #journalArticle #articleContents .tag_list::before {
+        width: 170px;
+        height: 20px;
+        top: -10px;
+        left: 10px; }
+      #journalArticle #articleContents .tag_list .comp-title {
+        left: 20px;
+        top: -20px; }
+  #journalArticle .comp-journal {
+    margin: 60px auto 100px; } }

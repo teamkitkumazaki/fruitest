@@ -204,18 +204,6 @@
         background-color: #f8f8f8;
         padding: 30px 0;
         position: relative;
-        &::before{
-          display: block;
-          content: "";
-          width: 65px;
-          height: 100%;
-          position: absolute;
-          top:0;
-          bottom:0;
-          left:0;
-          margin: auto;
-          background: #fff;
-        }
         .origin_img{
           text-align: center;
           position: relative;
@@ -334,9 +322,10 @@
   #relatedItem{
     margin-top: 150px;
   }
-  #detailJournal{
+  .comp-journal{
     margin: 150px 0;
   }
+
 }
 @media screen and (max-width: 1100px){
   #itemDetail{
@@ -443,7 +432,7 @@
     #relatedItem{
       margin-top: 150px;
     }
-    #detailJournal{
+    .comp-journal{
       margin: 150px 0;
     }
   }
@@ -700,7 +689,7 @@
     #relatedItem{
       margin-top: 60px;
     }
-    #detailJournal{
+    .comp-journal{
       margin: 60px 0;
     }
   }
