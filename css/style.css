@@ -2192,7 +2192,7 @@ footer {
       height: 25px;
       margin: auto;
       text-align: center;
-      content: "COMING SOON";
+      content: "UPCOMING";
       color: #fff;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -4271,7 +4271,7 @@ footer {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       letter-spacing: 0.1em !important;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 2;
       letter-spacing: 1.8px;
       color: #666; }
@@ -4583,8 +4583,8 @@ footer {
       #concept #conceptWrap .flex_ttl_wrap .ja p span {
         /*display: inline;*/ }
   #concept #conceptWrap .flex_ttl_wrap .en p {
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 12px;
+    line-height: 1.6;
     letter-spacing: normal; }
   #concept #conceptSozai {
     margin-top: 20px;

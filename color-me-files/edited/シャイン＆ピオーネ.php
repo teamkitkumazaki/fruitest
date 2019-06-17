@@ -6,7 +6,7 @@
     </div>
   <div class="comp-setcontent">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/shine_pione/setimg01.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -30,7 +30,7 @@
   </div><!-- comp-setcontent -->
   <div class="comp-setcontent reverse">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg02.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/shine_pione/setimg02.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">

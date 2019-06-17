@@ -91,17 +91,28 @@
           </div>
           <div class="item">
             <{if $product.price_disp == true}>
+              <{if $product.soldout_flg == false}>
               <span class="number">個数<input type="number" name="product_num" value="<{$product.init_num}>">個</span>
               <span class="price"><{$product.price}></span>
+              <{else}>
+              <span class="number">個数<input type="number" disabled="disabled" class="disabled" name="product_num" value="<{$product.init_num}>">個</span>
+              <span class="price"><{$product.price}></span>
+              <{/if}>
               <{else}>
               <span class="number">個数<input disabled="disabled" class="disabled" type="number" name="product_num" value="<{$product.init_num}>">個</span>
               <span class="price">価格未定</span>
             <{/if}>
           </div>
           <div class="button_wrap">
+            <{if $product.soldout_flg == false}>
             <button class="comp-cartbutton large"><span>カートに入れる</span></button>
             <input class="product_cart_btn product_addcart_btn" type="submit" value="カートに入れる">
             <{$product.info}>
+            <{else}>
+            <div class="comp-linkbutton">
+              <a href="#aaaa"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+            </div>
+            <{/if}>
           </div>
         </div><!-- comp-itemdetail -->
       </div>
@@ -133,16 +144,40 @@
     <h2 class="copy"><{$product.simple_explain}></h2>
     <div class="comp-itemdetail">
       <div class="item_upper item">
+        <{if $product.soldout_flg == false}>
+        <!-- 通常 -->
         <span class="amount">内容量: <{$product.weight}>個</span>
-        <span class="state on-sale"></span>
+        <span class="state onsale">販売中</span>
+        <{else}>
+        <!-- 売り切れ -->
+        <span class="amount">内容量: <{$product.weight}>個</span>
+          <span class="state soldout">再販受付中</span>
+        <{/if}>
       </div>
       <div class="item">
-        <span class="number">個数<input type="number">個</span>
-        <span class="price"><{$product.price}></span>
+        <{if $product.price_disp == true}>
+          <{if $product.soldout_flg == false}>
+          <span class="number">個数<input type="number" name="product_num" value="<{$product.init_num}>">個</span>
+          <span class="price"><{$product.price}></span>
+          <{else}>
+          <span class="number">個数<input type="number" disabled="disabled" class="disabled" name="product_num" value="<{$product.init_num}>">個</span>
+          <span class="price"><{$product.price}></span>
+          <{/if}>
+          <{else}>
+          <span class="number">個数<input disabled="disabled" class="disabled" type="number" name="product_num" value="<{$product.init_num}>">個</span>
+          <span class="price">価格未定</span>
+        <{/if}>
       </div>
       <div class="button_wrap">
+        <{if $product.soldout_flg == false}>
         <button class="comp-cartbutton large"><span>カートに入れる</span></button>
         <input class="product_cart_btn product_addcart_btn" type="submit" value="カートに入れる">
+        <{$product.info}>
+        <{else}>
+        <div class="comp-linkbutton">
+          <a href="#aaaa"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+        </div>
+        <{/if}>
       </div>
     </div><!-- comp-itemdetail -->
   </div>
