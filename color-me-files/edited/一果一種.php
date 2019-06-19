@@ -1,3 +1,13 @@
+<div id="leadTxt">
+  <div class="set_content">
+    <div class="set_detail">
+      <span>貴陽</span>
+      <span>ピオーネ</span>
+      <span>甲州百目</span>
+    </div>
+  </div>
+</div>
+
 <section id="setContent">
   <div class="inner">
     <div class="comp-title">
@@ -6,7 +16,7 @@
     </div>
   <div class="comp-setcontent">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/ikkaissyu/setimg01.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -30,7 +40,7 @@
   </div><!-- comp-setcontent -->
   <div class="comp-setcontent reverse">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg02.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/ikkaissyu/setimg02.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -52,7 +62,7 @@
   </div><!-- comp-setcontent -->
   <div class="comp-setcontent">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/ikkaissyu/setimg03.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">

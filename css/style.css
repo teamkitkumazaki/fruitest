@@ -2223,7 +2223,7 @@ footer {
     .comp-productlist li .state .img_wrap {
       position: relative; }
       .comp-productlist li .state .img_wrap a {
-        height: 40vw;
+        height: 44vw;
         margin-bottom: 10px; }
         .comp-productlist li .state .img_wrap a::after {
           font-size: 18px !important;
@@ -5425,10 +5425,11 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-bottom: 5px; }
+      margin-bottom: 15px; }
+      #itemDetail #basicInfo .comp-title .ttl_ja {
+        padding-right: 15px; }
       #itemDetail #basicInfo .comp-title .ttl_en {
-        display: block;
-        padding-left: 15px; }
+        display: block; }
     #itemDetail #basicInfo .flex_wrap {
       margin-top: 0px; }
       #itemDetail #basicInfo .flex_wrap .flex_left {
@@ -5437,11 +5438,13 @@ footer {
         margin-top: 0px; }
         #itemDetail #basicInfo .flex_wrap .flex_right .copy {
           font-size: 18px;
-          letter-spacing: 1px; }
+          letter-spacing: 1px;
+          margin-bottom: 10px; }
         #itemDetail #basicInfo .flex_wrap .flex_right .sp_img {
           display: block;
           margin: 40px auto 10px; }
         #itemDetail #basicInfo .flex_wrap .flex_right .set_content {
+          margin-top: 25px;
           margin-bottom: -15px; }
           #itemDetail #basicInfo .flex_wrap .flex_right .set_content .set_detail {
             margin-bottom: 15px; }

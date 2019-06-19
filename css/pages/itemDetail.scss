@@ -452,10 +452,12 @@
         text-align: left;
         @include flexSet;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+        .ttl_ja{
+          padding-right:15px;
+        }
         .ttl_en{
           display: block;
-          padding-left:15px;
         }
       }
       .flex_wrap{
@@ -468,12 +470,14 @@
           .copy{
             font-size: 18px;
             letter-spacing: 1px;
+            margin-bottom: 10px;
           }
           .sp_img{
             display: block;
             margin: 40px auto 10px;
           }
           .set_content{
+            margin-top: 25px;
             margin-bottom: -15px;
             .set_detail{
               margin-bottom: 15px;
