@@ -5459,6 +5459,8 @@ footer {
           width: 100%;
           margin: 0px auto;
           text-align: left; }
+          #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .copy {
+            text-align: left; }
           #itemDetail #basicInfo .flex_wrap .flex_right.flex_all .tag {
             font-size: 12px;
             margin: 0px 0 20px; }
