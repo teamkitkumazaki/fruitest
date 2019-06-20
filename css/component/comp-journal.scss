@@ -1,19 +1,23 @@
 .comp-journal{
   margin-top: 175px;
+  .autoHeight{
+    width: 1101px;
+    height: 350px;
+  }
   .journal_wrap{
     #slickSlider{
       .slick-list{
         padding: 0 !important;
       }
       .slick-dots{
-        display: none;
+        display: none !important;
       }
       .slick-track{
         min-width: 1080px;
         @include flexSet;
       }
       .slick-arrow{
-        display: none;
+        display: none !important;
       }
       .item_box{
         @media screen and (min-width: 1101px){
@@ -21,6 +25,7 @@
         }
         float: none;
         margin-right: 22px;
+        padding-bottom: 5px;
         &:nth-of-type(3){
           margin-right:0;
         }
@@ -111,6 +116,10 @@
 @media screen and (max-width: 1100px){
   .comp-journal{
     margin-top: 175px;
+    .autoHeight{
+      width: 741px;
+      height: 640px;
+    }
     .journal_wrap{
       #slickSlider{
         .slick-track{
@@ -149,6 +158,11 @@
 @media screen and (max-width: 740px){
   .comp-journal{
     margin-top: 100px;
+    .autoHeight{
+      width: 111%;
+      height: 105vw;
+      margin-left: -5%;
+    }
     .journal_wrap{
       #slickSlider{
         .slick-arrow{
@@ -160,14 +174,12 @@
           width: 320vw !important;
         }
         .slick-dots{
-          position: absolute;
-          bottom: -45px;
           list-style: none;
-          display: block;
+          display: block !important;
           text-align: center;
           padding: 0;
-          margin: 0;
           width: 100%;
+          margin: 15px auto 0px;
           li{
             position: relative;
             display: inline-block;
@@ -242,7 +254,7 @@
       }
       .comp-linkbutton {
         @include waku;
-        margin: 80px auto 0;
+        margin: 35px auto 0;
         text-align: left;
       }
     }

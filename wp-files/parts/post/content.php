@@ -11,7 +11,7 @@
 
 <div class="journal_item">
   <div class="img_wrap">
-    <a href="<?php echo $permalink; ?>" style="background-image:url(<?php the_field('page_thumbnail'); ?>)"></a>
+    <a href="<?php echo $permalink; ?>" style="background-image:url(<?php echo $src; ?>)"></a>
   </div>
   <div class="txt_wrap">
     <a class="title" href="<?php echo $permalink; ?>"><?php echo $title; ?></a>

@@ -2688,10 +2688,13 @@ footer {
 
 .comp-journal {
   margin-top: 175px; }
+  .comp-journal .autoHeight {
+    width: 1101px;
+    height: 350px; }
   .comp-journal .journal_wrap #slickSlider .slick-list {
     padding: 0 !important; }
   .comp-journal .journal_wrap #slickSlider .slick-dots {
-    display: none; }
+    display: none !important; }
   .comp-journal .journal_wrap #slickSlider .slick-track {
     min-width: 1080px;
     display: -webkit-box;
@@ -2700,10 +2703,11 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .comp-journal .journal_wrap #slickSlider .slick-arrow {
-    display: none; }
+    display: none !important; }
   .comp-journal .journal_wrap #slickSlider .item_box {
     float: none;
-    margin-right: 22px; }
+    margin-right: 22px;
+    padding-bottom: 5px; }
     @media screen and (min-width: 1101px) {
       .comp-journal .journal_wrap #slickSlider .item_box {
         width: 345px !important; } }
@@ -2798,6 +2802,9 @@ footer {
 @media screen and (max-width: 1100px) {
   .comp-journal {
     margin-top: 175px; }
+    .comp-journal .autoHeight {
+      width: 741px;
+      height: 640px; }
     .comp-journal .journal_wrap #slickSlider .slick-track {
       min-width: 720px;
       max-width: 720px; }
@@ -2832,6 +2839,10 @@ footer {
 @media screen and (max-width: 740px) {
   .comp-journal {
     margin-top: 100px; }
+    .comp-journal .autoHeight {
+      width: 111%;
+      height: 105vw;
+      margin-left: -5%; }
     .comp-journal .journal_wrap #slickSlider .slick-arrow {
       display: none !important; }
     .comp-journal .journal_wrap #slickSlider .slick-track {
@@ -2839,14 +2850,12 @@ footer {
       max-width: initial;
       width: 320vw !important; }
     .comp-journal .journal_wrap #slickSlider .slick-dots {
-      position: absolute;
-      bottom: -45px;
       list-style: none;
-      display: block;
+      display: block !important;
       text-align: center;
       padding: 0;
-      margin: 0;
-      width: 100%; }
+      width: 100%;
+      margin: 15px auto 0px; }
       .comp-journal .journal_wrap #slickSlider .slick-dots li {
         position: relative;
         display: inline-block;
@@ -2915,7 +2924,7 @@ footer {
       max-width: 1080px;
       margin-left: auto;
       margin-right: auto;
-      margin: 80px auto 0;
+      margin: 35px auto 0;
       text-align: left; } }
     @media screen and (max-width: 740px) and (max-width: 1100px) {
       .comp-journal .journal_wrap .comp-linkbutton {
@@ -6331,3 +6340,6 @@ footer {
       top: -20px; }
   #journalArticle .comp-journal {
     margin: 60px auto 100px; } }
+
+#iframe .comp-journal {
+  margin-top: 0; }

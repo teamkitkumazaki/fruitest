@@ -252,64 +252,39 @@
 </div>
 </section><!-- relatedItem -->
 <{/if}>
+<section id="topOption" class="comp-option">
+  <div class="inner">
+    <div class="comp-title center">
+      <h2 class="ttl_ja">FRUITESTのギフトセット</h2>
+      <span class="ttl_en">GIFT SET</span>
+    </div>
+    <div class="spimg_wrap"></div>
+    <div class="txt_wrap">
+      <p class="text">
+        <span>手土産や特別な日のプレゼントに。</span>
+        <span>旬のレア・ドライフルーツを、ギフトボックスに入れてお届けします。</span>
+      </p>
+    </div>
+    <div class="img_wrap"></div>
+    <div class="comp-linkbutton">
+      <a href="/?mode=f2">
+        <span>ギフトセット一覧<font>GIFT SET</font></span></a>
+    </div>
+  </div><!-- inner -->
+</section><!-- topOption -->
 <section class="comp-journal">
   <div class="inner">
     <div class="comp-title">
       <h2 class="ttl_ja">FRUITESTについて<span>もっと知る。</span></h2>
       <span class="ttl_en">JOURNAL</span>
     </div>
-    <div class="journal_wrap">
-      <div id="slickSlider" class="slick-slider">
-        <div class="item_box slick-slide">
-          <div class="img_wrap">
-            <a href="aaaa" style="background-image:url(//journal.fruitest.jp/wp-content/themes/fruitest-theme//img/journal/journal_img01.jpg)"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="title" href="https://journal.fruitest.jp/core-concept/">FRUITESTの素材について</a>
-            <div class="tag_wrap">
-              <a href="#aaaa">#素材/果物</a>
-            </div>
-            <div class="link_wrap">
-              <a class="prod_link" href="https://journal.fruitest.jp/core-concept/"><span>記事を読む</span></a>
-            </div>
-          </div><!-- txt_wrap -->
-        </div><!-- item_box -->
-        <div class="item_box slick-slide">
-          <div class="img_wrap">
-            <a href="aaaa" style="background-image:url(//journal.fruitest.jp/wp-content/themes/fruitest-theme//img/journal/journal_img02.jpg)"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="title" href="https://journal.fruitest.jp/core-concept/">FRUITESTが作られる風景(作業場、種取り）</a>
-            <div class="tag_wrap">
-              <a href="#aaaa">#製法</a>
-            </div>
-            <div class="link_wrap">
-              <a class="prod_link" href="https://journal.fruitest.jp/core-concept/"><span>記事を読む</span></a>
-            </div>
-          </div><!-- txt_wrap -->
-        </div><!-- item_box -->
-        <div class="item_box slick-slide">
-          <div class="img_wrap">
-            <a href="aaaa" style="background-image:url(//journal.fruitest.jp/wp-content/themes/fruitest-theme//img/journal/journal_img03.jpg)"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="title" href="https://journal.fruitest.jp/core-concept/">樋口さんのシャインマスカットは香りのレベルが違います</a>
-            <div class="tag_wrap">
-              <a href="#aaaa">#素材/果物</a>
-              <a href="#aaaa">#作り手</a>
-              <a href="#aaaa">#産地</a>
-            </div>
-            <div class="link_wrap">
-              <a class="prod_link" href="https://journal.fruitest.jp/core-concept/"><span>記事を読む</span></a>
-            </div>
-          </div><!-- txt_wrap -->
-        </div><!-- item_box -->
+      <iframe class="autoHeight" src="https://journal.fruitest.jp/iframe-all/" scrolling="no" frameborder="0"></iframe>
+      <div class="journal_wrap">
+        <div class="comp-linkbutton">
+          <a href="https://journal.fruitest.jp/"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
+        </div>
       </div>
-      <div class="comp-linkbutton">
-        <a href="https://journal.fruitest.jp/"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
-      </div>
-    </div>
-  </div>
+  </div><!-- inner -->
 </section>
 </article>
 <script>

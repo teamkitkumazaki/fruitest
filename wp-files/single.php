@@ -15,7 +15,7 @@ $src = $image[0];
 ?>
 <article id="journalArticle" class="journal">
 	<section id="articleTitle">
-		<div class="main_visual" style="background-image: url(<?php echo $src ?>)"></div>
+		<div class="main_visual" style="background-image: url(<?php echo the_field('page_thumbnail');?>)"></div>
 		<div class="title_wrap">
 			<h1 class="title"><?= the_title(); ?></h1>
 			<div class="flex_wrap">
@@ -87,19 +87,21 @@ $src = $image[0];
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 			$r_id = get_the_ID();
 			$r_title = get_the_title($post_id);
+			$r_thumbnail_id = get_post_thumbnail_id($r_id);
+			$r_image = wp_get_attachment_image_src( $r_thumbnail_id, 'medium' );
+			$r_src = $r_image[0];
 			$r_permalink = get_permalink($r_id);
-			$tags = get_the_tags($post_id);
 
 			?>
 			<div class="item_box slick-slide">
 				<div class="img_wrap">
-					<a href="<?php echo $r_permalink; ?>" style="background-image:url(<?php the_field('page_thumbnail'); ?>)"></a>
+					<a href="<?php echo $r_permalink; ?>" style="background-image:url(<?php echo $r_src; ?>)"></a>
 				</div>
 				<div class="txt_wrap">
 					<a class="title" href="<?php echo $r_permalink; ?>"><?php echo $r_title; ?></a>
 					<div class="tag_wrap">
 						<?php foreach($tags as $key => $tag): ?>
-						<a href="?tag=<?php echo $tag->term_id; ?>">#<?php echo $tag->name; ?></a>
+						<a href="/?tag=<?php echo $tag->term_id; ?>">#<?php echo $tag->name; ?></a>
 						<?php endforeach; ?>
 					</div>
 					<div class="link_wrap">
