@@ -1,0 +1,81 @@
+@keyframes loading {
+    0% {
+        width:0;
+    }
+    99.9%, to {
+        width:100%;
+    }
+}
+body .comp-loading{
+  position: fixed;
+  top:0;
+  background-color: #fff;
+  background-size: 1000px;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 10000;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+  .load_inner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transition: opacity .3s;
+    .loading_inner{
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      margin: auto;
+      width: 200px;
+      height: 75px;
+      .loading_logo{
+        position: relative;
+        display: block;
+        width: 130px;
+        height: 50px;
+        margin: 0 auto 20px;
+        transition: opacity .5s;
+        &::before{
+          display: block;
+          position: absolute;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 130px;
+          height: 50px;
+          @include bgSet;
+          background-image: url(../img/logo.svg);
+        }
+      }
+      #loadingBar{
+        position: relative;
+        width: 200px;
+        margin: 0 auto;
+        height: 1px;
+        background: rgba(0, 56, 31, 0.3);
+        transform: translate3d(0, 0, 0);
+        span{
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 20%;
+          animation: loading .8s linear -2s infinite normal;
+          height: 1px;
+          background: #333;
+        }
+      }
+    }
+  }
+}
+body.loaded .comp-loading{
+  opacity: 0;
+  pointer-events: none;
+}

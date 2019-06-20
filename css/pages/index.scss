@@ -11,7 +11,16 @@
       position: relative;
       @include bgSet;
       background-image: url("../img/index/main.jpg");
-
+      opacity: 0;
+      transition: opacity 1.5s, transform 1s;
+      transform: translateY(20px);
+      &.loaded{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      #firstView{
+        opacity: 0;
+      }
       #scrollDown {
         position: absolute;
         text-align: center;

@@ -1,4 +1,29 @@
+<script>
+(function() {
+	function removeScriptTags() {
+		var srcs = [];
+		var entry = document.getElementsByTagName('script')[0];
+
+		srcs.forEach(function(src) {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = src;
+			script.async = false;
+			entry.parentNode.insertBefore(script, entry);
+		})
+	}
+	window.addEventListener('load', removeScriptTags, false);
+})();
+</script>
 <script type="text/javascript" src="//journal.fruitest.jp/wp-content/themes/fruitest-theme/js/instafeed.min.js"></script>
+<div id="loading" class="comp-loading">
+	<div class="load_inner delete">
+		<div class="loading_inner">
+			<div class="loading_logo"></div>
+			<p id="loadingBar"><span></span></p>
+		</div>
+	</div>
+</div><!-- comp-loading -->
 <article id="index">
 		<section id="main">
 			<div id="mainVisual">
@@ -59,8 +84,8 @@
 					<div class="flex_right">
 						<span></span>
 					</div>
-				</div><!-- flex_set -->
-			</div>
+				</div><!-- flex_wrap -->
+			</div><!-- inner -->
 		</section><!-- topRareDry -->
 		<div id="topProduct">
 			<div class="inner">
@@ -178,7 +203,7 @@
 					<span class="txt">商品一覧へ<font>VIEW PRODUCTS</font></span><span class="obj"></span>
 					<span class="txt_sp"><font>VIEW PRODUCTS</font><span>商品一覧へ</span></span>
 				</a>
-			</div>
+			</div><!-- product_all -->
 		</div><!-- topProduct -->
 		<section id="topOption" class="comp-option">
 			<div class="inner">

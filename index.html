@@ -42,9 +42,35 @@
 			</div>
 		</div><!-- header_inner -->
 	</header>
+	<script>
+	(function() {
+		function removeScriptTags() {
+			var srcs = [];
+			var entry = document.getElementsByTagName('script')[0];
+
+			srcs.forEach(function(src) {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = src;
+				script.async = false;
+				entry.parentNode.insertBefore(script, entry);
+			})
+		}
+		window.addEventListener('load', removeScriptTags, false);
+	})();
+	</script>
+	<div id="loading" class="comp-loading">
+		<div class="load_inner delete">
+			<div class="loading_inner">
+				<div class="loading_logo"></div>
+				<p id="loadingBar"><span></span></p>
+			</div>
+		</div>
+	</div><!-- comp-loading -->
 	<article id="index">
 		<section id="main">
 			<div id="mainVisual">
+				<img id="firstView" src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/index/main.jpg">
 				<div id="scrollDown" class="scroll_button">
 					<a href="javascript:void(0)" jump="#topConcept"><span>SCROLL</span></a>
 				</div>

@@ -11,12 +11,11 @@ $(function() {
 
      img.on({
        'load': function() {
-         $('header').addClass('top');
          setTimeout(function() {
            $('body').addClass('loaded');
 
            setTimeout(function() {
-             $('header').addClass('top').addClass('loaded');
+             $('header').addClass('loaded');
              setTimeout(function() {
                $('#mainVisual').addClass('loaded');
              }, 1200);
@@ -150,7 +149,8 @@ $(function() {
     init();
 
   };
-    scrollJudge($('body'));
+
+  scrollJudge($('body'));
 
   //アンカーリンクで追従ヘッダー分をパディングする
   function scrollToLink() {
