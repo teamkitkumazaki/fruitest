@@ -2717,7 +2717,12 @@ footer {
         height: 230px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center; }
+        background-position: center center;
+        -webkit-transition: opacity .4s;
+        -o-transition: opacity .4s;
+        transition: opacity .4s; }
+        .comp-journal .journal_wrap #slickSlider .item_box .img_wrap a:hover {
+          opacity: 0.8; }
     .comp-journal .journal_wrap #slickSlider .item_box .txt_wrap .title {
       display: block;
       font-size: 18px;
@@ -3166,7 +3171,12 @@ footer {
         height: 230px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center; }
+        background-position: center center;
+        -webkit-transition: opacity .4s;
+        -o-transition: opacity .4s;
+        transition: opacity .4s; }
+        .comp-journal-archive .journal_item .img_wrap a:hover {
+          opacity: 0.8; }
     .comp-journal-archive .journal_item .txt_wrap .title {
       display: block;
       font-size: 18px;
@@ -3320,58 +3330,55 @@ footer {
             height: 15px; } }
 
 .comp-pager {
-  margin-top: 60px; }
-  .comp-pager .wp-pagenavi {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .comp-pager .wp-pagenavi .pages {
-      display: none; }
-    .comp-pager .wp-pagenavi .first, .comp-pager .wp-pagenavi .last {
-      display: none; }
-    .comp-pager .wp-pagenavi .current, .comp-pager .wp-pagenavi .page, .comp-pager .wp-pagenavi .previouspostslink, .comp-pager .wp-pagenavi .nextpostslink {
-      display: block;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      line-height: 38px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      letter-spacing: -1px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-      letter-spacing: 0.1em !important; }
-    .comp-pager .wp-pagenavi .current {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .comp-pager .first, .comp-pager .last {
+    display: none; }
+  .comp-pager a, .comp-pager span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em !important;
+    text-indent: 2px; }
+  .comp-pager .page-numbers {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #d8d8d8;
+    color: #333;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    margin-right: 0.5em; }
+    .comp-pager .page-numbers:hover {
+      opacity: 0.6; }
+    .comp-pager .page-numbers.current {
       font-size: 16px;
       background-color: #f1f1f1;
       border: 1px solid #f1f1f1;
       margin-right: 0.5em; }
-    .comp-pager .wp-pagenavi .page {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      border: 1px solid #d8d8d8;
-      color: #333;
-      -webkit-transition: opacity .5s;
-      -o-transition: opacity .5s;
-      transition: opacity .5s;
-      margin-right: 0.5em; }
-      .comp-pager .wp-pagenavi .page:hover {
-        opacity: 0.6; }
-    .comp-pager .wp-pagenavi .previouspostslink {
+    .comp-pager .page-numbers.previouspostslink {
       position: relative;
       background-color: #f1f1f1;
       border: 1px solid #f1f1f1;
       margin-right: 0.5em;
       text-indent: -9999px; }
-      .comp-pager .wp-pagenavi .previouspostslink::before {
+      .comp-pager .page-numbers.previouspostslink::before {
         display: block;
         position: absolute;
         width: 5px;
@@ -3387,12 +3394,12 @@ footer {
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         transform: rotate(-135deg); }
-    .comp-pager .wp-pagenavi .nextpostslink {
+    .comp-pager .page-numbers.nextpostslink {
       position: relative;
       background-color: #f1f1f1;
       border: 1px solid #f1f1f1;
       text-indent: -9999px; }
-      .comp-pager .wp-pagenavi .nextpostslink::before {
+      .comp-pager .page-numbers.nextpostslink::before {
         display: block;
         position: absolute;
         width: 5px;
@@ -3408,13 +3415,13 @@ footer {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg); }
-    .comp-pager .wp-pagenavi .extend {
-      display: block;
-      margin-right: 0.8em;
-      margin-left: 0.3em;
-      color: #999;
-      line-height: 40px;
-      margin-bottom: 10px; }
+  .comp-pager .extend {
+    display: block;
+    margin-right: 0.8em;
+    margin-left: 0.3em;
+    color: #999;
+    line-height: 40px;
+    margin-bottom: 10px; }
 
 @media screen and (max-width: 740px) {
   .comp-pager {
@@ -6081,7 +6088,8 @@ footer {
     font-size: 28px;
     line-height: 1.8;
     letter-spacing: 2.2px;
-    color: #333; }
+    color: #333;
+    margin-bottom: 10px; }
 
 #journalArticle #articleTitle .flex_wrap {
   display: -webkit-box;
@@ -6132,9 +6140,18 @@ footer {
         margin-right: 0; }
 
 #journalArticle #articleContents {
-  max-width: 780px;
-  margin: 0 auto; }
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 1100px) {
+    #journalArticle #articleContents {
+      max-width: 720px; } }
+  @media screen and (max-width: 740px) {
+    #journalArticle #articleContents {
+      max-width: 90vw; } }
   #journalArticle #articleContents .contents_inner {
+    max-width: 780px;
+    margin: 0 auto;
     position: relative;
     padding-bottom: 60px;
     margin-bottom: 60px; }
@@ -6155,7 +6172,9 @@ footer {
       letter-spacing: 1.8px;
       margin-bottom: 20px; }
     #journalArticle #articleContents .contents_inner img {
-      margin: 10px 0 30px; }
+      margin: 10px 0;
+      width: 100% !important;
+      height: auto !important; }
   #journalArticle #articleContents .footer_sns {
     text-align: center;
     margin-bottom: 100px; }
@@ -6226,23 +6245,22 @@ footer {
   #journalArticle #articleTitle .title_wrap {
     max-width: 730px;
     margin: 30px auto 40px; }
-  #journalArticle #articleContents {
+  #journalArticle #articleContents .contents_inner {
     max-width: 730px;
-    margin: 0 auto; }
-    #journalArticle #articleContents .contents_inner {
-      position: relative;
-      padding-bottom: 60px;
-      margin-bottom: 60px; }
-      #journalArticle #articleContents .contents_inner p {
-        font-size: 16px;
-        line-height: 1.6;
-        letter-spacing: 1.8px;
-        margin-bottom: 20px; }
-      #journalArticle #articleContents .contents_inner img {
-        margin: 10px 0 30px; }
-    #journalArticle #articleContents .footer_sns {
-      text-align: center;
-      margin-bottom: 100px; } }
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 60px; }
+    #journalArticle #articleContents .contents_inner p {
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: 1.8px;
+      margin-bottom: 20px; }
+    #journalArticle #articleContents .contents_inner img {
+      margin: 10px 0; }
+  #journalArticle #articleContents .footer_sns {
+    text-align: center;
+    margin-bottom: 100px; } }
 
 @media screen and (max-width: 730px) {
   #journalArticle #articleTitle .main_visual {
@@ -6277,40 +6295,39 @@ footer {
         display: block;
         width: 25px;
         margin-right: 5px; }
-  #journalArticle #articleContents {
+  #journalArticle #articleContents .contents_inner {
     max-width: 90vw;
-    margin: 0 auto; }
-    #journalArticle #articleContents .contents_inner {
-      padding-bottom: 40px;
-      margin-bottom: 60px; }
-      #journalArticle #articleContents .contents_inner p {
-        font-size: 14px;
-        line-height: 1.6;
-        letter-spacing: 1.5px;
-        margin-bottom: 15px; }
-      #journalArticle #articleContents .contents_inner img {
-        margin: 5px 0 20px; }
-    #journalArticle #articleContents .footer_sns {
-      text-align: center;
-      margin-bottom: 100px; }
-      #journalArticle #articleContents .footer_sns .sns_title {
-        font-size: 16px;
-        letter-spacing: 1.6px;
-        margin-bottom: 20px; }
-      #journalArticle #articleContents .footer_sns .sns_wrap a {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-right: 5px; }
-    #journalArticle #articleContents .tag_list {
-      padding: 30px 5px 5px 20px; }
-      #journalArticle #articleContents .tag_list::before {
-        width: 170px;
-        height: 20px;
-        top: -10px;
-        left: 10px; }
-      #journalArticle #articleContents .tag_list .comp-title {
-        left: 20px;
-        top: -20px; }
+    margin: 0 auto;
+    padding-bottom: 40px;
+    margin-bottom: 60px; }
+    #journalArticle #articleContents .contents_inner p {
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px; }
+    #journalArticle #articleContents .contents_inner img {
+      margin: 5px 0; }
+  #journalArticle #articleContents .footer_sns {
+    text-align: center;
+    margin-bottom: 100px; }
+    #journalArticle #articleContents .footer_sns .sns_title {
+      font-size: 16px;
+      letter-spacing: 1.6px;
+      margin-bottom: 20px; }
+    #journalArticle #articleContents .footer_sns .sns_wrap a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px; }
+  #journalArticle #articleContents .tag_list {
+    padding: 30px 5px 5px 20px; }
+    #journalArticle #articleContents .tag_list::before {
+      width: 170px;
+      height: 20px;
+      top: -10px;
+      left: 10px; }
+    #journalArticle #articleContents .tag_list .comp-title {
+      left: 20px;
+      top: -20px; }
   #journalArticle .comp-journal {
     margin: 60px auto 100px; } }

@@ -1,79 +1,75 @@
 .comp-pager {
   margin-top: 60px;
-  .wp-pagenavi{
-    @include flexSet;
-    justify-content: center;
-    align-items: center;
-    .pages{
-      display: none;
-    }
+  @include flexSet;
+  justify-content: center;
+  align-items: center;
     .first, .last{
       display: none;
     }
-    .current, .page, .previouspostslink, .nextpostslink{
+    a,span{
       display: block;
       width: 40px;
       height: 40px;
       text-align: center;
       line-height: 38px;
       box-sizing: border-box;
-      letter-spacing: -1px;
       @include xiaowei;
+      text-indent: 2px;
     }
-    .current{
-      font-size: 16px;
-      background-color: #f1f1f1;
-      border: 1px solid #f1f1f1;
-      margin-right: 0.5em;
-    }
-    .page{
+    .page-numbers{
       box-sizing: border-box;
       border: 1px solid #d8d8d8;
       color: #333;
       @include hover;
       margin-right: 0.5em;
-    }
-    .previouspostslink{
-      position: relative;
-      background-color: #f1f1f1;
-      border: 1px solid #f1f1f1;
-      margin-right: 0.5em;
-      text-indent: -9999px;
-      &::before{
-        display: block;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        border-top: 1px solid #666;
-        border-right: 1px solid #666;
-        transform: rotate(-135deg);
+      &.current{
+        font-size: 16px;
+        background-color: #f1f1f1;
+        border: 1px solid #f1f1f1;
+        margin-right: 0.5em;
       }
-    }
-    .nextpostslink{
-      position: relative;
-      background-color: #f1f1f1;
-      border: 1px solid #f1f1f1;
-      text-indent: -9999px;
-      &::before{
-        display: block;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        border-top: 1px solid #666;
-        border-right: 1px solid #666;
-        transform: rotate(45deg);
+      &.previouspostslink{
+        position: relative;
+        background-color: #f1f1f1;
+        border: 1px solid #f1f1f1;
+        margin-right: 0.5em;
+        text-indent: -9999px;
+        &::before{
+          display: block;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          border-top: 1px solid #666;
+          border-right: 1px solid #666;
+          transform: rotate(-135deg);
+        }
+      }
+      &.nextpostslink{
+        position: relative;
+        background-color: #f1f1f1;
+        border: 1px solid #f1f1f1;
+        text-indent: -9999px;
+        &::before{
+          display: block;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          border-top: 1px solid #666;
+          border-right: 1px solid #666;
+          transform: rotate(45deg);
+        }
       }
     }
     .extend{
@@ -84,7 +80,6 @@
       line-height: 40px;
       margin-bottom: 10px;
     }
-  }
 }
 @media screen and (max-width: 740px){
   .comp-pager {

@@ -6,29 +6,22 @@
   $image = wp_get_attachment_image_src( $thumbnail_id, 'medium' );
   $src = $image[0];
   $content = $post->post_content;
-  if(mb_strlen($content) > 90){
-    $content = mb_substr(strip_tags($content),0,90).'...';
-  }
-  if(mb_strlen($title) > 54){
-    $title = mb_substr(strip_tags($title),0,54).'...';
-  }
   $tags = get_the_tags($post_id);
 ?>
-        <li class="post_item_wrap">
-          <div class="post_item">
-            <div class="item_img">
-              <a href="<?php echo $permalink; ?>"><?php if(!empty($src)): ?><img src="<?php echo $src; ?>"><?php else: ?><img src="<?php echo get_template_directory_uri();?>/img/post_dummy.png"><?php endif; ?></a>
-            </div>
-            <div class="item_content">
-              <h2 class="item_title"><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h2>
-              <?php if (!empty($tags)): ?>
-              <ul class="item_tags">
-                <?php foreach($tags as $key => $tag): ?>
-                <li><a href="?tag=<?php echo $tag->term_id; ?>">#<?php echo $tag->name; ?></a></li>
-                <?php endforeach; ?>
-              </ul>
-              <?php endif; ?>
-              <p class="item_description"><a href="<?php echo $permalink; ?>"><?php echo $content; ?></a></p>
-            </div>
-          </div>
-        </li>
+
+<div class="journal_item">
+  <div class="img_wrap">
+    <a href="<?php echo $permalink; ?>" style="background-image:url(<?php the_field('page_thumbnail'); ?>)"></a>
+  </div>
+  <div class="txt_wrap">
+    <a class="title" href="<?php echo $permalink; ?>"><?php echo $title; ?></a>
+    <div class="tag_wrap">
+      <?php foreach($tags as $key => $tag): ?>
+      <a href="?tag=<?php echo $tag->term_id; ?>">#<?php echo $tag->name; ?></a>
+      <?php endforeach; ?>
+    </div>
+    <div class="link_wrap">
+      <a class="prod_link" href="<?php echo $permalink; ?>"><span>記事を読む</span></a>
+    </div>
+  </div>
+</div><!-- journal_item -->

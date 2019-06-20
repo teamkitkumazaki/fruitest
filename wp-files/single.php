@@ -3,47 +3,44 @@
 <?php get_template_part("parts/head");?>
 <body id="journal" class="fixed-header rolled">
 <?php get_template_part("parts/header");?>
+<?php // Start of the loop.
+	while ( have_posts() ) : the_post();
+?>
+<?php
+$id = get_the_ID();
+$tags = get_the_tags($id);
+$thumbnail_id = get_post_thumbnail_id($id);
+$image = wp_get_attachment_image_src( $thumbnail_id, 'full' );
+$src = $image[0];
+?>
 <article id="journalArticle" class="journal">
 	<section id="articleTitle">
-		<div class="main_visual" style="background-image: url(<?php echo get_template_directory_uri();?>/img/journal/sample/main.jpg)"></div>
+		<div class="main_visual" style="background-image: url(<?php echo $src ?>)"></div>
 		<div class="title_wrap">
-			<h1 class="title">FRUITESTはなぜ完熟にこだわるのか？</h1>
+			<h1 class="title"><?= the_title(); ?></h1>
 			<div class="flex_wrap">
 				<div class="tag_list">
-					<a href="#aaaa">#素材/果物</a>
-					<a href="#aaaa">#素材/果物</a>
+					<?php foreach ($tags as $key => $tag): ?>
+						<a href="/?tag=<?php echo $tag->term_id; ?>"><span>#</span><?php echo $tag->name; ?></a>
+					<?php endforeach; ?>
 				</div>
 				<div class="sns_wrap">
 					<span class="sns_title">SHARE</span>
-					<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_tw.png"></a>
-					<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_fb.png"></a>
-					<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_hb.png"></a>
-					<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_line.png"></a>
+					<?php get_template_part("parts/share");?>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section id="articleContents">
 		<div class="contents_inner">
-			<p>私たちは果物の「完熟」にこだわります。<br>完熟のタイミングにこそ、果物の「香りと風味」を最も感じることが出来るからです。</p>
-			<img src="<?php echo get_template_directory_uri();?>/img/journal/sample/article_img01.jpg">
-			<p>しかし、ふだんの生活の中で、ほんとうにおいしい完熟果物と出会うのは、実はとても難しいこと。なぜならスーパーなどに並ぶ果物は、産地ではおおよそ7~8割くらいの「熟し度合い」で市場に出荷しないと、流通の過程で腐ってしまうからです。</p>
-			<img src="<?php echo get_template_directory_uri();?>/img/journal/sample/article_img02.jpg">
-			<p>仮に完熟に近い状態にまで収穫せずに育ててしまうと、その果物は青果としては売り物になりません。そうなると、加工用として青果の1/10以下（時には1/100以下）の金額で引き取られるか、近所におすそ分けするか、はたまた捨て置くしかなくなってしまいます。</p>
-			<p>でも、私たちは樹の上で完熟のタイミングまでじっくり育てた、ほんとうの「完熟の香り」を世界中の人に味わってほしいと思っています。</p>
-			<p>だから、FRUITESTの協力農家さんには特別に、完熟のタイミングまで収穫を待っていただき、その上で加工用の果物としての価格ではなく、青果と同じレベルの価格でお取引させていただいております。</p>
-			<img src="<?php echo get_template_directory_uri();?>/img/journal/sample/article_img03.jpg">
-			<p>ぜひFRUITESTで、これまで産地じゃないと感じることのできなかったその香りを体感してください。</p>
+			<?= the_content(); ?>
 		</div>
 		<div class="footer_sns">
 			<span class="sns_title">この記事をシェアする</span>
 			<div class="sns_wrap">
-				<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_tw.png"></a>
-				<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_fb.png"></a>
-				<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_hb.png"></a>
-				<a href="#aaaa"><img src="<?php echo get_template_directory_uri();?>/img/journal/share_line.png"></a>
-			</div>
-		</div>
+				<?php get_template_part("parts/share");?>
+			</div><!-- sns_wrap -->
+		</div><!-- footer_sns -->
 		<div class="tag_list">
 			<div class="comp-title">
 				<h1 class="ttl_ja">タグ一覧</h1>
@@ -51,18 +48,21 @@
 			</div>
 			<div class="comp-taglist">
 				<ul>
-					<li class="current"><a href="/">すべて</a></li>
-					<li><a href="#aaaa"><span>#</span>素材/果物</a></li>
-					<li><a href="#aaaa"><span>#</span>作り手</a></li>
-					<li><a href="#aaaa"><span>#</span>産地</a></li>
-					<li><a href="#aaaa"><span>#</span>製法</a></li>
-					<li><a href="?tag=8"><span>#</span>レシピ</a></li>
-					<li><a href="?tag=11"><span>#</span>イベント</a></li>
-					<li><a href="?tag=11"><span>#</span>その他</a></li>
+					<?php
+						$all_tags = get_tags(array('hide_empty' => false));
+						$current_tag_id = ((isset($_GET['tag']) && !empty($_GET['tag']))) ? $_GET['tag'] : '';
+					?>
+					<li<?php if (empty($current_tag_id)): ?><?php endif; ?>><a href="/">すべて</a></li>
+					<?php foreach ($all_tags as $key => $tag): ?>
+						<li<?php if ($current_tag_id == $tag->term_id): ?> class="current"<?php endif; ?>><a href="?tag=<?php echo $tag->term_id; ?>"><span>#</span><?php echo $tag->name; ?></a></li>
+					<?php endforeach; ?>
 				</ul>
 			</div>
 		</div>
 	</section>
+	<?php endwhile;
+		// End of the loop.
+	?>
 	<section class="comp-journal">
 		<div class="inner">
 			<div class="comp-title">
@@ -71,53 +71,46 @@
 			</div>
 			<div class="journal_wrap">
 				<div id="slickSlider" class="slick-slider">
-					<div class="item_box slick-slide">
-						<div class="img_wrap">
-							<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img01.jpg)"></a>
-						</div>
-						<div class="txt_wrap">
-							<a class="title" href="#aaaa">FRUITESTの素材について</a>
-							<div class="tag_wrap">
-								<a href="#aaaa">#素材/果物</a>
-							</div>
-							<div class="link_wrap">
-								<a class="prod_link" href="#aaaa"><span>記事を読む</span></a>
-							</div>
-						</div><!-- txt_wrap -->
-					</div><!-- item_box -->
-					<div class="item_box slick-slide">
-						<div class="img_wrap">
-							<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img02.jpg)"></a>
-						</div>
-						<div class="txt_wrap">
-							<a class="title" href="#aaaa">FRUITESTが作られる風景(作業場、種取り）</a>
-							<div class="tag_wrap">
-								<a href="#aaaa">#製法</a>
-							</div>
-							<div class="link_wrap">
-								<a class="prod_link" href="#aaaa"><span>記事を読む</span></a>
-							</div>
-						</div><!-- txt_wrap -->
-					</div><!-- item_box -->
-					<div class="item_box slick-slide">
-						<div class="img_wrap">
-							<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img03.jpg)"></a>
-						</div>
-						<div class="txt_wrap">
-							<a class="title" href="#aaaa">樋口さんのシャインマスカットは香りのレベルが違います</a>
-							<div class="tag_wrap">
-								<a href="#aaaa">#素材/果物</a>
-								<a href="#aaaa">#作り手</a>
-								<a href="#aaaa">#産地</a>
-							</div>
-							<div class="link_wrap">
-								<a class="prod_link" href="#aaaa"><span>記事を読む</span></a>
-							</div>
-						</div><!-- txt_wrap -->
-					</div><!-- item_box -->
+					<?php
+	$args = array(
+		'posts_per_page'    => 3,
+		'orderby'           => 'post_date',
+		'order'             => 'DESC',
+		'post_type' => 'post',
+		'post_status'       => 'publish',
+		'post__not_in' => array($id)
+	);
+
+	$the_query = new WP_Query($args);
+
+	if ( $the_query->have_posts() ) :
+		while ( $the_query->have_posts() ) : $the_query->the_post();
+			$r_id = get_the_ID();
+			$r_title = get_the_title($post_id);
+			$r_permalink = get_permalink($r_id);
+			$tags = get_the_tags($post_id);
+
+			?>
+			<div class="item_box slick-slide">
+				<div class="img_wrap">
+					<a href="<?php echo $r_permalink; ?>" style="background-image:url(<?php the_field('page_thumbnail'); ?>)"></a>
+				</div>
+				<div class="txt_wrap">
+					<a class="title" href="<?php echo $r_permalink; ?>"><?php echo $r_title; ?></a>
+					<div class="tag_wrap">
+						<?php foreach($tags as $key => $tag): ?>
+						<a href="?tag=<?php echo $tag->term_id; ?>">#<?php echo $tag->name; ?></a>
+						<?php endforeach; ?>
+					</div>
+					<div class="link_wrap">
+						<a class="prod_link" href="<?php echo $r_permalink; ?>"><span>記事を読む</span></a>
+					</div>
+				</div><!-- txt_wrap -->
+			</div><!-- item_box -->
+			<?php endwhile; else: endif;?>
 				</div>
 				<div class="comp-linkbutton">
-					<a href="#aaaa"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
+					<a href="/"><span>ジャーナルトップへ<font>JOURNAL TOP</font></span></a>
 				</div>
 			</div>
 		</div>

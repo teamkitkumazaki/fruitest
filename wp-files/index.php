@@ -12,14 +12,14 @@
 			</div>
 			<div class="comp-taglist">
 				<ul>
-					<li class="current"><a href="/">すべて</a></li>
-					<li><a href="#aaaa"><span>#</span>素材/果物</a></li>
-					<li><a href="#aaaa"><span>#</span>作り手</a></li>
-					<li><a href="#aaaa"><span>#</span>産地</a></li>
-					<li><a href="#aaaa"><span>#</span>製法</a></li>
-					<li><a href="?tag=8"><span>#</span>レシピ</a></li>
-					<li><a href="?tag=11"><span>#</span>イベント</a></li>
-					<li><a href="?tag=11"><span>#</span>その他</a></li>
+					<?php
+						$all_tags = get_tags(array('hide_empty' => false));
+						$current_tag_id = ((isset($_GET['tag']) && !empty($_GET['tag']))) ? $_GET['tag'] : '';
+					?>
+					<li<?php if (empty($current_tag_id)): ?><?php endif; ?>><a href="/">すべて</a></li>
+					<?php foreach ($all_tags as $key => $tag): ?>
+						<li<?php if ($current_tag_id == $tag->term_id): ?> class="current"<?php endif; ?>><a href="?tag=<?php echo $tag->term_id; ?>"><span>#</span><?php echo $tag->name; ?></a></li>
+					<?php endforeach; ?>
         </ul>
 			</div>
 		</div><!-- inner -->
@@ -27,241 +27,58 @@
 	<section id="archiveList">
 		<div class="inner">
 			<div class="comp-journal-archive">
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img01.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTの素材について</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img02.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTが作られる風景(作業場、種取り）</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#製法</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img03.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">樋口さんのシャインマスカットは香りのレベルが違います</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-							<a href="#aaaa">#作り手</a>
-							<a href="#aaaa">#産地</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div><!-- txt_wrap -->
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img01.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTの素材について</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img02.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTが作られる風景(作業場、種取り）</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#製法</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img03.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">樋口さんのシャインマスカットは香りのレベルが違います</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-							<a href="#aaaa">#作り手</a>
-							<a href="#aaaa">#産地</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div><!-- txt_wrap -->
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img01.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTの素材について</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img02.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTが作られる風景(作業場、種取り）</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#製法</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img03.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">樋口さんのシャインマスカットは香りのレベルが違います</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-							<a href="#aaaa">#作り手</a>
-							<a href="#aaaa">#産地</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div><!-- txt_wrap -->
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img01.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTの素材について</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img02.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTが作られる風景(作業場、種取り）</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#製法</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img03.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">樋口さんのシャインマスカットは香りのレベルが違います</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-							<a href="#aaaa">#作り手</a>
-							<a href="#aaaa">#産地</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div><!-- txt_wrap -->
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img01.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTの素材について</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img02.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">FRUITESTが作られる風景(作業場、種取り）</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#製法</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div>
-				</div><!-- journal_item -->
-				<div class="journal_item">
-					<div class="img_wrap">
-						<a href="aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/img/journal/journal_img03.jpg)"></a>
-					</div>
-					<div class="txt_wrap">
-						<a class="title" href="#aaaa">樋口さんのシャインマスカットは香りのレベルが違います</a>
-						<div class="tag_wrap">
-							<a href="#aaaa">#素材/果物</a>
-							<a href="#aaaa">#作り手</a>
-							<a href="#aaaa">#産地</a>
-						</div>
-						<div class="link_wrap">
-							<a class="prod_link" href="/?pid=142898188"><span>記事を読む</span></a>
-						</div>
-					</div><!-- txt_wrap -->
-				</div><!-- journal_item -->
+				<?php
+
+		$paged = (int)get_query_var( 'paged', 1 );
+
+		$args = array(
+			'posts_per_page'    => 12,
+			'paged' => $paged,
+			'orderby'           => 'post_date',
+			'order'             => 'DESC',
+			'post_type' => 'post',
+			'post_status'       => 'publish'
+		);
+
+		if (!empty($current_tag_id)) {
+			$args['tag__in'] = array($current_tag_id);
+		}
+		$paginate_args = array(
+			'base' => get_pagenum_link(1).'%_%',
+			'format' => '/page/%#%/',
+			'current' => max(1, $paged),
+			'total' => $the_query->max_num_pages,
+			'prev_next' => true,
+			'prev_text' => 'prev',
+			'next_text' => 'next',
+		);
+
+		$the_query = new WP_Query($args);
+
+		if ( $the_query->have_posts() ) :
+			while ( $the_query->have_posts() ) : $the_query->the_post();
+
+				get_template_part( 'parts/post/content', '' );
+
+			endwhile;
+		else:
+			get_template_part( 'parts/post/content', 'none' );
+		endif;
+	?>
 			</div><!-- comp-journal-archive -->
 			<div class="comp-pager">
-				<div class="wp-pagenavi" role="navigation">
-					<span class="pages">1 / 13</span>
-					<span aria-current="page" class="current">1</span>
-					<a class="page larger" title="Page 2" href="#aaaa">2</a>
-					<a class="page larger" title="Page 3" href="#aaaa">3</a>
-					<a class="page larger" title="Page 4" href="#aaaa4">4</a>
-					<a class="page larger" title="Page 5" href="#aaaa5">5</a>
-					<span class="extend">...</span>
-					<a class="larger page" title="Page 10" href="#aaaa10">10</a>
-					<span class="extend">...</span>
-					<a class="nextpostslink" rel="next" href="#aaaa2">»</a>
-					<a class="last" href="#aaaa13">最後 »</a>
-				</div>
+			<?php
+				if ($the_query->max_num_pages > 1) {
+				echo paginate_links(array(
+					'base' => get_pagenum_link(1) . '%_%',
+					'format' => 'page/%#%/',
+					'current' => max(1, $paged),
+					'total' => $the_query->max_num_pages,
+					'prev_text' => '&laquo;',
+					'next_text' => '&raquo;',
+				));
+			}
+		?>
 			</div><!-- comp-pager -->
 		</div><!-- inner -->
 	</section>
