@@ -74,6 +74,27 @@
               <{if $product.ot8_url != null }>
               <li class="slide7"><img src="<{$product.ot8_url}>"></li>
               <{/if}>
+              <{if $product.ot9_url != null }>
+              <li class="slide8"><img src="<{$product.ot9_url}>"></li>
+              <{/if}>
+              <{if $product.ot10_url != null }>
+              <li class="slide9"><img src="<{$product.ot10_url}>"></li>
+              <{/if}>
+              <{if $product.ot11_url != null }>
+              <li class="slide10"><img src="<{$product.ot11_url}>"></li>
+              <{/if}>
+              <{if $product.ot12_url != null }>
+              <li class="slide11"><img src="<{$product.ot12_url}>"></li>
+              <{/if}>
+              <{if $product.ot13_url != null }>
+              <li class="slide12"><img src="<{$product.ot13_url}>"></li>
+              <{/if}>
+              <{if $product.ot14_url != null }>
+              <li class="slide13"><img src="<{$product.ot14_url}>"></li>
+              <{/if}>
+              <{if $product.ot15_url != null }>
+              <li class="slide14"><img src="<{$product.ot15_url}>"></li>
+              <{/if}>
             </ul>
           </div><!-- itemThumb01 -->
         </div>

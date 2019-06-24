@@ -19,7 +19,7 @@ $(function() {
              $('header').addClass('top').addClass('loaded');
              setTimeout(function() {
                $('#mainVisual').addClass('loaded');
-             }, 1200);
+             }, 900);
            }, 600);
          }, 1700);
        }

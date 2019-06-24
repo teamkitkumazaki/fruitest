@@ -8,6 +8,10 @@
   	$site_permalink = 'https://journal.fruitest.jp/';
 		$thumnail = 'https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/ogp.jpg';
 		$description = "限りなく生に近いFRUITESTの「レア・ドライフルーツ」みずみずしさを出来る限り保ちながら、おいしさを凝縮しました。原料は、国産果物だけ。砂糖や保存料などの添加物は一切入れず、低温でゆっくり乾燥させています。それによって、それぞれの果物が持つ風味や香りを残しながら、果物そのもののおいしさを最大限引き出すことに成功しました。";
+	} else if( is_category() ){
+		$page_title = get_single_cat_title();
+		$site_title =  $page_title.' | レア・ドライフルーツ - FRUITEST';
+  	$site_permalink = get_the_permalink();
 	} else {
   	$site_title =  wp_title('', false, '').' | レア・ドライフルーツ - FRUITEST';
   	$site_permalink = get_the_permalink();
