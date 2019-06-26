@@ -1676,7 +1676,7 @@ footer {
         text-align: center;
         border: 0px;
         font-family: inherit;
-        margin-bottom: 10px !important;
+        margin-bottom: 12.5px !important;
         -webkit-transition: opacity .5s;
         -o-transition: opacity .5s;
         transition: opacity .5s;
@@ -3573,6 +3573,26 @@ body.loaded .comp-loading {
   opacity: 0;
   pointer-events: none; }
 
+.comp-upcoming {
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: 0px;
+  box-shadow: 0px;
+  background: #c8c8c9;
+  padding: 19px 0;
+  text-align: center;
+  color: #fff;
+  pointer-events: none;
+  margin-bottom: 12.5px; }
+  .comp-upcoming span {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1.5px; }
+
 /* ページ個別 */
 #index {
   margin-top: 80px; }
@@ -4897,6 +4917,38 @@ body.loaded .comp-loading {
                 opacity: 0.6; }
               #gift #giftProduct .product_wrap .flex_wrap ul li .img_wrap a:hover {
                 opacity: .8; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .img_wrap.upcoming a {
+              position: relative; }
+              #gift #giftProduct .product_wrap .flex_wrap ul li .img_wrap.upcoming a::before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2); }
+              #gift #giftProduct .product_wrap .flex_wrap ul li .img_wrap.upcoming a::after {
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 25px;
+                margin: auto;
+                text-align: center;
+                content: "UPCOMING";
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                letter-spacing: 0.1em !important;
+                font-size: 25px;
+                letter-spacing: 1.2px !important;
+                pointer-events: none; }
           #gift #giftProduct .product_wrap .flex_wrap ul li .txt_wrap .prod_name {
             display: block;
             font-size: 20px;
