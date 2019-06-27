@@ -103,6 +103,7 @@ article{
 @import 'component/comp-pager.scss';
 @import 'component/comp-loading.scss';
 @import 'component/comp-upcoming.scss';
+@import 'component/comp-waiting-list.scss';
 
 
 /* ページ個別 */
@@ -116,3 +117,4 @@ article{
 @import 'pages/journalArchive.scss';
 @import 'pages/journalArticle.scss';
 @import 'pages/iframe.scss';
+@import 'pages/waitingList.scss';

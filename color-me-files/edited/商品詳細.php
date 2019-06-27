@@ -131,7 +131,7 @@
             <{$product.info}>
             <{else}>
             <div class="comp-linkbutton">
-              <a href="#aaaa"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+              <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
             </div>
             <{/if}>
           </div>
@@ -144,7 +144,7 @@
           <h2 class="copy"><{$product.simple_explain}></h2>
           <p id="excerpt" class="detail"></p>
           <div class="comp-linkbutton">
-            <a href="#aaaa"><span>購入予約<font>WAITING LIST</font></span></a>
+            <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>購入予約<font>WAITING LIST</font></span></a>
           </div>
       </div>
       <{/if}>

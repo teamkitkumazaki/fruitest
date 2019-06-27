@@ -3593,6 +3593,150 @@ body.loaded .comp-loading {
     font-size: 16px;
     letter-spacing: 1.5px; }
 
+.comp-waiting-list {
+  max-width: 600px;
+  margin: 40px auto 0; }
+  .comp-waiting-list .mailpoet_hp_email_label {
+    display: none; }
+  .comp-waiting-list .mailpoet_text_label {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 15px; }
+  .comp-waiting-list input[type="email"] {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 46px;
+    line-height: 45px;
+    border-radius: 5px;
+    border: solid 1px #c0c0c0;
+    font-size: 14px; }
+  .comp-waiting-list input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid #c8c8c9;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: color .3s, background .3s;
+    -o-transition: color .3s, background .3s;
+    transition: color .3s, background .3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: initial;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s; }
+    .comp-waiting-list input[type="submit"]:hover {
+      opacity: 0.6; }
+  .comp-waiting-list .mailpoet_validate_success {
+    padding: 10px 0;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid #468847;
+    margin-top: 15px; }
+  .comp-waiting-list .mailpoet_validate_error {
+    padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #b94a48;
+    border: 1px solid #b94a48; }
+  .comp-waiting-list .mailpoet_form_loading {
+    width: 30px;
+    text-align: center;
+    line-height: normal; }
+  .comp-waiting-list .mailpoet_form_loading > span {
+    width: 5px;
+    height: 5px;
+    background-color: #5b5b5b; }
+
+@media screen and (max-width: 740px) {
+  .comp-waiting-list {
+    margin: 30px auto 0; }
+    .comp-waiting-list .mailpoet_text_label {
+      display: block;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: #333;
+      margin-bottom: 15px; }
+    .comp-waiting-list input[type="email"] {
+      font-size: 16px; }
+    .comp-waiting-list input[type="submit"] {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: block;
+      border: 1px solid #c8c8c9;
+      padding: 10px 15px;
+      background: #333;
+      color: #fff;
+      border: 0px;
+      border-radius: 5px;
+      position: relative;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-transition: color .3s, background .3s;
+      -o-transition: color .3s, background .3s;
+      transition: color .3s, background .3s;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: initial;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      text-align: center;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      z-index: 10;
+      cursor: pointer;
+      -webkit-transition: opacity .5s;
+      -o-transition: opacity .5s;
+      transition: opacity .5s; }
+      .comp-waiting-list input[type="submit"]:hover {
+        opacity: 0.6; }
+    .comp-waiting-list .mailpoet_validate_success {
+      padding: 5px 0;
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: 1px;
+      text-align: left; }
+    .comp-waiting-list .mailpoet_validate_error {
+      color: #b94a48; }
+    .comp-waiting-list .mailpoet_form_loading {
+      width: 30px;
+      text-align: center;
+      line-height: normal; }
+    .comp-waiting-list .mailpoet_form_loading > span {
+      width: 5px;
+      height: 5px;
+      background-color: #5b5b5b; } }
+
 /* ページ個別 */
 #index {
   margin-top: 80px; }
@@ -6521,3 +6665,48 @@ body.loaded .comp-loading {
 
 #iframe .comp-journal {
   margin-top: 0; }
+
+#waitingList {
+  padding-top: 80px;
+  padding-bottom: 120px; }
+  #waitingList .img_wrap {
+    width: 100%;
+    height: 400px;
+    background: #f1f1f1;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #waitingList .description {
+    text-align: center; }
+    #waitingList .description .title {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 10px;
+      letter-spacing: 1px; }
+    #waitingList .description p {
+      color: #666;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 1.6; }
+  #waitingList .comp-linkbutton {
+    max-width: 500px;
+    margin: 40px auto 0; }
+
+@media screen and (max-width: 740px) {
+  #waitingList {
+    padding-top: 60px;
+    padding-bottom: 80px; }
+    #waitingList .img_wrap {
+      width: 110vw;
+      height: 30vh;
+      margin-bottom: 30px;
+      margin-left: -5vw;
+      margin-right: -5vw; }
+    #waitingList .description .title {
+      font-size: 18px;
+      margin-bottom: 15px; }
+    #waitingList .description p {
+      text-align: left; }
+    #waitingList .comp-linkbutton {
+      margin: 25px auto 0; } }
