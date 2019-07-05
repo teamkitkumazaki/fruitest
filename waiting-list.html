@@ -42,7 +42,8 @@
 		</div>
 		<!-- header_inner -->
 	</header>
-	<article id="waitingList" class="">
+	<article id="waitingList" class="register">
+		<section id=""
 	<div class="inner">
 		<div
 			class="img_wrap"
@@ -163,5 +164,34 @@
 	</div>
 	<!-- slideMenu -->
 </body>
+<script>
+$(window).on({
+	load: function(){
+		var urlExt = $(location).attr('search');
+		console.log(urlExt);
+		if(urlExt == '?mailpoet_success=2'){
+			$('#waitingList').addClass('complete');
+		}else{
+			$('#waitingList').addClass('register');
+		}
+	}
+});
 
+$('.mailpoet_submit').click(function() {
+  var formWrap = $(this).parents('p').parents('form');
+  var userAddress = formWrap.find(".mailpoet_text").val();
+  event.preventDefault();
+	if(userAddress.match(/^[a-zA-Z0-9!$&*.=^`|~#%'+\/?_{}-]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z]{2,6}$/)){
+		$.when(
+			formWrap.submit(),
+		).done(function() {
+			/*location = 'https://journal.fruitest.jp/waiting-list/complete/';*/
+		});
+	}else if( userAddress == '' || userAddress == null ){
+		alert('メールアドレス入力してください。');
+	}else{
+		alert('メールアドレスを正しく入力してください。');
+	}
+});
+</script>
 </html>

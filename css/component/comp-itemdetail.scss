@@ -28,16 +28,16 @@
       background-color: #63ad2b;
     }
     &.soldout{
-      background-color: #63ad2b;
+      background-color: #e67822;
     }
   }
   .number{
-    input[type="number"]{
-      width: 70px;
+    input[type="number"], input{
+      width: 40px;
       display: inline-block;
       margin: 0 10px;
       border-radius: 5px;
-      padding: 5px 10px;
+      padding: 7px 10px;
       font-size: 12px;
       &.disabled{
         pointer-events: none;

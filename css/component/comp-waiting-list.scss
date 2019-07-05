@@ -43,6 +43,9 @@
     z-index: 10;
     cursor: pointer;
     @include hover;
+    &:focus{
+      outline: none; 
+    }
   }
   .mailpoet_validate_success {
     padding: 10px 0;

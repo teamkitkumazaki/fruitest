@@ -1,4 +1,4 @@
-<?php/*Template Name: WAINTING LIST*/?>
+<?php/*Template Name: WAINTING LIST登録画面*/?>
 <!doctype html>
 <html>
 <?php get_template_part("parts/head");?>
@@ -13,6 +13,7 @@
 	$src = $image[0];
 	?>
 <article id="waitingList">
+	<section class="register">
 	<div class="inner">
 	<div
 		class="img_wrap"
@@ -24,13 +25,28 @@
 		</div>
 		<div class="description">
 			<h2 class="title">販売開始情報を受け取る</h2>
-			<p>下記よりメールアドレスをご登録頂くと、<?php the_title();?>の販売開始情報をお受け取り頂けます。</p>
+			<p>下記よりメールアドレスをご登録頂くと、<?php the_title();?>の商品リリース・再販開始に関する情報をお受け取り頂けます。</p>
 		</div>
 		<?php the_content(); ?>
 	</div>
+	</section>
 </article>
 <?php endwhile; endif; ?>
 <?php get_template_part("parts/footer");?>
 <?php get_template_part("parts/hummenu");?>
 </body>
+<script>
+$('.mailpoet_submit').click(function() {
+  var formWrap = $(this).parents('p').parents('form');
+  var userAddress = formWrap.find(".mailpoet_text").val();
+  event.preventDefault();
+	if(userAddress.match(/^[a-zA-Z0-9!$&*.=^`|~#%'+\/?_{}-]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z]{2,6}$/)){
+			formWrap.submit(),
+	}else if( userAddress == '' || userAddress == null ){
+		alert('メールアドレス入力してください。');
+	}else{
+		alert('メールアドレスを正しく入力してください。');
+	}
+});
+</script>
 </html>

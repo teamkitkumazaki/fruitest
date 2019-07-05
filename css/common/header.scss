@@ -276,6 +276,40 @@ header {
     opacity: 1;
     transform: translateY(0px);
     background: #fff;
+    .header_inner{
+      #hummenu{
+        a{
+           &:after{
+             display: none;
+           }
+        }
+      }
+      .header_logo{
+        a{
+          &::after{
+            display: none;
+          }
+        }
+      }
+      .header_nav{
+        a{
+          &.nav_login{
+            span{
+              &::after{
+                display: none;
+              }
+            }
+          }
+          &.nav_cart{
+            span{
+              &::after{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 740px){

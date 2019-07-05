@@ -21,7 +21,7 @@ $src = $image[0];
 			<div class="flex_wrap">
 				<div class="tag_list">
 					<?php foreach ($tags as $key => $tag): ?>
-						<a href="/?tag=<?php echo $tag->term_id; ?>"><span>#</span><?php echo $tag->name; ?></a>
+						<a href="/tag/<?php echo $tag->slug; ?>"><span>#</span><?php echo $tag->name; ?></a>
 					<?php endforeach; ?>
 				</div>
 				<div class="sns_wrap">

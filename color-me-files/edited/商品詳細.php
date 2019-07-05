@@ -1,3 +1,13 @@
+<script>
+$(function() {
+  function convSet(target){
+    target.find('input[type="submit"]').each(function(index) {
+      $(this).attr('onclick', 'gtag_report_conversion(); return false;');
+    });
+  }
+  convSet($('article'));
+});
+</script>
 <article id="itemDetail">
   <section id="keyVisual">
     <div class="img_wrap" style="background-image: url(<{$product.ot1_url}>)">
@@ -102,21 +112,30 @@
           <div class="item_upper item">
             <{if $product.soldout_flg == false}>
             <!-- 通常 -->
+            <{if $product.weight == 0}>
+            <span class="amount">セット商品</span>
+            <{else}>
             <span class="amount">内容量: <{$product.weight}>個</span>
+            <{/if}>
             <span class="state onsale">販売中</span>
             <{else}>
             <!-- 売り切れ -->
+            <{if $product.weight == 0}>
+            <span class="amount">セット商品</span>
+            <span class="state upcoming">構想中</span>
+            <{else}>
             <span class="amount">内容量: <{$product.weight}>個</span>
-              <span class="state soldout">再販受付中</span>
+            <span class="state soldout">再販受付中</span>
+            <{/if}>
             <{/if}>
           </div>
           <div class="item">
             <{if $product.price_disp == true}>
               <{if $product.soldout_flg == false}>
-              <span class="number">個数<input type="number" name="product_num" value="<{$product.init_num}>">個</span>
+              <span class="number">個数<input type="text" name="product_num" value="<{$product.init_num}>">個</span>
               <span class="price"><{$product.price}></span>
               <{else}>
-              <span class="number">個数<input type="number" disabled="disabled" class="disabled" name="product_num" value="<{$product.init_num}>">個</span>
+              <span class="number">個数<input type="text" disabled="disabled" class="disabled" name="product_num" value="<{$product.init_num}>">個</span>
               <span class="price"><{$product.price}></span>
               <{/if}>
               <{else}>
@@ -131,7 +150,11 @@
             <{$product.info}>
             <{else}>
             <div class="comp-linkbutton">
-              <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+              <{if $product.weight == 0}>
+                <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>購入予約<font>WAITING LIST</font></span></a>
+              <{else}>
+                <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+              <{/if}>
             </div>
             <{/if}>
           </div>
@@ -167,21 +190,30 @@
       <div class="item_upper item">
         <{if $product.soldout_flg == false}>
         <!-- 通常 -->
+        <{if $product.weight == 0}>
+        <span class="amount">セット商品</span>
+        <{else}>
         <span class="amount">内容量: <{$product.weight}>個</span>
+        <{/if}>
         <span class="state onsale">販売中</span>
         <{else}>
         <!-- 売り切れ -->
+        <{if $product.weight == 0}>
+        <span class="amount">セット商品</span>
+        <span class="state upcoming">構想中</span>
+        <{else}>
         <span class="amount">内容量: <{$product.weight}>個</span>
-          <span class="state soldout">再販受付中</span>
+        <span class="state soldout">再販受付中</span>
+        <{/if}>
         <{/if}>
       </div>
       <div class="item">
         <{if $product.price_disp == true}>
           <{if $product.soldout_flg == false}>
-          <span class="number">個数<input type="number" name="product_num" value="<{$product.init_num}>">個</span>
+          <span class="number">個数<input type="text" name="product_num" value="<{$product.init_num}>">個</span>
           <span class="price"><{$product.price}></span>
           <{else}>
-          <span class="number">個数<input type="number" disabled="disabled" class="disabled" name="product_num" value="<{$product.init_num}>">個</span>
+          <span class="number">個数<input type="text" disabled="disabled" class="disabled" name="product_num" value="<{$product.init_num}>">個</span>
           <span class="price"><{$product.price}></span>
           <{/if}>
           <{else}>
@@ -196,7 +228,11 @@
         <{$product.info}>
         <{else}>
         <div class="comp-linkbutton">
-          <a href="#aaaa"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+          <{if $product.weight == 0}>
+            <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>購入予約<font>WAITING LIST</font></span></a>
+          <{else}>
+            <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+          <{/if}>
         </div>
         <{/if}>
       </div>

@@ -620,22 +620,6 @@
       }
       .info_wrap{
         .info_item{
-          padding:10px 0;
-          .title{
-            display: block;
-            width: 90px;
-            padding: 10px 0;
-            font-size: 12px;
-            letter-spacing: 1.2px;
-            margin-right: 15px;
-          }
-          .content{
-            width: calc(100% - 105px);
-            font-size: 12px;
-            line-height: 1.6;
-            letter-spacing: 1px;
-          }
-          &.block{
             display: block;
             padding: 15px 0 0;
             border-bottom: 0px;
@@ -644,19 +628,23 @@
               width: 100%;
               margin-right: 0px;
               margin-bottom: 5px;
+              text-align: left;
+              padding: 10px;
+              box-sizing: border-box;
             }
             .content{
               width: 100%;
               font-size: 12px;
               line-height: 1.6;
               letter-spacing: 1px;
+              padding: 5px 5px 0;
+              box-sizing: border-box;
               .content_inner{
                 font{
                   font-size: 14px;
                 }
               }
             }
-          }
         }
       }
     }
