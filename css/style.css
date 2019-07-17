@@ -1810,7 +1810,7 @@ footer {
           background-size: cover;
           background-position: center center;
           background-size: 90%;
-          background-image: url(../img/gift/q.svg); }
+          background-image: url(../img/gift/q.png); }
       .comp-qa .toggle_item a.toggle_button.active::before {
         opacity: 0; }
       .comp-qa .toggle_item a.toggle_button.active::after {
@@ -1838,7 +1838,7 @@ footer {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center center;
-          background-image: url(../img/gift/a.svg);
+          background-image: url(../img/gift/a.png);
           background-size: 14px; }
         .comp-qa .toggle_item .toggle_contents p:nth-last-of-type(1) {
           padding: 20px 0 0 25px; }
