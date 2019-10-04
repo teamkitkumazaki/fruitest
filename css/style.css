@@ -2329,6 +2329,10 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media screen and (min-width: 740px) {
+      .comp-related-product .slick-track {
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important; } }
   .comp-related-product .slick-arrow {
     display: none; }
   .comp-related-product .item_box {

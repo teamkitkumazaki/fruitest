@@ -421,11 +421,12 @@ $(function() {
     var currentSlide = 1;
     var slideList = [];
     var targetSlide;
-    var slideNum = target.find('li').length;
+    var slideNum = target.find('li').length - 1;
     var slideNextButton = target.find('.slide_next');
     var slidePrevButton = target.find('.slide_prev');
 
     function slideChange() {
+      console.log(currentSlide);
       targetSlide = target.find('.slide' + currentSlide);
       target.find('.active_slide').removeClass('active_slide');
       targetSlide.addClass('active_slide');
@@ -469,8 +470,12 @@ $(function() {
     function init() {
       target.find('.all').text(slideNum);
       target.find('li').each(function(index) {
+        $(this).addClass('slide'+ index);
         slideList[index] = $(this);
       });
+
+      $('.slide0').remove();
+      $('.slide1').addClass('active_slide')
 
       slideNextButton.on({
         'click': function() {
