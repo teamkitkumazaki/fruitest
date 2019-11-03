@@ -27,6 +27,7 @@
 <article id="index">
 		<section id="main">
 			<div id="mainVisual">
+				<img id="firstView" src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/index/main.jpg">
 				<div id="scrollDown" class="scroll_button">
 					<a href="javascript:void(0)" jump="#topConcept"><span>SCROLL</span></a>
 				</div>
@@ -78,14 +79,14 @@
 							</p>
 						</div>
 						<div class="comp-linkbutton">
-							<a href="/?mode=f1#conceptRare"><span>詳しく知る<font>READ MORE</font></span></a>
+							<a href="/?mode=f1#conceptMethod"><span>詳しく知る<font>READ MORE</font></span></a>
 						</div>
 					</div><!-- flex_left -->
 					<div class="flex_right">
 						<span></span>
 					</div>
-				</div><!-- flex_wrap -->
-			</div><!-- inner -->
+				</div><!-- flex_set -->
+			</div>
 		</section><!-- topRareDry -->
 		<div id="topProduct">
 			<div class="inner">
@@ -203,7 +204,7 @@
 					<span class="txt">商品一覧へ<font>VIEW PRODUCTS</font></span><span class="obj"></span>
 					<span class="txt_sp"><font>VIEW PRODUCTS</font><span>商品一覧へ</span></span>
 				</a>
-			</div><!-- product_all -->
+			</div>
 		</div><!-- topProduct -->
 		<section id="topOption" class="comp-option">
 			<div class="inner">
@@ -225,6 +226,17 @@
 				</div>
 			</div><!-- inner -->
 		</section><!-- topOption -->
+		<section class="news-section">
+			<div class="inner">
+			<div class="comp-title">
+				<h2 class="ttl_ja">最新情報</h2>
+				<span class="ttl_en">NEWS</span>
+			</div>
+			<div class="iframe_wrap">
+			<iframe src="https://journal.fruitest.jp/iframe-news/" scrolling="no" frameborder="0"></iframe>
+		</div>
+		</div><!-- inner -->
+		</section>
 		<section class="comp-journal">
 			<div class="inner">
 				<div class="comp-title">

@@ -1,8 +1,25 @@
 <?php
-update_option( 'siteurl', 'https://journal.fruitest.jp/' );
-update_option( 'home', 'https://journal.fruitest.jp/' );
 
 add_theme_support('post-thumbnails');
+
+//カスタム投稿タイプの追加
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+//カスタム投稿タイプ１（ここから）
+register_post_type(
+'news',
+array(
+'labels' => array(
+'name' => __( '時間割管理' ),
+'singular_name' => __( 'news' )
+),
+'public' => true,
+'menu_position' =>5,
+'has_archive' => false,
+'supports' => array('title','editor','thumbnail')
+)
+);
+}
 
 function wpcf7_main_validation_filter( $result, $tag ) {
   $type = $tag['type'];
