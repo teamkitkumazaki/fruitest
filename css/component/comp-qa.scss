@@ -55,7 +55,7 @@
            height: 16px;
            @include bgSet;
            background-size: 90%;
-           background-image: url(../img/gift/q.svg);
+           background-image: url(../img/gift/q.png);
         }
       }
       &.active{
@@ -90,7 +90,7 @@
              width: 20px;
              height: 16px;
              @include bgSet;
-             background-image: url(../img/gift/a.svg);
+             background-image: url(../img/gift/a.png);
              background-size: 14px;
           }
         }

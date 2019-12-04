@@ -11,6 +11,9 @@
   .slick-track{
     min-width: 1080px;
     @include flexSet;
+    @media screen and (min-width: 740px){
+      transform: translate3d(0, 0, 0) !important;
+    }
   }
   .slick-arrow{
     display: none;

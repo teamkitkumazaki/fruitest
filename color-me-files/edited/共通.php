@@ -38,8 +38,8 @@
           <li><a href="/?mode=f1"><span>CONCEPT</span>コンセプト</a></li>
           <li><a href="/?mode=cate&csid=0&cbid=2520817"><span>PRODUCTS</span>商品一覧</a></li>
           <li><a href="/?mode=f2"><span>GIFT</span>ギフト商品一覧</a></li>
-          <li><a href="#aaaa"><span>JOURNAL</span>ジャーナル</a></li>
-          <li><a href="https://fruitest.sakura.ne.jp/journal/contact/"><span>CONTACT</span>お問い合わせ</a></li>
+          <li><a href="//journal.fruitest.jp"><span>JOURNAL</span>ジャーナル</a></li>
+          <li><a href="//journal.fruitest.jp/contact/"><span>CONTACT</span>お問い合わせ</a></li>
         </ul>
       </nav>
 					<div class="guide">
@@ -89,9 +89,9 @@
           <li><a href="/?mode=f1"><span>CONCEPT</span><font>コンセプト</font></a></li>
           <li><a href="/?mode=cate&csid=0&cbid=2520817"><span>PRODUCTS</span><font>商品一覧</font></a></li>
           <li><a href="/?mode=f2"><span>GIFT</span><font>ギフト商品一覧</font></a></li>
-          <li><a href="#aaaa"><span>JOURNAL</span><font>ジャーナル</font></a></li>
+          <li><a href="//journal.fruitest.jp"><span>JOURNAL</span><font>ジャーナル</font></a></li>
           <li><a href="/?mode=f3"><span>FAQ</span><font>よくある質問</font></a></li>
-          <li><a href="https://fruitest.sakura.ne.jp/journal/contact/"><span>CONTACT</span><font>お問い合わせ</font></a></li>
+          <li><a href="//journal.fruitest.jp/contact/"><span>CONTACT</span><font>お問い合わせ</font></a></li>
         </ul>
       </nav>
       </div>

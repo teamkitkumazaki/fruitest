@@ -1,3 +1,13 @@
+<div id="leadTxt">
+  <div class="set_content">
+    <div class="set_detail">
+      <span>貴陽</span>
+      <span>ピオーネ</span>
+      <span>甲州百目</span>
+    </div>
+  </div>
+</div>
+
 <section id="setContent">
   <div class="inner">
     <div class="comp-title">
@@ -6,7 +16,7 @@
     </div>
   <div class="comp-setcontent">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/ikkaissyu/setimg01.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -30,7 +40,7 @@
   </div><!-- comp-setcontent -->
   <div class="comp-setcontent reverse">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg02.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/ikkaissyu/setimg02.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -52,7 +62,7 @@
   </div><!-- comp-setcontent -->
   <div class="comp-setcontent">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/ikkaissyu/setimg03.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -93,23 +103,11 @@
       </div>
       <div class="info_item block">
         <span class="title">内容量</span>
-        <span class="content">貴陽：9個(約1.5個分)<br>ピオーネ：10個（10粒）<br>甲州百目：7個（7粒）</span>
+        <span class="content">貴陽：7個(約1.5個分)<br>ピオーネ：10個（10粒）<br>甲州百目：7個（7粒）</span>
       </div>
       <div class="info_item block">
-        <span class="title">保存方法</span>
-        <span class="content">
-          <span class="content_inner">
-            <font>貴陽</font>
-						※直射日光を避け、冷暗所に保存してください。<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
-          </span>
-          <span class="content_inner">
-						<font>ピオーネ</font>
-						※直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※手作業で種抜きをしていますが、まれに種が残っている場合があります。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
-          </span>
-          <span class="content_inner">
-            <font>甲州百目</font>
-						※直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
-          </span>
+        <span class="title">その他</span>
+        <span class="content">直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※手作業で種抜きをしていますが、まれに種が残っている場合があります。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
         </span><!-- content -->
       </div>
     </div><!-- info_wrap -->

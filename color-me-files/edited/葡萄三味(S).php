@@ -1,3 +1,13 @@
+<div id="leadTxt">
+  <div class="set_content">
+    <div class="set_detail">
+      <span>ピオーネ</span>
+      <span>シャインマスカット</span>
+      <span>巨峰</span>
+    </div>
+  </div>
+</div>
+
 <section id="setContent">
   <div class="inner">
     <div class="comp-title">
@@ -6,7 +16,7 @@
     </div>
     <div class="comp-setcontent">
       <div class="img_wrap">
-        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg02.jpg">
+        <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/budou_s/setimg01.jpg">
       </div>
       <div class="txt_wrap">
         <div class="comp-title">
@@ -28,7 +38,7 @@
     </div><!-- comp-setcontent -->
   <div class="comp-setcontent reverse">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg02.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/budou_s/setimg02.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -50,7 +60,7 @@
   </div><!-- comp-setcontent -->
   <div class="comp-setcontent">
     <div class="img_wrap">
-      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/pione_hyakume/setimg01.jpg">
+      <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/set_product/budou_s/setimg03.jpg">
     </div>
     <div class="txt_wrap">
       <div class="comp-title">
@@ -64,7 +74,7 @@
         </h3>
         <p class="detail_txt">
           <span>フルーツ王国山梨県のぶどう農家が口をそろえて「一番好き」と言う、元祖プレミアムぶどうの巨峰。品種登録から半世紀以上経っても未だにその味と人気は色あせません。</span>
-          <span>特にFRUITESTが使っている、山梨市牧岡地区の昔ながらの種あり巨峰の味は別格。</span><span>適度な甘みと、味の輪郭を際立たせる酸味のバランスを大切にして仕上げました。</span>
+          <span>特にFRUITESTが使っている、山梨市牧丘地区の昔ながらの種あり巨峰の味は別格。</span><span>適度な甘みと、味の輪郭を際立たせる酸味のバランスを大切にして仕上げました。</span>
         </p>
       </div>
       <div class="comp-linkbutton">
@@ -94,20 +104,8 @@
         <span class="content">ピオーネ：10個（10粒）<br>シャインマスカット：8個（8粒）<br>巨峰：12個（12粒）</span>
       </div>
       <div class="info_item block">
-        <span class="title">保存方法</span>
-        <span class="content">
-          <span class="content_inner">
-            <font>ピオーネ</font>
-						※直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※手作業で種抜きをしていますが、まれに種が残っている場合があります。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
-          </span>
-          <span class="content_inner">
-						<font>シャインマスカット</font>
-						※直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※手作業で種抜きをしていますが、まれに種が残っている場合があります。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
-          </span>
-          <span class="content_inner">
-            <font>巨峰</font>
-						※直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※手作業で種抜きをしていますが、まれに種が残っている場合があります。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
-          </span>
+        <span class="title">その他</span>
+        <span class="content">直射日光を避け、冷暗所に保存してください<br>※賞味期限は製造から1年になります。商品の缶底をご確認ください。<br>※手作業で種抜きをしていますが、まれに種が残っている場合があります。<br>※開封後は密封し、お早めにお召し上がりください。<br>※開封後の保存は、冷蔵庫をおすすめします。<br>※商品の仕様などは予告なく変更になる場合があります。予めご了承ください。
         </span><!-- content -->
       </div>
     </div><!-- info_wrap -->

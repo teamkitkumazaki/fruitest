@@ -1,7 +1,33 @@
+<script>
+(function() {
+	function removeScriptTags() {
+		var srcs = [];
+		var entry = document.getElementsByTagName('script')[0];
+
+		srcs.forEach(function(src) {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = src;
+			script.async = false;
+			entry.parentNode.insertBefore(script, entry);
+		})
+	}
+	window.addEventListener('load', removeScriptTags, false);
+})();
+</script>
 <script type="text/javascript" src="//journal.fruitest.jp/wp-content/themes/fruitest-theme/js/instafeed.min.js"></script>
+<div id="loading" class="comp-loading">
+	<div class="load_inner delete">
+		<div class="loading_inner">
+			<div class="loading_logo"></div>
+			<p id="loadingBar"><span></span></p>
+		</div>
+	</div>
+</div><!-- comp-loading -->
 <article id="index">
 		<section id="main">
 			<div id="mainVisual">
+				<img id="firstView" src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/index/main.jpg">
 				<div id="scrollDown" class="scroll_button">
 					<a href="javascript:void(0)" jump="#topConcept"><span>SCROLL</span></a>
 				</div>
@@ -53,7 +79,7 @@
 							</p>
 						</div>
 						<div class="comp-linkbutton">
-							<a href="/?mode=f1#conceptRare"><span>詳しく知る<font>READ MORE</font></span></a>
+							<a href="/?mode=f1#conceptMethod"><span>詳しく知る<font>READ MORE</font></span></a>
 						</div>
 					</div><!-- flex_left -->
 					<div class="flex_right">
@@ -95,7 +121,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="alex" class="prod_section">
+			<!--<section id="alex" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="/?pid=142905193"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
@@ -107,21 +133,21 @@
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section>
-			<!--<section id="reiou" class="prod_section">
+			</section> -->
+			<section id="reiou" class="prod_section">
 				<div class="productBg">
-					<a class="product_caret" href="#aaaa"><span class="caret"></span></a>
-					<div class="txt_wrapper">
+					<a class="product_caret" href="/?pid=143288029"><span class="caret"></span></a>
+					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">REIOU</span>
 							<h3 class="ja">麗王</h3>
-							<a class="prod_link" href="#aaaa"><span>VIEW MORE</span></a>
+							<a class="prod_link" href="/?pid=143288029"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section>-->
-			<section id="hyakume" class="prod_section">
+			</section>
+			<!--<section id="hyakume" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="/?pid=142905939"><span class="caret"></span></a>
 					<div class="txt_wrapper">
@@ -133,20 +159,7 @@
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section>
-			<section id="kiyou" class="prod_section">
-				<div class="productBg">
-					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
-					<div class="txt_wrapper right">
-						<div class="txt_block">
-							<span class="en">KIYOU</span>
-							<h3 class="ja">貴陽</h3>
-							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
-						</div>
-						<div class="height_adjuster"></div>
-					</div>
-				</div>
-			</section>
+			</section> -->
 			<section id="shine" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="/?pid=142904277"><span class="caret"></span></a>
@@ -168,6 +181,19 @@
 							<span class="en">KYOHOU</span>
 							<h3 class="ja">巨峰</h3>
 							<a class="prod_link" href="/?pid=142903040"><span>VIEW MORE</span></a>
+						</div>
+						<div class="height_adjuster"></div>
+					</div>
+				</div>
+			</section>
+			<section id="kiyou" class="prod_section">
+				<div class="productBg">
+					<a class="product_caret" href="/?pid=141554730"><span class="caret"></span></a>
+					<div class="txt_wrapper">
+						<div class="txt_block">
+							<span class="en">KIYOU</span>
+							<h3 class="ja">貴陽</h3>
+							<a class="prod_link" href="/?pid=141554730"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
@@ -200,56 +226,30 @@
 				</div>
 			</div><!-- inner -->
 		</section><!-- topOption -->
+		<section class="news-section">
+			<div class="inner">
+			<div class="comp-title">
+				<h2 class="ttl_ja">最新情報</h2>
+				<span class="ttl_en">NEWS</span>
+			</div>
+			<div class="iframe_wrap">
+			<iframe src="https://journal.fruitest.jp/iframe-news/" scrolling="no" frameborder="0"></iframe>
+		</div>
+		</div><!-- inner -->
+		</section>
 		<section class="comp-journal">
 			<div class="inner">
 				<div class="comp-title">
 					<h2 class="ttl_ja">FRUITESTについて<span>もっと知る。</span></h2>
 					<span class="ttl_en">JOURNAL</span>
 				</div>
-				<div class="journal_wrap">
-					<div id="slickSlider" class="slick-slider">
-						<div class="item_box slick-slide">
-							<a
-								class="img_wrap"
-								href="#aaaa"
-								style="background-image: url(//journal.fruitest.jp/files/img/index/journal01.jpg);"
-							>
-							</a>
-							<div class="txt_wrap">
-								<span class="date">10月<span>31日</span></span>
-								<a class="ttl" href="#aaaa">FRUITESTを作るにあたって</a>
-							</div>
-						</div>
-						<div class="item_box slick-slide">
-							<a
-								class="img_wrap"
-								href="#aaaa"
-								style="background-image: url(//journal.fruitest.jp/files/img/index/journal02.jpg);"
-							>
-							</a>
-							<div class="txt_wrap">
-								<span class="date">9月<span>4日</span></span>
-								<a class="ttl" href="#aaaa">”天空の茶畑”産ティーシードオイルについて</a>
-							</div>
-						</div>
-						<div class="item_box last slick-slide">
-							<a
-								class="img_wrap"
-								href="#aaaa"
-								style="background-image: url(//journal.fruitest.jp/files/img/index/journal03.jpg);"
-							>
-							</a>
-							<div class="txt_wrap">
-								<span class="date">7月<span>1日</span></span>
-								<a class="ttl" href="#aaaa">「Komons」の名前の由来は「江戸小紋」</a>
-							</div>
+					<iframe class="autoHeight" src="https://journal.fruitest.jp/iframe-all/" scrolling="no" frameborder="0"></iframe>
+					<div class="journal_wrap">
+						<div class="comp-linkbutton">
+							<a href="https://journal.fruitest.jp/"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
 						</div>
 					</div>
-					<div class="comp-linkbutton">
-						<a href="#aaaa"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
-					</div>
-				</div>
-			</div>
+			</div><!-- inner -->
 		</section>
 		<section id="topInstagram">
 			<div class="comp-title center">

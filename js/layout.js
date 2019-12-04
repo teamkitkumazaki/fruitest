@@ -1,33 +1,37 @@
 $(function() {
 
   // ローディングアニメーション
-  /*  function loadingAnimation() {
-      $(window).on({
-        'load': function() {
-          setTimeout(function() {
-            $('#main').addClass('loading');
-            $('.main_inner .ttl_wrap').addClass('loading');
+  function loadingAnimation() {
 
-            setTimeout(function() {
-              $('#main').addClass('loaded');
-              $('.main_inner .ttl_wrap').addClass('loaded');
+     var imgPreloader = new Image();
+     var img = $('#firstView');
+     var originSrc = img.attr('src');
+     img.attr('src', "");
+     console.log(originSrc);
 
-              setTimeout(function() {
-                $('.main_inner nav').addClass('loaded');
-                $('#spHeader').addClass('loaded');
-              }, 100);
-            }, 1500);
+     img.on({
+       'load': function() {
+         $('header').addClass('top');
+         setTimeout(function() {
+           $('body').addClass('loaded');
 
-          }, 100);
+           setTimeout(function() {
+             $('header').addClass('top').addClass('loaded');
+             setTimeout(function() {
+               $('#mainVisual').addClass('loaded');
+             }, 900);
+           }, 600);
+         }, 1700);
+       }
+     })
 
-        }
-      })
-    }
+     img.attr('src', originSrc);
+
+   }
 
     if (document.getElementById('index')) {
       loadingAnimation();
     }
-  */
 
   //ハンバーガーメニュー
   function humMenuToggle(target) {
@@ -146,8 +150,7 @@ $(function() {
     init();
 
   };
-
-  scrollJudge($('body'));
+    scrollJudge($('body'));
 
   //アンカーリンクで追従ヘッダー分をパディングする
   function scrollToLink() {
@@ -418,11 +421,12 @@ $(function() {
     var currentSlide = 1;
     var slideList = [];
     var targetSlide;
-    var slideNum = target.find('li').length;
+    var slideNum = target.find('li').length - 1;
     var slideNextButton = target.find('.slide_next');
     var slidePrevButton = target.find('.slide_prev');
 
     function slideChange() {
+      console.log(currentSlide);
       targetSlide = target.find('.slide' + currentSlide);
       target.find('.active_slide').removeClass('active_slide');
       targetSlide.addClass('active_slide');
@@ -466,8 +470,12 @@ $(function() {
     function init() {
       target.find('.all').text(slideNum);
       target.find('li').each(function(index) {
+        $(this).addClass('slide'+ index);
         slideList[index] = $(this);
       });
+
+      $('.slide0').remove();
+      $('.slide1').addClass('active_slide')
 
       slideNextButton.on({
         'click': function() {
@@ -523,6 +531,23 @@ $(function() {
 
 
   $('#slickSlider').slick({
+    accessibility: false,
+    infinite: false,
+    dots: true,
+    slidesToShow: 3,
+    centerMode: true,
+    autoplay: false,
+    responsive: [{
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '5%',
+        centerMode: false,
+      }
+    }]
+  });
+
+  $('#relatedSlider').slick({
     accessibility: false,
     infinite: false,
     dots: true,

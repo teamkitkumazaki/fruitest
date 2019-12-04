@@ -7,3 +7,39 @@
 <script type="text/javascript" src="//journal.fruitest.jp/wp-content/themes/fruitest-theme/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="//journal.fruitest.jp/wp-content/themes/fruitest-theme/slick/slick.min.js"></script>
 <script type="text/javascript" src="//journal.fruitest.jp/wp-content/themes/fruitest-theme/js/layout.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142991880-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-142991880-1', {
+    'linker': {
+       'domains': ['www.fruitest.jp/', 'journal.fruitest.jp/', 'cart.shop-pro.jp', 'shop-pro.jp']
+    }
+  });
+  function gtag_report_conversion() {
+  var callback = function () {
+       console.log('get')
+       $('#cartIn').submit();
+  };
+  gtag('event', 'submit', {
+    'event_category': 'cartIn',
+    'event_callback': callback,
+  });
+  return false;
+}
+  function gtag_report_conversion2(e) {
+  var callback = function () {
+       console.log(e);
+             $('#form'+ e).submit();
+  };
+  gtag('event', 'submit', {
+    'event_category': 'cartIn',
+    'event_callback': callback,
+  });
+  return false;
+  }
+</script>

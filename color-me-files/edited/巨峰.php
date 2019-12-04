@@ -53,13 +53,13 @@
         <span class="ttl_en">ORIGIN</span>
       </div>
       <div class="origin_upper">
-        <p class="txt">巨峰の聖地とよばれる「牧岡地区」。標高が600メートル以上で昼夜の寒暖の差が大きく、南向き斜面という好条件がそろうこの地区では、昔から一貫して種ありのおいしい巨峰を作り続けています。</p>
+        <p class="txt">巨峰の聖地とよばれる「牧丘地区」。標高が600メートル以上で昼夜の寒暖の差が大きく、南向き斜面という好条件がそろうこの地区では、昔から一貫して種ありのおいしい巨峰を作り続けています。</p>
         <div class="sp_img">
           <img src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/product_detail/kyohou/location.png">
         </div>
         <div class="origin_item">
           <span class="title">産地</span>
-          <span class="content">山梨県山梨市（牧岡地区）</span>
+          <span class="content">山梨県山梨市（牧丘地区）</span>
         </div>
         <div class="origin_item">
           <span class="title">旬の時期</span>

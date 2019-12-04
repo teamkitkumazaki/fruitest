@@ -1,19 +1,23 @@
 .comp-journal{
   margin-top: 175px;
+  .autoHeight{
+    width: 1101px;
+    height: 350px;
+  }
   .journal_wrap{
     #slickSlider{
       .slick-list{
         padding: 0 !important;
       }
       .slick-dots{
-        display: none;
+        display: none !important;
       }
       .slick-track{
         min-width: 1080px;
         @include flexSet;
       }
       .slick-arrow{
-        display: none;
+        display: none !important;
       }
       .item_box{
         @media screen and (min-width: 1101px){
@@ -21,60 +25,83 @@
         }
         float: none;
         margin-right: 22px;
+        padding-bottom: 5px;
         &:nth-of-type(3){
           margin-right:0;
         }
         .img_wrap{
-          display: block;
-          width: 100%;
-          height: 250px;
-          background-color: #f1f1f1;
-          @include bgSet;
-          @include hover;
           margin-bottom: 15px;
-          &:hover{
-            opacity: 0.8;
+          a{
+            display: block;
+            width: 100%;
+            height: 230px;
+            @include bgSet;
+            transition: opacity .4s;
+            &:hover{
+              opacity: 0.8;
+            }
           }
         }
         .txt_wrap{
-          @include flexSet;
-          align-items: center;
-          .date{
-            position:  relative;
+          .title{
             display: block;
-            width: 65px;
-            padding: 5px 0;
-            margin-right: 20px;
-            text-align: center;
-            font-size: 12px;
-            letter-spacing: 1px;
-            &::after{
-              position: absolute;
-              top:0;
-              bottom:0;
-              right:0;
-              margin: auto;
+            font-size: 18px;
+            line-height: 1.44;
+            letter-spacing: 2px;
+            color: #333;
+            @include hover;
+            margin-bottom: 5px;
+          }
+          .tag_wrap{
+            @include flexSet;
+            a{
               display: block;
-              content: "";
-              width: 1px;
-              height: 100%;
-              background: #d8d8d8;
-            }
-            span{
-              display: block;
-              font-size: 18px;
-              margin-top: 5px;
+              font-size: 12px;
+              margin-right: 0.7em;
+              line-height: 1;
+              letter-spacing: 2.4px;
+              color: #666;
+              @include hover;
+              margin-bottom: 5px;
+              &:nth-last-of-type(1){
+                margin-right: 0;
+              }
             }
           }
-          .ttl{
-            width: calc(100% - 85px);
-            font-size: 14px;
-            color: #333;
-            line-height: 1.6;
-            letter-spacing: 1.5px;
-            box-sizing: border-box;
-            padding-right: 20px;
+        }
+        .link_wrap{
+          margin-top: 15px;
+          .prod_link{
+            display: inline-block;
+            color: #979797;
             @include hover;
+            span{
+              position: relative;
+              font-size: 14px;
+              letter-spacing: 1px;
+              padding-right: 35px;
+              &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                top:0;
+                bottom:0;
+                right: 5px;
+                margin: auto;
+                width: 20px;
+                height: 20px;
+                @include bgSet;
+                transition: right .3s;
+                background-image: url(../img/journal/journal_caret.png);
+              }
+            }
+            &:hover{
+              span{
+                &::after{
+                  right:0;
+                }
+              }
+            }
           }
         }
       }
@@ -89,6 +116,10 @@
 @media screen and (max-width: 1100px){
   .comp-journal{
     margin-top: 175px;
+    .autoHeight{
+      width: 741px;
+      height: 640px;
+    }
     .journal_wrap{
       #slickSlider{
         .slick-track{
@@ -109,12 +140,15 @@
           .img_wrap{
             display: block;
             width: 250px;
-            height: 140px;
-            margin-right: 20px;
+            margin-right: 25px;
             margin-bottom: 15px;
+            a{
+              height: 170px;
+            }
+
           }
           .txt_wrap{
-            width: calc(100% - 270px);
+            width: calc(100% - 275px);
           }
         }
       }
@@ -124,6 +158,11 @@
 @media screen and (max-width: 740px){
   .comp-journal{
     margin-top: 100px;
+    .autoHeight{
+      width: 111%;
+      height: 105vw;
+      margin-left: -5%;
+    }
     .journal_wrap{
       #slickSlider{
         .slick-arrow{
@@ -135,14 +174,12 @@
           width: 320vw !important;
         }
         .slick-dots{
-          position: absolute;
-          bottom: -45px;
           list-style: none;
-          display: block;
+          display: block !important;
           text-align: center;
           padding: 0;
-          margin: 0;
           width: 100%;
+          margin: 15px auto 0px;
           li{
             position: relative;
             display: inline-block;
@@ -185,56 +222,39 @@
           .img_wrap{
             display: block;
             width: 100%;
-            height: 60vw;
             margin-right:0;
             margin-bottom: 15px;
-            &:hover{
-              opacity: 0.8;
+            a{
+              height: 60vw;
             }
           }
           .txt_wrap{
             width: 100%;
-            @include flexSet;
-            align-items: center;
-            .date{
-              position:  relative;
-              display: block;
-              width: 65px;
-              padding: 5px 0;
-              margin-right: 20px;
-              text-align: center;
-              font-size: 12px;
-              letter-spacing: 1px;
-              &::after{
-                position: absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                margin: auto;
+            display: block;
+            padding: 0 5px;
+            box-sizing: border-box;
+            .title{
+              font-size: 16px;
+              letter-spacing: 1.2px;
+            }
+            .tag_wrap{
+              @include flexSet;
+              a{
                 display: block;
-                content: "";
-                width: 1px;
-                height: 100%;
-                background: #d8d8d8;
-              }
-              span{
-                display: block;
-                font-size: 18px;
-                margin-top: 5px;
+                font-size: 12px;
+                line-height: 1;
+                letter-spacing: 1.5px;
               }
             }
-            .ttl{
-              color: #333;
-              line-height: 1.6;
-              letter-spacing: 1px;
-              padding-right: 20px;
+            .link_wrap{
+              margin-top: 10px;
             }
           }
         }
       }
       .comp-linkbutton {
         @include waku;
-        margin: 80px auto 0;
+        margin: 35px auto 0;
         text-align: left;
       }
     }

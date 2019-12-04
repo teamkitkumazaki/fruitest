@@ -19,7 +19,7 @@
 	<meta property="og:image" content="img/ogp.jpg">
 	<meta property="og:description" content="限りなく生に近いFRUITESTの「レア・ドライフルーツ」みずみずしさを出来る限り保ちながら、おいしさを凝縮しました。原料は、国産果物だけ。砂糖や保存料などの添加物は一切入れず、低温でゆっくり乾燥させています。それによって、それぞれの果物が持つ風味や香りを残しながら、果物そのもののおいしさを最大限引き出すことに成功しました。">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?191103">
 	<link rel="stylesheet" href="slick/slick.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
@@ -42,9 +42,35 @@
 			</div>
 		</div><!-- header_inner -->
 	</header>
+	<script>
+	(function() {
+		function removeScriptTags() {
+			var srcs = [];
+			var entry = document.getElementsByTagName('script')[0];
+
+			srcs.forEach(function(src) {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = src;
+				script.async = false;
+				entry.parentNode.insertBefore(script, entry);
+			})
+		}
+		window.addEventListener('load', removeScriptTags, false);
+	})();
+	</script>
+	<div id="loading" class="comp-loading">
+		<div class="load_inner delete">
+			<div class="loading_inner">
+				<div class="loading_logo"></div>
+				<p id="loadingBar"><span></span></p>
+			</div>
+		</div>
+	</div><!-- comp-loading -->
 	<article id="index">
 		<section id="main">
 			<div id="mainVisual">
+				<img id="firstView" src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/index/main.jpg">
 				<div id="scrollDown" class="scroll_button">
 					<a href="javascript:void(0)" jump="#topConcept"><span>SCROLL</span></a>
 				</div>
@@ -219,56 +245,32 @@
 				</div>
 			</div><!-- inner -->
 		</section><!-- topOption -->
+		<section class="news-section">
+			<div class="inner">
+			<div class="comp-title">
+				<h2 class="ttl_ja">最新情報</h2>
+				<span class="ttl_en">NEWS</span>
+			</div>
+			<div class="iframe_wrap">
+			<iframe src="https://journal.fruitest.jp/iframe-news/" scrolling="no" frameborder="0"></iframe>
+		</div>
+		</div><!-- inner -->
+		</section>
 		<section class="comp-journal">
 			<div class="inner">
 				<div class="comp-title">
 					<h2 class="ttl_ja">FRUITESTについて<span>もっと知る。</span></h2>
 					<span class="ttl_en">JOURNAL</span>
 				</div>
-				<div class="journal_wrap">
-					<div id="slickSlider" class="slick-slider">
-						<div class="item_box slick-slide">
-							<a
-								class="img_wrap"
-								href="#aaaa"
-								style="background-image: url(img/index/journal01.jpg);"
-							>
-							</a>
-							<div class="txt_wrap">
-								<span class="date">10月<span>31日</span></span>
-								<a class="ttl" href="#aaaa">FRUITESTを作るにあたって</a>
-							</div>
+				<div class="iframe_wrap">
+					<iframe class="autoHeight" src="https://journal.fruitest.jp/iframe-all/" scrolling="no" frameborder="0"></iframe>
+					<div class="journal_wrap">
+						<div class="comp-linkbutton">
+							<a href="https://journal.fruitest.jp/"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
 						</div>
-						<div class="item_box slick-slide">
-							<a
-								class="img_wrap"
-								href="#aaaa"
-								style="background-image: url(img/index/journal02.jpg);"
-							>
-							</a>
-							<div class="txt_wrap">
-								<span class="date">9月<span>4日</span></span>
-								<a class="ttl" href="#aaaa">”天空の茶畑”産ティーシードオイルについて</a>
-							</div>
-						</div>
-						<div class="item_box last slick-slide">
-							<a
-								class="img_wrap"
-								href="#aaaa"
-								style="background-image: url(img/index/journal03.jpg);"
-							>
-							</a>
-							<div class="txt_wrap">
-								<span class="date">7月<span>1日</span></span>
-								<a class="ttl" href="#aaaa">「Komons」の名前の由来は「江戸小紋」</a>
-							</div>
-						</div>
-					</div>
-					<div class="comp-linkbutton">
-						<a href="#aaaa"><span>ジャーナル一覧へ<font>VIEW JOURNAL</font></span></a>
 					</div>
 				</div>
-			</div>
+			</div><!-- inner -->
 		</section>
 		<section id="topInstagram">
 			<div class="comp-title center">
