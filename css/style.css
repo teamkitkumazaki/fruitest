@@ -5234,6 +5234,18 @@ body.loaded .comp-loading {
               color: #333; }
           #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap {
             margin-top: 30px; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap .comp-upcoming {
+              display: none; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap .comp-gift-cartbutton {
+              display: none; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap.onsale .comp-upcoming {
+              display: none; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap.onsale .comp-gift-cartbutton {
+              display: block; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap.soldout .comp-upcoming {
+              display: block; }
+            #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap.soldout .comp-gift-cartbutton {
+              display: none; }
       #gift #giftProduct .product_wrap .flex_wrap#trio ul li .txt_wrap .desc {
         min-height: 44px; }
 

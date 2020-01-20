@@ -137,6 +137,28 @@
             }
             .button_wrap{
               margin-top: 30px;
+              .comp-upcoming{
+                display: none;
+              }
+              .comp-gift-cartbutton{
+                display: none;
+              }
+              &.onsale{
+                .comp-upcoming{
+                  display: none;
+                }
+                .comp-gift-cartbutton{
+                  display: block;
+                }
+              }
+              &.soldout{
+                .comp-upcoming{
+                  display: block;
+                }
+                .comp-gift-cartbutton{
+                  display: none;
+                }
+              }
             }
           }
         }

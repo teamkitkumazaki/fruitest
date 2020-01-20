@@ -415,6 +415,45 @@ $(function() {
 
   smoothScroll($('.scroll_button'));
 
+  //ギフトページの売り切れ・販売中レイアウト出し分け
+
+  function giftProductAutomation(target){
+    var buttonWrap = [];
+    var cartBox = [];
+
+    function soldoutFilter(){
+      target.find('.button_wrap').each(function(index) {
+        buttonWrap[index] = $(this);
+        cartBox[index] = $(this).find('input[type="submit"]');
+        console.log('index' + cartBox[index].length);
+        if( cartBox[index].length == 0){
+          console.log('index' + index);
+          buttonWrap[index].addClass('soldout');
+        }else{
+          buttonWrap[index].addClass('onsale');
+        }
+      });
+    }
+
+    function init(){
+      $(window).on({
+        'load': function(){
+          setTimeout(function() {
+            soldoutFilter();
+          }, 200);
+        }
+      })
+    }
+
+
+    init();
+
+  }
+
+  if (document.getElementById('gift')) {
+    giftProductAutomation($('#giftProduct'));
+  }
+
   // 商品ページのサムネイルスライダー
 
   function slideItemThumb(target) {
