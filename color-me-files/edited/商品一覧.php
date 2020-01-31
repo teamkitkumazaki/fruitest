@@ -89,7 +89,7 @@
       <h2 class="ttl_ja">FRUITESTのギフトセット</h2>
       <span class="ttl_en">GIFT SET</span>
     </div>
-    <div class="spimg_wrap"></div>
+		<div class="spimg_wrap"><a href="/?mode=f2"></a></div>
     <div class="txt_wrap">
       <p class="text">
         <span>手土産や特別な日のプレゼントに。</span>

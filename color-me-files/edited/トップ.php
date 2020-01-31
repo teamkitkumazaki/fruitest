@@ -39,7 +39,7 @@
 				<h2 class="ttl_ja">はじめまして、FRUITESTです。</h2>
 			</div>
 			<div class="lead_txt">
-				<h1 class="ja">フルーテストは、日本が誇る最上級の完熟果物だけをつかったレア・ドライフルーツのブランドです。</h1>
+				<h1 class="ja">フルーテストは、日本が誇る完熟果物の"新しい楽しみ方"を提案するブランドです。</h1>
 				<span class="en">
 					<span>“FRUITEST” is a brand that makes a new type of dried fruit called “rare (soft and juicy) dried fruit”.</span>
 					<span>We only use fully ripened fruit of the highest grade from Japan.</span>
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 			</section>
-			<!--<section id="alex" class="prod_section">
+			<section id="alex" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="/?pid=142905193"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
@@ -133,20 +133,20 @@
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section> -->
-			<section id="reiou" class="prod_section">
+			</section>
+			<!--<section id="reiou" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="/?pid=143288029"><span class="caret"></span></a>
 					<div class="txt_wrapper right">
 						<div class="txt_block">
 							<span class="en">REIOU</span>
-							<h3 class="ja">麗王</h3>
+							<h3 class="ja">黎王</h3>
 							<a class="prod_link" href="/?pid=143288029"><span>VIEW MORE</span></a>
 						</div>
 						<div class="height_adjuster"></div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!--<section id="hyakume" class="prod_section">
 				<div class="productBg">
 					<a class="product_caret" href="/?pid=142905939"><span class="caret"></span></a>

@@ -2701,7 +2701,8 @@ footer {
       margin-bottom: 25px; }
     .comp-option .img_wrap {
       display: none; }
-    .comp-option .spimg_wrap {
+    .comp-option .spimg_wrap a {
+      display: block;
       width: 100%;
       height: 48vw;
       background-repeat: no-repeat;
