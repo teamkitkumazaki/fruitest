@@ -4,7 +4,7 @@
     width: 100%;
     height: 480px;
     @include bgSet;
-    background-image: url("../img/index/giftset_img.jpg");
+    background-image: url("https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/index/giftset_img_zlleon.jpg");
     margin-bottom: 50px;
   }
   .txt_wrap {
@@ -55,7 +55,7 @@
         width: 100%;
         height: 48vw;
         @include bgSet;
-        background-image: url("../img/index/giftset_img.jpg");
+        background-image: url("https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/index/giftset_img_zlleon.jpg");
         margin-bottom: 20px;
       }
     }

@@ -35,11 +35,11 @@
       margin: auto;
     }
     &::before{
-      background-image: url(../img/caret_hover.png);
+      background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/caret_hover_kwgb5x.png);
     }
     &::after{
       transition: opacity .3s;
-      background-image: url(../img/caret.png);
+      background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/caret_fyygas.png);
     }
     span{
       font-size: 20px;

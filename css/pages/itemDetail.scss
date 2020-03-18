@@ -283,6 +283,14 @@
         margin-top: 35px;
         .comp-title{
           margin-bottom: 5px;
+          .ja{
+            display: inline-block;
+            padding-right: 30px;
+            margin-bottom: 5px;
+          }
+          .en{
+            padding-left: 0;
+          }
         }
         .copy{
           font-size: 22px;
@@ -664,9 +672,13 @@
           margin-top: 25px;
           .comp-title{
             .ttl_ja{
+              .ja{
+                padding-right: 15px;
+                margin-bottom: 0;
+              }
               .en{
                 display: inline-block;
-                padding-left:15px;
+                padding-left:0px;
               }
             }
           }
