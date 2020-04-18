@@ -42,11 +42,11 @@ header {
            background-size: 26px;
          }
          &:before{
-           background-image: url(../img/header/menu_button.png);
+           background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/header/menu_button_hcwyev.png);
          }
          &:after{
            opacity: 0;
-           background-image: url(../img/header/menu_button_white.png);
+           background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/header/menu_button_white_tl2ule.png);
          }
       }
     }
@@ -79,11 +79,11 @@ header {
           @include bgSet;
         }
         &::before{
-          background-image: url(../img/logo.svg);
+          background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/v1584337926/common/logo_n9hlak.svg);
         }
         &::after{
           opacity: 0;
-          background-image: url(../img/logo_white.svg);
+          background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/v1584337926/common/logo_white_weygho.svg);
         }
       }
     }
@@ -124,22 +124,22 @@ header {
           margin-right: 20px;
           span{
             &::before{
-              background-image: url(../img/header/header_login.svg);
+              background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/v1584337926/header/header_login_aw414f.svg);
             }
             &::after{
               opacity: 0;
-              background-image: url(../img/header/header_login_white.png);
+              background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/header/header_login_white_nr6hwd.png);
             }
           }
         }
         &.nav_cart{
           span{
             &::before{
-              background-image: url(../img/header/header_cart.svg);
+              background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/v1584337926/header/header_cart_vd0lkn.svg);
             }
             &::after{
               opacity: 0;
-              background-image: url(../img/header/header_cart_white.png);
+              background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/header/header_cart_white_tanhur.png);
             }
           }
         }

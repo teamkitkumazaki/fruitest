@@ -13,7 +13,7 @@ footer{
         margin: 0 auto 25px;
         @include bgSet;
         @include hover;
-        background-image: url(../img/logo.svg);
+        background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/v1584337926/common/logo_n9hlak.svg);
       }
       .sns_wrap{
         ul{
@@ -31,13 +31,13 @@ footer{
               height: 25px;
               @include bgSet;
               &.tw{
-                background-image: url(../img/icon_tw.png);
+                background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/icon_tw_sujz8o.png);
               }
               &.fb{
-                background-image: url(../img/icon_fb.png);
+                background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/icon_fb_avesbi.png);
               }
               &.ig{
-                background-image: url(../img/icon_ig.png);
+                background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/icon_ig_kyzyba.png);
               }
             }
           }
@@ -189,7 +189,7 @@ footer{
                   width: 20px;
                   height: 20px;
                   @include bgSet;
-                  background-image: url(../img/footer_caret.png);
+                  background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/footer_caret_a7zoop.png);
                 }
                 span{
                   @include xiaowei;

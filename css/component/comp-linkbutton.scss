@@ -33,6 +33,7 @@
       left:0;
       right:0;
       margin: auto;
+      cursor: pointer;
     }
     &::before{
       background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/caret_hover_kwgb5x.png);
@@ -55,6 +56,18 @@
     &:hover{
       background: #c8c8c9;
       color: #fff;
+      &::after{
+        opacity: 0;
+      }
+    }
+    &.black{
+      background: #222;
+      border: 1px solid #222;
+      color: #fff;
+      @include hover;
+      &::before{
+        background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1587223350/common/caret_black_j1u4jm.png);
+      }
       &::after{
         opacity: 0;
       }
