@@ -1,0 +1,54 @@
+.comp-gift-cartbutton {
+  position: relative;
+  .comp-cartbutton{
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+  }
+  .cartjs_box{
+    padding: 0 !important;
+    .cartjs_product_table{
+      table{
+        margin: 0 !important;
+      }
+      .cartjs_product_num{
+        display: none;
+      }
+    }
+    .cartjs_cart_in{
+      opacity: 0;
+      position: relative;
+      z-index: 10;
+      input[type="submit"]{
+        border-radius: 0px !important;
+        display: block;
+        width: 100% !important;
+        appearance: none;
+        font-size: 16px !important;
+        height: auto !important;
+        padding: 15px 0;
+        background-color: #333 !important;
+        color: #fff;
+        letter-spacing: normal;
+        text-align: center;
+        border: 0px;
+        font-family: inherit;
+        margin-bottom: 12.5px !important;
+        @include hover;
+        transition: background .4s, opacity .4s;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+  &:hover{
+    .comp-cartbutton{
+      background: #464646;
+    }
+  }
+}

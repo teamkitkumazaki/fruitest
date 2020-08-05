@@ -16,9 +16,9 @@
   <div class="txt_wrap">
     <a class="title" href="<?php echo $permalink; ?>"><?php echo $title; ?></a>
     <div class="tag_wrap">
-      <?php foreach($tags as $key => $tag): ?>
-      <a href="?tag=<?php echo $tag->term_id; ?>">#<?php echo $tag->name; ?></a>
-      <?php endforeach; ?>
+		<?php foreach ($tags as $key => $tag): ?>
+			<a href="/tag/<?php echo $tag->slug; ?>"><span>#</span><?php echo $tag->name; ?></a>
+		<?php endforeach; ?>
     </div>
     <div class="link_wrap">
       <a class="prod_link" href="<?php echo $permalink; ?>"><span>記事を読む</span></a>

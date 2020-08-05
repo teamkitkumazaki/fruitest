@@ -1,4 +1,3 @@
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
@@ -55,6 +54,7 @@
 	<meta name="twitter:description" content="<?php echo $description; ?>">
 	<meta name="twitter:title" content="<?php echo $site_title; ?>">
 	<meta name="twitter:image" content="<?php echo $thumnail; ?>">
+	<meta name="google-site-verification" content="usi1_8b0xqBpOlrg8xlRHbelveHpGmnPgNoB1tPnzFc" />
 	<link href="<?php echo get_template_directory_uri();?>/img/favicon.png" rel="apple-touch-icon" sizes="180x180">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/img/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
@@ -63,6 +63,8 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/slick/slick.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/layout.js"></script>
+    <script src="//statics.a8.net/a8sales/a8sales.js"></script>
+    <script src="//statics.a8.net/a8sales/a8crossDomain.js "></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142991880-1"></script>
 <script>
@@ -78,5 +80,13 @@
   });
   gtag('config', 'UA-142991880-1');
 </script>
+<!-- Begin Mieruca Embed Code -->
+<script type="text/javascript" id="mierucajs">
+window.__fid = window.__fid || [];__fid.push([373175377]);
+(function() {
+function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
+setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
+})();
+</script>
+<!-- End Mieruca Embed Code -->
 	<?php wp_head(); ?>
-</head>

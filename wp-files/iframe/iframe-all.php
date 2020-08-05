@@ -57,11 +57,6 @@
 				</div><!-- item_box -->
 				<?php endwhile; else: endif;?>
 					</div>
-					<div class="comp-linkbutton">
-						<a href="//journal.fruitest.jp/" target="_top">
-							<span>ジャーナルトップへ<font>JOURNAL TOP</font></span>
-						</a>
-					</div>
 				</div>
 			</div>
 		</section>

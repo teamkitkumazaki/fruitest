@@ -1,0 +1,47 @@
+.comp-taglist {
+  margin-bottom: 40px;
+  ul{
+    @include flexSet;
+    li{
+      margin-right: 0.7em;
+      a{
+        @include hover;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #333;
+      }
+      &.current{
+        a{
+          pointer-events: none;
+          color: #999;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  .comp-taglist {
+    overflow: hidden;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    height: 30px;
+    overflow: hidden;
+    ul{
+      flex-wrap: nowrap;
+      overflow: auto;
+      overflow-y: hidden;
+      height: 38px;
+      -webkit-overflow-scrolling: touch;
+      li{
+        display: table-cell;
+        margin-right: 0.7em;
+        a{
+          font-size: 14px;
+          display: inline-block;
+          white-space: nowrap;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+  }
+}

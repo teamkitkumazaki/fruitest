@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="robots" content="noindex,nofollow">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css?191101">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/slick/slick.css">
 		<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/slick/slick.min.js"></script>
