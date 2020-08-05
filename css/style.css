@@ -3822,6 +3822,59 @@ body.loaded .comp-loading {
       text-decoration: underline !important;
       color: #333; } }
 
+.comp-instagram ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+  .comp-instagram ul li {
+    width: 212px; }
+    .comp-instagram ul li a, .comp-instagram ul li span {
+      display: block;
+      width: 212px;
+      height: 212px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .comp-instagram ul li:last-child {
+      display: none; }
+
+@media screen and (max-width: 1000px) {
+  .comp-instagram ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+    .comp-instagram ul li {
+      width: 20vw; }
+      .comp-instagram ul li a, .comp-instagram ul li span {
+        display: block;
+        width: 20vw;
+        height: 20vw; } }
+
+@media screen and (max-width: 760px) {
+  .comp-instagram ul li {
+    width: calc(100% / 3); }
+    .comp-instagram ul li a, .comp-instagram ul li span {
+      display: block;
+      width: 33vw;
+      height: 33vw;
+      margin-bottom: 1px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .comp-instagram ul li:last-child {
+      display: block; } }
+
 /* ページ個別 */
 #index {
   margin-top: 80px; }
@@ -4228,34 +4281,11 @@ body.loaded .comp-loading {
       @media screen and (max-width: 740px) {
         #index #topInstagram #instaFeed {
           max-width: 90vw; } }
-      #index #topInstagram #instaFeed ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        margin-bottom: 40px; }
-        #index #topInstagram #instaFeed ul li {
-          width: 212px; }
-          #index #topInstagram #instaFeed ul li a {
-            display: block;
-            width: 212px;
-            height: 212px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            -webkit-transition: opacity .5s;
-            -o-transition: opacity .5s;
-            transition: opacity .5s; }
-            #index #topInstagram #instaFeed ul li a:hover {
-              opacity: 0.6; }
-            #index #topInstagram #instaFeed ul li a:hover {
-              opacity: 0.8; }
-          #index #topInstagram #instaFeed ul li:last-child {
-            display: none; }
+      #index #topInstagram #instaFeed iframe {
+        display: block;
+        width: 100%;
+        height: 212px;
+        margin-bottom: 60px; }
       #index #topInstagram #instaFeed .ig_link a {
         width: 150px;
         display: block;
@@ -4352,22 +4382,9 @@ body.loaded .comp-loading {
     margin-bottom: 100px; }
     #index #topInstagram #instaFeed {
       max-width: 100%; }
-      #index #topInstagram #instaFeed ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        margin-bottom: 40px; }
-        #index #topInstagram #instaFeed ul li {
-          width: 20vw; }
-          #index #topInstagram #instaFeed ul li a {
-            display: block;
-            width: 20vw;
-            height: 20vw; }
+      #index #topInstagram #instaFeed iframe {
+        height: 20vw;
+        margin-bottom: 80px; }
       #index #topInstagram #instaFeed .ig_link a {
         width: 120px;
         padding-top: 100px; }
@@ -4630,17 +4647,9 @@ body.loaded .comp-loading {
     margin-bottom: 80px; }
     #index #topInstagram #instaFeed {
       max-width: 100vw; }
-      #index #topInstagram #instaFeed ul li {
-        width: calc(100% / 3); }
-        #index #topInstagram #instaFeed ul li a {
-          display: block;
-          width: 33vw;
-          height: 33vw;
-          margin-bottom: 1px;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-        #index #topInstagram #instaFeed ul li:last-child {
-          display: block; }
+      #index #topInstagram #instaFeed iframe {
+        height: 70vw;
+        margin-bottom: 50px; }
       #index #topInstagram #instaFeed .ig_link a {
         width: 150px;
         display: block;

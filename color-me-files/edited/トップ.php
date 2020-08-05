@@ -27,7 +27,7 @@
 <article id="index">
 		<section id="main">
 			<div id="mainVisual">
-				<img id="firstView" src="https://journal.fruitest.jp/wp-content/themes/fruitest-theme/img/index/main.jpg">
+				<img id="firstView" src="https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/index/main_qvwzml.jpg">
 				<div id="scrollDown" class="scroll_button">
 					<a href="javascript:void(0)" jump="#topConcept"><span>SCROLL</span></a>
 				</div>
@@ -212,7 +212,7 @@
 					<h2 class="ttl_ja">FRUITESTのギフトセット</h2>
 					<span class="ttl_en">GIFT SET</span>
 				</div>
-				<div class="spimg_wrap"></div>
+				<div class="spimg_wrap"><a href="/?mode=f2"></a></div>
 				<div class="txt_wrap">
 					<p class="text">
 						<span>手土産や特別な日のプレゼントに。</span>
@@ -255,9 +255,8 @@
 			<div class="comp-title center">
 				<h2 class="ttl_ja">#FRUITEST</h2>
 			</div>
-			<div id="instaFeed">
-				<ul id="instafeed">
-				</ul>
+			<div id="instaFeed" class="insta_feed">
+				<iframe class="autoHeight" src="https://journal.fruitest.jp/iframe-instagram/" scrolling="no" frameborder="0"></iframe>
 				<div class="ig_link">
 					<a href="https://www.instagram.com/fruitest.jp/" target="_blank">
 						<span>@fruitest.jp</span>
@@ -265,17 +264,4 @@
 				</div>
 			</div>
 		</section>
-		<script type="text/javascript">
-			var feed = new Instafeed({
-				clientId: '76def5db2e0346ac867b6acdcba28b66',
-				get: 'user',
-				userId: '14104863491',
-				accessToken:'14104863491.76def5d.5b705e6afa6a409aa4a3b284f069c437',
-				links: true,
-				limit: 6, // 取得件数
-				resolution:'standard_resolution',
-				template: '<li><a href="{{link}}" style="background-image: url({{image}})"></a></li>'
-			});
-			feed.run();
-		</script>
 	</article>

@@ -417,26 +417,11 @@
     }
     #instaFeed{
       @include waku;
-      ul{
-        @include flexSet;
-        justify-content: space-between;
-        margin-bottom: 40px;
-        li{
-          width: 212px;
-          a{
-            display: block;
-            width: 212px;
-            height: 212px;
-            @include bgSet;
-            @include hover;
-            &:hover{
-              opacity: 0.8;
-            }
-          }
-          &:last-child{
-            display: none;
-          }
-        }
+      iframe{
+        display: block;
+        width: 100%;
+        height: 212px;
+        margin-bottom: 60px;
       }
       .ig_link{
         a{
@@ -568,18 +553,9 @@
       margin-bottom: 100px;
       #instaFeed{
         max-width: 100%;
-        ul{
-          @include flexSet;
-          justify-content: space-between;
-          margin-bottom: 40px;
-          li{
-            width: 20vw;
-            a{
-              display: block;
-              width: 20vw;
-              height: 20vw;
-            }
-          }
+        iframe{
+          height: 20vw;
+          margin-bottom: 80px;
         }
         .ig_link{
           a{
@@ -896,20 +872,9 @@
       margin-bottom: 80px;
       #instaFeed{
         max-width: 100vw;
-        ul{
-          li{
-            width: calc(100% / 3);
-            a{
-              display: block;
-              width: 33vw;
-              height: 33vw;
-              margin-bottom: 1px;
-              box-sizing: border-box;
-            }
-            &:last-child{
-              display: block;
-            }
-          }
+        iframe{
+          height: 70vw;
+          margin-bottom: 50px;
         }
         .ig_link{
           a{

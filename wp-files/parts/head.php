@@ -58,11 +58,11 @@
 	<link href="<?php echo get_template_directory_uri();?>/img/favicon.png" rel="apple-touch-icon" sizes="180x180">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/img/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css?ver200806">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/slick/slick.css">
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/slick/slick.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/layout.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/layout.js?ver200806"></script>
     <script src="//statics.a8.net/a8sales/a8sales.js"></script>
     <script src="//statics.a8.net/a8sales/a8crossDomain.js "></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
