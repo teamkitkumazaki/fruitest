@@ -3875,6 +3875,117 @@ body.loaded .comp-loading {
     .comp-instagram ul li:last-child {
       display: block; } }
 
+.comp-paring-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .comp-paring-content .paring_img {
+    width: 500px; }
+  .comp-paring-content .paring_txt {
+    width: 525px; }
+    .comp-paring-content .paring_txt .paring_ttl {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 1px solid #d8d8d8;
+      padding: 10px;
+      margin-bottom: 25px; }
+      .comp-paring-content .paring_txt .paring_ttl .icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .comp-paring-content .paring_txt .paring_ttl .paring_name {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .comp-paring-content .paring_txt .paring_ttl .paring_name .drink {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          letter-spacing: 0.1em !important;
+          font-size: 18px;
+          letter-spacing: 2px;
+          margin-right: 10px; }
+        .comp-paring-content .paring_txt .paring_ttl .paring_name .genre {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          letter-spacing: 0.1em !important;
+          font-size: 12px;
+          letter-spacing: 1.5px; }
+    .comp-paring-content .paring_txt .sp_img {
+      display: none; }
+    .comp-paring-content .paring_txt .paring_desc {
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 1px; }
+      .comp-paring-content .paring_txt .paring_desc .ttl {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.6;
+        letter-spacing: 1.4px;
+        margin-bottom: 15px; }
+
+@media screen and (max-width: 1100px) {
+  .comp-paring-content {
+    display: block; }
+    .comp-paring-content .paring_img {
+      width: 100%;
+      margin-bottom: 30px; }
+    .comp-paring-content .paring_txt {
+      width: 100%; } }
+
+@media screen and (max-width: 740px) {
+  .comp-paring-content .paring_img {
+    display: none; }
+  .comp-paring-content .paring_txt {
+    width: 100%; }
+    .comp-paring-content .paring_txt .paring_ttl {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+      .comp-paring-content .paring_txt .paring_ttl .icon {
+        margin-right: 15px; }
+      .comp-paring-content .paring_txt .paring_ttl .paring_name {
+        width: auto;
+        display: block; }
+        .comp-paring-content .paring_txt .paring_ttl .paring_name .drink {
+          display: block;
+          margin-bottom: 2px;
+          margin-right: 0px; }
+    .comp-paring-content .paring_txt .sp_img {
+      display: block;
+      margin-bottom: 10px; }
+    .comp-paring-content .paring_txt .paring_desc {
+      font-size: 14px;
+      line-height: 1.8;
+      letter-spacing: 0.6px; }
+      .comp-paring-content .paring_txt .paring_desc .ttl {
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 1.4px;
+        margin-bottom: 10px; } }
+
 /* ページ個別 */
 #index {
   margin-top: 80px; }
@@ -5730,6 +5841,9 @@ body.loaded .comp-loading {
     #itemDetail #itemFeature .flex_origin .flex_photo {
       width: calc(100% - 600px); }
 
+#itemDetail #paringWrap {
+  margin-top: 120px; }
+
 #itemDetail #setContent {
   margin-top: 120px; }
 
@@ -6047,6 +6161,8 @@ body.loaded .comp-loading {
         max-width: 80%; }
     #itemDetail #itemFeature .flex_origin .flex_img, #itemDetail #itemFeature .flex_origin .flex_photo {
       display: none; }
+  #itemDetail #paringWrap {
+    margin-top: 80px; }
   #itemDetail #setContent {
     margin-top: 80px;
     margin-bottom: 80px; }

@@ -1,0 +1,109 @@
+.comp-paring-content {
+  @include flexSet;
+  justify-content: space-between;
+  align-items: center;
+  .paring_img{
+    width: 500px;
+  }
+  .paring_txt{
+    width: 525px;
+    .paring_ttl{
+      @include flexSet;
+      align-items: center;
+      border: 1px solid #d8d8d8;
+      padding: 10px;
+      margin-bottom: 25px;
+      .icon{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        @include bgSet;
+      }
+      .paring_name{
+        @include flexSet;
+        align-items: center;
+        .drink{
+          @include xiaowei;
+          font-size: 18px;
+          letter-spacing: 2px;
+          margin-right: 10px;
+        }
+        .genre{
+          @include xiaowei;
+          font-size: 12px;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+    .sp_img{
+      display: none;
+    }
+    .paring_desc{
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 1px;
+      .ttl{
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.6;
+        letter-spacing: 1.4px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .comp-paring-content {
+    display: block;
+    .paring_img{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .paring_txt{
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  .comp-paring-content {
+    .paring_img{
+      display: none;
+    }
+    .paring_txt{
+      width: 100%;
+      .paring_ttl{
+        justify-content: center;
+        margin-bottom: 20px;
+        .icon{
+          margin-right: 15px;
+        }
+        .paring_name{
+          width: auto;
+          display: block;
+          .drink{
+            display: block;
+            margin-bottom: 2px;
+            margin-right: 0px;
+          }
+          .genre{}
+        }
+      }
+      .sp_img{
+        display: block;
+        margin-bottom: 10px;
+      }
+      .paring_desc{
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.6px;
+        .ttl{
+          font-size: 20px;
+          line-height: 1.6;
+          letter-spacing: 1.4px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
