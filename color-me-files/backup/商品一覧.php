@@ -1,150 +1,110 @@
-<!-- パンくずリスト -->
-<ul class="topicpath_nav">
-  <li><a href="<{$home_url}>">ホーム</a></li>
-  <{if $smarty.get.mode != "grp"}>
-    <{if $bid_name != ""}>
-      <li>&nbsp;&gt;&nbsp;<a href="<{$bid_link}>"><{$bid_name}></a></li>
-    <{/if}>
-    <{if $sid_name != ""}><li>&nbsp;&gt;&nbsp;<a href="<{$sid_link}>"><{$sid_name}></a></li><{/if}>
-  <{else}>
-    <{section name=num loop=$group_breadcrumb}><li>&nbsp;&gt;&nbsp;<a href="<{$group_breadcrumb[num].link_url}>"><{$group_breadcrumb[num].name}></a></li><{/section}>
-  <{/if}>
-</ul>
-<!-- //パンくずリスト -->
-
-<div class="prd_lst_block container_section">
-
-  <{if $category_desc_1 != "" || $subcategory_desc_1 != "" || $group_desc_1 != ""}>
-    <!-- カテゴリー・グループ 説明文 1 -->
-    <div class="category_desc_1 category_desc container_section clearfix">
-      <{$category_desc_1}><{$subcategory_desc_1}><{$group_desc_1}>
+<article id="itemList">
+  <section id="keyVisual">
+    <div class="img_wrap">
     </div>
-    <!-- //カテゴリー・グループ 説明文 1 -->
-  <{/if}>
-
-  <h2 class="ttl_h2"><{if $sid_name != ""}><{$sid_name}><{elseif $bid_name != ""}><{$bid_name}><{else}>該当のカテゴリーがありません<{/if}></h2>
-
-  <{if $subcategory_num != 0}>
-    <!-- カテゴリー（小）一覧 -->
-    <ul class="grp_lst clearfix">
-      <{section name=num loop=$sub_category}>
-        <li class="grp_lst_unit">
-          <a href="<{$sub_category[num].link_url}>">
-            <{if $sub_category[num].img_url != "" }>
-              <img src="<{$sub_category[num].img_url}>" class="grp_lst_img" />
+  </section>
+  <section id="productList">
+    <div class="inner">
+      <div class="ttl_wrap">
+      <div class="comp-title">
+        <h1 class="ttl_ja">商品一覧<span class="en">PRODUCT LIST</span></h1>
+      </div>
+      <select name="cat" id="cat" class="postform">
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2520817">全ての商品</option>
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2520817&amp;csid=1">発売中の商品</option>
+       <option class="option-1" value="?mode=cate&amp;csid=0&amp;cbid=2520817&amp;csid=2">Upcoming商品</option>
+      </select>
+    </div><!-- ttl_wrap -->
+    <div id="product" class="products">
+      <ul class="comp-productlist">
+        <{if $productlist_num !=0 }>
+          <{section name=num loop=$productlist}>
+        <li>
+          <{$productlist[num].sub_category}>
+            <{if $productlist[num].soldout_flg == false}>
+              <{if $productlist[num].teika_disp == true}>
+              <!-- 通常 -->
+              <div class="state">
+              <{else}>
+              <!-- Upcoming -->
+              <div class="state upcoming">
+              <{/if}>
+              <{else}>
+              <div class="state soldout">
             <{/if}>
-            <{$sub_category[num].name}>
-          </a>
+            <div class="img_wrap">
+              <a href="<{$productlist[num].link_url}>" style="background-image: url(<{$productlist[num].img_url}>)"></a>
+              <{if $productlist[num].soldout_flg == false}>
+                <{if $productlist[num].teika_disp == true}>
+                <!-- 通常 -->
+                <span class="stock">販売中</span>
+                <{else}>
+                <!-- Upcoming -->
+                <span class="upcoming">構想中</span>
+                <{/if}>
+                <{else}>
+                  <!-- 売り切れ -->
+                  <span class="soldout">再販受付中</span>
+                <{/if}>
+          </div>
+          <div class="txt_wrap">
+            <a class="product_name" href="<{$productlist[num].link_url}>"><{$productlist[num].name}><span><{$productlist[num].model}></span></a>
+            <p class="copy"><{$productlist[num].s_expl}></p>
+            <div class="detail">
+              <{if $productlist[num].soldout_flg == false}>
+                <{if $productlist[num].teika_disp == true}>
+                <!-- 通常 -->
+                <span class="price">
+                  <{$productlist[num].price}>
+                </span>
+                <span class="stock">販売中</span>
+              <{else}>
+                <!-- Upcoming -->
+                <span class="price">発売前</span>
+                <span class="upcoming">構想中</span>
+              <{/if}>
+              <{else}>
+                <!-- 売り切れ -->
+                <span class="price">
+                  <{$productlist[num].price}>
+                </span>
+                <span class="soldout">再販受付中</span>
+              <{/if}>
+            </div>
+            <div class="comp-linkbutton-mini">
+              <a href="<{$productlist[num].link_url}>"><span>詳しく見る</span></a>
+            </div>
+          </div>
+          </div>
         </li>
-      <{/section}>
-    </ul>
-    <!-- //カテゴリー（小）一覧 -->
-  <{/if}>
-
-  <{if $subgroup_num != 0}>
-    <!-- グループ（小）一覧 -->
-    <ul class="grp_lst clearfix">
-      <{section name=num loop=$sub_group}>
-        <li class="grp_lst_unit">
-          <a href="<{$sub_group[num].link_url}>">
-            <{if $sub_group[num].img_url != "" }>
-              <img src="<{$sub_group[num].img_url}>" class="grp_lst_img" />
-            <{/if}>
-            <span class="grp_lst_name">
-              <{$sub_group[num].name}>
-            </span>
-          </a>
-        </li>
-      <{/section}>
-    </ul>
-    <!-- //グループ（小）一覧 -->
-  <{/if}>
-
-  <{if $productlist_num != 0}>
-    <div class="prd_lst_sort icon icon_sort">
-      <{if $productlist_sort_now != ""}>
-        <a href="<{$productlist_sort_def}>">おすすめ順</a>
-      <{else}>
-        <strong>おすすめ順</strong>
-      <{/if}>
-      &nbsp;|&nbsp;
-      <{if $productlist_sort_now != "p"}>
-        <a href="<{$productlist_sort_price}>">価格順</a>
-      <{else}>
-        <strong>価格順</strong>
-      <{/if}>
-      &nbsp;|&nbsp;
-      <{if $productlist_sort_now != "n"}>
-        <a href="<{$productlist_sort_new}>">新着順</a>
-      <{else}>
-        <strong>新着順</strong>
-      <{/if}>
-    </div>
-    <ul class="prd_lst prd_lst_s clearfix">
-      <{section name=num loop=$productlist}>
-        <li class="prd_lst_unit prd_lst_unit_s">
-          <a href="<{$productlist[num].link_url}>" class="prd_lst_link">
-            <{if $productlist[num].img_url != ""}>
-              <img src="<{$productlist[num].img_url}>" class="prd_lst_img" alt="<{$productlist[num].name}>" />
-            <{else}>
-              <img src="https://img.shop-pro.jp/tmpl_img/63/prd_lst_noimage.png" class="prd_lst_img" alt="<{$productlist[num].name}>" />
-            <{/if}>
-          </a>
-          <span class="prd_lst_name prd_lst_span">
-            <a href="<{$productlist[num].link_url}>"><{$productlist[num].name}></a>
-          </span>
-          <{if $productlist[num].s_expl != ""}>
-            <span class="prd_lst_exp prd_lst_span">
-              <{$productlist[num].s_expl}>
-            </span>
-          <{/if}>
-          <{if $members_login_flg == true && $productlist[num].discount_flg == true}>
-            <span class="prd_lst_regular prd_lst_span"><{$productlist[num].regular_price}></span>
-          <{/if}>
-          <{if $productlist[num].soldout_flg == false}>
-            <span class="prd_lst_price prd_lst_span"><{$productlist[num].price}></span>
-            <{if $members_login_flg == true && $productlist[num].discount_flg == true}>
-              <span class="prd_lst_discount prd_lst_span"><{$productlist[num].discount_rate}>OFF!!</span>
-            <{/if}>
-          <{else}>
-            <span class="prd_lst_soldout prd_lst_span">SOLDOUT</span>
-          <{/if}>
-        </li>
-      <{/section}>
-    </ul>
-    <div class="prd_lst_pager">
-      <ul>
-        <li class="prd_lst_pager_prev">
-          <{if $productlist_prev_page == ""}>
-            <span class="icon icon_prev_dis">前のページ</span>
-          <{else}>
-            <a href="<{$productlist_prev_page}>" class="icon icon_prev">前のページ</a>
-          <{/if}>
-        </li>
-        <li class="prd_lst_pos">
-          <b><{$productlist_num}></b><span>商品中</span>&nbsp;<b><{$productlist_snum}>-<{$productlist_enum}></b><span>商品</span>
-        </li>
-        <li class="prd_lst_pager_next">
-          <{if $productlist_next_page == ""}>
-            <span class="icon icon_next_dis">次のページ</span>
-          <{else}>
-            <a href="<{$productlist_next_page}>" class="icon icon_next">次のページ</a>
-          <{/if}>
-        </li>
+        <{/section}>
       </ul>
+      <{/if}>
     </div>
-  <{else}>
-    <{if $subcategory_num == 0 && $subgroup_num == 0}>
-      <p class="prd_lst_none">該当する商品がありません</p>
-    <{/if}>
-  <{/if}>
-
-  <{if $category_desc_2 != "" || $subcategory_desc_2 != "" || $group_desc_2 != ""}>
-    <!-- カテゴリー・グループ 説明文 2 -->
-    <div class="category_desc_2 category_desc container_section clearfix">
-      <{$category_desc_2}><{$subcategory_desc_2}><{$group_desc_2}>
+  </div><!-- inner -->
+</section><!-- productList -->
+<section class="comp-option">
+  <div class="inner">
+    <div class="comp-title center">
+      <h2 class="ttl_ja">FRUITESTのギフトセット</h2>
+      <span class="ttl_en">GIFT SET</span>
     </div>
-    <!-- //カテゴリー・グループ 説明文 2 -->
-  <{/if}>
+		<div class="spimg_wrap"><a href="/?mode=f2"></a></div>
+    <div class="txt_wrap">
+      <p class="text">
+        <span>手土産や特別な日のプレゼントに。</span>
+        <span>旬のレア・ドライフルーツを、ギフトボックスに入れてお届けします。</span>
+      </p>
+    </div>
+    <div class="img_wrap"></div>
+    <div class="comp-linkbutton">
+      <a href="/?mode=f2">
+        <span>ギフトセット一覧<font>GIFT SET</font></span></a>
+    </div>
+  </div><!-- inner -->
+</section><!-- topOption -->
+</article>
 
-</div>
+<script>
+$('header').addClass('under');
+</script>

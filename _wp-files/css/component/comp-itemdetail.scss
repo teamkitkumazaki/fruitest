@@ -1,0 +1,48 @@
+.comp-itemdetail{
+  .item{
+    @include flexSet;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    @media screen and (max-width: 740px){
+      font-size: 14px;
+    }
+    &.item_upper{
+      border-bottom: 1px solid #d8d8d8;
+    }
+  }
+  .state{
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    padding: 5px 10px;
+    color: #fff;
+    &.onsale{
+      background-color: #4675ab;
+    }
+    &.upcoming{
+      background-color: #63ad2b;
+    }
+    &.soldout{
+      background-color: #e67822;
+    }
+  }
+  .number{
+    input[type="number"], input{
+      width: 40px;
+      display: inline-block;
+      margin: 0 10px;
+      border-radius: 5px;
+      padding: 7px 10px;
+      font-size: 12px;
+      &.disabled{
+        pointer-events: none;
+        background: #f1f1f1;
+      }
+    }
+  }
+}

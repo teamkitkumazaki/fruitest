@@ -132,6 +132,11 @@
                   line-height: 1.62;
                   letter-spacing: normal;
                   color: #333;
+                  em{
+                    display: inline-block;
+                    font-style: normal;
+                    padding-right: 1em;
+                  }
                 }
               }
             }
@@ -162,12 +167,15 @@
             }
           }
         }
-        &#trio{
+        &#trio, &#full{
           ul{
             li{
               .txt_wrap{
                 .desc{
                   min-height: 44px;
+                  @media screen and (max-width: 720px){
+                    min-height: unset;
+                  }
                 }
               }
             }
@@ -187,6 +195,11 @@
             font-size: 16px;
             line-height: 1.67;
             letter-spacing: 1.4px;
+            &.notice{
+              font-size: 14px;
+              color: #646464;
+              margin-top: 10px;
+            }
           }
         }
       }
@@ -346,22 +359,16 @@
                   margin-top: 20px;
                   span{
                     font-size: 13px;
+                    em{
+                      display: block;
+                      font-style: normal;
+                      padding-right: 0;
+                    }
                   }
                 }
               }
               .button_wrap{
                 margin-top: 20px;
-              }
-            }
-          }
-        }
-        &#trio{
-          ul{
-            li{
-              .txt_wrap{
-                .desc{
-                  min-height: initial;
-                }
               }
             }
           }
@@ -382,6 +389,10 @@
             p{
               font-size: 14px;
               letter-spacing: 1px;
+              &.notice{
+                font-size: 12px;
+                color: #646464;
+              }
             }
           }
         }

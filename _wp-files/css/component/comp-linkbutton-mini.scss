@@ -1,0 +1,54 @@
+.comp-linkbutton-mini {
+  width: 100%;
+
+  a {
+    display: block;
+    border: 1px solid #c8c8c9;
+    padding: 15px 0;
+    text-align: center;
+    color: #979797;
+    transition: color 0.3s, background 0.3s;
+
+    span {
+      position: relative;
+      display: inline-block;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      padding-right: 30px;
+
+      &::after,
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        @include bgSet;
+      }
+
+      &::before {
+        background-image: url("https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/caret_hover_kwgb5x.png");
+      }
+
+      &::after {
+        transition: opacity 0.3s;
+        background-image: url("https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/common/caret_fyygas.png");
+      }
+    }
+
+    &:hover {
+      background: #c8c8c9;
+      color: #fff;
+
+      span {
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

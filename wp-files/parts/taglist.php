@@ -1,9 +1,0 @@
-<li><a href="/">すべて</a></li>
-<li><a href="/tag/ingredient-fruits/"><span>#</span>素材/果物</a></li>
-<li><a href="/tag/producer/"><span>#</span>作り手</a></li>
-<li><a href="/tag/location/"><span>#</span>産地</a></li>
-<li><a href="/tag/method/"><span>#</span>製法</a></li>
-<li><a href="/tag/paring/"><span>#</span>ペアリング</a></li>
-<li><a href="/tag/recipe/"><span>#</span>レシピ</a></li>
-<li><a href="/tag/events/"><span>#</span>イベント</a></li>
-<li><a href="/tag/others/"><span>#</span>その他</a></li>
