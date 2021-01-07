@@ -3986,6 +3986,198 @@ body.loaded .comp-loading {
         letter-spacing: 1.4px;
         margin-bottom: 10px; } }
 
+.comp-gift-service .service_upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 80px; }
+  .comp-gift-service .service_upper .img_wrap {
+    width: 500px;
+    margin-right: 60px; }
+  .comp-gift-service .service_upper .txt_wrap {
+    width: calc(100% - 560px); }
+    .comp-gift-service .service_upper .txt_wrap .option_ttl {
+      font-size: 22px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: 0.19px;
+      margin-bottom: 15px; }
+    .comp-gift-service .service_upper .txt_wrap .option_desc {
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: 0.78px;
+      margin-bottom: 15px; }
+      .comp-gift-service .service_upper .txt_wrap .option_desc .added {
+        margin-top: 5px;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: #646464; }
+    .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_ttl {
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0.6px;
+      margin-bottom: 15px; }
+    .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list span {
+        display: block;
+        width: 24%;
+        margin-right: calc(4% / 3);
+        margin-bottom: 7px;
+        border: solid 1px #979797;
+        padding: 10px 0px;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 13px;
+        line-height: 1;
+        letter-spacing: 0.5px; }
+        .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list span:nth-of-type(4n) {
+          margin-right: 0; }
+    .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_desc {
+      margin-top: 10px;
+      display: block;
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: 0.5px;
+      color: #646464; }
+
+.comp-gift-service .service_lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .comp-gift-service .service_lower .service_item {
+    width: 31%; }
+    .comp-gift-service .service_lower .service_item .img_wrap {
+      margin-bottom: 15px; }
+    .comp-gift-service .service_lower .service_item .txt_wrap .option_ttl {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: 0.17px;
+      margin-bottom: 10px; }
+    .comp-gift-service .service_lower .service_item .txt_wrap .option_desc {
+      font-size: 14px;
+      line-height: 1.8;
+      letter-spacing: 0.5px; }
+      .comp-gift-service .service_lower .service_item .txt_wrap .option_desc span {
+        display: block; }
+
+@media screen and (max-width: 1100px) {
+  .comp-gift-service .service_upper {
+    margin-bottom: 80px; }
+    .comp-gift-service .service_upper .img_wrap {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 25px; }
+    .comp-gift-service .service_upper .txt_wrap {
+      width: 100%; }
+  .comp-gift-service .service_lower {
+    display: block; }
+    .comp-gift-service .service_lower .service_item {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 60px; }
+      .comp-gift-service .service_lower .service_item .img_wrap {
+        width: 45%;
+        margin-right: 5%;
+        margin-bottom: 0px; }
+      .comp-gift-service .service_lower .service_item .txt_wrap {
+        width: 50%; } }
+
+@media screen and (max-width: 730px) {
+  .comp-gift-service .service_upper {
+    display: block;
+    margin-bottom: 60px; }
+    .comp-gift-service .service_upper .img_wrap {
+      width: 100%;
+      margin-right: 0px; }
+    .comp-gift-service .service_upper .txt_wrap {
+      width: 100%; }
+      .comp-gift-service .service_upper .txt_wrap .option_ttl {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        margin-bottom: 15px; }
+      .comp-gift-service .service_upper .txt_wrap .option_desc {
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px; }
+        .comp-gift-service .service_upper .txt_wrap .option_desc .added {
+          margin-top: 10px;
+          font-size: 13px;
+          letter-spacing: 0.4px; }
+      .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_ttl {
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0.6px;
+        margin-bottom: 15px; }
+      .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list span {
+          display: block;
+          width: 32%;
+          margin-right: calc(4% / 3);
+          margin-bottom: 7px;
+          padding: 10px 0px;
+          font-size: 13px; }
+          .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list span:nth-of-type(4n) {
+            margin-right: calc(4% / 3); }
+          .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_list span:nth-of-type(3n) {
+            margin-right: 0; }
+      .comp-gift-service .service_upper .txt_wrap .noshi_variation .variation_desc {
+        margin-top: 10px;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.5px; }
+  .comp-gift-service .service_lower .service_item {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px; }
+    .comp-gift-service .service_lower .service_item .img_wrap {
+      width: 100%;
+      margin-bottom: 15px; }
+    .comp-gift-service .service_lower .service_item .txt_wrap {
+      width: 100%; }
+      .comp-gift-service .service_lower .service_item .txt_wrap .option_ttl {
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        margin-bottom: 15px; }
+      .comp-gift-service .service_lower .service_item .txt_wrap .option_desc {
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px; } }
+
 /* ページ個別 */
 #index {
   margin-top: 80px; }
@@ -5393,41 +5585,14 @@ body.loaded .comp-loading {
           #gift #giftProduct .product_wrap .flex_wrap#trio ul li .txt_wrap .desc, #gift #giftProduct .product_wrap .flex_wrap#full ul li .txt_wrap .desc {
             min-height: unset; } }
 
-#gift #giftWrapping .flex_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  #gift #giftWrapping .flex_wrap .flex_left {
-    width: 50%; }
-    #gift #giftWrapping .flex_wrap .flex_left .txt p {
-      font-size: 16px;
-      line-height: 1.67;
-      letter-spacing: 1.4px; }
-      #gift #giftWrapping .flex_wrap .flex_left .txt p.notice {
-        font-size: 14px;
-        color: #646464;
-        margin-top: 10px; }
-  #gift #giftWrapping .flex_wrap .flex_right {
-    width: 50%;
-    padding-left: 40px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    #gift #giftWrapping .flex_wrap .flex_right .img_wrap {
-      width: 100%;
-      height: 320px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/gift/gift_box_fwzgkl.jpg); }
+#gift .section-gift-wrapping {
+  padding-top: 60px; }
+  #gift .section-gift-wrapping .comp-title {
+    margin-bottom: 100px; }
 
 #gift #giftFaq {
-  margin-top: 200px;
-  margin-bottom: 100px; }
+  margin-top: 160px;
+  margin-bottom: 160px; }
   #gift #giftFaq .others {
     margin-top: 80px;
     text-align: center;
@@ -5454,24 +5619,10 @@ body.loaded .comp-loading {
       margin-right: 0; }
     #gift #giftProduct .product_wrap .flex_wrap ul li:last-child {
       margin-right: 0; }
-  #gift #giftWrapping .flex_wrap {
-    display: block; }
-    #gift #giftWrapping .flex_wrap .flex_left {
-      width: 100%; }
-      #gift #giftWrapping .flex_wrap .flex_left .sp_img {
-        width: 100%;
-        height: 350px;
-        margin-bottom: 40px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1584337926/gift/gift_box_fwzgkl.jpg); }
-      #gift #giftWrapping .flex_wrap .flex_left .txt p {
-        font-size: 16px;
-        line-height: 1.67;
-        letter-spacing: 1.4px; }
-    #gift #giftWrapping .flex_wrap .flex_right {
-      display: none; } }
+  #gift .section-gift-wrapping {
+    padding-top: 0px; }
+    #gift .section-gift-wrapping .comp-title {
+      margin-bottom: 60px; } }
 
 @media screen and (max-width: 740px) {
   #gift #keyVisual .img_wrap {
@@ -5561,17 +5712,10 @@ body.loaded .comp-loading {
                 padding-right: 0; }
           #gift #giftProduct .product_wrap .flex_wrap ul li .button_wrap {
             margin-top: 20px; }
-  #gift #giftWrapping .flex_wrap .flex_left .ttl_section {
-    text-align: center; }
-  #gift #giftWrapping .flex_wrap .flex_left .sp_img {
-    height: 58vw;
-    margin-bottom: 20px; }
-  #gift #giftWrapping .flex_wrap .flex_left .txt p {
-    font-size: 14px;
-    letter-spacing: 1px; }
-    #gift #giftWrapping .flex_wrap .flex_left .txt p.notice {
-      font-size: 12px;
-      color: #646464; }
+  #gift .section-gift-wrapping {
+    padding-top: 40px; }
+    #gift .section-gift-wrapping .comp-title {
+      margin-bottom: 40px; }
   #gift #giftFaq {
     margin-top: 100px;
     margin-bottom: 60px; }
