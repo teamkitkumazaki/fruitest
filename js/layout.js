@@ -568,6 +568,136 @@ $(function() {
     slideItemThumb($('#itemThumb02'));
   }
 
+  //ギフト商品オプション選択欄
+  function optionPopup(target){
+    var posi;
+    var optionPop = $('#optionPop');
+    var optionSelect = $('#optionSelect');
+    var optionSelect02 = $('#optionSelect02');
+    var fixedPopButton = $('#fixedPopButton');
+    var popBg = $('#popBg');
+    var mizuhiki = $('.mizuhiki');
+    var popClose = $('#popClose');
+    var optionFix = $('#optionFix');
+    var tesageState = $("input[name='tesage']");
+    var muzihikiState = $('input[name="mizuhiki"]');
+    var mizuhikiOptionState = $("input[name='mizuhiki_option']");
+    var tesageDisplay = $('#tesageDisplay');
+    var mizuhikiDisplay = $('#mizuhikiDisplay');
+
+    function optionShifter(){
+      var tesageCheck = $("input[name='tesage']:checked").val();
+      var mizuhikiCheck = $("input[name='mizuhiki_option']:checked");
+      if(tesageCheck == 'tesage'){
+        var checkedValue = mizuhikiCheck.attr('tesageAri');
+      }else{
+        var checkedValue = mizuhikiCheck.attr('tesageNashi');
+      }
+      $(checkedValue).click();
+      mizuhikiDisplay.text(mizuhikiCheck.val());
+    }
+
+    function optionPopOpen(){
+      posi = $(window).scrollTop();
+      $('body').addClass('fixed');
+      $('body').css({
+        position: 'fixed',
+        top: -1 * posi
+      });
+      target.addClass('open');
+    }
+
+    function optionPopClose(){
+      $('body').removeClass('fixed');
+      $('body').attr('style', '');
+      $('html, body').prop({scrollTop: posi});
+      target.removeClass('open');
+    }
+
+    function displayMizuhikiOption(){
+      var state = $('input[name="mizuhiki"]:checked').val();
+      var contentsHeight = mizuhiki.find('.mizuhiki_inner').outerHeight();
+      if(state == 'mizuhiki'){
+        mizuhiki.addClass('active');
+        /*mizuhiki.css({'height': contentsHeight});*/
+        $("input[name='mizuhiki_option']").val(["表書き無し"]);
+      }else{
+        mizuhiki.removeClass('active');
+        /*mizuhiki.css({'height': 0 + 'px'});*/
+        $("input[name='mizuhiki_option']").val(["無し"]);
+      }
+    }
+
+    function init(){
+
+      $('#6-13').click();
+
+      optionPopClose();
+
+      optionSelect.on({
+        'click': function(){
+          optionPopOpen();
+        }
+      });
+
+      fixedPopButton.on({
+        'click': function(){
+          optionPopOpen();
+        }
+      })
+
+      optionSelect02.on({
+        'click': function(){
+          optionPopOpen();
+        }
+      });
+
+      popBg.on({
+        'click': function(){
+          optionPopClose();
+        }
+      });
+
+      popClose.on({
+        'click': function(){
+          optionPopClose();
+        }
+      });
+
+      optionFix.on({
+        'click': function(){
+          optionPopClose();
+        }
+      });
+
+      muzihikiState.on({
+        'click': function(){
+          displayMizuhikiOption();
+          optionShifter();
+        }
+      });
+
+      mizuhikiOptionState.on({
+        'click': function(){
+          optionShifter();
+        }
+      });
+
+      tesageState.on({
+        'click': function(){
+          optionShifter();
+        }
+      });
+    }
+
+    init();
+
+  }
+
+  if (document.getElementById('itemDetail')) {
+    optionPopup($('#optionPop'));
+  }
+
 
   $('#slickSlider').slick({
     accessibility: false,

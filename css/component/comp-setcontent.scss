@@ -3,11 +3,11 @@
   align-items: center;
   margin-bottom: 120px;
   .img_wrap{
-    width: 450px;
-    margin-right: 35px;
+    width: 440px;
+    margin-right: 60px;
   }
   .txt_wrap{
-    width: calc(100% - 485px);
+    width: calc(100% - 500px);
     .comp-title{
       @include flexSet;
       align-items: center;
@@ -55,7 +55,7 @@
     flex-direction: row-reverse;
     .img_wrap{
       margin-right: 0px;
-      margin-left: 35px;
+      margin-left: 60px;
     }
   }
 }

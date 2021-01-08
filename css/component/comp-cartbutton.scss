@@ -11,6 +11,9 @@
   border: 0px;
   transition: background .4s;
   margin-bottom: 10px;
+  @media screen and (max-width: 730px){
+    font-size: 4.5vw;
+  }
   &:focus{
     outline: none;
   }
