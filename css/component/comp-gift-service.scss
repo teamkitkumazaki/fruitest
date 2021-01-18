@@ -1,0 +1,220 @@
+.comp-gift-service{
+  .service_upper{
+    @include flexSet;
+    align-items: center;
+    margin-bottom: 80px;
+    .img_wrap{
+      width: 500px;
+      margin-right: 50px;
+    }
+    .txt_wrap{
+      width: calc(100% - 550px);
+      .option_ttl{
+        font-size: 22px;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: 0.19px;
+        margin-bottom: 15px;
+      }
+      .option_desc{
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.78px;
+        margin-bottom: 15px;
+        .added{
+          margin-top: 5px;
+          display: block;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          color: #646464;
+        }
+      }
+      .noshi_variation{
+        .variation_ttl{
+          font-size: 18px;
+          font-weight: normal;
+          letter-spacing: 0.6px;
+          margin-bottom: 15px;
+        }
+        .variation_list{
+          @include flexSet;
+          span{
+            display: block;
+            width: 24%;
+            margin-right: calc(4% / 3);
+            margin-bottom: 7px;
+            border: solid 1px #979797;
+            padding: 10px 0px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 13px;
+            line-height: 1;
+            letter-spacing: 0.5px;
+            &:nth-of-type(4n){
+              margin-right: 0;
+            }
+          }
+        }
+        .variation_desc{
+          margin-top: 10px;
+          display: block;
+          font-size: 14px;
+          line-height: 1.6;
+          letter-spacing: 0.5px;
+          color: #646464;
+        }
+      }
+    }
+  }
+  .service_lower{
+    @include flexSet;
+    justify-content: space-between;
+    .service_item{
+      width: 31%;
+      .img_wrap{
+        margin-bottom: 15px;
+      }
+      .txt_wrap{
+        .option_ttl{
+          font-size: 20px;
+          font-weight: normal;
+          line-height: normal;
+          letter-spacing: 0.17px;
+          margin-bottom: 10px;
+        }
+        .option_desc{
+          font-size: 14px;
+          line-height: 1.8;
+          letter-spacing: 0.5px;
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .comp-gift-service{
+    .service_upper{
+      margin-bottom: 80px;
+      .img_wrap{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+      }
+      .txt_wrap{
+        width: 100%;
+      }
+    }
+    .service_lower{
+      display: block;
+      .service_item{
+        width: 100%;
+        @include flexSet;
+        align-items: center;
+        margin-bottom: 60px;
+        .img_wrap{
+          width: 45%;
+          margin-right: 5%;
+          margin-bottom: 0px;
+        }
+        .txt_wrap{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px){
+  .comp-gift-service{
+    .service_upper{
+      display: block;
+      margin-bottom: 60px;
+      .img_wrap{
+        width: 100%;
+        margin-right: 0px;
+      }
+      .txt_wrap{
+        width: 100%;
+        .option_ttl{
+          font-size: 18px;
+          font-weight: normal;
+          line-height: normal;
+          letter-spacing: 0.7px;
+          margin-bottom: 15px;
+        }
+        .option_desc{
+          font-size: 14px;
+          line-height: 1.6;
+          letter-spacing: 0.5px;
+          margin-bottom: 25px;
+          .added{
+            margin-top: 10px;
+            font-size: 13px;
+            letter-spacing: 0.4px;
+          }
+        }
+        .noshi_variation{
+          .variation_ttl{
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 0.6px;
+            margin-bottom: 15px;
+          }
+          .variation_list{
+            @include flexSet;
+            span{
+              display: block;
+              width: 32%;
+              margin-right: calc(4% / 3);
+              margin-bottom: 7px;
+              padding: 10px 0px;
+              font-size: 13px;
+              &:nth-of-type(4n){
+                margin-right: calc(4% / 3);
+              }
+              &:nth-of-type(3n){
+                margin-right: 0;
+              }
+            }
+          }
+          .variation_desc{
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+    .service_lower{
+      .service_item{
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+        .img_wrap{
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .txt_wrap{
+          width: 100%;
+          .option_ttl{
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: 0.7px;
+            margin-bottom: 15px;
+          }
+          .option_desc{
+            font-size: 14px;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

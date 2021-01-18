@@ -10,16 +10,20 @@
   }
   #basicInfo{
     margin-top: 45px;
+    .comp-title{
+      margin-bottom: 60px;
+    }
     .flex_wrap{
       margin-top: 50px;
       @include flexSet;
+      align-items: center;
       .flex_left{
-        width: 520px;
-        margin-right: 40px;
+        width: 480px;
+        margin-right: 60px;
       }
       .flex_right{
-        width: calc(100% - 560px);
-        margin-top: 35px;
+        width: calc(100% - 540px);
+        margin-top: 0;
         .copy{
           font-size: 22px;
           line-height: 1.59;
@@ -218,6 +222,9 @@
         .img_wrap{}
       }
     }
+  }
+  #paringWrap{
+    margin-top: 120px;
   }
   #setContent{
     margin-top: 120px;
@@ -616,6 +623,9 @@
           display: none;
         }
       }
+    }
+    #paringWrap{
+      margin-top: 80px;
     }
     #setContent{
       margin-top: 80px;
