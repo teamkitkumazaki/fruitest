@@ -20,11 +20,11 @@
     .detail{
       margin-bottom: 25px;
       .detail_ttl{
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.59;
         letter-spacing: 1.2px;
         font-weight: normal;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         span{
           display: block;
         }
@@ -90,10 +90,17 @@
     .txt_wrap{
       width: 100%;
       .comp-title{
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         .ttl_ja{
+          width: 100%;
+          font-size: 24px;
           margin-bottom: 7px;
-          margin-right: 0.5em;
+          margin-right: 0em;
+        }
+        .ttl_en{
+          font-size: 14px;
+          letter-spacing: 1.6px;
+          text-indent: 0.3em;
         }
       }
       .detail{

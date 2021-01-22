@@ -52,7 +52,7 @@
 				<div class="inner">
 					<div class="comp-title center">
 						<h1 class="ttl_ja">シャイン＆貴陽</h1>
-						<span class="ttl_en">SHINE&amp;KIYOU</span>
+						<span id="enName01" class="ttl_en"></span>
 					</div>
 					<div class="flex_wrap">
 						<div class="flex_left">
@@ -74,7 +74,7 @@
 							</div>
 						</div>
 						<div class="flex_right">
-							<h2 class="copy">ぶどう・すももから1缶ずつをセレクトしたセット</h2>
+							<h2 class="copy"><span id="enName" enName="SHINE&KIYOU">ぶどう・すももから1缶ずつをセレクトしたセット</span></h2>
 							<p id="excerpt" class="detail">
 								<div class="set_content">
 									<div class="set_detail">
@@ -112,7 +112,7 @@
 									<span class="price">4,000円(税抜)</span>
 								</div>
 								<div class="button_wrap">
-									<a id="optionSelect" class="comp-cartbutton large" href="javascript:void(0);"><span>ギフトオプションを選択して購入</span></a>
+									<a id="optionSelect" class="comp-cartbutton large gift" href="javascript:void(0);"><span>ギフトオプションを選択して購入</span></a>
 								</div>
 							</div>
 						</div>
@@ -236,7 +236,7 @@
 									<span class="price">4,000円(税抜)</span>
 								</div>
 								<div class="button_wrap">
-									<a id="optionSelect02" class="comp-cartbutton large" href="javascript:void(0);"><span>ギフトオプションを選択して購入</span></a>
+									<a id="optionSelect02" class="comp-cartbutton large gift" href="javascript:void(0);"><span>ギフトオプションを選択して購入</span></a>
 								</div>
 							</div>
 						</div>
@@ -291,9 +291,9 @@
         </div>
           <p class="prod_name">
 						<span class="ja">シャイン＆貴陽</span>
-						<span class="en">SHINE&KIYOU</span>
+						<span id="enName02" class="en"></span>
 					</p>
-        <p class="pop_title">下記より有料オプションを<span>お選びいただけます</span></p>
+        <p class="pop_title">下記よりオプションを<span>お選びいただけます</span></p>
                 <div class="option_select">
           <div class="option_item tesage">
             <label>
@@ -302,7 +302,7 @@
                 <input type="checkbox" name="tesage" value="tesage">
                 <span class="radio_checker"></span>
                 <div class="option_name">
-                  <span class="name">手提げ布バッグ</span>
+                  <span class="name">手提げ紙袋</span>
                   <span class="price">無料</span>
                 </div>
               </div>
@@ -321,46 +321,7 @@
               </div>
             </label>
             <p class="mizuhiki_desc">※水引の種類は、どのシーンのお祝い事にもお使いいただける「紅白梅結び」になります。</p>
-          </div>
-        </div>
-        <div class="mizuhiki">
-          <div class="mizuhiki_inner">
-            <p class="pop_subtitle">熨斗の表書き</p>
-            <div class="mizuhiki_option">
-              <div class="option_item">
-                <input id="mizu01" type="radio" name="mizuhiki_option" tesageari="#0-0" tesagenashi="#0-1" value="表書き無し">
-                <label for="mizu01">無地(表書きなし)</label>
-              </div>
-              <div class="option_item">
-                <input id="mizu02" type="radio" name="mizuhiki_option" tesageari="#1-2" tesagenashi="#1-3" value="御祝">
-                <label for="mizu02">御祝</label>
-              </div>
-              <div class="option_item">
-                <input id="mizu03" type="radio" name="mizuhiki_option" tesageari="#2-4" tesagenashi="#2-5" value="内祝">
-                <label for="mizu03">内祝</label>
-              </div>
-              <div class="option_item">
-                <input id="mizu04" type="radio" name="mizuhiki_option" tesageari="#3-6" tesagenashi="#3-7" value="御結婚祝">
-                <label for="mizu04">御結婚祝</label>
-              </div>
-              <div class="option_item">
-                <input id="mizu05" type="radio" name="mizuhiki_option" tesageari="#4-8" tesagenashi="#4-9" value="御礼">
-                <label for="mizu05">御礼</label>
-              </div>
-              <!--<div class="option_item">
-                <input id="mizu07" type="radio" checked name="mizuhiki_option" tesageAri="#7-14" tesageNashi="#7-15" value="御歳暮">
-                <label for="mizu07">御歳暮</label>
-              </div> -->
-              <div class="option_item">
-                <input id="mizu06" type="radio" name="mizuhiki_option" tesageari="#5-10" tesagenashi="#5-11" value="その他">
-                <label for="mizu06">その他</label>
-              </div>
-              <div class="option_item" style="display: none;">
-                <input id="mizu00" type="radio" checked="" name="mizuhiki_option" tesageari="#6-12" tesagenashi="#6-13" value="無し">
-                <label for="mizu00">無し</label>
-              </div>
-            </div>
-            <p class="mizuhiki_desc">※「その他」を選択した方は、表書きの内容を購入手続き画面の記入欄にご記入ください。ご記入のない場合は無地熨斗にて対応させていただきます。</p>
+						<p class="mizuhiki_desc">※熨斗に「表書き（御祝/内祝/御結婚祝など）」「お名前」の印字をご希望のお客様は、購入手続き画面最下部の「備考欄」にその内容をご記入ください。ご記入のない場合は、「無地熨斗」にて対応させていただきます。</p>
           </div>
         </div>
       </div>

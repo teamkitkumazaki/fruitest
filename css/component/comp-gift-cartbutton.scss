@@ -10,7 +10,10 @@
     margin: auto;
   }
   .cartjs_box{
+    height: 60px;
+    margin-bottom: 10px !important;
     padding: 0 !important;
+    overflow: hidden;
     .cartjs_product_table{
       table{
         margin: 0 !important;

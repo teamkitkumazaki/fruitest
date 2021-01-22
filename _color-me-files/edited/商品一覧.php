@@ -48,7 +48,7 @@
                 <{/if}>
           </div>
           <div class="txt_wrap">
-            <a class="product_name" href="<{$productlist[num].link_url}>"><{$productlist[num].name}><span><{$productlist[num].model}></span></a>
+            <a class="product_name" href="<{$productlist[num].link_url}>"><{$productlist[num].name}><span class="english_name"></span></a>
             <p class="copy"><{$productlist[num].s_expl}></p>
             <div class="detail">
               <{if $productlist[num].soldout_flg == false}>

@@ -1,24 +1,21 @@
 <script>
 $(function() {
-  function convSet(target){
-    target.find('input[type="submit"]').each(function(index) {
-      $(this).attr('onclick', 'gtag_report_conversion(); return false;');
-    });
+  function submitForm(){
+    $('#cartIn').submit();
   }
-  convSet($('article'));
 });
 </script>
+<form id="cartIn" name="product_form" method="post" action="<{$cart_url}>">
 <article id="itemDetail">
   <section id="keyVisual">
     <div class="img_wrap" style="background-image: url(<{$product.ot1_url}>)">
     </div>
   </section>
-  <form id="cartIn" name="product_form" method="post" action="<{$cart_url}>">
   <section id="basicInfo">
     <div class="inner">
     <div class="comp-title center">
       <h1 class="ttl_ja"><{$product.name}></h1>
-      <span class="ttl_en"><{$product.model}></span>
+      <span id="enName01" class="ttl_en"></span>
     </div>
     <div class="flex_wrap">
       <{if $product.price_disp == true}>
@@ -30,24 +27,12 @@ $(function() {
           <div class="slide_next"></div>
           <div class="slide_prev"></div>
           <ul class="slide_upper">
-            <li class="slide1 active_slide"><img draggable="false" src="<{$product.ot2_url}>"></li>
-            <{if $product.ot3_url != null }>
-            <li class="slide2"><img draggable="false" src="<{$product.ot3_url}>"></li>
+            <{if $otherimg_num != 0}>
+            <{section name=num loop=$otherimg}>
+            <{if $otherimg[num].url != ""}>
+            <li><img src="<{$otherimg[num].url}>" /></li>
             <{/if}>
-            <{if $product.ot4_url != null }>
-            <li class="slide3"><img draggable="false" src="<{$product.ot4_url}>"></li>
-            <{/if}>
-            <{if $product.ot5_url != null }>
-            <li class="slide4"><img draggable="false" src="<{$product.ot5_url}>"></li>
-            <{/if}>
-            <{if $product.ot6_url != null }>
-            <li class="slide5"><img draggable="false" src="<{$product.ot6_url}>"></li>
-            <{/if}>
-            <{if $product.ot7_url != null }>
-            <li class="slide6"><img draggable="false" src="<{$product.ot7_url}>"></li>
-            <{/if}>
-            <{if $product.ot8_url != null }>
-            <li class="slide7"><img draggable="false" src="<{$product.ot8_url}>"></li>
+            <{/section}>
             <{/if}>
           </ul>
         </div><!-- itemThumb01 -->
@@ -65,70 +50,36 @@ $(function() {
             <div class="slide_next"></div>
             <div class="slide_prev"></div>
             <ul class="slide_upper">
-              <li class="slide1 active_slide"><img src="<{$product.ot2_url}>"></li>
-              <{if $product.ot3_url != null }>
-              <li class="slide2"><img src="<{$product.ot3_url}>"></li>
+              <{if $otherimg_num != 0}>
+              <{section name=num loop=$otherimg}>
+              <{if $otherimg[num].url != ""}>
+              <li><img src="<{$otherimg[num].url}>" /></li>
               <{/if}>
-              <{if $product.ot4_url != null }>
-              <li class="slide3"><img src="<{$product.ot4_url}>"></li>
-              <{/if}>
-              <{if $product.ot5_url != null }>
-              <li class="slide4"><img src="<{$product.ot5_url}>"></li>
-              <{/if}>
-              <{if $product.ot6_url != null }>
-              <li class="slide5"><img src="<{$product.ot6_url}>"></li>
-              <{/if}>
-              <{if $product.ot7_url != null }>
-              <li class="slide6"><img src="<{$product.ot7_url}>"></li>
-              <{/if}>
-              <{if $product.ot8_url != null }>
-              <li class="slide7"><img src="<{$product.ot8_url}>"></li>
-              <{/if}>
-              <{if $product.ot9_url != null }>
-              <li class="slide8"><img src="<{$product.ot9_url}>"></li>
-              <{/if}>
-              <{if $product.ot10_url != null }>
-              <li class="slide9"><img src="<{$product.ot10_url}>"></li>
-              <{/if}>
-              <{if $product.ot11_url != null }>
-              <li class="slide10"><img src="<{$product.ot11_url}>"></li>
-              <{/if}>
-              <{if $product.ot12_url != null }>
-              <li class="slide11"><img src="<{$product.ot12_url}>"></li>
-              <{/if}>
-              <{if $product.ot13_url != null }>
-              <li class="slide12"><img src="<{$product.ot13_url}>"></li>
-              <{/if}>
-              <{if $product.ot14_url != null }>
-              <li class="slide13"><img src="<{$product.ot14_url}>"></li>
-              <{/if}>
-              <{if $product.ot15_url != null }>
-              <li class="slide14"><img src="<{$product.ot15_url}>"></li>
+              <{/section}>
               <{/if}>
             </ul>
           </div><!-- itemThumb01 -->
         </div>
         <div class="comp-itemdetail">
           <div class="item_upper item">
+            <{if $sid_name == "gift"}>
+              <span class="amount">セット商品</span>
+            <{else}>
+              <span class="amount">内容量: <{$product.weight}>個</span>
+            <{/if}>
             <{if $product.soldout_flg == false}>
-            <!-- 通常 -->
-            <{if $product.weight == 0}>
-            <span class="amount">セット商品</span>
+              <!-- 通常 -->
+              <span class="state onsale">販売中</span>
             <{else}>
-            <span class="amount">内容量: <{$product.weight}>個</span>
+              <!-- 売り切れ -->
+              <{if $sid_name != "Upcoming商品"}>
+                <span class="state soldout">再販受付中</span>
+                <{else}>
+                <!-- Upcoming商品 -->
+                <span class="upcoming">構想中</span>
+                <{/if}>
             <{/if}>
-            <span class="state onsale">販売中</span>
-            <{else}>
-            <!-- 売り切れ -->
-            <{if $product.weight == 0}>
-            <span class="amount">セット商品</span>
-            <span class="state upcoming">構想中</span>
-            <{else}>
-            <span class="amount">内容量: <{$product.weight}>個</span>
-            <span class="state soldout">再販受付中</span>
-            <{/if}>
-            <{/if}>
-          </div>
+            </div>
           <div class="item">
             <{if $product.price_disp == true}>
               <{if $product.soldout_flg == false}>
@@ -143,18 +94,30 @@ $(function() {
               <span class="price">価格未定</span>
             <{/if}>
           </div>
+          <{if $sid_name == "gift" || $sid_name == "preview"}>
+          <div class="product_option_table" style="display: none;">
+            <{$option_table}>
+          </div>
+          <{/if}>
           <div class="button_wrap">
             <{if $product.soldout_flg == false}>
+            <{if $sid_name != "gift"}>
             <button class="comp-cartbutton large"><span>カートに入れる</span></button>
             <input class="product_cart_btn product_addcart_btn" type="submit" value="カートに入れる">
+            <{else}>
+            <a id="optionSelect" class="comp-cartbutton large gift" href="javascript:void(0);"><span>ギフトオプションを選択して購入</span></a>
+            <{/if}>
             <{$product.info}>
             <{else}>
             <div class="comp-linkbutton">
-              <{if $product.weight == 0}>
-                <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>購入予約<font>WAITING LIST</font></span></a>
-              <{else}>
-                <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
-              <{/if}>
+              <div class="comp-linkbutton">
+                <{if $sid_name != "Upcoming商品"}>
+                  <a target="_blank" href="//journal.fruitest.jp/waiting-list/id<{$product.id}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+                  <{else}>
+                  <a target="_blank" href="//journal.fruitest.jp/waiting-list/id<{$product.id}>/"><span>購入予約<font>WAITING LIST</font></span></a>
+                  <!-- Upcoming商品 -->
+                <{/if}>
+              </div>
             </div>
             <{/if}>
           </div>
@@ -167,7 +130,7 @@ $(function() {
           <h2 class="copy"><{$product.simple_explain}></h2>
           <p id="excerpt" class="detail"></p>
           <div class="comp-linkbutton">
-            <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>購入予約<font>WAITING LIST</font></span></a>
+            <a target="_blank" href="//journal.fruitest.jp/waiting-list/id<{$product.id}>/"><span>購入予約<font>WAITING LIST</font></span></a>
           </div>
       </div>
       <{/if}>
@@ -183,28 +146,30 @@ $(function() {
   </div>
   <div class="flex_txt">
     <div class="comp-title">
-      <h2 class="ttl_ja"><{$product.name}><span class="en"><{$product.model}></span></h2>
+      <h2 class="ttl_ja">
+        <span class="ja"><{$product.name}></span>
+        <span id="enName02" class="en"></span>
+      </h2>
     </div>
     <h2 class="copy"><{$product.simple_explain}></h2>
     <div class="comp-itemdetail">
       <div class="item_upper item">
+        <{if $sid_name == "gift"}>
+          <span class="amount">セット商品</span>
+        <{else}>
+          <span class="amount">内容量: <{$product.weight}>個</span>
+        <{/if}>
         <{if $product.soldout_flg == false}>
-        <!-- 通常 -->
-        <{if $product.weight == 0}>
-        <span class="amount">セット商品</span>
+          <!-- 通常 -->
+          <span class="state onsale">販売中</span>
         <{else}>
-        <span class="amount">内容量: <{$product.weight}>個</span>
-        <{/if}>
-        <span class="state onsale">販売中</span>
-        <{else}>
-        <!-- 売り切れ -->
-        <{if $product.weight == 0}>
-        <span class="amount">セット商品</span>
-        <span class="state upcoming">構想中</span>
-        <{else}>
-        <span class="amount">内容量: <{$product.weight}>個</span>
-        <span class="state soldout">再販受付中</span>
-        <{/if}>
+          <!-- 売り切れ -->
+          <{if $sid_name != "Upcoming商品"}>
+            <span class="state soldout">再販受付中</span>
+            <{else}>
+            <!-- Upcoming商品 -->
+            <span class="upcoming">構想中</span>
+            <{/if}>
         <{/if}>
       </div>
       <div class="item">
@@ -223,15 +188,20 @@ $(function() {
       </div>
       <div class="button_wrap">
         <{if $product.soldout_flg == false}>
-        <button class="comp-cartbutton large"><span>カートに入れる</span></button>
-        <input class="product_cart_btn product_addcart_btn" type="submit" value="カートに入れる">
+        <{if $sid_name != "gift"}>
+          <button class="comp-cartbutton large"><span>カートに入れる</span></button>
+          <input class="product_cart_btn product_addcart_btn" type="submit" value="カートに入れる">
+        <{else}>
+          <a id="optionSelect02" class="comp-cartbutton large gift" href="javascript:void(0);"><span>ギフトオプションを選択して購入</span></a>
+        <{/if}>
         <{$product.info}>
         <{else}>
         <div class="comp-linkbutton">
-          <{if $product.weight == 0}>
-            <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>購入予約<font>WAITING LIST</font></span></a>
-          <{else}>
-            <a target="_blank" href="//journal.fruitest.jp/waiting-list/<{$product.name}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+          <{if $sid_name != "Upcoming商品"}>
+            <a target="_blank" href="//journal.fruitest.jp/waiting-list/id<{$product.id}>/"><span>再入荷リクエスト<font>REQUEST</font></span></a>
+            <{else}>
+            <a target="_blank" href="//journal.fruitest.jp/waiting-list/id<{$product.id}>/"><span>購入予約<font>WAITING LIST</font></span></a>
+            <!-- Upcoming商品 -->
           <{/if}>
         </div>
         <{/if}>
@@ -241,7 +211,6 @@ $(function() {
 </div>
 </div><!-- inner -->
 </section><!-- detailLower -->
-</form>
 <{if $together_product_num != 0}>
 <section id="relatedItem">
 <div class="inner">
@@ -280,7 +249,7 @@ $(function() {
              <{/if}>
        </div>
        <div class="txt_wrap">
-         <a class="product_name" href="<{$together_product[num].link_url}>"><{$together_product[num].name}><span><{$together_product[num].model}></span></a>
+         <a class="product_name" href="<{$together_product[num].link_url}>"><{$together_product[num].name}><span class="english_name"></span></a>
          <p class="copy"><{$together_product[num].s_expl}></p>
          <div class="detail">
            <span class="price"><{$together_product[num].price}></span>
@@ -309,13 +278,13 @@ $(function() {
 </div>
 </section><!-- relatedItem -->
 <{/if}>
-<section id="topOption" class="comp-option">
+<section class="comp-option">
   <div class="inner">
     <div class="comp-title center">
       <h2 class="ttl_ja">FRUITESTのギフトセット</h2>
       <span class="ttl_en">GIFT SET</span>
     </div>
-    <div class="spimg_wrap"></div>
+		<div class="spimg_wrap"><a href="/?mode=f2"></a></div>
     <div class="txt_wrap">
       <p class="text">
         <span>手土産や特別な日のプレゼントに。</span>
@@ -344,6 +313,64 @@ $(function() {
   </div><!-- inner -->
 </section>
 </article>
+<{if $sid_name == "gift"}>
+<div id="optionPop" class="comp-gift-option-pop">
+<div id="popBg" class="pop_bg"></div>
+<div class="pop_flex">
+  <div class="height_adjust"></div>
+  <div class="pop_contents">
+    <div id="popClose" class="pop_close"></div>
+    <div class="contents_inner">
+      <div class="item_thumb">
+        <span class="pc_thumb" style="background-image: url(<{$product.ot1_url}>);"></span>
+      </div>
+        <p class="prod_name">
+          <span class="ja"><{$product.name}></span>
+          <span id="enName03" class="en"></span>
+        </p>
+      <p class="pop_title">下記よりオプションを<span>お選びいただけます</span></p>
+              <div class="option_select">
+        <div class="option_item tesage">
+          <label>
+            <div class="img_wrap" style="background-image:url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1611221777/gift_service/gift_service03_yrwugo.jpg)"></div>
+            <div class="input_wrap">
+              <input type="checkbox" name="tesage" value="tesage">
+              <span class="radio_checker"></span>
+              <div class="option_name">
+                <span class="name">手提げ紙袋</span>
+                <span class="price">無料</span>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="option_item nosi">
+          <label>
+            <div class="img_wrap" style="background-image:url(https://res.cloudinary.com/dj7vewpdn/image/upload/f_auto,q_auto/v1611221777/gift_service/gift_service01_r4ctym.jpg)"></div>
+            <div class="input_wrap">
+              <input type="checkbox" name="mizuhiki" value="mizuhiki">
+              <span class="radio_checker"></span>
+              <div class="option_name">
+                <span class="name">熨斗(のし)</span>
+                <span class="price">+100円(税抜)</span>
+              </div>
+            </div>
+          </label>
+          <p class="mizuhiki_desc">※水引の種類は、どのシーンのお祝い事にもお使いいただける「紅白梅結び」になります。</p>
+          <p class="mizuhiki_desc">※熨斗に「表書き（御祝/内祝/御結婚祝など）」「お名前」の印字をご希望のお客様は、購入手続き画面最下部の「備考欄」にその内容をご記入ください。ご記入のない場合は、「無地熨斗」にて対応させていただきます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="fix_wrapper">
+      <div class="option_fix">
+        <button id="optionFix" class="option_fix_button" href="javascript:void(0);" onclick="gtag_report_conversion(); return false;"><span>購入する</span></button>
+        <input class="product_cart_btn product_addcart_btn" type="submit" value=" カートに入れる" onclick="gtag_report_conversion(); return false;">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</form>
+<{/if}>
 <script>
 $('header').addClass('under');
 </script>

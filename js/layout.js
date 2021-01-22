@@ -161,15 +161,32 @@ $(function() {
   }
 
   //商品詳細のリード説明文を上部に移動
-  function readTxtMove(target) {
-    var strInnerHTML = target.html();
-    $('#excerpt').prepend(strInnerHTML);
-    target.remove();
+  function arrangeDetailLayout(target) {
+    var leadTxt = $('#leadTxt')
+    var englishName = target.attr('enName');
+    var copyBox = [];
+    var pasteBox = [];
+    
+    function init(){
+      $('#excerpt').prepend(leadTxt.html());
+      leadTxt.remove();
+      $('#enName01').text(englishName);
+      $('#enName02').text(englishName);
+      $('#relatedSlider').find('.item_box').each(function(index) {
+        pasteBox[index] = $(this).find('.english_name');
+        copyBox[index] = $(this).find('.enName').attr('enname');
+        pasteBox[index].html(copyBox[index]);
+      });
+    }
+    
+    init();
   }
 
   if (document.getElementById('itemDetail')) {
-    readTxtMove($('#leadTxt'));
+    arrangeDetailLayout($('.enName'));
   }
+  
+  
 
   //商品一覧のフィルタリング機能
   function filterProduct(target) {
@@ -222,28 +239,26 @@ $(function() {
    filterProduct($('#cat'));
  }
 
- // 商品一覧ページで「0円から未定」にテキストを差し替える
- /*function txtFreeToMitei(target) {
-   console.log('txtFreeToMitei');
-   var priceTxt = [];
-   $.each(target.find('li'), function(index) {
-     var priceTag = $(this).find('span.price');
-     priceTxt[index] = priceTag.text();
-     console.log(priceTxt[index] == '0円(税抜)');
-     if ( priceTxt[index] == '0円(税抜)') {
-       console.log(priceTxt[index]);
-       priceTag.text('発売前');
-     } else if (priceTxt[index] == '') {
-       console.log('index:' + priceTxt[index]);
-       $(this).remove();
-     }
-   });
+ // 商品一覧ページで英語名をレイアウトに入れる
+ function arrangeEnglishName(target) {
+   var pasteBox = [];
+   var copyBox = [];
+   function init(){
+     target.find('li').each(function(index) {
+       pasteBox[index] = $(this).find('.english_name');
+       copyBox[index] = $(this).find('.enName').attr('enname');
+       pasteBox[index].html(copyBox[index]);
+     });
+   }
+   
+   init();
  }
+ 
 
  if (document.getElementById('itemList')) {
-   txtFreeToMitei($('#product'));
+   arrangeEnglishName($('#product'));
  }
- */
+
 
 
   //よくある質問
@@ -581,20 +596,21 @@ $(function() {
     var optionFix = $('#optionFix');
     var tesageState = $("input[name='tesage']");
     var muzihikiState = $('input[name="mizuhiki"]');
-    var mizuhikiOptionState = $("input[name='mizuhiki_option']");
     var tesageDisplay = $('#tesageDisplay');
     var mizuhikiDisplay = $('#mizuhikiDisplay');
 
     function optionShifter(){
       var tesageCheck = $("input[name='tesage']:checked").val();
-      var mizuhikiCheck = $("input[name='mizuhiki_option']:checked");
-      if(tesageCheck == 'tesage'){
-        var checkedValue = mizuhikiCheck.attr('tesageAri');
-      }else{
-        var checkedValue = mizuhikiCheck.attr('tesageNashi');
+      var mizuhikiCheck = $("input[name='mizuhiki']:checked").val();
+      if(tesageCheck == 'tesage' && mizuhikiCheck == 'mizuhiki'){
+        $('#0-3').click();
+      }else if(tesageCheck != 'tesage' && mizuhikiCheck == 'mizuhiki'){
+        $('#0-1').click();
+      }else if(tesageCheck == 'tesage' && mizuhikiCheck != 'mizuhiki'){
+        $('#0-2').click();
+      }else if(tesageCheck != 'tesage' && mizuhikiCheck != 'mizuhiki'){
+        $('#0-0').click();
       }
-      $(checkedValue).click();
-      mizuhikiDisplay.text(mizuhikiCheck.val());
     }
 
     function optionPopOpen(){
@@ -615,22 +631,18 @@ $(function() {
     }
 
     function displayMizuhikiOption(){
-      var state = $('input[name="mizuhiki"]:checked').val();
+      var state = $('input[name="tesage"]:checked').val();
       var contentsHeight = mizuhiki.find('.mizuhiki_inner').outerHeight();
-      if(state == 'mizuhiki'){
-        mizuhiki.addClass('active');
-        /*mizuhiki.css({'height': contentsHeight});*/
-        $("input[name='mizuhiki_option']").val(["表書き無し"]);
+      if(state == 'tesage'){
+        $('#0-3').click();
       }else{
-        mizuhiki.removeClass('active');
-        /*mizuhiki.css({'height': 0 + 'px'});*/
-        $("input[name='mizuhiki_option']").val(["無し"]);
+        $('#0-2').click();
       }
     }
 
     function init(){
 
-      $('#6-13').click();
+      $('#0-0').click();
 
       optionPopClose();
 
@@ -672,12 +684,11 @@ $(function() {
 
       muzihikiState.on({
         'click': function(){
-          displayMizuhikiOption();
           optionShifter();
         }
       });
 
-      mizuhikiOptionState.on({
+      tesageState.on({
         'click': function(){
           optionShifter();
         }
@@ -697,7 +708,6 @@ $(function() {
   if (document.getElementById('itemDetail')) {
     optionPopup($('#optionPop'));
   }
-
 
   $('#slickSlider').slick({
     accessibility: false,
