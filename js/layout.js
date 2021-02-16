@@ -166,7 +166,7 @@ $(function() {
     var englishName = target.attr('enName');
     var copyBox = [];
     var pasteBox = [];
-    
+
     function init(){
       $('#excerpt').prepend(leadTxt.html());
       leadTxt.remove();
@@ -178,15 +178,15 @@ $(function() {
         pasteBox[index].html(copyBox[index]);
       });
     }
-    
+
     init();
   }
 
   if (document.getElementById('itemDetail')) {
     arrangeDetailLayout($('.enName'));
   }
-  
-  
+
+
 
   //商品一覧のフィルタリング機能
   function filterProduct(target) {
@@ -250,10 +250,10 @@ $(function() {
        pasteBox[index].html(copyBox[index]);
      });
    }
-   
+
    init();
  }
- 
+
 
  if (document.getElementById('itemList')) {
    arrangeEnglishName($('#product'));
@@ -434,18 +434,22 @@ $(function() {
 
   function giftProductAutomation(target){
     var buttonWrap = [];
+    var productBox = [];
     var cartBox = [];
 
     function soldoutFilter(){
       target.find('.button_wrap').each(function(index) {
         buttonWrap[index] = $(this);
+        productBox[index] = $(this).parent('li');
         cartBox[index] = $(this).find('input[type="submit"]');
         console.log('index' + cartBox[index].length);
         if( cartBox[index].length == 0){
           console.log('index' + index);
           buttonWrap[index].addClass('soldout');
+          productBox[index].addClass('soldout');
         }else{
           buttonWrap[index].addClass('onsale');
+          productBox[index].addClass('onsale');
         }
       });
     }

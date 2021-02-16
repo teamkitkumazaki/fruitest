@@ -58,7 +58,7 @@
               margin-right: 0;
             }
             .img_wrap{
-              margin-bottom: 10px;
+              margin-bottom: 20px;
               a{
                 display: block;
                 @include hover;
@@ -69,6 +69,7 @@
               &.upcoming{
                 a{
                   position: relative;
+                  pointer-events: none;
                   &::before{
                     display: block;
                     content: "";
@@ -80,7 +81,7 @@
                     margin: auto;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(0, 0, 0, 0.2);
+                    background-color: rgba(0, 0, 0, 0.4);
                   }
                   &::after{
                     display: block;
@@ -92,7 +93,7 @@
                     height: 25px;
                     margin: auto;
                     text-align: center;
-                    content: "UPCOMING";
+                    content: "UPCOMING" !important;
                     color: #fff;
                     @include xiaowei;
                     font-size: 25px;
@@ -109,7 +110,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 color: #111111;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
                 @include hover;
               }
               .price{
@@ -153,15 +154,53 @@
                   display: none;
                 }
                 .comp-gift-cartbutton{
-                  display: block;
+                  display: none;
                 }
               }
               &.soldout{
                 .comp-upcoming{
-                  display: block;
+                  display: none;
                 }
                 .comp-gift-cartbutton{
                   display: none;
+                }
+              }
+            }
+            &.soldout{
+              .img_wrap{
+                a{
+                  position: relative;
+                  pointer-events: none;
+                  &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    margin: auto;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                  }
+                  &::after{
+                    display: block;
+                    position: absolute;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    height: 25px;
+                    margin: auto;
+                    text-align: center;
+                    content: "SOLD OUT";
+                    color: #fff;
+                    @include xiaowei;
+                    font-size: 25px;
+                    letter-spacing: 1.2px !important;
+                    pointer-events: none;
+                  }
                 }
               }
             }
@@ -288,7 +327,7 @@
               margin-right: 0px;
               margin-bottom: 40px;
               .img_wrap{
-                margin-bottom: 10px;
+                margin-bottom: 15px;
                 a{
                   display: block;
                   @include hover;
@@ -300,7 +339,7 @@
               .txt_wrap{
                 .prod_name{
                   font-size: 20px;
-                  margin-bottom: 5px;
+                  margin-bottom: 10px;
                 }
                 .price{
                   font-size: 14px;

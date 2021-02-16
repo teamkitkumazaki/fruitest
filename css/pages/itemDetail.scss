@@ -152,11 +152,16 @@
           }
         }
         .chart_wrap{
+          max-width: 90%;
           margin-top: 40px;
         }
       }
       .flex_img{
         width: 480px;
+        &.bg_img{
+          height: 750px;
+          @include bgSet;
+        }
       }
     }
     .flex_origin{
